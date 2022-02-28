@@ -3,7 +3,7 @@ from random import choice
 from django import forms
 import datetime
 from .choices import *
-#from .models import HardDrive
+from .models import HardDrive
 
 class addNewHardDrive(forms.Form):
     """ 
@@ -36,8 +36,8 @@ class addNewHardDrive(forms.Form):
     actualRetDate = forms.DateField(label='Actual Returned Date', label_suffix='MM/DD/YYYY', initial=datetime.date.today)
     modDate = forms.DateField(label='Modified Date', label_suffix='MM/DD/YYYY', initial=datetime.date.today)
 
-    #class Meta:
-    #   model = HardDrive
-    #   fiels = ['creationDate', 'serialNo', 'manufacturer',
-    #  'modelNo', 'hdType', 'connPort', 'hdSize', 'hdClass', 'justiClass', 'imageVerID', 
-    # 'btStatus', 'btExpDate', 'hdStatus', 'justiStatus', 'issueDate', 'expectRetDate', 'justiRetDate', 'actualRetDate', 'modDate']
+    class Meta:
+       model = HardDrive
+       fiels = ['creationDate', 'serialNo', 'manufacturer',
+      'modelNo', 'hdType', 'connPort', 'hdSize', 'hdClass', 'justiClass', 'imageVerID', 
+     'btStatus', 'btExpDate', 'hdStatus', 'justiStatus', 'issueDate', 'expectRetDate', 'justiRetDate', 'actualRetDate', 'modDate']
