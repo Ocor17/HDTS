@@ -1,0 +1,21 @@
+{% extends 'Inventory/base.html'%}
+
+
+{% block Customer %}
+
+{% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'Inventory/style.css' %}">
+
+<div class="btn-group" >
+<button >
+    
+   <a href="{% url 'Inventory:viewInventory'%}">View Inventory </a>   
+</button>
+<button>
+    <a href="{% url 'Inventory:mainMenu'%}" >Main Menu</a>
+</button>
+</div>
+
+
+{% endblock Customer%}
