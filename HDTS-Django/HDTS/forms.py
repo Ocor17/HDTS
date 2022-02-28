@@ -5,8 +5,6 @@ import datetime
 from .choices import *
 #from .models import HardDrive
 
-
-
 class addNewHardDrive(forms.Form):
     """ 
     Revisit Later
