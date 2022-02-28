@@ -5,7 +5,7 @@ from django.urls import reverse
 from .forms import addNewHardDrive
 
 from django.views.decorators.csrf import csrf_exempt
-#from .models import HardDrive
+from .models import HardDrive
 
 @csrf_exempt
 def addHardDrive(request):
@@ -32,6 +32,9 @@ def addHardDrive(request):
             justiRetDate = form.cleaned_data['justiRetDate']
             actualRetDate = form.cleaned_data['actualRetDate']
             modDate = form.cleaned_data['modDate'] 
-        
-        return HttpResponse('Form Works!')
+
+            hd = HardDrive(creationDate, serialNo, manufacturer, modelNo, hdType, connPort, hdSize, hdClass, justiClass, imageVerID, btStatus, btExpDate, hdStatus,
+                justiStatus, issueDate, expectRetDate, justiRetDate, actualRetDate, modDate)
+            hd.save()
+            return HttpResponse('Form Works!')
     return HttpResponse('Hello World!')

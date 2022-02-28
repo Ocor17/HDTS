@@ -3,4 +3,4 @@ __pycache__/
 venv/
 env/
 
-HDTS-Django/db.sqlite3
+*.sqlite3
