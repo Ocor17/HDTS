@@ -33,8 +33,9 @@ def addHardDrive(request):
             actualRetDate = form.cleaned_data['actualRetDate']
             modDate = form.cleaned_data['modDate'] 
 
-            hd = HardDrive(creationDate, serialNo, manufacturer, modelNo, hdType, connPort, hdSize, hdClass, justiClass, imageVerID, btStatus, btExpDate, hdStatus,
-                justiStatus, issueDate, expectRetDate, justiRetDate, actualRetDate, modDate)
-            hd.save()
+            hd = HardDrive.objects.create(creationDate=creationDate, serialNo=serialNo, manufacturer= manufacturer, modelNo=modelNo, 
+            hdType=hdType, connPort=connPort, hdSize=hdSize, hdClass=hdClass, justiClass=justiClass, imageVerID=imageVerID, btStatus=btStatus,
+            btExpDate=btExpDate, hdStatus=hdStatus, justiStatus=justiStatus, issueDate=issueDate, expectRetDate=expectRetDate,
+            justiRetDate=justiRetDate, actualRetDate=actualRetDate, modDate=modDate)
             return HttpResponse('Form Works!')
     return HttpResponse('Hello World!')
