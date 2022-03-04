@@ -2,10 +2,10 @@ from django.http import HttpResponseRedirect
 from django.http.response import HttpResponse
 from django.shortcuts import get_object_or_404, render
 from django.urls import reverse
-from .forms import addNewHardDrive
+from Inventory.forms import addNewHardDrive
 
 from django.views.decorators.csrf import csrf_exempt
-from .models import HardDrive
+from Inventory.models import HardDrive
 
 @csrf_exempt
 def addHardDrive(request):
