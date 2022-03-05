@@ -58,6 +58,7 @@ def addHardDrive(request):
 def viewInventory(request):
     #customer and product objects are passed. Values can be called from html
     harddrive = HardDrive.objects.all()
+    #call inventory html and pass 'harddrive' as an object to be itterated through
     return render(request, 'Inventory/viewInventory.html',{'harddrive':harddrive})
 
 def mainMenu(request):
