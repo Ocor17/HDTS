@@ -18,7 +18,7 @@ def request(response):
 
     else:
         form = CreateNewRequest()
-        
+
     return render(response, 'request/request.html', {"form":form})
 
 def requestList(response):

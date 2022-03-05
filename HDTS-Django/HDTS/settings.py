@@ -32,7 +32,7 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'Inventory.apps.InventoryConfig',
-    'register.apps.RegisterConfig',
+    'accounts.apps.AccountsConfig',
     'request.apps.RequestConfig',
     'crispy_forms',
     'django.contrib.admin',
@@ -138,5 +138,5 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 CRISPY_TEMPLATE_PACK="bootstrap4"
 
-LOGIN_REDIRECT_URL="/"
+LOGIN_REDIRECT_URL="/login.html"
 LOGOUT_REDIRECT_URL="/"
