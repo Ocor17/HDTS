@@ -21,4 +21,5 @@ urlpatterns = [
     path('Inventory/', include('Inventory.urls')),
     path('register/', include('register.urls')),
     path('', include('Inventory.urls')),
+    path('', include('django.contrib.auth.urls')),
 ]
