@@ -1,0 +1,11 @@
+{% extends 'request/base.html' %}
+
+{% block title %}
+Requests
+{% endblock %}
+
+{% block content %}
+    {% for r in user.requestlist.all %}
+        <p><a href="/{{r.id}}">{{r.name}}</a></p>
+    {% endfor %}
+{% endblock %}

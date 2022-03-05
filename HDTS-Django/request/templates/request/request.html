@@ -1,0 +1,15 @@
+{% extends 'request/base.html' %}
+
+{% block title %}
+Create New List
+{% endblock %}
+
+{% block content %}
+<h3 class="mt-2">Hard Drive Request</h3>
+<hr class="mt-0 mb-4">
+<form method="post" action="/create/">
+    {% csrf_token %}
+    {{form.as_p}}
+    <button type="submit", name="save">Submit</button>
+</form>
+{% endblock %}
