@@ -16,6 +16,7 @@ Including another URLconf
 from django.urls import path
 
 from . import views
+from register import views as register_view
 
 app_name = 'Inventory'
 
