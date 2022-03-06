@@ -45,7 +45,8 @@
             <div class="col-8">
                 <hr class="mt-0 mb-4">
                 {% block Customer %}
-            
+                {% if user.is_authenticated %}
+                {% endif %}
                 {% endblock %}
             </div>
         </div>

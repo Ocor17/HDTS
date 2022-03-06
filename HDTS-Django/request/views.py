@@ -21,7 +21,7 @@ def request(response):
     else:
         form = CreateNewRequest()
 
-    return render(response, 'request/request.html', {"form":form})
+    return render(response, 'request/newrequest.html', {"form":form})
 
 @login_required(login_url='/')
 def requestList(response):

@@ -13,24 +13,44 @@
     <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
+    <!-- put navigation bar style thing-->
     <title>HDTS</title>
     </head>
     <body>
-        <div class="nav-center">
-            <a href="/request">New Request</a>
-            <a href="/request/requestlist">View Requests</a>
-        </div>
-        
-        <div id="content", name="content", class="Inventory">
-            <div class="row justify-content-center">
-                <div class="col-8">
-                    <h3 class="mt-2"></h3>
-                    {% block content %}
-                
-                    {% endblock %}
-                </div>
+    
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark"> 
+            <h5>HDTS</h3>
+            <button class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+            aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ui class="navbar-nav">
+                    <li class="navbar-nav">
+                        <a class="'nav-link" href="{% url 'request:newrequest' %}">New Request</a>
+                    </li>
+                    <li class="navbar-nav">
+                        <a class="'nav-link" href="{% url 'request:requestlist' %}">View Requests</a>
+                    </li>
+                </ui>
+
+            </div>
+
+            <span><a href="{% url 'logout' %}">Logout</a></span>
+        </nav>
+
+    <div id="content", name="content", class="request">
+        <div class="row justify-content-center">
+            <div class="col-8">
+                <hr class="mt-0 mb-4">
+                {% block Customer %}
+                {% if user.is_authenticated %}
+                {% endif %}
+                {% endblock %}
             </div>
         </div>
+    </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

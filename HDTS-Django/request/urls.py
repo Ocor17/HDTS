@@ -20,6 +20,7 @@ from . import views
 app_name = 'request'
 
 urlpatterns = [
-    path('', views.request, name='request'),
-    path('requestlist', views.requestList, name='requestList'),
+    path('', views.requestList, name='requestList'),
+    path('newrequest/', views.request, name='request'),
+    path('requestlist/', views.requestList, name='requestList'),
 ]
