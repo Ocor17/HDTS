@@ -51,7 +51,7 @@ def addHardDrive(request):
                                             expectRetDate=expectRetDate,
                                             justiRetDate=justiRetDate, 
                                             actualRetDate=actualRetDate, 
-                                            modDate=modDate)            #hd.save()
+                                            modDate=modDate)           
                 return HttpResponse('Form Works!')
     return HttpResponse('Hello World!')
 
