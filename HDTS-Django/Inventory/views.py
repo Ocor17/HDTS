@@ -3,11 +3,13 @@ from django.http.response import HttpResponse
 from django.shortcuts import get_object_or_404, render
 from django.urls import reverse
 from .forms import addNewHardDrive
+from django.contrib.auth.decorators import login_required
 
 from django.views.decorators.csrf import csrf_exempt
 from .models import HardDrive
 
 @csrf_exempt
+@login_required(login_url='/')
 def addHardDrive(request):
     if request.method == 'POST':
         form = addNewHardDrive(request.POST)
@@ -55,11 +57,13 @@ def addHardDrive(request):
             return HttpResponse('Form Works!')
     return HttpResponse('Hello World!')
 
+@login_required(login_url='/')
 def viewInventory(request):
     #customer and product objects are passed. Values can be called from html
     harddrive = HardDrive.objects.all()
     #call inventory html and pass 'harddrive' as an object to be itterated through
     return render(request, 'Inventory/viewInventory.html',{'harddrive':harddrive})
 
+@login_required(login_url='/')
 def mainMenu(request):
     return render(request, 'Inventory/mainMenu.html')

@@ -2,8 +2,10 @@ from django.shortcuts import render
 from django.http import HttpResponse, HttpResponseRedirect
 from .forms import CreateNewRequest
 from .models import RequestList, Request
+from django.contrib.auth.decorators import login_required
 
 # Create your views here.
+@login_required(login_url='/')
 def request(response):
     if response.method == "POST":
         form = CreateNewRequest(response.POST)
@@ -21,5 +23,6 @@ def request(response):
 
     return render(response, 'request/request.html', {"form":form})
 
+@login_required(login_url='/')
 def requestList(response):
     return render(response, "request/requestlist.html")
