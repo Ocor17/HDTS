@@ -52,8 +52,10 @@ def addHardDrive(request):
                                             justiRetDate=justiRetDate, 
                                             actualRetDate=actualRetDate, 
                                             modDate=modDate)           
-                return HttpResponse('Form Works!')
-    return HttpResponse('Hello World!')
+                return HttpResponse('Hard Drive added to Inventory!')
+            else:
+                return HttpResponse('Hard Drive alreadys exists')
+    return HttpResponse('Failed to add Hard Drive!')
 
 def viewInventory(request):
     #customer and product objects are passed. Values can be called from html
