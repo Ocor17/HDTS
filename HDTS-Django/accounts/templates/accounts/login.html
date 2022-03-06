@@ -4,10 +4,13 @@
 {% load crispy_forms_tags %}
 
 {% block content %}
-    <form method="POST" action="{% url 'accounts:login'%}" class="form-group">
+    <form method="POST" class="form-group">
         {% csrf_token %}
         {{form|crispy}}
+        {% for message in messages %}
+            <p id="message">{{message}}</p>
+        {% endfor %}
         <button type="submit", class="btn btn-success">Login</button>
-        <p><a href="/register">Create an Account</a></p>
+        <p><a href="/register">Register</a></p>
     </form>
 {% endblock %}
