@@ -26,3 +26,7 @@ def request(response):
 @login_required(login_url='/')
 def requestList(response):
     return render(response, "request/requestlist.html")
+
+@login_required(login_url='/')
+def mainMenu(request):
+    return render(request, 'request/mainmenu.html')
