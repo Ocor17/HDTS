@@ -2,15 +2,14 @@ from django.http import HttpResponseRedirect
 from django.http.response import HttpResponse
 from django.shortcuts import get_object_or_404, render
 from django.urls import reverse
-from .forms import addNewHardDrive
-
 from django.views.decorators.csrf import csrf_exempt
-from .models import HardDrive
 
+from .models import HardDrive
+from .forms import addNewHardDrive
 @csrf_exempt
 def addHardDrive(request):
     if request.method == 'POST':
-        form = addNewHardDrive(request.POST)
+        form = addNewHardDrive(request.POST, request.FILES)
         #print(form.cleaned_data)
         if form.is_valid():
             creationDate = form.cleaned_data['creationDate']
