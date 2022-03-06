@@ -9,7 +9,7 @@ from djongo import models
 class HardDrive(models.Model):
     
     creationDate = models.DateField(db_column='Creation Date',  blank=True, null=True)
-    serialNo = models.IntegerField(db_column='Serial Number', blank=True, null=True)
+    serialNo = models.IntegerField(db_column='Serial Number', unique=True, blank=True, null=True)
     manufacturer = models.CharField(db_column='Manufacturer',max_length=50,  blank=True, null=True)
     modelNo = models.IntegerField(db_column='Model Number',  blank=True, null=True)
     hdType = models.CharField(db_column=' Hard Drive Type',max_length=50,  blank=True, null=True)
