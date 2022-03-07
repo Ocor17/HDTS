@@ -35,9 +35,9 @@ class CreateNewRequest(forms.Form):
     type = forms.CharField(label="Hard Drive Type",widget=forms.Select(choices=hd_type))
     comment = forms.CharField(label="Comment")
 
-    eventName = forms.CharField(label="Event Name")
+    eventName = forms.CharField(label="Event Name", max_length=200)
     eventDescription = forms.CharField(label="Event Description")
-    eventLocation = forms.CharField(label="Event Location")
+    eventLocation = forms.CharField(label="Event Location", max_length=200)
     eventType = forms.CharField(label="Event Type",widget=forms.Select(choices=event_type))
     reportingCycle = forms.IntegerField(label="Length of Reporting Cycle (days)")
     eventStatus = forms.CharField(label="Event Status",widget=forms.Select(choices=event_status))

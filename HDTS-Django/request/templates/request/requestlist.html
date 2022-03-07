@@ -1,11 +1,12 @@
 {% extends 'request/base.html' %}
 
-{% block title %}
-Requests
-{% endblock %}
+{% block title %} Requests {% endblock %}
 
 {% block content %}
+    <h3 class="mt-2">Hard Drive Requests</h3>
+    <hr class="mt-0 mb-4">
     {% for r in user.requestlist.all %}
         <p><a href="/{{r.id}}">{{r.name}}</a></p>
+        <p><a href="/{{r.id}}">{{r.classification}}</a></p>
     {% endfor %}
 {% endblock %}
