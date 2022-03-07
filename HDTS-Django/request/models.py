@@ -6,14 +6,30 @@ class RequestList(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE, related_name="requestlist", null=True)
     name = models.CharField(max_length=200)
 
+    # info from form
+    classification = models.CharField(max_length=200, null=True)
+    amount = models.IntegerField(null=True)
+    port = models.CharField(max_length=200, null=True)
+    size = models.IntegerField(null=True)
+    type = models.CharField(max_length=200, null=True)
+    comment = models.CharField(max_length=200, null=True)
+
+    eventDescription = models.CharField(max_length=200, null=True)
+    eventLocation = models.CharField(max_length=200, null=True)
+    eventType = models.CharField(max_length=200, null=True)
+    reportingCycle = models.IntegerField(null=True)
+    eventStatus = models.CharField(max_length=200, null=True)
+    eventStartDate = models.DateField(max_length=200, null=True)
+    eventEndDate = models.DateField(max_length=200, null=True)
+
 
     def __str__(self):
         return self.name
 
 class Request(models.Model):
     requestList = models.ForeignKey(RequestList, on_delete=models.CASCADE, related_name="requestlist", null=True)
-    text = models.CharField(max_length=300)
-    complete = models.BooleanField()
+    text = models.CharField(max_length=300, null=True)
+    complete = models.BooleanField(null=True)
 
     def __str__(self):
         return self.text

@@ -6,7 +6,21 @@
     <h3 class="mt-2">Hard Drive Requests</h3>
     <hr class="mt-0 mb-4">
     {% for r in user.requestlist.all %}
-        <p>{{r.name}}</p>
+        <p>Event Name: {{r.name}}</p>
+        <p>Classification: {{r.classification}}</p>
+        <p>Amount: {{r.amount}}</p>
+        <p>Port Type: {{r.port}}</p>
+        <p>Size (MB): {{r.size}}</p>
+        <p>Hard Drive Type: {{r.type}}</p>
+        <p>Comment: {{r.comment}}</p>
+        <p>Event Description: {{r.eventDescription}}</p>
+        <p>Event Location: {{r.eventLocation}}</p>
+        <p>Event Type: {{r.eventType}}</p>
+        <p>Reporting Cycle: {{r.reportingCycle}}</p>
+        <p>Event Status: {{r.eventStatus}}</p>
+        <p>Event Start Date: {{r.eventStartDate}}</p>
+        <p>Event End Date: {{r.eventEndDate}}</p>
         <hr class="mt-0 mb-4">
+
     {% endfor %}
 {% endblock %}

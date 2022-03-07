@@ -18,8 +18,38 @@ def new_request(response):
         form = CreateNewRequest(response.POST)
 
         if form.is_valid():
-            n = form.cleaned_data["eventName"]
-            t = RequestList(name=n)
+            name = form.cleaned_data["eventName"]
+
+            classification = form.cleaned_data["classification"]
+            amount = form.cleaned_data["amount"]
+            port = form.cleaned_data["port"]
+            size = form.cleaned_data["size"]
+            type = form.cleaned_data["type"]
+            comment = form.cleaned_data["comment"]
+            eventDescription = form.cleaned_data["eventDescription"]
+            eventLocation = form.cleaned_data["eventLocation"]
+            eventType = form.cleaned_data["eventType"]
+            reportingCycle = form.cleaned_data["reportingCycle"]
+            eventStatus = form.cleaned_data["eventStatus"]
+            eventStartDate = form.cleaned_data["eventStartDate"]
+            eventEndDate = form.cleaned_data["eventEndDate"]
+
+
+            t = RequestList(name=name, 
+                            classification=classification, 
+                            amount=amount, 
+                            port=port, 
+                            size=size, 
+                            type=type, 
+                            comment=comment, 
+                            eventDescription=eventDescription, 
+                            eventLocation=eventLocation, 
+                            eventType=eventType, 
+                            reportingCycle=reportingCycle, 
+                            eventStatus=eventStatus, 
+                            eventStartDate=eventStartDate, 
+                            eventEndDate=eventEndDate)
+                            
             t.save()
             response.user.requestlist.add(t)
     else:
