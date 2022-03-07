@@ -17,6 +17,7 @@
     <title>HDTS</title>
     </head>
     <body>
+    
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <a class="navbar-brand" href="#">HDTS</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -26,13 +27,10 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav mr-auto navbar-dark bg-dark">
                 <li class="nav-item">
-                    <a class="nav-link" href="{% url 'Inventory:viewInventory' %}">View Requests (not made yet) </a>
+                  <a class="nav-link" href="{% url 'request:newrequest' %}">New Request</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="{% url 'Inventory:viewInventory' %}">View Inventory <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="{% url 'Inventory:mainMenu' %}">Main Menu</a>
+                  <a class="nav-link" href="{% url 'request:requestlist' %}">View Requests</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="{% url 'logout' %}">Logout</a>
@@ -42,13 +40,11 @@
             
           </nav>
 
-    <div id="content", name="content", class="Inventory">
-        <div class="text-left">
+    <div id="content", name="content">
+        <div class="row justify-content-center">
             <div class="col-8">
-                <hr class="mt-0 mb-4">
-                {% block Customer %}
-                {% if user.is_authenticated %}
-                {% endif %}
+                {% block content %}
+                
                 {% endblock %}
             </div>
         </div>
