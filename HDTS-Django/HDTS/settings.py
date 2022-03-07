@@ -25,6 +25,7 @@ SECRET_KEY = 'django-insecure-6oii^+w*=n88*uh$866f19yln6!4i@eutt*astet*$bwe3&o6)
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+#CHANGE LATER TO USE .ENV
 ALLOWED_HOSTS = []
 
 
@@ -81,6 +82,7 @@ WSGI_APPLICATION = 'HDTS.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
+#CHANGE LATER TO USE .ENV VARIABLES
 DATABASES = {
     'default': {
         'ENGINE': 'djongo',

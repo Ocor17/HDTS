@@ -1,4 +1,4 @@
-from django.db import models
+from djongo import models
 from django.contrib.auth.models import User
 
 # Create your models here.
@@ -22,14 +22,22 @@ class RequestList(models.Model):
     eventStartDate = models.DateField(max_length=200, null=True)
     eventEndDate = models.DateField(max_length=200, null=True)
 
+    class Meta:
+        managed = False
+        db_table = 'requestlist'
 
-    def __str__(self):
-        return self.name
+
+#    def __str__(self):
+#        return self.name
 
 class Request(models.Model):
     requestList = models.ForeignKey(RequestList, on_delete=models.CASCADE, related_name="requestlist", null=True)
     text = models.CharField(max_length=300, null=True)
     complete = models.BooleanField(null=True)
 
-    def __str__(self):
-        return self.text
+    class Meta:
+        managed = False
+        db_table = 'request'
+
+#    def __str__(self):
+#        return self.text

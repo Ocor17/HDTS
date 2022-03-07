@@ -5,7 +5,7 @@
 {% block content %}
     <h3 class="mt-2">Hard Drive Requests</h3>
     <hr class="mt-0 mb-4">
-    {% for r in user.requestlist.all %}
+    {% for r in reqlist %}
         <p>Event Name: {{r.name}}</p>
         <p>Classification: {{r.classification}}</p>
         <p>Amount: {{r.amount}}</p>

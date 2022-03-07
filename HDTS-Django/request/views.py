@@ -35,7 +35,7 @@ def new_request(response):
             eventEndDate = form.cleaned_data["eventEndDate"]
 
 
-            t = RequestList(name=name, 
+            t = RequestList.objects.create(name=name, 
                             classification=classification, 
                             amount=amount, 
                             port=port, 
@@ -50,7 +50,7 @@ def new_request(response):
                             eventStartDate=eventStartDate, 
                             eventEndDate=eventEndDate)
 
-            t.save()
+            #t.save()
             response.user.requestlist.add(t)
     else:
         form = CreateNewRequest()
@@ -58,8 +58,8 @@ def new_request(response):
 
 @login_required(login_url='/')
 def request_list(response):
-    ls = response.user.requestlist.all()
-    return render(response, "request/requestlist.html", {"ls": ls})
+    ls = RequestList.objects.all()
+    return render(response, "request/requestlist.html", {"reqlist":ls})
 
 @login_required(login_url='/')
 def mainMenu(request):
