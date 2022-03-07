@@ -16,8 +16,8 @@ Including another URLconf
 from django.urls import path
 
 from . import views
-from register import views as register_view
-
+from django.conf import settings
+from django.conf.urls.static import static
 app_name = 'Inventory'
 
 urlpatterns = [
@@ -26,3 +26,6 @@ urlpatterns = [
     path('', views.mainMenu, name='mainMenu'),
     path('viewInventory/', views.viewInventory, name='viewInventory'),
 ]
+
+if settings.DEBUG:
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
