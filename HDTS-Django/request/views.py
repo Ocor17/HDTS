@@ -8,8 +8,9 @@ from django.contrib.auth.decorators import login_required
 def index(response, id):
     ls = RequestList.objects.get(id=id)
 
-    return render(response, 'request/newrequest.html', {"ls":ls})
-
+    if ls in response.user.todolist.all():
+        return render(response, 'request/requestlist.html', {"ls":ls})
+    return render(response, 'accounts/requestorlogin.html', {})
 
 @login_required(login_url='/')
 def new_request(response):
@@ -27,7 +28,8 @@ def new_request(response):
 
 @login_required(login_url='/')
 def request_list(response):
-    return render(response, "request/requestlist.html", {})
+    ls = response.user.requestlist.all()
+    return render(response, "request/requestlist.html", {"ls": ls})
 
 @login_required(login_url='/')
 def mainMenu(request):

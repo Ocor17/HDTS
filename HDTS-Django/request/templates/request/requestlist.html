@@ -6,7 +6,8 @@
     <h3 class="mt-2">Hard Drive Requests</h3>
     <hr class="mt-0 mb-4">
     {% for r in user.requestlist.all %}
-        <p><a href="/{{r.id}}">{{r.name}}</a></p>
-        <p><a href="/{{r.id}}">{{r.classification}}</a></p>
+        <p>{{r.name}}</a></p>
+        <p>{{r.classification}}</a></p>
+        <hr class="mt-0 mb-4">
     {% endfor %}
 {% endblock %}
