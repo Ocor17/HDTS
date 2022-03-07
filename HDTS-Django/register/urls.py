@@ -16,16 +16,9 @@ Including another URLconf
 from django.urls import path
 
 from . import views
-from django.conf import settings
-from django.conf.urls.static import static
-app_name = 'Inventory'
+
+app_name = 'register'
 
 urlpatterns = [
-    path('addHardDrive/', views.addHardDrive, name='addHardDrive'),
-    path('mainMenu/', views.mainMenu, name='mainMenu'),
-    path('', views.mainMenu, name='mainMenu'),
-    path('viewInventory/', views.viewInventory, name='viewInventory'),
+    path('', views.register, name='register'),
 ]
-
-if settings.DEBUG:
-    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
