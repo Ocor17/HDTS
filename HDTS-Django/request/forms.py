@@ -5,27 +5,32 @@ from django.contrib.auth.forms import UserCreationForm
 
 class CreateNewRequest(forms.Form):
     classification_choices = (
-        (1, "Classified"),
-        (2, "Unclassified"),
+        ("Classified", "Classified"),
+        ("Unclassified", "Unclassified"),
     )
 
     connection_port = (
-        (1, "SATA"),
+        ("SATA", "SATA"),
+        ("M.2", "M.2"),
     )
 
     hd_type= (
-        (1, "type1"),
-        (2, "type2"),
+        ("SSD", "SSD"),
+        ("HDD", "HDD"),
     )
 
     event_type= (
-        (1, "type1"),
-        (2, "type2"),
+        ("PMR", "PMR"),
+        ("CVPA", "CVPA"),
+        ("CVI", "CVI"),
+        ("VoF", "VoF"),
+        ("Research Project", "Research Project"),
     )
 
     event_status= (
-        (1, "type1"),
-        (2, "type2"),
+        ("Confirmed", "Confirmed"),
+        ("Forecasted", "Forecasted"),
+        ("Canceled}", "Canceled"),
     )
 
     classification = forms.CharField(label="Classification", widget=forms.Select(choices=classification_choices))

@@ -49,7 +49,7 @@ def new_request(response):
                             eventStatus=eventStatus, 
                             eventStartDate=eventStartDate, 
                             eventEndDate=eventEndDate)
-                            
+
             t.save()
             response.user.requestlist.add(t)
     else:
