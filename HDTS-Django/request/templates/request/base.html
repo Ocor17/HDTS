@@ -40,13 +40,11 @@
             
           </nav>
 
-    <div id="content", name="content", class="request">
+    <div id="content", name="content">
         <div class="row justify-content-center">
             <div class="col-8">
-                <hr class="mt-0 mb-4">
-                {% block Customer %}
-                {% if user.is_authenticated %}
-                {% endif %}
+                {% block content %}
+                
                 {% endblock %}
             </div>
         </div>
