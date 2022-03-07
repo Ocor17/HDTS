@@ -6,6 +6,7 @@
 {% block content %}
     <form method="POST" class="form-group">
         <h3 class="mt-2">Login</h3>
+        <hr class="mt-0 mb-4">
         {% csrf_token %}
         {{form|crispy}}
         {% for message in messages %}
