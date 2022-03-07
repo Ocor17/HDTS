@@ -17,28 +17,27 @@
     <title>HDTS</title>
     </head>
     <body>
-    
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark"> 
-            <h5>HDTS</h3>
-            <button class="navbar-toggler" type="button" data-toggle="collapse"
-            data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-            aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">HDTS</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ui class="navbar-nav">
-                    <li class="navbar-nav">
-                        <a class="'nav-link" href="{% url 'Inventory:viewInventory' %}">View Inventory</a>
-                    </li>
-                    <li class="navbar-nav">
-                        <a class="'nav-link" href="{% url 'Inventory:mainMenu' %}">Main Menu</a>
-                    </li>
-                </ui>
-
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto navbar-dark bg-dark">
+                <li class="nav-item">
+                  <a class="nav-link" href="{% url 'Inventory:viewInventory' %}">View Inventory <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="{% url 'Inventory:mainMenu' %}">Main Menu</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'logout' %}">Logout</a>
+                </li>
+              </ul>
             </div>
-
-            <span><a href="{% url 'logout' %}">Logout</a></span>
-        </nav>
+            
+          </nav>
 
     <div id="content", name="content", class="Inventory">
         <div class="row justify-content-center">

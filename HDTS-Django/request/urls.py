@@ -21,6 +21,6 @@ app_name = 'request'
 
 urlpatterns = [
     path('', views.mainMenu, name='mainmenu'),
-    path('newrequest/', views.request, name='request'),
+    path('newrequest/', views.request, name='newrequest'),
     path('requestlist/', views.requestList, name='requestlist'),
 ]
