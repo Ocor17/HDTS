@@ -18,7 +18,7 @@ class addNewHardDrive(forms.Form):
 
     creationDate = forms.DateField(label='Creation Date', label_suffix='MM/DD/YYYY', initial=datetime.date.today)
     serialNo = forms.IntegerField(label='Serial Number')
-    manufacturer = forms.ChoiceField(label='Manufacturer', choices=MANUFACTURER_CHOICES[0], required=False)
+    manufacturer = forms.ChoiceField(label='Manufacturer', choices=MANUFACTURER_CHOICES, required=False)
     modelNo = forms.IntegerField(label='Model Number', required=False)
     hdType = forms.ChoiceField(label=' Hard Drive Type', choices=HD_TYPE_CHOICES)
     connPort = forms.ChoiceField(label=' Hard Drive Connection Port', choices=CONN_PORT_CHOICES)
@@ -38,6 +38,6 @@ class addNewHardDrive(forms.Form):
 
     class Meta:
        model = HardDrive
-       fiels = ['creationDate', 'serialNo', 'manufacturer',
+       fields = ['creationDate', 'serialNo', 'manufacturer',
       'modelNo', 'hdType', 'connPort', 'hdSize', 'hdClass', 'justiClass', 'imageVerID', 
      'btStatus', 'btExpDate', 'hdStatus', 'justiStatus', 'issueDate', 'expectRetDate', 'justiRetDate', 'actualRetDate', 'modDate']

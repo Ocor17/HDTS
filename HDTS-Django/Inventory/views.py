@@ -1,6 +1,7 @@
+from urllib import response
 from django.http import HttpResponseRedirect
 from django.http.response import HttpResponse
-from django.shortcuts import get_object_or_404, render
+from django.shortcuts import get_object_or_404, redirect, render
 from django.urls import reverse
 from .forms import addNewHardDrive
 from django.contrib.auth.decorators import login_required
@@ -18,50 +19,56 @@ def addHardDrive(request):
         form = addNewHardDrive(request.POST, request.FILES)
         #print(form.cleaned_data)
         if form.is_valid():
-            if not HardDrive.objects.filter(serialNo = form.cleaned_data['serialNo']).exists():
-                creationDate = form.cleaned_data['creationDate']
-                serialNo = form.cleaned_data['serialNo']
-                manufacturer = form.cleaned_data['manufacturer']
-                modelNo = form.cleaned_data['modelNo']
-                hdType = form.cleaned_data['hdType']
-                connPort = form.cleaned_data['connPort']
-                hdSize = form.cleaned_data['hdSize']
-                hdClass = form.cleaned_data['hdClass']
-                justiClass = form.cleaned_data['justiClass']
-                imageVerID = form.cleaned_data['imageVerID']
-                btStatus = form.cleaned_data['btStatus']
-                btExpDate = form.cleaned_data['btExpDate']
-                hdStatus = form.cleaned_data['hdStatus']
-                justiStatus = form.cleaned_data['justiStatus']
-                issueDate = form.cleaned_data['issueDate']
-                expectRetDate = form.cleaned_data['expectRetDate']
-                justiRetDate = form.cleaned_data['justiRetDate']
-                actualRetDate = form.cleaned_data['actualRetDate']
-                modDate = form.cleaned_data['modDate'] 
+            #if not HardDrive.objects.filter(serialNo = form.cleaned_data['serialNo']).exists():
+            serialNo = form.cleaned_data['serialNo']
+            creationDate = form.cleaned_data['creationDate']
+            serialNo = form.cleaned_data['serialNo']
+            manufacturer = form.cleaned_data['manufacturer']
+            modelNo = form.cleaned_data['modelNo']
+            hdType = form.cleaned_data['hdType']
+            connPort = form.cleaned_data['connPort']
+            hdSize = form.cleaned_data['hdSize']
+            hdClass = form.cleaned_data['hdClass']
+            justiClass = form.cleaned_data['justiClass']
+            imageVerID = form.cleaned_data['imageVerID']
+            btStatus = form.cleaned_data['btStatus']
+            btExpDate = form.cleaned_data['btExpDate']
+            hdStatus = form.cleaned_data['hdStatus']
+            justiStatus = form.cleaned_data['justiStatus']
+            issueDate = form.cleaned_data['issueDate']
+            expectRetDate = form.cleaned_data['expectRetDate']
+            justiRetDate = form.cleaned_data['justiRetDate']
+            actualRetDate = form.cleaned_data['actualRetDate']
+            modDate = form.cleaned_data['modDate'] 
 
-                hd = HardDrive.objects.create(creationDate=creationDate, 
-                                            serialNo=serialNo, 
-                                            manufacturer=manufacturer, 
-                                            modelNo=modelNo,
-                                            hdType=hdType, 
-                                            connPort=connPort, 
-                                            hdSize=hdSize, 
-                                            hdClass=hdClass, 
-                                            justiClass=justiClass, 
-                                            imageVerID=imageVerID, 
-                                            btStatus=btStatus,
-                                            btExpDate=btExpDate, 
-                                            hdStatus=hdStatus, 
-                                            justiStatus=justiStatus, 
-                                            issueDate=issueDate, 
-                                            expectRetDate=expectRetDate,
-                                            justiRetDate=justiRetDate, 
-                                            actualRetDate=actualRetDate, 
-                                            modDate=modDate)           
-                return HttpResponse('Hard Drive added to Inventory!')
-            else:
-                return HttpResponse('Hard Drive alreadys exists')
-    return HttpResponse('Failed to add Hard Drive!')
+            hd = HardDrive.objects.create(creationDate=creationDate, 
+                                        serialNo=serialNo, 
+                                        manufacturer=manufacturer, 
+                                        modelNo=modelNo,
+                                        hdType=hdType, 
+                                        connPort=connPort, 
+                                        hdSize=hdSize, 
+                                        hdClass=hdClass, 
+                                        justiClass=justiClass, 
+                                        imageVerID=imageVerID, 
+                                        btStatus=btStatus,
+                                        btExpDate=btExpDate, 
+                                        hdStatus=hdStatus, 
+                                        justiStatus=justiStatus, 
+                                        issueDate=issueDate, 
+                                        expectRetDate=expectRetDate,
+                                        justiRetDate=justiRetDate, 
+                                        actualRetDate=actualRetDate, 
+                                        modDate=modDate)          
+    else:
+        form = addNewHardDrive()
+    return render(request, 'Inventory/addHardDrive.html', {"form":form}) 
+        
+
+#                return HttpResponse('Hard Drive added to Inventory!')
+#            else:
+#                return HttpResponse('Hard Drive alreadys exists')
+#    return HttpResponse('Failed to add Hard Drive!')
 
 @login_required(login_url='/')
 def viewInventory(request):
