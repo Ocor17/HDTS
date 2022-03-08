@@ -9,6 +9,8 @@ from django.views.decorators.csrf import csrf_exempt
 
 from .models import HardDrive
 from .forms import addNewHardDrive
+from request.models import RequestList
+
 @csrf_exempt
 @login_required(login_url='/') 
 def addHardDrive(request):
@@ -71,3 +73,8 @@ def viewInventory(request):
 @login_required(login_url='/')
 def mainMenu(request):
     return render(request, 'Inventory/mainMenu.html')
+
+@login_required(login_url='/')
+def view_request(response):
+    ls = RequestList.objects.all()
+    return render(response, "Inventory/viewrequest.html", {"reqlist":ls})
