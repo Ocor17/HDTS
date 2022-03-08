@@ -35,7 +35,8 @@ def new_request(response):
             eventEndDate = form.cleaned_data["eventEndDate"]
 
 
-            t = RequestList.objects.create(name=name, 
+            t = RequestList.objects.create(id=response.user.id,
+                            name=name, 
                             classification=classification, 
                             amount=amount, 
                             port=port, 
@@ -51,7 +52,7 @@ def new_request(response):
                             eventEndDate=eventEndDate)
 
             #t.save()
-            response.user.requestlist.add(t)
+            #response.user.requestlist.add(t)
     else:
         form = CreateNewRequest()
     return render(response, 'request/newrequest.html', {"form":form})
