@@ -1,7 +1,7 @@
 from urllib import response
 from django.http import HttpResponseRedirect
 from django.http.response import HttpResponse
-from django.shortcuts import get_object_or_404, render
+from django.shortcuts import get_object_or_404, redirect, render
 from django.urls import reverse
 from .forms import addNewHardDrive
 from django.contrib.auth.decorators import login_required
@@ -78,3 +78,7 @@ def viewInventory(request):
 @login_required(login_url='/')
 def mainMenu(request):
     return render(request, 'Inventory/mainMenu.html')
+
+@login_required(login_url='/')
+def goto_request(request):
+    return redirect('/request/requestall/')

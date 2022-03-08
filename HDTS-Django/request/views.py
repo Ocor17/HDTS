@@ -59,6 +59,11 @@ def new_request(response):
 
 @login_required(login_url='/')
 def request_list(response):
+    ls = RequestList.objects.filter(user_id=(response.user.id))
+    return render(response, "request/requestlist.html", {"reqlist":ls})
+
+@login_required(login_url='/')
+def request_list_maintainer(response):
     ls = RequestList.objects.all()
     return render(response, "request/requestlist.html", {"reqlist":ls})
 
