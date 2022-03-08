@@ -24,5 +24,4 @@ urlpatterns = [
     path('newrequest/', views.new_request, name='newrequest'),
     path('requestlist/', views.request_list, name='requestlist'),
     path('<str>:<int>', views.index, name='index'),
-    path('requestall/',views.request_list_maintainer,name='requestall'),
 ]

@@ -21,6 +21,7 @@ class RequestList(models.Model):
     eventStatus = models.CharField(max_length=200, null=True)
     eventStartDate = models.DateField(max_length=200, null=True)
     eventEndDate = models.DateField(max_length=200, null=True)
+    requestStatus = models.CharField(max_length=200, null=True)
 
     class Meta:
         managed = False

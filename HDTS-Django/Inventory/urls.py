@@ -25,7 +25,7 @@ urlpatterns = [
     path('mainMenu/', views.mainMenu, name='mainMenu'),
     path('', views.mainMenu, name='mainMenu'),
     path('viewInventory/', views.viewInventory, name='viewInventory'),
-    path('viewRequest/',views.goto_request,name='viewRequest'),
+    path('viewrequest/', views.view_request, name='viewrequest'),
 ]
 
 if settings.DEBUG:
