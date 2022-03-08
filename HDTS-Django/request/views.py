@@ -35,7 +35,7 @@ def new_request(response):
             eventEndDate = form.cleaned_data["eventEndDate"]
 
 
-            t = RequestList.objects.create(id=response.user.id,
+            t = RequestList.objects.create(user=response.user, #takes the current id of the logged in user and sets it as a key for the request
                             name=name, 
                             classification=classification, 
                             amount=amount, 
