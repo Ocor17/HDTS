@@ -12,7 +12,7 @@ def index(response, id):
     return render(response, 'accounts/requestorlogin.html', {})
 
 @login_required(login_url='/')
-def new_request(response):
+def new_request(response):#will get values from user to generate new request in database
     if response.method == "POST":
         form = CreateNewRequest(response.POST)
 
@@ -52,10 +52,10 @@ def new_request(response):
     return render(response, 'request/newrequest.html', {"form":form})
 
 @login_required(login_url='/')
-def request_list(response):
-    ls = RequestList.objects.filter(user=response.user)#only get list of request made by current user
+def request_list(response):#passes values of requests made by current user
+    ls = RequestList.objects.filter(user=response.user)
     return render(response, "request/requestlist.html", {"reqlist":ls})
 
 @login_required(login_url='/')
-def mainMenu(request):
+def mainMenu(request):#passes user the default page
     return render(request, 'request/mainmenu.html')
