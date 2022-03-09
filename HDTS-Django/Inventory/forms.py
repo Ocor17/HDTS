@@ -5,6 +5,12 @@ import datetime
 from .choices import *
 from .models import HardDrive
 
+'''
+This class is the form used to add a Hard Drive
+    This verifies whether the inputs that the user provided were correct
+    If they were it proceeds to insert the Hard Drive onto the server
+'''
+
 class addNewHardDrive(forms.Form):
     """ 
     Revisit Later

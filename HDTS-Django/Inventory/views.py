@@ -11,6 +11,16 @@ from .models import HardDrive
 from .forms import addNewHardDrive
 from request.models import RequestList
 
+'''
+Hard Drive Inventory Controller
+    Handle the following routes
+        - AddHardDrive [GET, POST]
+        - viewInventory [GET]
+        - mainMenu [GET]
+        - goto_request [GET]
+
+'''
+
 @csrf_exempt
 @login_required(login_url='/') 
 def addHardDrive(request):

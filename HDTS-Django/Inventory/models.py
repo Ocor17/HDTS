@@ -1,5 +1,15 @@
 from djongo import models
 
+'''
+The Hard Drive Class has all the attributes from the SRS Real World Object Requirements
+    The Object is stored in the 'harddrive' collection on our Mongo database
+    There are three types of files for the Hard Drives. 
+        For the following Hard Drive fields their files are stored in the following directories
+            -justiClass: '/media/Justification_Class_Change/'
+            -justiStatus:'/media/Justification_Status_Change/'
+            -justiRetDate: '/media/Justification_Return_Date/'
+'''
+
 class HardDrive(models.Model):
     creationDate = models.DateField(db_column='Creation Date',  blank=True, null=True)
     serialNo = models.IntegerField(db_column='Serial Number', unique=True, blank=True, null=True)
