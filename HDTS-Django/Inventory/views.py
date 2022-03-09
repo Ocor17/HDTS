@@ -3,11 +3,10 @@ from django.http import HttpResponseRedirect
 from django.http.response import HttpResponse
 from django.shortcuts import get_object_or_404, redirect, render
 from django.urls import reverse
-from .forms import addNewHardDrive
 from django.contrib.auth.decorators import login_required
-
 from django.views.decorators.csrf import csrf_exempt
 
+from .forms import addNewHardDrive
 from .models import HardDrive
 from .forms import addNewHardDrive
 from request.models import RequestList
@@ -63,12 +62,6 @@ def addHardDrive(request):
     else:
         form = addNewHardDrive()
     return render(request, 'Inventory/addHardDrive.html', {"form":form}) 
-        
-
-#                return HttpResponse('Hard Drive added to Inventory!')
-#            else:
-#                return HttpResponse('Hard Drive alreadys exists')
-#    return HttpResponse('Failed to add Hard Drive!')
 
 @login_required(login_url='/')
 def viewInventory(request):
@@ -82,6 +75,6 @@ def mainMenu(request):
     return render(request, 'Inventory/mainMenu.html')
 
 @login_required(login_url='/')
-def view_request(response):
+def view_request(response):#passes request values stored to be called from html
     ls = RequestList.objects.all()
     return render(response, "Inventory/viewrequest.html", {"reqlist":ls})

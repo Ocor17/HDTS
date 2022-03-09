@@ -1,7 +1,5 @@
 {% extends 'Inventory/base.html' %}
-
 {% block title %} Requests {% endblock %}
-
 {% block content %}
     <h3 class="mt-2">Hard Drive Requests</h3>
     <hr class="mt-0 mb-4">
@@ -10,6 +8,5 @@
         <p>Event Status: {{r.eventStatus}}</p>
         <p>Event Start Date: {{r.eventStartDate}}</p>
         <hr class="mt-0 mb-4">
-
     {% endfor %}
 {% endblock %}

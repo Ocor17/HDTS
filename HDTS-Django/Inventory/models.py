@@ -1,13 +1,6 @@
-#import datetime
-
 from djongo import models
-#from django.utils import timezone
-#from django.contrib import admin
-#from django.contrib.auth.models import User
-
 
 class HardDrive(models.Model):
-    
     creationDate = models.DateField(db_column='Creation Date',  blank=True, null=True)
     serialNo = models.IntegerField(db_column='Serial Number', unique=True, blank=True, null=True)
     manufacturer = models.CharField(db_column='Manufacturer',max_length=50,  blank=True, null=True)
@@ -31,6 +24,3 @@ class HardDrive(models.Model):
     class Meta:
         managed = False
         db_table = 'harddrive'
-
-
-
