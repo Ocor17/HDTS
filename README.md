@@ -5,4 +5,5 @@ web-based hard drive tracker system
 
     Install the application libraries
     -1. pip install -r requirements.txt
-    -2. python manage.py runserver
+    -2. cd HDTS-Django/
+    -3. python manage.py runserver
