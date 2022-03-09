@@ -7,6 +7,7 @@
     <hr class="mt-0 mb-4">
     <table>
         <tr>
+            <th>Request ID</th>
             <th>Event Name</th>
             <th>Classification</th>
             <th>Event Location</th>
@@ -16,6 +17,7 @@
         </tr>
         {% for r in reqlist %}
         <tr>
+            <td>{{r.req_id}}</td>
             <td>{{r.name}}</td>
             <td>{{r.classification}}</td>
             <td>{{r.eventLocation}}</td>

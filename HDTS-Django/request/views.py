@@ -1,8 +1,12 @@
+from datetime import datetime
 from django.shortcuts import render
 from django.http import HttpResponse, HttpResponseRedirect
 from .forms import CreateNewRequest
 from .models import RequestList, Request
 from django.contrib.auth.decorators import login_required
+
+this_year = datetime.year
+request_num = 1
 
 # Create your views here.
 def index(response, id):
@@ -36,6 +40,7 @@ def new_request(response):
 
 
             t = RequestList.objects.create(user=response.user, #takes the current id of the logged in user and sets it as a key for the request
+                            req_id=str(this_year) + "/" +  str(request_num),  #sets Id of the request to YYYY/number of the request
                             name=name, 
                             classification=classification, 
                             amount=amount, 
@@ -52,6 +57,12 @@ def new_request(response):
                             eventEndDate=eventEndDate,
                             requestStatus="pending")
 
+            if this_year != datetime.year:  #If a new year has started, start request from 0 again
+                request_num = 0
+                this_year = datetime.year
+            else:
+                request_num += 1
+
             #t.save()
             #response.user.requestlist.add(t)
     else:
@@ -61,8 +72,7 @@ def new_request(response):
 @login_required(login_url='/')
 def request_list(response):
     ls = RequestList.objects.filter(user=response.user)#only get list of request made by current user
-    hdr = Request.get_deferred_fields()
-    return render(response, "request/requestlist.html", {"reqlist":ls, "headers": hdr})
+    return render(response, "request/requestlist.html", {"reqlist":ls})
 
 @login_required(login_url='/')
 def mainMenu(request):

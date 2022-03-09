@@ -6,6 +6,8 @@ class RequestList(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE, related_name="requestlist", null=True)
     name = models.CharField(max_length=200)
 
+    req_id =models.CharField(max_length=50, null=True)
+
     # info from form
     classification = models.CharField(max_length=200, null=True)
     amount = models.IntegerField(null=True)
