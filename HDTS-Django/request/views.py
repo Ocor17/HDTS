@@ -61,7 +61,8 @@ def new_request(response):
 @login_required(login_url='/')
 def request_list(response):
     ls = RequestList.objects.filter(user=response.user)#only get list of request made by current user
-    return render(response, "request/requestlist.html", {"reqlist":ls})
+    hdr = Request.get_deferred_fields()
+    return render(response, "request/requestlist.html", {"reqlist":ls, "headers": hdr})
 
 @login_required(login_url='/')
 def mainMenu(request):
