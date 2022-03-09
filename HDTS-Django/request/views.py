@@ -1,13 +1,12 @@
 from django.shortcuts import render
 from django.http import HttpResponse, HttpResponseRedirect
 from .forms import CreateNewRequest
-from .models import RequestList, Request
+from .models import RequestList
 from django.contrib.auth.decorators import login_required
 
 # Create your views here.
 def index(response, id):
     ls = RequestList.objects.get(id=id)
-
     if ls in response.user.todolist.all():
         return render(response, 'request/requestlist.html', {"ls":ls})
     return render(response, 'accounts/requestorlogin.html', {})
@@ -19,7 +18,6 @@ def new_request(response):
 
         if form.is_valid():
             name = form.cleaned_data["eventName"]
-
             classification = form.cleaned_data["classification"]
             amount = form.cleaned_data["amount"]
             port = form.cleaned_data["port"]
@@ -33,8 +31,6 @@ def new_request(response):
             eventStatus = form.cleaned_data["eventStatus"]
             eventStartDate = form.cleaned_data["eventStartDate"]
             eventEndDate = form.cleaned_data["eventEndDate"]
-
-
             t = RequestList.objects.create(user=response.user, #takes the current id of the logged in user and sets it as a key for the request
                             name=name, 
                             classification=classification, 
@@ -51,9 +47,6 @@ def new_request(response):
                             eventStartDate=eventStartDate, 
                             eventEndDate=eventEndDate,
                             requestStatus="pending")
-
-            #t.save()
-            #response.user.requestlist.add(t)
     else:
         form = CreateNewRequest()
     return render(response, 'request/newrequest.html', {"form":form})

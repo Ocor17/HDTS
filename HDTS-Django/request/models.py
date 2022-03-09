@@ -5,7 +5,6 @@ from django.contrib.auth.models import User
 class RequestList(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE, related_name="requestlist", null=True)
     name = models.CharField(max_length=200)
-
     # info from form
     classification = models.CharField(max_length=200, null=True)
     amount = models.IntegerField(null=True)
@@ -13,7 +12,6 @@ class RequestList(models.Model):
     size = models.IntegerField(null=True)
     type = models.CharField(max_length=200, null=True)
     comment = models.CharField(max_length=200, null=True)
-
     eventDescription = models.CharField(max_length=200, null=True)
     eventLocation = models.CharField(max_length=200, null=True)
     eventType = models.CharField(max_length=200, null=True)
@@ -26,19 +24,3 @@ class RequestList(models.Model):
     class Meta:
         managed = False
         db_table = 'requestlist'
-
-
-#    def __str__(self):
-#        return self.name
-
-class Request(models.Model):
-    requestList = models.ForeignKey(RequestList, on_delete=models.CASCADE, related_name="requestlist", null=True)
-    text = models.CharField(max_length=300, null=True)
-    complete = models.BooleanField(null=True)
-
-    class Meta:
-        managed = False
-        db_table = 'request'
-
-#    def __str__(self):
-#        return self.text
