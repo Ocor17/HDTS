@@ -12,6 +12,10 @@ from .models import HardDrive
 from .forms import addNewHardDrive
 from request.models import RequestList
 
+import logging
+
+db_logger = logging.getLogger('db')
+
 @csrf_exempt
 @login_required(login_url='/') 
 def addHardDrive(request):
@@ -85,3 +89,7 @@ def mainMenu(request):
 def view_request(response):
     ls = RequestList.objects.all()
     return render(response, "Inventory/viewrequest.html", {"reqlist":ls})
+
+def test_login(response):
+    db_logger.info('info message')
+    return HttpResponse('Test')
