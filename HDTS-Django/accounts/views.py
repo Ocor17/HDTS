@@ -7,6 +7,16 @@ from django.contrib.auth.decorators import login_required
 from .decorators import unauthenticated_user
 # Create your views here.
 
+'''
+Accounts Controller
+    Handle the following routes
+        - register [GET, POST]
+        - select_login_page [GET]
+        - requestor_login_page [GET, POST]
+        - maintainer_login_page [GET, POST]
+        - logout_user [GET]
+'''
+
 def register(response):
     if response.method == "POST":
         form = RegisterForm(response.POST)

@@ -19,6 +19,10 @@ from . import views
 
 app_name = 'accounts'
 
+'''
+Accounts Controller URL routes 
+'''
+
 urlpatterns = [
     path('', views.select_login_page, name='select_login_page'),
     path('requestorlogin/', views.requestor_login_page, name='requestor_login_page'),
