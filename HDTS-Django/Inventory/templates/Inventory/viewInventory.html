@@ -27,7 +27,7 @@
 {% for item in harddrive %}
 <tr>
 <td>{{item.creationDate}}</td> 
-<td>{{item.serialNo}} </td>
+<td> <a href="/viewHardDrive/{%item.serialNo%}>"> {{item.serialNo}} </a> </td>
 <td>{{item.manufacturer}}</td> 
 <td>{{item.modelNo}} </td>
 <td>{{item.hdType}}</td> 
