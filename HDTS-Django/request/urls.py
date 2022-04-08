@@ -21,4 +21,5 @@ urlpatterns = [
     path('newrequest/', views.new_request, name='newrequest'),
     path('requestlist/', views.request_list, name='requestlist'),
     path('<str>:<int>', views.index, name='index'),
+    path('viewrequest/<request_name>', views.get_request, name='viewrequest')
 ]

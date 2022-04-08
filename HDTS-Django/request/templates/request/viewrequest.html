@@ -1,0 +1,33 @@
+{% extends 'request/base.html' %}
+
+{% block title %} Create New Request {% endblock %}
+
+{% block content %}
+<form action="">
+    <button class="btn btn-primary" type="submit">Request Extension
+
+<h1>Request # MISSING Details</h1>
+<p>Request Made: MISSING</p>
+<p>User ID: {{user}}</p>
+<p>Email: {{user.email}}</p>
+
+<p>Role: Team Lead or Requestor</p>
+<p>Requires: {{req.amount}} # of Hard Drives</p>
+<p>Additional Notes: {{req.comment}}</p>
+
+<p>Event # MISSING</p>
+<p>Event Name: {{req.name}} </p>
+<p>Event Location: {{req.eventLocation}} </p>
+<p>Event Type: {{req.type}}</p>
+<p>Event Starting Date: {{req.eventStartDate}}</p>
+<p>Event Ending Date: {{req.eventEndDate}} </p>
+<p>Classification of Event: {{req.classification}}</p>
+
+<p>Approved: </p>
+<p>By: </p>
+<p>User ID: </p>
+
+<p>Handed Out: MISSING </p>
+<p>By: </p>
+<p>User ID: </p>
+{% endblock %}

@@ -1,8 +1,13 @@
+from urllib import response
 from django.shortcuts import render
-from django.http import HttpResponse, HttpResponseRedirect
+from django.http import HttpResponse, HttpResponseRedirect, JsonResponse
+from requests import request
+from django.contrib.auth.decorators import login_required
+from django.core.paginator import Paginator
+
 from .forms import CreateNewRequest
 from .models import RequestList
-from django.contrib.auth.decorators import login_required
+from .filters import RequestFilter
 
 # Create your views here.
 def index(response, id):
@@ -53,9 +58,28 @@ def new_request(response):#will get values from user to generate new request in 
 
 @login_required(login_url='/')
 def request_list(response):#passes values of requests made by current user
-    ls = RequestList.objects.filter(user=response.user)
-    return render(response, "request/requestlist.html", {"reqlist":ls})
+    request_list = RequestList.objects.filter(user=response.user).order_by('name')
+
+    filter = RequestFilter(response.GET, queryset=request_list)
+    request_list = filter.qs
+
+    paginator = Paginator(request_list, 5)
+
+    page_number = response.GET.get('page')
+    page_obj = paginator.get_page(page_number)
+    return render(response, "request/requestlist.html", 
+        {"reqlist":request_list, 'page_obj': page_obj, 'filter': filter})
 
 @login_required(login_url='/')
 def mainMenu(request):#passes user the default page
     return render(request, 'request/mainmenu.html')
+
+def get_request(response, request_name):
+    print(request_name, type(request_name))
+
+    filter = {}
+    filter['name'] = request_name
+
+    request = RequestList.objects.filter(**filter)
+
+    return render(response, "request/viewrequest.html", {'req': request[0], 'user' :response.user})

@@ -1,26 +1,84 @@
 {% extends 'request/base.html' %}
 
 {% block title %} Requests {% endblock %}
-
 {% block content %}
     <h3 class="mt-2">Hard Drive Requests</h3>
     <hr class="mt-0 mb-4">
-    {% for r in reqlist %}
-        <p>Event Name: {{r.name}}</p>
-        <p>Classification: {{r.classification}}</p>
-        <p>Amount: {{r.amount}}</p>
-        <p>Port Type: {{r.port}}</p>
-        <p>Size (MB): {{r.size}}</p>
-        <p>Hard Drive Type: {{r.type}}</p>
-        <p>Comment: {{r.comment}}</p>
-        <p>Event Description: {{r.eventDescription}}</p>
-        <p>Event Location: {{r.eventLocation}}</p>
-        <p>Event Type: {{r.eventType}}</p>
-        <p>Reporting Cycle: {{r.reportingCycle}}</p>
-        <p>Event Status: {{r.eventStatus}}</p>
-        <p>Event Start Date: {{r.eventStartDate}}</p>
-        <p>Event End Date: {{r.eventEndDate}}</p>
-        <hr class="mt-0 mb-4">
+    <a class="button" href="/request/newrequest/">Create Request</a>
 
-    {% endfor %}
+    <form method="get">
+        {{filter.form}}
+        <button class="btn btn-primary" type="submit">Search</button>
+    </form>
+
+    <form action="/request/requestlist">
+        <button class="btn btn-primary" type="submit">Clear Filters</button>
+    </form>
+    
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Request Number</th>
+                <th>Event Name</th>
+                <th>Event Location</th>
+                <th>Request Creation Date</th>
+                <th>Hard Drive Count</th>
+                <th>Hard Drive Due Date</th>
+                <th>Event Status</th>
+                <th>Receipt Number</th>
+            </tr>
+        </thead>
+    <tbody>
+        {% for r in page_obj %}
+        <tr>
+            <td>MISSING</td>
+            <td>{{r.name}}</td>
+            <td>{{r.eventLocation}}</td>
+            <td>MISSING</td>
+            <td>{{r.amount}}</td>
+            <td>{{r.eventStatus}}</td>
+            <td>{{r.eventEndDate}}</td>
+            <td>MISSING</td>
+        </tr>
+        {% endfor %}
+ 
+
+    </tbody>
+    
+</table>
+<div class="pagination">
+    <span class="step-links">
+        {% if page_obj.has_previous %}
+            <a href="?page=1">&laquo; first</a>
+            <a href="?page={{ page_obj.previous_page_number }}">previous</a>
+        {% endif %}
+
+        <span class="current">
+            Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}.
+        </span>
+
+        {% if page_obj.has_next %}
+            <a href="?page={{ page_obj.next_page_number }}">next</a>
+            <a href="?page={{ page_obj.paginator.num_pages }}">last &raquo;</a>
+        {% endif %}
+    </span>
+</div>
+
+
+
+
 {% endblock %}
+
+<style>
+.button {
+  font: bold 11px Arial;
+  text-decoration: none;
+  background-color: #EEEEEE;
+  color: #333333;
+  padding: 2px 6px 2px 6px;
+  border-top: 1px solid #CCCCCC;
+  border-right: 1px solid #333333;
+  border-bottom: 1px solid #333333;
+  border-left: 1px solid #CCCCCC;
+}
+</style>
