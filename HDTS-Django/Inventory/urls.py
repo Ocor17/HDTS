@@ -30,6 +30,7 @@ urlpatterns = [
     path('', views.mainMenu, name='mainMenu'),
     path('viewInventory/', views.viewInventory, name='viewInventory'),
     path('viewrequest/', views.view_request, name='viewrequest'),
+    path('viewHardDrive/<int:serial_number>', views.viewHardDrive ,name='viewHardDrive')
 ]
 
 if settings.DEBUG:

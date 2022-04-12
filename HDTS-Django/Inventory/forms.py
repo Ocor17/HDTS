@@ -1,9 +1,11 @@
 from email.policy import default
 from random import choice
+from urllib import request
 from django import forms
 import datetime
 from .choices import *
 from .models import HardDrive
+from django.utils.translation import gettext_lazy as _
 
 '''
 This class is the form used to add a Hard Drive
@@ -11,39 +13,39 @@ This class is the form used to add a Hard Drive
     If they were it proceeds to insert the Hard Drive onto the server
 '''
 
-class addNewHardDrive(forms.Form):
-    """ 
-    Revisit Later
-    reportLifecycle = 17
-    eventEndDate = datetime.date(2022, 2, 28)
-    today = datetime.date.today()
-    reportLifecyleDays = datetime.timedelta(days=reportLifecycle)
-    endDateDays = (eventEndDate - datetime.date.today()).days
-    endDateDays2 = datetime.timedelta(days=endDateDays) 
-    calculated_date = today + reportLifecyleDays + endDateDays2 """
-
-    creationDate = forms.DateField(label='Creation Date', label_suffix='MM/DD/YYYY', initial=datetime.date.today)
-    serialNo = forms.IntegerField(label='Serial Number')
-    manufacturer = forms.ChoiceField(label='Manufacturer', choices=MANUFACTURER_CHOICES, required=False)
-    modelNo = forms.IntegerField(label='Model Number', required=False)
-    hdType = forms.ChoiceField(label=' Hard Drive Type', choices=HD_TYPE_CHOICES)
-    connPort = forms.ChoiceField(label=' Hard Drive Connection Port', choices=CONN_PORT_CHOICES)
-    hdSize = forms.ChoiceField(label='Hard Drive Size', choices=HD_MEMORY_SIZES)
-    hdClass = forms.ChoiceField(label=' Hard Drive Classification', choices=CLASS_CHOICES, required=False)
-    justiClass = forms.FileField(label='Justification for Classification Change', required=False)
+class addNewHardDrive(forms.ModelForm):
+    creationDate = forms.DateField(label='Creation Date', label_suffix='MM/DD/YYYY', initial=datetime.date.today, disabled=True)
     imageVerID = forms.IntegerField(label='Image Version ID', max_value=9999, min_value=0, required=False)
-    btStatus = forms.BooleanField(label='Boot Test Passed?', required=False)
-    btExpDate = forms.DateField(label='Boot Expiration Date', label_suffix='MM/DD/YYYY', initial=datetime.date.today, required=False)
-    hdStatus = forms.ChoiceField(label='HD Status', choices=HD_STATUS_CHOICES)
-    justiStatus = forms.FileField(label='Justification Change Status', required=False)
-    issueDate = forms.DateField(label='Issue Date', label_suffix='MM/DD/YYYY', initial=datetime.date.today, required=False)
-    expectRetDate = forms.DateField(label='Expected Returned Date', label_suffix='MM/DD/YYYY',  required=False)
-    justiRetDate = forms.FileField(label='Justification Change Return Date', required=False)
-    actualRetDate = forms.DateField(label='Actual Returned Date', label_suffix='MM/DD/YYYY', initial=datetime.date.today)
-    modDate = forms.DateField(label='Modified Date', label_suffix='MM/DD/YYYY', initial=datetime.date.today)
 
     class Meta:
-       model = HardDrive
-       fields = ['creationDate', 'serialNo', 'manufacturer',
-      'modelNo', 'hdType', 'connPort', 'hdSize', 'hdClass', 'justiClass', 'imageVerID', 
-     'btStatus', 'btExpDate', 'hdStatus', 'justiStatus', 'issueDate', 'expectRetDate', 'justiRetDate', 'actualRetDate', 'modDate']
+        model = HardDrive
+        fields = ['creationDate', 'serialNo', 'manufacturer',
+        'modelNo', 'hdType', 'connPort', 'hdSize', 'hdClass', 'justiClass', 'imageVerID', 
+        'btStatus', 'btExpDate', 'hdStatus', 'justiStatus', 'issueDate', 'expectRetDate', 'justiRetDate', 'actualRetDate', 'modDate']
+        labels = {
+            'serialNo': _('Serial Number'),
+            'manufacturer': _('Manufacturer'),
+            'modelNo': _('Model Number'),
+            'hdType': _('Hard Drive Type'),
+            'connPort': _('Hard Drive Connection Port'),
+            'hdSize': _('Hard Drive Size'),
+            'hdClass': _('Hard Drive Classification'),
+            'justiClass': _('Justification for Calssification Change'),
+            'btStatus': _('Boot Test Passed?'),
+            'btExpDate': _('Boot Test Expiration Date'),
+            'hdStatus': _('Hard Drive Status'),
+            'justiStatus': _('Justification for Status Change'),
+            'issueDate': _('Issue Date'),
+            'expectRetDate': _('Expected Return Date'),
+            'justiReturnDate': _('Justification for Return Date Change'),
+            'actualRetDate': _('Actual Return Date'),
+            'modDate': _('Modified Date'),
+        }
+
+        widgets = {
+            'btExpDate': forms.SelectDateWidget(empty_label=("Choose Year", "Choose Month", "Choose Day")),
+            'issueDate': forms.SelectDateWidget(empty_label=("Choose Year", "Choose Month", "Choose Day")),
+            'expectRetDate': forms.SelectDateWidget(empty_label=("Choose Year", "Choose Month", "Choose Day")),
+            'actualRetDate': forms.SelectDateWidget(empty_label=("Choose Year", "Choose Month", "Choose Day")),
+            'modDate': forms.SelectDateWidget(empty_label=("Choose Year", "Choose Month", "Choose Day")),
+        }

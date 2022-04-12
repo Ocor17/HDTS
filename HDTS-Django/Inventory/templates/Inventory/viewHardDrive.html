@@ -1,0 +1,25 @@
+{% extends 'Inventory/base.html'%}
+{% block content %}
+
+<h3 class="mt-2">Hard Drive</h3>
+<hr class="mt-0 mb-4">
+
+<p>Creation Date: {{hd.creationDate}} </p>
+<p>Serial Number: {{hd.serialNo}} </p>
+<p>Manufacturer: {{hd.manufacturer}} </p>
+<p>Model Number: {{hd.modelNo}} </p>
+<p>Hard Drive Type: {{hd.hdType}} </p>
+<p>Connection Port: {{hd.connPort}} </p>
+<p>Hard Drive Size: {{hd.hdSize}} </p>
+<p>Hard Drive Class: {{hd.hdClass}} </p>
+<p>Justification for Class Change: {{hd.justiClass}}</p>
+<p>Image Version ID: {{hd.imageVerID}} </p>
+<p>Boot Test Status: {{hd.btStatus}} </p>
+<p>Boot Test Expiration Date: {{hd.btExpDate}} </p>
+<p>Hard Drive Status: {{hd.hdStatus}} </p>
+<p>Issue Date: {{hd.issueDate}} </p>
+<p>Expected Return Date: {{hd.expectRetDate}} </p>
+<p>Justifucation for Return Date Change: {{hd.justiRetDate}} </p>
+<p>Actual Return Date: {{hd.actualRetDate}} </p>
+<p>Modification Date: {{hd.modDate}} </p>
+{% endblockKS%}
