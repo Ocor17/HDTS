@@ -5,45 +5,27 @@
 
 <table class="table" width="device-width">
   <thead>
-  <td>creationDate </td>
-  <td>serialNo </td>
-  <td>manufacturer </td>
-  <td>modelNo </td>
-  <td>hdType </td>
-  <td>connPort </td>
-  <td>hdSize </td>
-  <td>hdClass </td>
-  <td>justiClass</td>
-  <td>imageVerID </td>
-  <td>btStatus </td>
-  <td>btExpDate </td>
-  <td>hdStatus </td>
-  <td>issueDate </td>
-  <td>expectRetDate </td>
-  <td>justiRetDate </td>
-  <td>actualRetDate </td>
-  <td>modDate </td>
-</thead>
+    <td> </td>
+    <td>serialNo </td>
+    <td>manufacturer </td>
+    <td>modelNo </td>
+    <td>hdType </td>
+    <td>connPort </td>
+    <td>hdSize </td>
+    <td>hdClass </td>
+    <td>hdStatus </td>
+  </thead>
 {% for item in harddrive %}
 <tr>
-<td>{{item.creationDate}}</td> 
-<td> <a href="/viewHardDrive/{%item.serialNo%}>"> {{item.serialNo}} </a> </td>
-<td>{{item.manufacturer}}</td> 
-<td>{{item.modelNo}} </td>
-<td>{{item.hdType}}</td> 
-<td>{{item.connPort}}</td> 
-<td>{{item.hdSize}} </td>
-<td>{{item.hdClass}}</td>
-<td>{{item.justiClass}}</td>  
-<td>{{item.imageVerID}} </td>
-<td>{{item.btStatus}}</td> 
-<td>{{item.btExpDate}} </td>
-<td>{{item.hdStatus}}</td> 
-<td>{{item.issueDate}} </td>
-<td>{{item.expectRetDate}}</td> 
-<td>{{item.justiRetDate}} </td>
-<td>{{item.actualRetDate}}</td> 
-<td>{{item.modDate}} </td>
+  <td> Checkbox here </td>
+  <td><a method="POST" href="{% url 'inv:updateHardDrive' item.serialNo %}">{{item.serialNo}}</a> </td>
+  <td>{{item.manufacturer}}</td> 
+  <td>{{item.modelNo}} </td>
+  <td>{{item.hdType}}</td> 
+  <td>{{item.connPort}}</td> 
+  <td>{{item.hdSize}} </td>
+  <td>{{item.hdClass}}</td>
+  <td>{{item.hdStatus}}</td> 
 </tr>
 {% endfor%}
 </table>
