@@ -6,7 +6,7 @@ from django.urls import reverse
 from django.contrib.auth.decorators import login_required
 from django.views.decorators.csrf import csrf_exempt
 
-from .forms import addNewHardDrive, updateExistingHardDrive
+from .forms import addNewHardDrive
 from .models import HardDrive
 from .forms import addNewHardDrive
 from request.models import RequestList
@@ -61,16 +61,21 @@ def view_request(response):#passes request values stored to be called from html
 @login_required(login_url='/')
 def viewHardDrive(request, sn):
     hd = HardDrive.objects.get(serialNo=sn)
-    return render(request, "Inventory/viewHardDrive.html", {'harddrive': hd})
+    return render(request, "Inventory/viewHardDrive.html", {'hd': hd})
 
 
 @login_required(login_url='/')
 def updateHardDrive(request, sn):
+
     a = HardDrive.objects.get(serialNo=sn)
-    context ={}
     if request.method == 'POST':
-        form = updateExistingHardDrive(request.POST, instance=a)
+        print(0)
+        form = addNewHardDrive(request.POST, instance=a)
         if form.is_valid():
-           form.save()
-    context['form'] = form
-    return render(request, "Inventory/viewHardDrive.html", context)
+            form.save()
+            return redirect('viewInventory/')
+    else:
+        print(1)
+        form = addNewHardDrive(instance=a)
+
+    return render(request, "Inventory/updatedHardDrive.html", {'form': form, 'sn': sn})
