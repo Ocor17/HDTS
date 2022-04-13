@@ -14,7 +14,7 @@ This class is the form used to add a Hard Drive
 '''
 
 class addNewHardDrive(forms.ModelForm):
-    creationDate = forms.DateField(label='Creation Date', label_suffix='MM/DD/YYYY', initial=datetime.date.today, disabled=True)
+    creationDate = forms.DateField(label='Creation Date', initial=datetime.date.today, disabled=True)
     imageVerID = forms.IntegerField(label='Image Version ID', max_value=9999, min_value=0, required=False)
 
     class Meta:
@@ -30,19 +30,20 @@ class addNewHardDrive(forms.ModelForm):
             'connPort': _('Hard Drive Connection Port'),
             'hdSize': _('Hard Drive Size'),
             'hdClass': _('Hard Drive Classification'),
-            'justiClass': _('Justification for Calssification Change'),
+            'justiClass': _('Justification for Classification Change'),
             'btStatus': _('Boot Test Passed?'),
             'btExpDate': _('Boot Test Expiration Date'),
             'hdStatus': _('Hard Drive Status'),
             'justiStatus': _('Justification for Status Change'),
             'issueDate': _('Issue Date'),
             'expectRetDate': _('Expected Return Date'),
-            'justiReturnDate': _('Justification for Return Date Change'),
+            'justiRetDate': _('Justification for Return Date Change'),
             'actualRetDate': _('Actual Return Date'),
             'modDate': _('Modified Date'),
         }
 
         widgets = {
+            'btStatus': forms.RadioSelect(choices=BOOT_TEST_CHOICES),
             'btExpDate': forms.SelectDateWidget(empty_label=("Choose Year", "Choose Month", "Choose Day")),
             'issueDate': forms.SelectDateWidget(empty_label=("Choose Year", "Choose Month", "Choose Day")),
             'expectRetDate': forms.SelectDateWidget(empty_label=("Choose Year", "Choose Month", "Choose Day")),
