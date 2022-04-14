@@ -1,26 +1,59 @@
 {% extends 'request/base.html' %}
-
 {% block title %} Requests {% endblock %}
-
 {% block content %}
-    <h3 class="mt-2">Hard Drive Requests</h3>
-    <hr class="mt-0 mb-4">
-    {% for r in reqlist %}
-        <p>Event Name: {{r.name}}</p>
-        <p>Classification: {{r.classification}}</p>
-        <p>Amount: {{r.amount}}</p>
-        <p>Port Type: {{r.port}}</p>
-        <p>Size (MB): {{r.size}}</p>
-        <p>Hard Drive Type: {{r.type}}</p>
-        <p>Comment: {{r.comment}}</p>
-        <p>Event Description: {{r.eventDescription}}</p>
-        <p>Event Location: {{r.eventLocation}}</p>
-        <p>Event Type: {{r.eventType}}</p>
-        <p>Reporting Cycle: {{r.reportingCycle}}</p>
-        <p>Event Status: {{r.eventStatus}}</p>
-        <p>Event Start Date: {{r.eventStartDate}}</p>
-        <p>Event End Date: {{r.eventEndDate}}</p>
-        <hr class="mt-0 mb-4">
-
-    {% endfor %}
+<div class="container-fluid">
+    <h3 class="mt-2">Requestor Hard Drive Requests</h3>
+    <input id="requestInput" class="form-control" type="text" placeholder="Search..">
+    <br>
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th scope="col">Event Name</th>
+                <th scope="col">Classification</th>
+                <th scope="col"># of Hard Drives</th>
+                <th scope="col">Port Type</th>
+                <th scope="col">Size (GB)</th>
+                <th scope="col">Hard Drive Type</th>
+                <!--<th scope="col">Comments</th>-->
+                <th scope="col">Event Description</th>
+                <th scope="col">Event Location</th>
+                <th scope="col">Event Type</th>
+                <th scope="col">Report Cycle</th>
+                <th scope="col">Event Status</th>
+                <th scope="col">Event Start Date</th>
+                <th scope="col">Event End Date</th>
+            </tr>
+        </thead>
+        {% for r in reqlist %}
+        <tbody id="requestTable">
+            <tr>
+                <td>{{r.name}}</td>
+                <td>{{r.classification}}</td>
+                <td>{{r.amount}}</td>
+                <td>{{r.port}}</td>
+                <td>{{r.size}}</td>
+                <td>{{r.type}}</td>
+                <!--<td>{{r.comment}}</td>-->
+                <td>{{r.eventDescription}}</td>
+                <td>{{r.eventLocation}}</td>
+                <td>{{r.eventType}}</td>
+                <td>{{r.reportingCycle}}</td>
+                <td>{{r.eventStatus}}</td>
+                <td>{{r.eventStartDate}}</td>
+                <td>{{r.eventEndDate}}</td>
+            </tr>
+        </tbody>
+        {% endfor %}
+    </table>
+    <script>
+        $(document).ready(function(){
+          $("#requestInput").on("keyup", function() {
+            var value = $(this).val().toLowerCase();
+            $("#requestTable tr").filter(function() {
+              $(this).toggle( $(this).text().toLowerCase().indexOf(value) > -1 );
+            });
+          });
+        });
+    </script>
+</div>
 {% endblock %}
