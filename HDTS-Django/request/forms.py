@@ -31,7 +31,7 @@ class CreateNewRequest(forms.Form):
     classification = forms.CharField(label="Classification", widget=forms.Select(choices=classification_choices))
     amount = forms.IntegerField(label="Amount required")
     port = forms.CharField(label="Connection Port Type",widget=forms.Select(choices=connection_port))
-    size = forms.IntegerField(label="Hard Drive Size (MB)")
+    size = forms.IntegerField(label="Hard Drive Size (GB)")
     type = forms.CharField(label="Hard Drive Type",widget=forms.Select(choices=hd_type))
     comment = forms.CharField(label="Comment")
     eventName = forms.CharField(label="Event Name", max_length=200)
