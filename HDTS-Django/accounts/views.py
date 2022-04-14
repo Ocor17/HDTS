@@ -4,7 +4,9 @@ from django.contrib.auth.forms import AuthenticationForm
 from django.contrib.auth import login, authenticate, logout
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
+from django.contrib.auth.models import User
 from .decorators import unauthenticated_user
+
 # Create your views here.
 
 '''
@@ -68,3 +70,11 @@ def maintainer_login_page(response):
 def logout_user(response):
     logout(response)
     return redirect("/")
+
+def view_user_profile(response):
+    print(response.user)
+    filter = {}
+    filter['username'] = response.user    
+    user = User.objects.filter(**filter)
+    
+    return render(response, 'accounts/viewprofile.html', {'user': user[0]})

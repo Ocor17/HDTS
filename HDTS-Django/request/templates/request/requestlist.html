@@ -4,10 +4,25 @@
 {% block content %}
     <h3 class="mt-2">Hard Drive Requests</h3>
     <hr class="mt-0 mb-4">
-    <a class="button" href="/request/newrequest/">Create Request</a>
+
+    <form action="/request/newrequest/">
+        <button class="btn btn-primary" type="submit">Create Request</button>
+    </form>
 
     <form method="get">
-        {{filter.form}}
+        <label for="{{ form.eventLocation }}">Event Location:</label>
+
+        {{filter.form.eventLocation}}
+        <label for="{{ form.amount }}">Hard Drive Amount:</label>
+
+        {{filter.form.amount}}
+        <label for="{{ form.event_end_date }}">Event End Date:</label>
+
+        {{filter.form.event_end_date}}
+        <label for="{{ form.eventStatus }}">Event Status:</label>
+
+        {{filter.form.eventStatus}}
+        
         <button class="btn btn-primary" type="submit">Search</button>
     </form>
 
@@ -31,18 +46,16 @@
     <tbody>
         {% for r in page_obj %}
         <tr>
-            <td>MISSING</td>
-            <td>{{r.name}}</td>
-            <td>{{r.eventLocation}}</td>
-            <td>MISSING</td>
-            <td>{{r.amount}}</td>
-            <td>{{r.eventStatus}}</td>
-            <td>{{r.eventEndDate}}</td>
-            <td>MISSING</td>
+            <td><a href='/request/requestlist/{{r.name}}'>MISSING</a></td>
+            <td><a href='/request/viewrequest/{{r.name}}'>{{r.name}}</a></td>
+            <td><a href='/request/viewrequest/{{r.name}}'>{{r.eventLocation}}</a></td>
+            <td><a href='/request/viewrequest/{{r.name}}'>MISSING</a></td>
+            <td><a href='/request/viewrequest/{{r.name}}'>{{r.amount}}</a></td>
+            <td><a href='/request/viewrequest/{{r.name}}'>{{r.eventStatus}}</a></td>
+            <td><a href='/request/viewrequest/{{r.name}}'>{{r.eventEndDate}}</a></td>
+            <td><a href='/request/viewrequest/{{r.name}}'>MISSING</a></td>
         </tr>
         {% endfor %}
- 
-
     </tbody>
     
 </table>
@@ -64,21 +77,38 @@
     </span>
 </div>
 
+{% if request is not None %}
+    <p> Hello Test</p>
+    <form action="/request/requestlist">
+        <button class="btn btn-primary" type="submit">Close Request</button>
+    </form>
 
-
-
+    <form action="">
+        <button class="btn btn-primary" type="submit">Request Extension</button>
+    </form>
+    <h1>Request # MISSING Details</h1>
+    <p>Request Made: MISSING</p>
+    <p>User ID: {{user}}</p>
+    <p>Email: {{user.email}}</p>
+    
+    <p>Role: Team Lead or Requestor</p>
+    <p>Requires: {{req.amount}} # of Hard Drives</p>
+    <p>Additional Notes: {{req.comment}}</p>
+    
+    <p>Event # MISSING</p>
+    <p>Event Name: {{req.name}} </p>
+    <p>Event Location: {{req.eventLocation}} </p>
+    <p>Event Type: {{req.type}}</p>
+    <p>Event Starting Date: {{req.eventStartDate}}</p>
+    <p>Event Ending Date: {{req.eventEndDate}} </p>
+    <p>Classification of Event: {{req.classification}}</p>
+    
+    <p>Approved: </p>
+    <p>By: </p>
+    <p>User ID: </p>
+    
+    <p>Handed Out: MISSING </p>
+    <p>By: </p>
+    <p>User ID: </p>
+{% endif %}
 {% endblock %}
-
-<style>
-.button {
-  font: bold 11px Arial;
-  text-decoration: none;
-  background-color: #EEEEEE;
-  color: #333333;
-  padding: 2px 6px 2px 6px;
-  border-top: 1px solid #CCCCCC;
-  border-right: 1px solid #333333;
-  border-bottom: 1px solid #333333;
-  border-left: 1px solid #CCCCCC;
-}
-</style>
