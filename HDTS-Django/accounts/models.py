@@ -22,7 +22,12 @@ The User Class has all the basic attributes the Django has included
         -date_joined
 '''
 class User(models.Model):
-    
+    first_name = models.CharField(max_length=30)
+    last_name = models.CharField(max_length=30)
+    email = models.CharField(max_length=30)
+    user_role = models.CharField(max_length=30)
+    direct_supervisor_email = models.CharField(max_length=30)
+    branch_chief_name = models.CharField(max_length=30)
  
 
     class Meta:

@@ -82,20 +82,20 @@ WSGI_APPLICATION = 'HDTS.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-#CHANGE LATER TO USE .ENV VARIABLES
-DATABASES = {
-    'default': {
-        'ENGINE': 'djongo',
-        'NAME': 'hdts',
-        'CLIENT': {
-            'username': 'team7',
-            'password': 'team7',
-            'host': 'hdts.azemend.com',
-            'port': 4444,
-        }
+# #CHANGE LATER TO USE .ENV VARIABLES
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'djongo',
+#         'NAME': 'hdts',
+#         'CLIENT': {
+#             'username': 'team7',
+#             'password': 'team7',
+#             'host': 'hdts.azemend.com',
+#             'port': 4444,
+#         }
 
-    }
-}
+#     }
+# }
 
 
 
