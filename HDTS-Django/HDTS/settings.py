@@ -155,19 +155,19 @@ LOGGING = {
    'disable_existing_loggers': True,
    'filters': {
        'filter_info_level': {
-           '()': 'logging_formatter.log_middleware.FilterLevels',
+           '()': 'HDTS.log_middleware.FilterLevels',
            'filter_levels' : [
                "INFO"
            ]
        },
        'filter_error_level': {
-           '()': 'logging_formatter.log_middleware.FilterLevels',
+           '()': 'HDTS.log_middleware.FilterLevels',
            'filter_levels' : [
                "ERROR"
            ]
        },
        'filter_warning_level': {
-           '()': 'logging_formatter.log_middleware.FilterLevels',
+           '()': 'HDTS.log_middleware.FilterLevels',
            'filter_levels' : [
                "WARNING"
            ]
@@ -188,15 +188,15 @@ LOGGING = {
    'handlers': {
        'customHandler_1': {
            'formatter': 'info-formatter',
-           'class': 'logging_formatter.log_middleware.DatabaseLoggingHandler',
-           'database': 'logging_formatter',
+           'class': 'HDTS.log_middleware.DatabaseLoggingHandler',
+           'database': 'HDTS',
            'collection': 'logs',
            'filters': ['filter_info_level'],
        },
        'customHandler_2': {
            'formatter': 'error-formatter',
-           'class': 'logging_formatter.log_middleware.DatabaseLoggingHandler',
-           'database': 'logging_formatter',
+           'class': 'HDTS.log_middleware.DatabaseLoggingHandler',
+           'database': 'HDTS',
            'collection': 'logs',
            'filters': ['filter_error_level'],
        },
@@ -226,5 +226,5 @@ REST_FRAMEWORK = {
       'rest_framework.authentication.SessionAuthentication',
       'rest_framework.authentication.BasicAuthentication',
   ),
-  'EXCEPTION_HANDLER': 'logging_formatter.exception_handler.handle_exception'
+  'EXCEPTION_HANDLER': 'HDTS.exception_handler.handle_exception'
 }
