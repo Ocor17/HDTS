@@ -36,7 +36,6 @@ INSTALLED_APPS = [
     'Inventory.apps.InventoryConfig',
     'accounts.apps.AccountsConfig',
     'request.apps.RequestConfig',
-    'log.apps.LogConfig',
     'crispy_forms',
 
     # django apps
@@ -83,20 +82,20 @@ WSGI_APPLICATION = 'HDTS.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-#CHANGE LATER TO USE .ENV VARIABLES
-DATABASES = {
-    'default': {
-        'ENGINE': 'djongo',
-        'NAME': 'hdts',
-        'CLIENT': {
-            'username': 'team7',
-            'password': 'team7',
-            'host': 'hdts.azemend.com',
-            'port': 4444,
-        }
+# #CHANGE LATER TO USE .ENV VARIABLES
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'djongo',
+#         'NAME': 'hdts',
+#         'CLIENT': {
+#             'username': 'team7',
+#             'password': 'team7',
+#             'host': 'hdts.azemend.com',
+#             'port': 4444,
+#         }
 
-    }
-}
+#     }
+# }
 
 
 
@@ -152,83 +151,23 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 LOGGING = {
-<<<<<<< Updated upstream
-    'version': 1,
-    'disable_existing_loggers': False,
-    'formatters': {
-        'verbose': {
-            'format': '%(username)s %(asctime)s %(module)s %(process)d %(thread)d %(message)s'
-        },
-        'simple': {
-            'format': '%(levelname)s %(asctime)s %(message)s'
-        },
-    },
-    'handlers': {
-        'db_log': {
-            'level': 'DEBUG',
-            'class': 'log.db_log_handler.DatabaseLogHandler'
-        },
-    },
-    'loggers': {
-        'db': {
-            'handlers': ['db_log'],
-            'level': 'DEBUG'
-        },
-        'django.request': { # logging 500 errors to database
-            'handlers': ['db_log'],
-            'level': 'ERROR',
-            'propagate': False,
-        }
-    }
-}
-
-'''LOGGING = {
-    'version': 1,
-    'disable_existing_loggers': False,
-    'formatters': {
-        'verbose': {
-            'format': '%(username)s %(fullname)s %(asctime)s %(date)d %(action)d %(message)s'
-        },
-        'simple': {
-            'format': '%(username)s %(asctime)s %(date)s %(action)s'
-        },
-    },
-    'handlers': {
-        'db_log': {
-            'level': 'DEBUG',
-            'class': 'log.db_log_handler.DatabaseLogHandler'
-        },
-    },
-    'loggers': {
-        'db': {
-            'handlers': ['db_log'],
-            'level': 'DEBUG'
-        },
-        'django.request': { # logging 500 errors to database
-            'handlers': ['db_log'],
-            'level': 'ERROR',
-            'propagate': False,
-        }
-    }
-}'''
-=======
    'version': 1,
    'disable_existing_loggers': True,
    'filters': {
        'filter_info_level': {
-           '()': 'HDTS.log_middleware.FilterLevels',
+           '()': 'logging_formatter.log_middleware.FilterLevels',
            'filter_levels' : [
                "INFO"
            ]
        },
        'filter_error_level': {
-           '()': 'HDTS.log_middleware.FilterLevels',
+           '()': 'logging_formatter.log_middleware.FilterLevels',
            'filter_levels' : [
                "ERROR"
            ]
        },
        'filter_warning_level': {
-           '()': 'HDTS.log_middleware.FilterLevels',
+           '()': 'logging_formatter.log_middleware.FilterLevels',
            'filter_levels' : [
                "WARNING"
            ]
@@ -249,15 +188,15 @@ LOGGING = {
    'handlers': {
        'customHandler_1': {
            'formatter': 'info-formatter',
-           'class': 'HDTS.log_middleware.DatabaseLoggingHandler',
-           'database': 'HDTS',
+           'class': 'logging_formatter.log_middleware.DatabaseLoggingHandler',
+           'database': 'logging_formatter',
            'collection': 'logs',
            'filters': ['filter_info_level'],
        },
        'customHandler_2': {
            'formatter': 'error-formatter',
-           'class': 'HDTS.log_middleware.DatabaseLoggingHandler',
-           'database': 'HDTS',
+           'class': 'logging_formatter.log_middleware.DatabaseLoggingHandler',
+           'database': 'logging_formatter',
            'collection': 'logs',
            'filters': ['filter_error_level'],
        },
@@ -287,6 +226,5 @@ REST_FRAMEWORK = {
       'rest_framework.authentication.SessionAuthentication',
       'rest_framework.authentication.BasicAuthentication',
   ),
-  'EXCEPTION_HANDLER': 'HDTS.exception_handler.handle_exception'
+  'EXCEPTION_HANDLER': 'logging_formatter.exception_handler.handle_exception'
 }
->>>>>>> Stashed changes
