@@ -81,6 +81,16 @@ def viewInventory(request):
     #call inventory html and pass 'harddrive' as an object to be itterated through
     return render(request, 'Inventory/viewInventory.html',{'harddrive':harddrive})
 
+<<<<<<< Updated upstream
+=======
+@login_required(login_url='/')
+def viewLog(request):
+    #customer and product objects are passed. Values can be called from html
+    harddrive = HardDrive.objects.all()
+    #call inventory html and pass 'harddrive' as an object to be itterated through
+    return render(request, 'Inventory/viewLog.html',{'harddrive':harddrive})
+
+>>>>>>> Stashed changes
 @login_required(login_url='/')
 def mainMenu(request):
     return render(request, 'Inventory/mainMenu.html')

@@ -26,7 +26,13 @@ urlpatterns = [
     path('', views.mainMenu, name='mainMenu'),
     path('viewInventory/', views.viewInventory, name='viewInventory'),
     path('viewrequest/', views.view_request, name='viewrequest'),
+<<<<<<< Updated upstream
     path('test_logging/', views.test_login, name='testlogin')
+=======
+    path('viewLog/', views.viewLog, name='viewLog'),
+    re_path(r'^viewHardDrive/(?P<sn>\d+)/$', views.viewHardDrive, name='viewHardDrive'),
+    re_path(r'^updateHardDrive/(?P<sn>\d+)/$', views.updateHardDrive, name='updateHardDrive'),
+>>>>>>> Stashed changes
 ]
 
 if settings.DEBUG:

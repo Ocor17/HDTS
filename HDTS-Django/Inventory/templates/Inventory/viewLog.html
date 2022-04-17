@@ -1,0 +1,20 @@
+{% extends 'Inventory/base.html'%}
+{% block content %}
+<h3 class="mt-2">Log</h3>
+<hr class="mt-0 mb-4">
+
+<table class="table" width="device-width">
+  <thead>
+  <td>Timestamp </td>
+  <td>User </td>
+  <td>Action </td>
+</thead>
+{% for item in harddrive %}
+<tr>
+<td>{{item.creationDate}}</td> 
+<td>{{item.serialNo}} </td>
+<td>{{item.manufacturer}}</td> 
+</tr>
+{% endfor%}
+</table>
+{% endblock content%}
