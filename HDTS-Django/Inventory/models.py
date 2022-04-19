@@ -14,7 +14,7 @@ The Hard Drive Class has all the attributes from the SRS Real World Object Requi
 
 class HardDrive(models.Model):
     creationDate = models.DateField(db_column='Creation Date', blank=True, null=True)
-    serialNo = models.CharField(db_column='Serial Number', max_length=10, unique=True)
+    serialNo = models.CharField(db_column='Serial Number', max_length=10, primary_key=True, unique=True)
     manufacturer = models.CharField(db_column='Manufacturer', max_length=50, choices=MANUFACTURER_CHOICES, blank=True, null=True)
     modelNo = models.CharField(db_column='Model Number', max_length=10, blank=True, null=True)
     hdType = models.CharField(db_column=' Hard Drive Type', max_length=50, choices=HD_TYPE_CHOICES)

@@ -30,8 +30,11 @@ urlpatterns = [
     path('', views.mainMenu, name='mainMenu'),
     path('viewInventory/', views.viewInventory, name='viewInventory'),
     path('viewrequest/', views.view_request, name='viewrequest'),
-    re_path(r'^viewHardDrive/(?P<sn>\d+)/$', views.viewHardDrive, name='viewHardDrive'),
-    re_path(r'^updateHardDrive/(?P<sn>\d+)/$', views.updateHardDrive, name='updateHardDrive'),
+    path('returnharddrives/', views.return_hard_drive, name='returnharddrives'),
+    path('viewHardDrive/<sn>/$', views.viewHardDrive, name='viewHardDrive'),
+    path('updateHardDrive/<sn>/$', views.updateHardDrive, name='updateHardDrive'),
+    
+
 ]
 
 if settings.DEBUG:

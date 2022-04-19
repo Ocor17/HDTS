@@ -1,0 +1,64 @@
+{% extends 'Inventory/base.html' %}
+
+{% block title %} Return Hard Drives {% endblock %}
+
+{% block content %}
+
+<style>
+    .ingredient-form {
+        border-bottom: 1px solid black;
+    }
+    .hidden {
+        display: none
+    }
+</style>
+<h3 class="mt-2">Return Hard Drives</h3>
+<hr class="mt-0 mb-4">
+
+<form action="/Inventory/returnharddrives/" method="POST">
+    {% csrf_token %}
+    {% if formset %}
+        <h3>Hard Drive Return</h3>
+        {{ formset.management_form }}
+        <div id="harddrive-form-list">
+            {% for form in formset %}
+            <div class="harddrive-form">
+                {{ form.as_p }}
+            </div>
+            {% endfor %}
+        </div>
+
+
+        <div id='empty-form' class='hidden'>{{ formset.empty_form.as_p }}</div>
+        <button class="btn btn-dark" id='add-more' style='margin-top:10px;' type='button'>Add more</button>
+    {% endif %}
+    <button class="btn btn-primary" style='margin-top:10px;' type='submit' >Return Hard Drives</button>
+</form>
+
+
+<script>
+    
+    const addMoreBtn = document.getElementById('add-more')
+    const totalNewForms = document.getElementById('id_form-TOTAL_FORMS')
+    
+    addMoreBtn.addEventListener('click', add_new_form)
+    function add_new_form(event) {
+        if (event) {
+            event.preventDefault()
+        }
+        const currentHDForms = document.getElementsByClassName('harddrive-form')
+        const currentFormCount = currentHDForms.length // + 1
+        const formCopyTarget = document.getElementById('harddrive-form-list')
+        const copyEmptyFormEl = document.getElementById('empty-form').cloneNode(true)
+        console.log(formCopyTarget)
+        copyEmptyFormEl.setAttribute('class', 'harddrive-form')
+        copyEmptyFormEl.setAttribute('id', `form-${currentFormCount}`)
+        const regex = new RegExp('__prefix__', 'g')
+        copyEmptyFormEl.innerHTML = copyEmptyFormEl.innerHTML.replace(regex, currentFormCount)
+        totalNewForms.setAttribute('value', currentFormCount + 1)
+        // now add new empty form element to our html form
+        formCopyTarget.append(copyEmptyFormEl)
+        console.log(currentFormCount)
+    }
+</script>
+{% endblock %}

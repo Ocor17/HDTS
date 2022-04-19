@@ -1,4 +1,5 @@
 from urllib import response
+from django.forms import formset_factory
 from django.http import HttpResponseRedirect
 from django.http.response import HttpResponse
 from django.shortcuts import get_object_or_404, redirect, render
@@ -6,7 +7,7 @@ from django.urls import reverse
 from django.contrib.auth.decorators import login_required
 from django.views.decorators.csrf import csrf_exempt
 
-from .forms import addNewHardDrive
+from .forms import addNewHardDrive, return_hard_drives
 from .models import HardDrive
 from .forms import addNewHardDrive
 from request.models import RequestList
@@ -79,3 +80,20 @@ def updateHardDrive(request, sn):
         form = addNewHardDrive(instance=a)
 
     return render(request, "Inventory/updatedHardDrive.html", {'form': form, 'sn': sn})
+
+@login_required(login_url='/')
+def return_hard_drive(response):
+    hd_formSet = formset_factory(return_hard_drives)
+    formset = hd_formSet(response.POST or None)
+    if response.method == 'POST':
+        if formset.is_valid():  
+            for form in formset:
+                form = form.cleaned_data
+                serial_num = form.get('serialNo')
+                hd = HardDrive.objects.get(serialNo=serial_num)
+                hd.hdStatus = 'Pending Wipe'
+                hd.save(update_fields=['hdStatus'])
+        return redirect(reverse('Inventory:viewInventory'))
+
+    
+    return render(response, "Inventory/return.html", {'formset': formset})
