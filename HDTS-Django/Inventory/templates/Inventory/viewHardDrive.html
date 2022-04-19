@@ -22,4 +22,10 @@
 <p>Justification for Return Date Change: {{hd.justiRetDate}} </p>
 <p>Actual Return Date: {{hd.actualRetDate}} </p>
 <p>Modification Date: {{hd.modDate}} </p>
+
+<form method="post" action="{% url 'Inventory:updateHardDrive' hd.serialNo %}">
+    {% csrf_token %}
+    <input type="submit" value="Edit" />
+</form>
+
 {% endblock%}

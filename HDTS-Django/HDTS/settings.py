@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django_filters',
 ]
 
 MIDDLEWARE = [
@@ -83,20 +84,20 @@ WSGI_APPLICATION = 'HDTS.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-#CHANGE LATER TO USE .ENV VARIABLES
+ #CHANGE LATER TO USE .ENV VARIABLES
 DATABASES = {
-    'default': {
-        'ENGINE': 'djongo',
-        'NAME': 'hdts',
-        'CLIENT': {
-            'username': 'team7',
-            'password': 'team7',
-            'host': 'hdts.azemend.com',
-            'port': 4444,
-        }
+     'default': {
+         'ENGINE': 'djongo',
+         'NAME': 'hdts',
+         'CLIENT': {
+             'username': 'team7',
+             'password': 'team7',
+             'host': 'hdts.azemend.com',
+             'port': 4444,
+         }
 
-    }
-}
+     }
+ }
 
 
 
@@ -150,3 +151,27 @@ LOGOUT_REDIRECT_URL="/"
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+LOGGING = {
+    'version': 1,
+    'loggers': {
+        'django': {
+            'handlers': ['file'],
+            'level': 'INFO',
+        }
+    },
+    'handlers': {
+        'file': {
+            'level': 'INFO',
+            'class': 'logging.FileHandler',
+            'filename': './log.log',
+            'formatter': 'simpleRe',
+        },
+    },
+    'formatters': {
+        'simpleRe': {
+            'format': '{asctime} {message}',
+            'style': '{',
+        }
+    }
+}

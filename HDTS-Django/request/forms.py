@@ -31,7 +31,7 @@ class CreateNewRequest(forms.Form):
     classification = forms.CharField(label="Classification", widget=forms.Select(choices=classification_choices))
     amount = forms.IntegerField(label="Amount required")
     port = forms.CharField(label="Connection Port Type",widget=forms.Select(choices=connection_port))
-    size = forms.IntegerField(label="Hard Drive Size (GB)")
+    size = forms.IntegerField(label="Hard Drive Size (MB)")
     type = forms.CharField(label="Hard Drive Type",widget=forms.Select(choices=hd_type))
     comment = forms.CharField(label="Comment")
     eventName = forms.CharField(label="Event Name", max_length=200)
@@ -40,5 +40,7 @@ class CreateNewRequest(forms.Form):
     eventType = forms.CharField(label="Event Type",widget=forms.Select(choices=event_type))
     reportingCycle = forms.IntegerField(label="Length of Reporting Cycle (days)")
     eventStatus = forms.CharField(label="Event Status",widget=forms.Select(choices=event_status))
-    eventStartDate = forms.DateField(label="Event Start Date")
-    eventEndDate = forms.DateField(label="Event End Date")
+    eventStartDate = forms.DateField(label="Event Start Date", widget=forms.SelectDateWidget)
+    eventEndDate = forms.DateField(label="Event End Date",  widget=forms.SelectDateWidget)
+
+    hd_pick_up_date = forms.DateField(label='Needed by', widget=forms.SelectDateWidget)
