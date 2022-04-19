@@ -1,6 +1,6 @@
 {% extends 'Inventory/base.html'%}
 {% block content %}
-<h3 class="mt-2">Inventory</h3>
+<h3 class="mt-2">Summary View of All Hard Drives</h3>
 <hr class="mt-0 mb-4">
 
 <table class="table" width="device-width">
@@ -18,7 +18,7 @@
 {% for item in harddrive %}
 <tr>
   <td> Checkbox here </td>
-  <td><a method="POST" href="{% url 'inv:updateHardDrive' item.serialNo %}">{{item.serialNo}}</a> </td>
+  <td><a href="{% url 'Inventory:updateHardDrive' item.serialNo %}"> {{item.serialNo}} </a></td>
   <td>{{item.manufacturer}}</td> 
   <td>{{item.modelNo}} </td>
   <td>{{item.hdType}}</td> 
