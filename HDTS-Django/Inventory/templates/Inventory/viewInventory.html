@@ -8,7 +8,6 @@
   <table class="table table-hover">
     <thead>
       <tr>
-        <th scope ="col"></th>
         <th scope ="col">serialNo </th>
         <th scope ="col">manufacturer </th>
         <th scope ="col">modelNo </th>
@@ -22,7 +21,6 @@
     {% for item in harddrive %}
     <tbody id="inventoryTable">  
       <tr>
-        <td> Checkbox here </td>
         <td><a href="{% url 'Inventory:updateHardDrive' item.serialNo %}"> {{item.serialNo}} </a></td>
         <td>{{item.manufacturer}}</td> 
         <td>{{item.modelNo}} </td>
