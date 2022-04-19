@@ -1,9 +1,15 @@
-from django.shortcuts import render
-from django.http import HttpResponse, HttpResponseRedirect
+from urllib import response
+from django.shortcuts import get_object_or_404, redirect, render
+from django.http import HttpResponse, HttpResponseRedirect, JsonResponse
+from requests import request
+from django.contrib.auth.decorators import login_required
+from django.core.paginator import Paginator
+
 from .forms import CreateNewRequest
 from .models import RequestList
-from django.contrib.auth.decorators import login_required
+from .filters import RequestFilter
 
+view_request = False
 # Create your views here.
 def index(response, id):
     ls = RequestList.objects.get(id=id)
@@ -52,10 +58,39 @@ def new_request(response):#will get values from user to generate new request in 
     return render(response, 'request/newrequest.html', {"form":form})
 
 @login_required(login_url='/')
-def request_list(response):#passes values of requests made by current user
-    ls = RequestList.objects.filter(user=response.user)
-    return render(response, "request/requestlist.html", {"reqlist":ls})
+def request_list(response, request_id=None):#passes values of requests made by current user
+    request_list = RequestList.objects.filter(user=response.user).order_by('name')
+    request = None
+
+    if request_id is not None:
+        filter = {}
+        filter['name'] = request_id
+        request = RequestList.objects.filter(**filter)  
+
+    filter = RequestFilter(response.GET, queryset=request_list)
+    request_list = filter.qs
+    
+    paginator = Paginator(request_list, 5)
+
+    page_number = response.GET.get('page')
+    page_obj = paginator.get_page(page_number)
+    return render(response, "request/requestlist.html", 
+        {"reqlist":request_list, 'page_obj': page_obj, 
+        'filter': filter, 'view_request': view_request, 'request':request})
 
 @login_required(login_url='/')
 def mainMenu(request):#passes user the default page
     return render(request, 'request/mainmenu.html')
+
+def get_request(response, request_name):
+    global view_request
+    view_request = True
+    filter = {}
+    filter['name'] = request_name
+    print(f'view_request: {view_request}')
+    request = RequestList.objects.filter(**filter)
+
+    return HttpResponse('done')
+    #return render(response, "/", 
+    #     {'req': request[0], 'user' :response.user, 'view_request': view_request})
+

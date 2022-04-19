@@ -20,5 +20,6 @@ urlpatterns = [
     path('', views.mainMenu, name='mainmenu'),
     path('newrequest/', views.new_request, name='newrequest'),
     path('requestlist/', views.request_list, name='requestlist'),
+    path('requestlist/<request_id>', views.request_list, name='requestlistparams'),
     path('<str>:<int>', views.index, name='index'),
 ]
