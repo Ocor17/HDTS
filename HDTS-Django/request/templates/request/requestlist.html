@@ -46,14 +46,14 @@
     <tbody>
         {% for r in page_obj %}
         <tr>
-            <td><a href='/request/requestlist/{{r.request_number }}'>MISSING</a></td>
+            <td><a href='/request/requestlist/{{r.request_number }}'>{{r.request_number}}</a></td>
             <td><a href='/request/viewrequest/{{r.request_number }}'>{{r.name}}</a></td>
             <td><a href='/request/viewrequest/{{r.request_number }}'>{{r.eventLocation}}</a></td>
-            <td><a href='/request/viewrequest/{{r.request_number }}'>MISSING</a></td>
+            <td><a href='/request/viewrequest/{{r.request_number }}'>{{r.request_creation_date}}</a></td>
             <td><a href='/request/viewrequest/{{r.request_number }}'>{{r.amount}}</a></td>
             <td><a href='/request/viewrequest/{{r.request_number }}'>{{r.eventStatus}}</a></td>
             <td><a href='/request/viewrequest/{{r.request_number }}'>{{r.eventEndDate}}</a></td>
-            <td><a href='/request/viewrequest/{{r.request_number }}'>MISSING</a></td>
+            <td><a href='/request/viewrequest/{{r.request_number }}'>{{r.ticket_number}}</a></td>
         </tr>
         {% endfor %}
     </tbody>
@@ -78,7 +78,6 @@
 </div>
 
 {% if request is not None %}
-    <p> Hello Test</p>
     <form action="/request/requestlist">
         <button class="btn btn-primary" type="submit">Close Request</button>
     </form>
@@ -86,8 +85,8 @@
     <form action="">
         <button class="btn btn-primary" type="submit">Request Extension</button>
     </form>
-    <h1>Request # MISSING Details</h1>
-    <p>Request Made: MISSING</p>
+    <h1>Request # {{r.request_number}}</h1>
+    <p>Request Made: {{r.request_creation_date}}</p>
     <p>User ID: {{user}}</p>
     <p>Email: {{user.email}}</p>
     
@@ -95,7 +94,6 @@
     <p>Requires: {{req.amount}} # of Hard Drives</p>
     <p>Additional Notes: {{req.comment}}</p>
     
-    <p>Event # MISSING</p>
     <p>Event Name: {{req.name}} </p>
     <p>Event Location: {{req.eventLocation}} </p>
     <p>Event Type: {{req.type}}</p>
@@ -107,7 +105,7 @@
     <p>By: </p>
     <p>User ID: </p>
     
-    <p>Handed Out: MISSING </p>
+    <p>Handed Out: </p>
     <p>By: </p>
     <p>User ID: </p>
 {% endif %}
