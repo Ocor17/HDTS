@@ -5,11 +5,14 @@
 
 {% block content %}
     <form method="POST" class="form-group">
-        <h3 class="mt-2">Register</h3>
+        <h3 class="mt-2">User Profile</h3>
+        <p></p>
         <hr class="mt-0 mb-4">
         {% csrf_token %}
         {{form|crispy}}
-        <button type="submit", class="btn btn-success">Register</button>
+        <button type="submit", class="btn btn-success">Request Account</button>
+        <button type="submit", class="btn btn-light">Cancel</button>
+        <p></p>
         <p>Already have an account? Login <a href="/requestorlogin">Here</a></p>
     </form>
 {% endblock %}
