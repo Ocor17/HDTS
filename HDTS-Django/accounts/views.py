@@ -4,8 +4,8 @@ from django.contrib.auth.forms import AuthenticationForm
 from django.contrib.auth import login, authenticate, logout
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
-from django.contrib.auth.models import User
 from .decorators import unauthenticated_user
+from .models import User
 
 # Create your views here.
 
