@@ -1,0 +1,16 @@
+2022-04-19 20:01:42,638 Watching for file changes with StatReloader
+2022-04-19 20:01:50,452 "GET / HTTP/1.1" 200 3115
+2022-04-19 20:01:50,610 "GET /static/HDTS/style.css HTTP/1.1" 404 1801
+2022-04-19 20:01:51,831 "GET /maintainerlogin/ HTTP/1.1" 200 4217
+2022-04-19 20:01:51,882 "GET /static/HDTS/style.css HTTP/1.1" 404 1801
+2022-04-19 20:01:53,427 "POST /maintainerlogin/ HTTP/1.1" 302 0
+2022-04-19 20:01:53,470 "GET /Inventory HTTP/1.1" 301 0
+2022-04-19 20:01:54,097 "GET /Inventory/ HTTP/1.1" 200 4152
+2022-04-19 20:01:54,155 "GET /static/Inventory/style.css HTTP/1.1" 404 1816
+2022-04-19 20:01:54,164 "GET /static/HDTS/style.css HTTP/1.1" 404 1801
+2022-04-19 20:02:05,968 "GET /Inventory/viewLog/ HTTP/1.1" 200 10466
+2022-04-19 20:02:06,028 "GET /static/HDTS/style.css HTTP/1.1" 404 1801
+2022-04-19 20:02:18,626 /Users/sofiagutierrez/Desktop/Git Uploads/HDTS/HDTS-Django/Inventory/views.py changed, reloading.
+2022-04-19 20:02:21,930 Watching for file changes with StatReloader
+2022-04-19 20:02:28,668 /Users/sofiagutierrez/Desktop/Git Uploads/HDTS/HDTS-Django/Inventory/views.py changed, reloading.
+2022-04-19 20:02:32,017 Watching for file changes with StatReloader

@@ -67,9 +67,8 @@ def viewInventory(request):
     return render(request, 'Inventory/viewInventory.html',{'harddrive':harddrive})
 
 def write_file_contents():
-    f = open('./logs/log.log', 'r')
+    f = open('./log.log', 'r')
     file_contents = f.read().splitlines()
-    #print(file_contents)
     f.close()
     return file_contents
 
