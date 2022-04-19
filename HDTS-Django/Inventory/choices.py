@@ -31,3 +31,8 @@ MANUFACTURER_CHOICES = [
     ('toshiba', 'Toshiba'),
     ('seagate', 'Seagate')
 ]
+
+BOOT_TEST_CHOICES = [
+    (True, 'Yes'),
+    (False, 'No')
+]
