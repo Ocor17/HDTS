@@ -3,12 +3,12 @@
 {% block title %} Login {% endblock %}
 
 {% block content %}
-    <h1>ID: {{user.id}}</h1>
     <p>Username: {{user.username}}</p>
     <p>First Name: {{user.first_name}}</p>
     <p>Last Name: {{user.last_name}}</p>
     <p>Email: {{user.email}}</p>
-    <p>User Groups/Roles: {{user.groups}}</p>
-    <p>First Name: {{user.first_name}}</p>
+    <p>Roles: {{user.user_role}}</p>
+    <p>Direct Supervisor Email {{user.direct_supervisor_email}}</p>
+    <p>Branch Chieft Name: {{user.branch_chief_name}}</p>
 
 {% endblock %}
