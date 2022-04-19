@@ -40,5 +40,7 @@ class CreateNewRequest(forms.Form):
     eventType = forms.CharField(label="Event Type",widget=forms.Select(choices=event_type))
     reportingCycle = forms.IntegerField(label="Length of Reporting Cycle (days)")
     eventStatus = forms.CharField(label="Event Status",widget=forms.Select(choices=event_status))
-    eventStartDate = forms.DateField(label="Event Start Date")
-    eventEndDate = forms.DateField(label="Event End Date")
+    eventStartDate = forms.DateField(label="Event Start Date", widget=forms.SelectDateWidget)
+    eventEndDate = forms.DateField(label="Event End Date",  widget=forms.SelectDateWidget)
+
+    hd_pick_up_date = forms.DateField(label='Needed by', widget=forms.SelectDateWidget)

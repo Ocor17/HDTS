@@ -54,3 +54,6 @@ class addNewHardDrive(forms.ModelForm):
             'modDate': forms.SelectDateWidget(empty_label=("Choose Year", "Choose Month", "Choose Day")),
             'comments': forms.Textarea({'rows':10, 'cols':80})
         }
+
+class return_hard_drives(forms.Form):
+    serialNo = forms.CharField( max_length=10, label='Hard Drive Serial Number')
