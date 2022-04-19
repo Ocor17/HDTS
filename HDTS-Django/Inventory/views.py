@@ -1,4 +1,5 @@
 from urllib import response
+from django.forms import formset_factory
 from django.http import HttpResponseRedirect
 from django.http.response import HttpResponse
 from django.shortcuts import get_object_or_404, redirect, render
@@ -8,12 +9,15 @@ from django.views.decorators.csrf import csrf_exempt
 from django import forms
 
 
-from .forms import addNewHardDrive
+from .forms import addNewHardDrive, return_hard_drives
 from .models import HardDrive
 from .forms import addNewHardDrive
 from request.models import RequestList
 
 from datetime import date
+
+import logging,traceback
+logger = logging.getLogger('django')
 
 '''
 Hard Drive Inventory Controller
@@ -38,6 +42,7 @@ def addHardDrive(request):
         form = addNewHardDrive()
     
     context['form'] = form
+    logger.info('Hard Drive Added')
     return render(request, 'Inventory/addHardDrive.html', context) 
 
 
@@ -61,6 +66,18 @@ def viewInventory(request):
     #call inventory html and pass 'harddrive' as an object to be itterated through
     return render(request, 'Inventory/viewInventory.html',{'harddrive':harddrive})
 
+def write_file_contents():
+    f = open('./logs/log.log', 'r')
+    file_contents = f.read().splitlines()
+    #print(file_contents)
+    f.close()
+    return file_contents
+
+@login_required(login_url='/')
+def viewLog(request):
+    file_contents = write_file_contents()
+    harddrive = HardDrive.objects.all()
+    return render(request, 'Inventory/viewLog.html',{'harddrive':harddrive, 'file_contents':file_contents})
 
 @login_required(login_url='/')
 def mainMenu(request):
@@ -92,3 +109,20 @@ def updateHardDrive(request, sn):
         form = addNewHardDrive(instance=hd)
 
     return render(request, "Inventory/updatedHardDrive.html", {'form': form, 'sn': sn})
+
+@login_required(login_url='/')
+def return_hard_drive(response):
+    hd_formSet = formset_factory(return_hard_drives)
+    formset = hd_formSet(response.POST or None)
+    if response.method == 'POST':
+        if formset.is_valid():  
+            for form in formset:
+                form = form.cleaned_data
+                serial_num = form.get('serialNo')
+                hd = HardDrive.objects.get(serialNo=serial_num)
+                hd.hdStatus = 'Pending Wipe'
+                hd.save(update_fields=['hdStatus'])
+        return redirect(reverse('Inventory:viewInventory'))
+
+    
+    return render(response, "Inventory/return.html", {'formset': formset})
