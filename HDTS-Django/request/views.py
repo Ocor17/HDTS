@@ -1,7 +1,6 @@
 from urllib import response
 from django.shortcuts import get_object_or_404, redirect, render
 from django.http import HttpResponse, HttpResponseRedirect, JsonResponse
-from requests import request
 from django.contrib.auth.decorators import login_required
 from django.core.paginator import Paginator
 
