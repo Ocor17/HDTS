@@ -6,7 +6,8 @@ from django.shortcuts import get_object_or_404, redirect, render
 from django.urls import reverse
 from django.contrib.auth.decorators import login_required
 from django.views.decorators.csrf import csrf_exempt
-from django.template import loader
+from django import forms
+
 
 from .forms import addNewHardDrive, return_hard_drives
 from .models import HardDrive
@@ -101,6 +102,7 @@ def updateHardDrive(request, sn):
 
     if request.method == 'POST':
         form = addNewHardDrive(request.POST, instance=hd)
+        form.reqChanged()
         if form.is_valid():
             form.save()
     else:
