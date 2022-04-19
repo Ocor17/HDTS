@@ -36,6 +36,7 @@ INSTALLED_APPS = [
     'Inventory.apps.InventoryConfig',
     'accounts.apps.AccountsConfig',
     'request.apps.RequestConfig',
+    'register.apps.RegisterConfig',
     'crispy_forms',
 
     # django apps

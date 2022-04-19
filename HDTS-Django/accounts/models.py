@@ -2,6 +2,7 @@ from operator import is_
 from djongo import models
 from django.contrib.auth.models import User, AbstractUser, AbstractBaseUser, BaseUserManager
 from django.utils.translation import gettext_lazy as _
+from datetime import date
 
 # Create your models here.
 
@@ -28,6 +29,8 @@ class User(models.Model):
     user_role = models.CharField(max_length=30)
     direct_supervisor_email = models.CharField(max_length=30)
     branch_chief_name = models.CharField(max_length=30)
+    approved = models.BooleanField()
+    last_modified_date = date.today()
  
 
     class Meta:
