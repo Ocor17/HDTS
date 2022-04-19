@@ -1,11 +1,12 @@
 from django.shortcuts import render, redirect
 from .forms import RegisterForm
 from django.contrib.auth.forms import AuthenticationForm
+from django.contrib.auth.models import User
 from django.contrib.auth import login, authenticate, logout
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from .decorators import unauthenticated_user
-from .models import User
+# from .models import User
 
 # Create your views here.
 
@@ -73,8 +74,8 @@ def logout_user(response):
 
 def view_user_profile(response):
     print(response.user)
-    filter = {}
-    filter['username'] = response.user    
-    user = User.objects.filter(**filter)
+    #filter = {}
+    #filter['username'] = response.user    
+    user = User.objects.get(username=response.user)
     
     return render(response, 'accounts/viewprofile.html', {'user': user[0]})
