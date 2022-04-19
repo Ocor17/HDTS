@@ -149,3 +149,27 @@ LOGOUT_REDIRECT_URL="/"
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+LOGGING = {
+    'version': 1,
+    'loggers': {
+        'django': {
+            'handlers': ['file'],
+            'level': 'INFO',
+        }
+    },
+    'handlers': {
+        'file': {
+            'level': 'INFO',
+            'class': 'logging.FileHandler',
+            'filename': './logs/log.log',
+            'formatter': 'simpleRe',
+        },
+    },
+    'formatters': {
+        'simpleRe': {
+            'format': '{asctime} {message}',
+            'style': '{',
+        }
+    }
+}

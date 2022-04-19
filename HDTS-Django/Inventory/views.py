@@ -14,6 +14,9 @@ from request.models import RequestList
 
 from datetime import date
 
+import logging,traceback
+logger = logging.getLogger('django')
+
 '''
 Hard Drive Inventory Controller
     Handle the following routes
@@ -37,6 +40,7 @@ def addHardDrive(request):
         form = addNewHardDrive()
     
     context['form'] = form
+    logger.info('Hard Drive Added')
     return render(request, 'Inventory/addHardDrive.html', context) 
 
 
@@ -60,6 +64,18 @@ def viewInventory(request):
     #call inventory html and pass 'harddrive' as an object to be itterated through
     return render(request, 'Inventory/viewInventory.html',{'harddrive':harddrive})
 
+def write_file_contents():
+    f = open('./logs/log.log', 'r')
+    file_contents = f.read().splitlines()
+    #print(file_contents)
+    f.close()
+    return file_contents
+
+@login_required(login_url='/')
+def viewLog(request):
+    file_contents = write_file_contents()
+    harddrive = HardDrive.objects.all()
+    return render(request, 'Inventory/viewLog.html',{'harddrive':harddrive, 'file_contents':file_contents})
 
 @login_required(login_url='/')
 def mainMenu(request):
