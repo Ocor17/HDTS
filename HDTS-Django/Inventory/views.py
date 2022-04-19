@@ -13,6 +13,8 @@ from .forms import addNewHardDrive, return_hard_drives
 from .models import HardDrive
 from .forms import addNewHardDrive
 from request.models import RequestList
+from request.filters import RequestFilter
+from django.core.paginator import Paginator
 
 from datetime import date
 
@@ -84,9 +86,25 @@ def mainMenu(request):
 
 
 @login_required(login_url='/')
-def view_request(response):#passes request values stored to be called from html
-    ls = RequestList.objects.all()
-    return render(response, "Inventory/viewrequest.html", {"reqlist":ls})
+def view_request(response, request_id=None):#passes request values stored to be called from html
+    request_list = RequestList.objects.all()
+    request = None
+
+    if request_id is not None:
+        filter = {}
+        filter['name'] = request_id
+        request = RequestList.objects.filter(**filter)  
+
+    filter = RequestFilter(response.GET, queryset=request_list)
+    request_list = filter.qs
+    
+    paginator = Paginator(request_list, 5)
+
+    page_number = response.GET.get('page')
+    page_obj = paginator.get_page(page_number)
+    return render(response, "Inventory/viewrequest.html", 
+        {"reqlist":request_list, 'page_obj': page_obj, 
+        'filter': filter, 'view_request': view_request, 'request':request})
 
 
 @login_required(login_url='/')

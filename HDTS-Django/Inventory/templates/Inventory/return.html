@@ -1,7 +1,5 @@
 {% extends 'Inventory/base.html' %}
-
 {% block title %} Return Hard Drives {% endblock %}
-
 {% block content %}
 
 <style>
@@ -12,32 +10,30 @@
         display: none
     }
 </style>
-<h3 class="mt-2">Return Hard Drives</h3>
-<hr class="mt-0 mb-4">
-
-<form action="/Inventory/returnharddrives/" method="POST">
-    {% csrf_token %}
-    {% if formset %}
-        <h3>Hard Drive Return</h3>
-        {{ formset.management_form }}
-        <div id="harddrive-form-list">
-            {% for form in formset %}
-            <div class="harddrive-form">
-                {{ form.as_p }}
+<div class="container-fluid">
+    <h3 class="mt-2">Return Hard Drives</h3>
+    <hr class="mt-0 mb-4">
+    <form action="/Inventory/returnharddrives/" method="POST">
+        {% csrf_token %}
+        {% if formset %}
+            <h3>Hard Drive Return</h3>
+            {{ formset.management_form }}
+            <div id="harddrive-form-list">
+                {% for form in formset %}
+                <div class="harddrive-form">
+                    {{ form.as_p }}
+                </div>
+                {% endfor %}
             </div>
-            {% endfor %}
-        </div>
 
-
-        <div id='empty-form' class='hidden'>{{ formset.empty_form.as_p }}</div>
-        <button class="btn btn-dark" id='add-more' style='margin-top:10px;' type='button'>Add more</button>
-    {% endif %}
-    <button class="btn btn-primary" style='margin-top:10px;' type='submit' >Return Hard Drives</button>
-</form>
-
+            <div id='empty-form' class='hidden'>{{ formset.empty_form.as_p }}</div>
+            <button class="btn btn-dark" id='add-more' style='margin-top:10px;' type='button'>Add more</button>
+        {% endif %}
+        <button class="btn btn-primary" style='margin-top:10px;' type='submit' >Return Hard Drives</button>
+    </form>
+</div>
 
 <script>
-    
     const addMoreBtn = document.getElementById('add-more')
     const totalNewForms = document.getElementById('id_form-TOTAL_FORMS')
     
