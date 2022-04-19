@@ -1,18 +1,19 @@
 {% extends 'accounts/base.html'%}
 
-{% block title %} Create an Account {% endblock %}
+{% block title %} Login {% endblock %}
 {% load crispy_forms_tags %}
 
 {% block content %}
     <form method="POST" class="form-group">
-        <h3 class="mt-2">User Profile</h3>
-        <p></p>
+        <h3 class="mt-2">Login</h3>
         <hr class="mt-0 mb-4">
         {% csrf_token %}
         {{form|crispy}}
-        <button type="submit", class="btn btn-success">Request Account</button>
-        <button type="submit", class="btn btn-light">Cancel</button>
+        {% for message in messages %}
+            <p id="message">{{message}}</p>
+        {% endfor %}
+        <button type="submit", class="btn btn-success">Login</button>
         <p></p>
-        <p>Already have an account? Login <a href="/requestorlogin">Here</a></p>
+        <p>Don't have an account? Request an account <a href="/accountRequest">Here</a></p>
     </form>
 {% endblock %}

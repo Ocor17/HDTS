@@ -20,5 +20,7 @@ from . import views
 app_name = 'register'
 
 urlpatterns = [
-    path('', views.register, name='register'),
+    path('', views.mainMenu, name='mainMenu'),
+    path('viewAccounts/', views.viewAccounts, name='viewAccounts'),
+    path('accountRequestAdmin/', views.requestAdmin, name='requestAdmin'),
 ]

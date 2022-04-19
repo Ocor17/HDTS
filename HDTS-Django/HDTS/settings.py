@@ -36,6 +36,7 @@ INSTALLED_APPS = [
     'Inventory.apps.InventoryConfig',
     'accounts.apps.AccountsConfig',
     'request.apps.RequestConfig',
+    'register.apps.RegisterConfig',
     'crispy_forms',
 
     # django apps
@@ -82,7 +83,7 @@ WSGI_APPLICATION = 'HDTS.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
- #CHANGE LATER TO USE .ENV VARIABLES
+#CHANGE LATER TO USE .ENV VARIABLES
 DATABASES = {
     'default': {
         'ENGINE': 'djongo',

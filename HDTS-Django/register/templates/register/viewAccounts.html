@@ -1,0 +1,73 @@
+{% extends 'register/base.html'%}
+{% block content %}
+
+<div class="container-fluid">
+  <h3 class="mt-2">Summary view of user profiles</h3>
+    <input id="profileInput" class="form-control" type="text" placeholder="Search..">
+</div>
+  <br>
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <SettingsBehavior AllowSelectSingleRowOnly="true" AllowSelectByRowClick="true" />
+        <Columns>
+        <th scope ="col">Last Modified Date </th>
+        <th scope ="col">First Name </th>
+        <th scope ="col">Last Name </th>
+        <th scope ="col">Email </th>
+        <th scope ="col">User Role </th>
+        <th scope ="col">User Profile Status </th>
+        <th scope ="col">Direct Supervisor Email </th>
+        <th scope ="col">Branch Chief  </th>
+        </Columns>
+        <SettingsPager NumericButtonCount="6"></SettingsPager>
+      </tr>
+    </thead>
+    {% for item in accounts %}
+    <tbody id="profileTable">  
+      <tr>
+        <td>{{item.last_modified_date}}</td>
+        <td>{{item.first_name}}</td> 
+        <td>{{item.last_name}} </td>
+        <td>{{item.email}} </td>
+        <td>{{item.user_role}}</td> 
+        <td>Active</td>
+        <td>{{item.direct_supervisor_email}}</td> 
+        <td>{{item.branch_chief_name}}</td> 
+      </tr>
+    </tbody>
+    {% endfor%}
+  </table>
+
+  <head>
+    <script type="text/javascript">
+       function selectAll(){
+         var items=document.getElementsByName('acs');
+         for(var i=0; i<items.length; i++){
+           if(items[i].type=='checkbox')
+             items[i].checked=true;
+         }
+       }
+       
+       function UnSelectAll(){
+         var items=document.getElementsByName('acs');
+         for(var i=0; i<items.length; i++){
+           if(items[i].type=='checkbox')
+             items[i].checked=false;
+         }
+       }			
+    </script>
+ </head>
+
+  <script>
+    $(document).ready(function(){
+      $("#inventoryInput").on("keyup", function() {
+        var value = $(this).val().toLowerCase();
+        $("#inventoryTable tr").filter(function() {
+          $(this).toggle( $(this).text().toLowerCase().indexOf(value) > -1 );
+        });
+      });
+    });
+</script>
+</div>
+{% endblock content%}

@@ -2,6 +2,7 @@ from django import forms
 from django.contrib.auth import login, authenticate
 from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
 from django.contrib.auth.models import User
+from datetime import date
 
 '''
 Form used to validated the inputes from the user,
@@ -16,12 +17,22 @@ class RegisterForm(UserCreationForm):
     ('Auditor', 'Auditor'),
     ]
 
+    user_status = [
+    ('Pending', 'Pending'),
+    ('Active', 'Active'),
+    ('Disabled', 'Disabled'),
+    ('Archived', 'Archived'),
+    ]
+
     first_name = forms.CharField(required=True)
     last_name = forms.CharField(required=True)
     email = forms.EmailField(required=True)
     user_role = forms.CharField(widget=forms.Select(choices=role_choices))
     direct_supervisor_email = forms.CharField(required=True)
     branch_chief_name = forms.CharField(required=True)
+    approved = False
+    last_modified_date = date.today()
+    user_profile_status = forms.CharField(widget=forms.Select(choices=user_status))
 
     class Meta:
         model = User

@@ -18,21 +18,21 @@ Accounts Controller
         - logout_user [GET]
 '''
 
-def register(response):
-    # if response.method == "POST":
-    #     form = RegisterForm(response.POST)
-    #     if form.is_valid():
-    #         user = form.save()
-    #         #
-    #         group, created = Group.objects.get_or_create(name='maintainer')
-    #         user.groups.add(group)
-    #         group, created = Group.objects.get_or_create(name='test2')
-    #         user.groups.add(group)
-    #         #
-    #         return redirect("/")
-    # else:
-    form = RegisterForm()
-    return render(response, 'accounts/register.html', {"form":form})
+def accountRequest(response):
+    if response.method == "POST":
+        form = RegisterForm(response.POST)
+        if form.is_valid():
+            user = form.save()
+            #
+            # group, created = Group.objects.get_or_create(name='maintainer')
+            # user.groups.add(group)
+            # group, created = Group.objects.get_or_create(name='test2')
+            # user.groups.add(group)
+            #
+            return redirect("/")
+    else:
+        form = RegisterForm()
+    return render(response, 'accounts/accountRequest.html', {"form":form})
 
 @unauthenticated_user
 def select_login_page(response):
@@ -83,7 +83,7 @@ def admin_login_page(response):
         
         if user is not None:
             login(response, user)
-            return redirect("/admin")
+            return redirect("/register")
         else:
             messages.info(response, "Username or password is incorrect")
 

@@ -28,6 +28,6 @@ urlpatterns = [
     path('requestorlogin/', views.requestor_login_page, name='requestor_login_page'),
     path('maintainerlogin/', views.maintainer_login_page, name='maintainer_login_page'),
     path('adminlogin/', views.admin_login_page, name='admin_login_page'),
-    path('register/', views.register, name='register'),
+    path('accountRequest/', views.accountRequest, name='accountRequest'),
     path('logout/', views.logout_user, name='logout_user'),
 ]
