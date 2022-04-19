@@ -102,7 +102,7 @@ def updateHardDrive(request, sn):
 
     if request.method == 'POST':
         form = addNewHardDrive(request.POST, instance=hd)
-        form.reqChanged()
+        #form.reqChanged()
         if form.is_valid():
             form.save()
     else:

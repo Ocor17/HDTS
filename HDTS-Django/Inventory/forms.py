@@ -55,12 +55,12 @@ class addNewHardDrive(forms.ModelForm):
             'modDate': forms.SelectDateWidget(empty_label=("Choose Year", "Choose Month", "Choose Day")),
             'comments': forms.Textarea({'rows':10, 'cols':80})
         }
-
+'''
     def reqChanged(self):
         changed = self.changed_data
         if 'hdClass' in changed and 'justiClass' not in changed:
             msg = ValidationError("Justification for Classification Change is required")
-            self.add_error('justiStatus', msg)
+            self.add_error('justiClass', msg)
 
         if 'hdStatus' in changed and 'justiStatus' not in changed:
             msg = ValidationError("Justification for Status Change is required")
@@ -68,7 +68,7 @@ class addNewHardDrive(forms.ModelForm):
 
         if 'expectRetDate' in changed and 'justiRetDate' not in changed:
             msg = ValidationError("Justification for Expected Return Date Change is required")
-            self.add_error('justiStatus', msg)
-
+            self.add_error('justiRetDate', msg)
+'''
 class return_hard_drives(forms.Form):
     serialNo = forms.CharField( max_length=10, label='Hard Drive Serial Number')
