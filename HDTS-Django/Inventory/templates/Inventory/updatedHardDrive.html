@@ -1,13 +1,13 @@
 {% extends 'Inventory/base.html' %}
 
-{% block title %} Add New Hard Drive {% endblock %}
+{% block title %}Hard Drive Details{% endblock %}
 
 {% block content %}
-<h3 class="mt-2">Update Hard Drive</h3>
+<h3 class="mt-2">Hard Drive Details</h3>
 <hr class="mt-0 mb-4">
 <form method="post" action="/Inventory/updateHardDrive/{{sn}}/">
     {% csrf_token %}
     {{form.as_p}}
-    <button class="btn btn-primary" type="submit">Update</button>   <button class="btn btn-primary" type="reset">Reset</button>
-</form>
+    <button class="btn btn-primary" type="submit">Save</button> 
+</form> 
 {% endblock %}

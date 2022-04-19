@@ -16,12 +16,14 @@ This class is the form used to add a Hard Drive
 class addNewHardDrive(forms.ModelForm):
     creationDate = forms.DateField(label='Creation Date', initial=datetime.date.today, disabled=True)
     imageVerID = forms.IntegerField(label='Image Version ID', max_value=9999, min_value=0, required=False)
+    measurements = forms.CharField(label='Hard Drive Measurements', required=False, label_suffix=' (in.)', help_text='Format: 2.5 x 3.5')
 
     class Meta:
         model = HardDrive
         fields = ['creationDate', 'serialNo', 'manufacturer',
         'modelNo', 'hdType', 'connPort', 'hdSize', 'hdClass', 'justiClass', 'imageVerID', 
-        'btStatus', 'btExpDate', 'hdStatus', 'justiStatus', 'issueDate', 'expectRetDate', 'justiRetDate', 'actualRetDate', 'modDate']
+        'btStatus', 'btExpDate', 'hdStatus', 'justiStatus', 'issueDate', 'expectRetDate', 
+        'justiRetDate', 'actualRetDate', 'modDate', 'measurements', 'comments']
         labels = {
             'serialNo': _('Serial Number'),
             'manufacturer': _('Manufacturer'),
@@ -40,6 +42,7 @@ class addNewHardDrive(forms.ModelForm):
             'justiRetDate': _('Justification for Return Date Change'),
             'actualRetDate': _('Actual Return Date'),
             'modDate': _('Modified Date'),
+            'comments': _('Comments'),
         }
 
         widgets = {
@@ -49,6 +52,7 @@ class addNewHardDrive(forms.ModelForm):
             'expectRetDate': forms.SelectDateWidget(empty_label=("Choose Year", "Choose Month", "Choose Day")),
             'actualRetDate': forms.SelectDateWidget(empty_label=("Choose Year", "Choose Month", "Choose Day")),
             'modDate': forms.SelectDateWidget(empty_label=("Choose Year", "Choose Month", "Choose Day")),
+            'comments': forms.Textarea({'rows':10, 'cols':80})
         }
 
 class return_hard_drives(forms.Form):

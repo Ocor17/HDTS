@@ -9,7 +9,21 @@ Form used to validated the inputes from the user,
 '''
 
 class RegisterForm(UserCreationForm):
+    role_choices = [
+    ('Requestor', 'Requestor'),
+    ('Maintainer', 'Maintainer'),
+    ('Administrator', 'Administrator'),
+    ('Auditor', 'Auditor'),
+    ]
+
+    first_name = forms.CharField(required=True)
+    last_name = forms.CharField(required=True)
+    email = forms.EmailField(required=True)
+    user_role = forms.CharField(widget=forms.Select(choices=role_choices))
+    direct_supervisor_email = forms.CharField(required=True)
+    branch_chief_name = forms.CharField(required=True)
 
     class Meta:
         model = User
-        fields = ["username", "password1", "password2"]
+        fields = ["first_name", "last_name", "email", "username", "password1", "password2", "user_role", "direct_supervisor_email", "branch_chief_name"]
+        

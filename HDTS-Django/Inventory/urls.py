@@ -29,12 +29,11 @@ urlpatterns = [
     path('mainMenu/', views.mainMenu, name='mainMenu'),
     path('', views.mainMenu, name='mainMenu'),
     path('viewInventory/', views.viewInventory, name='viewInventory'),
+    path('viewLog/', views.viewLog, name='viewLog'),
     path('viewrequest/', views.view_request, name='viewrequest'),
     path('returnharddrives/', views.return_hard_drive, name='returnharddrives'),
     path('viewHardDrive/<sn>/$', views.viewHardDrive, name='viewHardDrive'),
     path('updateHardDrive/<sn>/$', views.updateHardDrive, name='updateHardDrive'),
-    
-
 ]
 
 if settings.DEBUG:
