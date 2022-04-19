@@ -22,6 +22,4 @@ urlpatterns = [
     path('requestlist/', views.request_list, name='requestlist'),
     path('requestlist/<request_id>', views.request_list, name='requestlistparams'),
     path('<str>:<int>', views.index, name='index'),
-    path('viewrequest/<request_name>', views.get_request, name='viewrequest'),
-    path('closerequest/', views.close_request, name='closerequest')
 ]
