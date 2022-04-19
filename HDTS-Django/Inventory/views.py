@@ -5,6 +5,7 @@ from django.shortcuts import get_object_or_404, redirect, render
 from django.urls import reverse
 from django.contrib.auth.decorators import login_required
 from django.views.decorators.csrf import csrf_exempt
+from django.template import loader
 
 from .forms import addNewHardDrive
 from .models import HardDrive
@@ -42,6 +43,19 @@ def addHardDrive(request):
 @login_required(login_url='/')
 def viewInventory(request):
     #customer and product objects are passed. Values can be called from html
+
+    '''
+    filters = {
+        key: value
+        for key, value in request.post.items()
+        if key in ['creationDate', 'serialNo', 'manufacturer','modelNo', 'hdType', 
+        'connPort', 'hdSize', 'hdClass', 'justiClass', 'imageVerID', 'btStatus',
+        'btExpDate', 'hdStatus', 'justiStatus', 'issueDate', 'expectRetDate', 
+        'justiRetDate', 'actualRetDate', 'modDate',]
+        #['user', 'modifier', 'reqRefNo', 'expression']
+    }
+    '''
+
     harddrive = HardDrive.objects.all()
     #call inventory html and pass 'harddrive' as an object to be itterated through
     return render(request, 'Inventory/viewInventory.html',{'harddrive':harddrive})
@@ -66,16 +80,13 @@ def viewHardDrive(request, sn):
 
 @login_required(login_url='/')
 def updateHardDrive(request, sn):
+    hd = HardDrive.objects.filter(serialNo=sn).first()
 
-    a = HardDrive.objects.get(serialNo=sn)
     if request.method == 'POST':
-        print(0)
-        form = addNewHardDrive(request.POST, instance=a)
+        form = addNewHardDrive(request.POST, instance=hd)
         if form.is_valid():
             form.save()
-            return redirect('viewInventory/')
     else:
-        print(1)
-        form = addNewHardDrive(instance=a)
+        form = addNewHardDrive(instance=hd)
 
     return render(request, "Inventory/updatedHardDrive.html", {'form': form, 'sn': sn})
