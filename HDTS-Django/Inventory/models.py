@@ -32,7 +32,7 @@ class HardDrive(models.Model):
     justiRetDate = models.FileField(db_column='Justification Change Return Date',  blank=True, null=True, upload_to='Justification_Return_Date/')
     actualRetDate = models.DateField(db_column='Actual Returned Date', blank=True, null=True)
     modDate = models.DateField(db_column='Modified Date', blank=True, null=True)
-    measurements = models.FloatField(db_column='Hard Drive Measurements', blank=True, null=True)
+    measurements = models.CharField(db_column='Hard Drive Measurements', max_length=15, blank=True, null=True)
     comments = models.CharField(db_column='Comments', max_length=500 ,blank=True, null=True)
 
     class Meta:

@@ -8,6 +8,7 @@
   <table class="table table-hover">
     <thead>
       <tr>
+        <th><input type="checkbox" onclick="checkBoxToggle(this)"></th>
         <th scope ="col">serialNo </th>
         <th scope ="col">manufacturer </th>
         <th scope ="col">modelNo </th>
@@ -21,6 +22,7 @@
     {% for item in harddrive %}
     <tbody id="inventoryTable">  
       <tr>
+        <th><input type="checkbox" name="check"></th>
         <td><a href="{% url 'Inventory:updateHardDrive' item.serialNo %}"> {{item.serialNo}} </a></td>
         <td>{{item.manufacturer}}</td> 
         <td>{{item.modelNo}} </td>
@@ -33,6 +35,11 @@
     </tbody>
     {% endfor%}
   </table>
+
+  <form method="get" action="{% url 'Inventory:addHardDrive' %}">
+    <button class="btn btn-primary" type="submit">Add Hard Drive</button>
+  </form>
+
   <script>
     $(document).ready(function(){
       $("#inventoryInput").on("keyup", function() {
@@ -42,6 +49,15 @@
         });
       });
     });
+</script>
+
+<script lang="JavaScript">
+  function checkBoxToggle(header){
+    cbs = document.getElementsByName("check");
+    for(var i=0, n=cbs.length; i<n; i++) {
+      cbs[i].checked = header.checked;
+    }
+  }
 </script>
 </div>
 {% endblock content%}
