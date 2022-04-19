@@ -1,32 +1,49 @@
 {% extends 'Inventory/base.html'%}
 {% block content %}
-<h3 class="mt-2">Summary View of All Hard Drives</h3>
-<hr class="mt-0 mb-4">
 
-<table class="table" width="device-width">
-  <thead>
-    <td> </td>
-    <td>serialNo </td>
-    <td>manufacturer </td>
-    <td>modelNo </td>
-    <td>hdType </td>
-    <td>connPort </td>
-    <td>hdSize </td>
-    <td>hdClass </td>
-    <td>hdStatus </td>
-  </thead>
-{% for item in harddrive %}
-<tr>
-  <td> Checkbox here </td>
-  <td><a href="{% url 'Inventory:updateHardDrive' item.serialNo %}"> {{item.serialNo}} </a></td>
-  <td>{{item.manufacturer}}</td> 
-  <td>{{item.modelNo}} </td>
-  <td>{{item.hdType}}</td> 
-  <td>{{item.connPort}}</td> 
-  <td>{{item.hdSize}} </td>
-  <td>{{item.hdClass}}</td>
-  <td>{{item.hdStatus}}</td> 
-</tr>
-{% endfor%}
-</table>
+<div class="container-fluid">
+  <h3 class="mt-2">Inventory</h3>
+  <input id="inventoryInput" class="form-control" type="text" placeholder="Search..">
+  <br>
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th scope ="col"></th>
+        <th scope ="col">serialNo </th>
+        <th scope ="col">manufacturer </th>
+        <th scope ="col">modelNo </th>
+        <th scope ="col">hdType </th>
+        <th scope ="col">connPort </th>
+        <th scope ="col">hdSize </th>
+        <th scope ="col">hdClass </th>
+        <th scope ="col">hdStatus </th>
+      </tr>
+    </thead>
+    {% for item in harddrive %}
+    <tbody id="inventoryTable">  
+      <tr>
+        <td> Checkbox here </td>
+        <td><a href="{% url 'Inventory:updateHardDrive' item.serialNo %}"> {{item.serialNo}} </a></td>
+        <td>{{item.manufacturer}}</td> 
+        <td>{{item.modelNo}} </td>
+        <td>{{item.hdType}}</td> 
+        <td>{{item.connPort}}</td> 
+        <td>{{item.hdSize}} </td>
+        <td>{{item.hdClass}}</td>
+        <td>{{item.hdStatus}}</td> 
+      </tr>
+    </tbody>
+    {% endfor%}
+  </table>
+  <script>
+    $(document).ready(function(){
+      $("#inventoryInput").on("keyup", function() {
+        var value = $(this).val().toLowerCase();
+        $("#inventoryTable tr").filter(function() {
+          $(this).toggle( $(this).text().toLowerCase().indexOf(value) > -1 );
+        });
+      });
+    });
+</script>
+</div>
 {% endblock content%}
