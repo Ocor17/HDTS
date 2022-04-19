@@ -78,4 +78,4 @@ def view_user_profile(response):
     #filter['username'] = response.user    
     user = User.objects.get(username=response.user)
     
-    return render(response, 'accounts/viewprofile.html', {'user': user[0]})
+    return render(response, 'accounts/viewprofile.html', {'user': user})
