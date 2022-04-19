@@ -83,7 +83,7 @@ WSGI_APPLICATION = 'HDTS.wsgi.application'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
  #CHANGE LATER TO USE .ENV VARIABLES
- DATABASES = {
+DATABASES = {
      'default': {
          'ENGINE': 'djongo',
          'NAME': 'hdts',
