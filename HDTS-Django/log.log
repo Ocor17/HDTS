@@ -14,3 +14,941 @@
 2022-04-19 20:02:21,930 Watching for file changes with StatReloader
 2022-04-19 20:02:28,668 /Users/sofiagutierrez/Desktop/Git Uploads/HDTS/HDTS-Django/Inventory/views.py changed, reloading.
 2022-04-19 20:02:32,017 Watching for file changes with StatReloader
+2022-04-25 19:48:59,240 Watching for file changes with StatReloader
+2022-04-25 19:49:20,013 "GET / HTTP/1.1" 200 3250
+2022-04-25 19:49:20,156 "GET /static/HDTS/style.css HTTP/1.1" 404 1801
+2022-04-25 19:49:20,635 Not Found: /favicon.ico
+2022-04-25 19:49:20,635 "GET /favicon.ico HTTP/1.1" 404 5217
+2022-04-25 19:49:22,659 "GET /maintainerlogin HTTP/1.1" 301 0
+2022-04-25 19:49:22,796 "GET /maintainerlogin/ HTTP/1.1" 200 4377
+2022-04-25 19:49:22,855 "GET /static/HDTS/style.css HTTP/1.1" 404 1801
+2022-04-25 19:49:23,415 "GET /requestorlogin HTTP/1.1" 301 0
+2022-04-25 19:49:23,445 "GET /requestorlogin/ HTTP/1.1" 200 4384
+2022-04-25 19:49:23,487 "GET /static/HDTS/style.css HTTP/1.1" 404 1801
+2022-04-25 19:49:23,993 "GET /adminlogin HTTP/1.1" 301 0
+2022-04-25 19:49:24,018 "GET /adminlogin/ HTTP/1.1" 200 4377
+2022-04-25 19:49:24,054 "GET /static/HDTS/style.css HTTP/1.1" 404 1801
+2022-04-25 19:49:46,155 "GET /requestorlogin/ HTTP/1.1" 200 4384
+2022-04-25 19:49:46,189 "GET /static/HDTS/style.css HTTP/1.1" 404 1801
+2022-04-25 19:49:46,773 "GET /maintainerlogin/ HTTP/1.1" 200 4377
+2022-04-25 19:49:46,852 "GET /static/HDTS/style.css HTTP/1.1" 404 1801
+2022-04-25 19:49:53,943 "GET /static/HDTS/style.css HTTP/1.1" 404 1801
+2022-04-25 19:49:56,843 "GET /admin HTTP/1.1" 301 0
+2022-04-25 19:49:56,880 Session data corrupted
+2022-04-25 19:49:56,889 "GET /admin/ HTTP/1.1" 302 0
+2022-04-25 19:49:57,364 Session data corrupted
+2022-04-25 19:49:57,471 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 2215
+2022-04-25 19:49:58,597 "GET /static/admin/css/login.css HTTP/1.1" 200 954
+2022-04-25 19:49:58,599 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2616
+2022-04-25 19:49:58,600 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3401
+2022-04-25 19:49:58,605 "GET /static/admin/css/base.css HTTP/1.1" 200 19513
+2022-04-25 19:49:58,614 "GET /static/admin/css/responsive.css HTTP/1.1" 200 18575
+2022-04-25 19:49:58,618 "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+2022-04-25 19:49:58,780 "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 85692
+2022-04-25 19:49:58,785 "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 85876
+2022-04-25 19:50:00,085 Session data corrupted
+2022-04-25 19:50:01,037 "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+2022-04-25 19:50:01,844 "GET /admin/ HTTP/1.1" 200 3332
+2022-04-25 19:50:01,886 "GET /static/admin/css/dashboard.css HTTP/1.1" 200 380
+2022-04-25 19:50:01,918 "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+2022-04-25 19:50:01,919 "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+2022-04-25 19:50:01,937 "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 86184
+2022-04-25 19:50:08,497 "GET /admin/auth/user/ HTTP/1.1" 200 22942
+2022-04-25 19:50:08,562 "GET /static/admin/css/changelists.css HTTP/1.1" 200 6932
+2022-04-25 19:50:08,565 "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+2022-04-25 19:50:08,570 "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 5984
+2022-04-25 19:50:08,573 "GET /static/admin/js/core.js HTTP/1.1" 200 5698
+2022-04-25 19:50:08,584 "GET /static/admin/js/urlify.js HTTP/1.1" 200 7902
+2022-04-25 19:50:08,584 "GET /static/admin/js/actions.js HTTP/1.1" 200 7872
+2022-04-25 19:50:08,589 "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+2022-04-25 19:50:08,626 "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 288580
+2022-04-25 19:50:08,640 "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 232381
+2022-04-25 19:50:08,652 "GET /static/admin/img/search.svg HTTP/1.1" 200 458
+2022-04-25 19:50:08,664 "GET /static/admin/img/icon-no.svg HTTP/1.1" 200 560
+2022-04-25 19:50:08,675 "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+2022-04-25 19:50:09,144 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2022-04-25 19:50:09,190 "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+2022-04-25 19:50:09,201 "GET /static/admin/img/sorting-icons.svg HTTP/1.1" 200 1097
+2022-04-25 19:50:18,667 "GET /maintainerlogin/ HTTP/1.1" 200 4377
+2022-04-25 19:50:18,716 "GET /static/HDTS/style.css HTTP/1.1" 404 1801
+2022-04-25 19:50:20,245 "POST /maintainerlogin/ HTTP/1.1" 302 0
+2022-04-25 19:50:20,271 "GET /Inventory HTTP/1.1" 301 0
+2022-04-25 19:50:21,008 "GET /Inventory/ HTTP/1.1" 200 4152
+2022-04-25 19:50:21,067 "GET /static/HDTS/style.css HTTP/1.1" 404 1801
+2022-04-25 19:50:21,067 "GET /static/Inventory/style.css HTTP/1.1" 404 1816
+2022-04-25 20:11:55,775 Watching for file changes with StatReloader
+2022-04-25 20:11:59,382 "GET /Inventory/viewrequest/ HTTP/1.1" 200 8919
+2022-04-25 20:11:59,435 "GET /static/HDTS/style.css HTTP/1.1" 404 1801
+2022-04-25 20:14:57,359 D:\Documents\HARD DRIVES\HDTS\HDTS-Django\HDTS\settings.py changed, reloading.
+2022-04-25 20:14:58,382 Watching for file changes with StatReloader
+2022-04-25 20:15:21,964 D:\Documents\HARD DRIVES\HDTS\HDTS-Django\HDTS\settings.py changed, reloading.
+2022-04-25 20:15:23,228 Watching for file changes with StatReloader
+2022-04-25 20:23:26,622 Watching for file changes with StatReloader
+2022-04-25 20:23:29,458 "GET /Inventory/viewrequest/ HTTP/1.1" 200 8919
+2022-04-25 20:23:29,503 "GET /static/HDTS/style.css HTTP/1.1" 404 1801
+2022-04-25 20:23:31,415 "GET /Inventory/viewrequest/ HTTP/1.1" 200 8919
+2022-04-25 20:23:31,456 "GET /static/HDTS/style.css HTTP/1.1" 404 1801
+2022-04-25 20:23:32,770 "GET /Inventory/viewInventory/ HTTP/1.1" 200 14332
+2022-04-25 20:23:32,845 Not Found: /Inventory/viewInventory/main_inventory.css
+2022-04-25 20:23:32,846 "GET /Inventory/viewInventory/main_inventory.css HTTP/1.1" 404 7105
+2022-04-25 20:23:32,859 Not Found: /Inventory/viewInventory/style.css
+2022-04-25 20:23:32,859 "GET /Inventory/viewInventory/style.css HTTP/1.1" 404 7078
+2022-04-25 20:23:32,929 Not Found: /Inventory/viewInventory/public/playground_assets/hdts-200h.png
+2022-04-25 20:23:32,929 "GET /Inventory/viewInventory/public/playground_assets/hdts-200h.png HTTP/1.1" 404 7165
+2022-04-25 20:23:32,932 Not Found: /Inventory/viewInventory/public/playground_assets/3d5cfec84e518bf6a39609681dc93bd7-400w.png
+2022-04-25 20:23:32,936 Not Found: /Inventory/viewInventory/b32df1dc-e88b-492f-bbac-32fd99bf0c29
+2022-04-25 20:23:32,939 Not Found: /Inventory/viewInventory/public/playground_assets/4d7777708e58ea04be2ded716d9f9d61-500w.png
+2022-04-25 20:23:32,939 "GET /Inventory/viewInventory/b32df1dc-e88b-492f-bbac-32fd99bf0c29 HTTP/1.1" 404 7159
+2022-04-25 20:23:32,939 "GET /Inventory/viewInventory/public/playground_assets/3d5cfec84e518bf6a39609681dc93bd7-400w.png HTTP/1.1" 404 7249
+2022-04-25 20:23:32,940 "GET /Inventory/viewInventory/public/playground_assets/4d7777708e58ea04be2ded716d9f9d61-500w.png HTTP/1.1" 404 7249
+2022-04-25 20:26:11,725 Watching for file changes with StatReloader
+2022-04-25 20:26:20,742 "GET /Inventory/viewInventory/ HTTP/1.1" 200 14304
+2022-04-25 20:26:20,809 Not Found: /Inventory/viewInventory/style.css
+2022-04-25 20:26:20,810 "GET /Inventory/viewInventory/style.css HTTP/1.1" 404 7078
+2022-04-25 20:26:20,828 Not Found: /Inventory/viewInventory/main_inventory.css
+2022-04-25 20:26:20,829 "GET /Inventory/viewInventory/main_inventory.css HTTP/1.1" 404 7105
+2022-04-25 20:26:20,940 Not Found: /media/images/hdts-200h.png
+2022-04-25 20:26:20,940 "GET /media/images/hdts-200h.png HTTP/1.1" 404 5262
+2022-04-25 20:26:20,943 Not Found: /Inventory/viewInventory/public/playground_assets/3d5cfec84e518bf6a39609681dc93bd7-400w.png
+2022-04-25 20:26:20,947 Not Found: /Inventory/viewInventory/b32df1dc-e88b-492f-bbac-32fd99bf0c29
+2022-04-25 20:26:20,947 "GET /Inventory/viewInventory/public/playground_assets/3d5cfec84e518bf6a39609681dc93bd7-400w.png HTTP/1.1" 404 7249
+2022-04-25 20:26:20,952 Not Found: /Inventory/viewInventory/public/playground_assets/4d7777708e58ea04be2ded716d9f9d61-500w.png
+2022-04-25 20:26:20,952 "GET /Inventory/viewInventory/b32df1dc-e88b-492f-bbac-32fd99bf0c29 HTTP/1.1" 404 7159
+2022-04-25 20:26:20,953 "GET /Inventory/viewInventory/public/playground_assets/4d7777708e58ea04be2ded716d9f9d61-500w.png HTTP/1.1" 404 7249
+2022-04-25 20:26:33,106 Not Found: /Inventory/viewInventory/style.css
+2022-04-25 20:26:33,109 Not Found: /Inventory/viewInventory/main_inventory.css
+2022-04-25 20:26:33,109 "GET /Inventory/viewInventory/style.css HTTP/1.1" 404 7078
+2022-04-25 20:26:33,109 "GET /Inventory/viewInventory/main_inventory.css HTTP/1.1" 404 7105
+2022-04-25 20:27:42,132 "GET /Inventory/viewInventory/ HTTP/1.1" 200 14314
+2022-04-25 20:27:42,177 Not Found: /Inventory/viewInventory/style.css
+2022-04-25 20:27:42,179 "GET /Inventory/viewInventory/style.css HTTP/1.1" 404 7078
+2022-04-25 20:27:42,238 Not Found: /Inventory/viewInventory/b32df1dc-e88b-492f-bbac-32fd99bf0c29
+2022-04-25 20:27:42,241 Not Found: /media/images/hdts-200h.png
+2022-04-25 20:27:42,241 "GET /Inventory/viewInventory/b32df1dc-e88b-492f-bbac-32fd99bf0c29 HTTP/1.1" 404 7159
+2022-04-25 20:27:42,245 Not Found: /Inventory/viewInventory/public/playground_assets/3d5cfec84e518bf6a39609681dc93bd7-400w.png
+2022-04-25 20:27:42,245 "GET /media/images/hdts-200h.png HTTP/1.1" 404 5262
+2022-04-25 20:27:42,249 Not Found: /Inventory/viewInventory/public/playground_assets/4d7777708e58ea04be2ded716d9f9d61-500w.png
+2022-04-25 20:27:42,250 "GET /Inventory/viewInventory/public/playground_assets/3d5cfec84e518bf6a39609681dc93bd7-400w.png HTTP/1.1" 404 7249
+2022-04-25 20:27:42,250 "GET /Inventory/viewInventory/public/playground_assets/4d7777708e58ea04be2ded716d9f9d61-500w.png HTTP/1.1" 404 7249
+2022-04-25 20:27:42,483 "GET /static/css/main_inventory.css HTTP/1.1" 200 16011
+2022-04-25 20:29:23,183 Not Found: /Inventory/viewInventory/style.css
+2022-04-25 20:29:23,184 "GET /static/css/main_inventory.css HTTP/1.1" 304 0
+2022-04-25 20:29:23,184 "GET /Inventory/viewInventory/style.css HTTP/1.1" 404 7078
+2022-04-25 20:30:32,964 "GET /Inventory/viewInventory/ HTTP/1.1" 200 14262
+2022-04-25 20:30:32,991 "GET /static/css/main_inventory.css HTTP/1.1" 304 0
+2022-04-25 20:30:32,999 "GET /static/css/style.css HTTP/1.1" 200 2410
+2022-04-25 20:30:33,053 Not Found: /Inventory/viewInventory/b32df1dc-e88b-492f-bbac-32fd99bf0c29
+2022-04-25 20:30:33,056 Not Found: /Inventory/viewInventory/public/playground_assets/4d7777708e58ea04be2ded716d9f9d61-500w.png
+2022-04-25 20:30:33,058 Not Found: /media/images/hdts-200h.png
+2022-04-25 20:30:33,061 Not Found: /Inventory/viewInventory/public/playground_assets/3d5cfec84e518bf6a39609681dc93bd7-400w.png
+2022-04-25 20:30:33,061 "GET /Inventory/viewInventory/b32df1dc-e88b-492f-bbac-32fd99bf0c29 HTTP/1.1" 404 7159
+2022-04-25 20:30:33,062 "GET /Inventory/viewInventory/public/playground_assets/4d7777708e58ea04be2ded716d9f9d61-500w.png HTTP/1.1" 404 7249
+2022-04-25 20:30:33,062 "GET /media/images/hdts-200h.png HTTP/1.1" 404 5262
+2022-04-25 20:30:33,063 "GET /Inventory/viewInventory/public/playground_assets/3d5cfec84e518bf6a39609681dc93bd7-400w.png HTTP/1.1" 404 7249
+2022-04-25 20:30:40,804 Not Found: /Inventory/viewInventory/pending_request.html
+2022-04-25 20:30:40,805 "GET /Inventory/viewInventory/pending_request.html HTTP/1.1" 404 7111
+2022-04-25 20:30:46,269 Not Found: /Inventory/viewInventory/main_inventory.html
+2022-04-25 20:30:46,269 "GET /Inventory/viewInventory/main_inventory.html HTTP/1.1" 404 7108
+2022-04-25 20:33:35,451 D:\Documents\HARD DRIVES\HDTS\HDTS-Django\HDTS\settings.py changed, reloading.
+2022-04-25 20:33:36,480 Watching for file changes with StatReloader
+2022-04-25 20:33:40,059 "GET /Inventory/viewInventory/ HTTP/1.1" 200 14262
+2022-04-25 20:33:40,088 "GET /static/css/main_inventory.css HTTP/1.1" 304 0
+2022-04-25 20:33:40,089 "GET /static/css/style.css HTTP/1.1" 304 0
+2022-04-25 20:33:40,138 Not Found: /Inventory/viewInventory/public/playground_assets/3d5cfec84e518bf6a39609681dc93bd7-400w.png
+2022-04-25 20:33:40,142 Not Found: /Inventory/viewInventory/public/playground_assets/4d7777708e58ea04be2ded716d9f9d61-500w.png
+2022-04-25 20:33:40,143 "GET /Inventory/viewInventory/public/playground_assets/3d5cfec84e518bf6a39609681dc93bd7-400w.png HTTP/1.1" 404 7249
+2022-04-25 20:33:40,146 Not Found: /media/images/hdts-200h.png
+2022-04-25 20:33:40,149 Not Found: /Inventory/viewInventory/b32df1dc-e88b-492f-bbac-32fd99bf0c29
+2022-04-25 20:33:40,150 "GET /Inventory/viewInventory/public/playground_assets/4d7777708e58ea04be2ded716d9f9d61-500w.png HTTP/1.1" 404 7249
+2022-04-25 20:33:40,150 "GET /media/images/hdts-200h.png HTTP/1.1" 404 5262
+2022-04-25 20:33:40,150 "GET /Inventory/viewInventory/b32df1dc-e88b-492f-bbac-32fd99bf0c29 HTTP/1.1" 404 7159
+2022-04-25 20:33:43,136 "GET /Inventory/viewInventory/ HTTP/1.1" 200 14262
+2022-04-25 20:33:43,180 "GET /static/css/main_inventory.css HTTP/1.1" 304 0
+2022-04-25 20:33:43,218 Not Found: /Inventory/viewInventory/public/playground_assets/4d7777708e58ea04be2ded716d9f9d61-500w.png
+2022-04-25 20:33:43,222 Not Found: /Inventory/viewInventory/b32df1dc-e88b-492f-bbac-32fd99bf0c29
+2022-04-25 20:33:43,227 Not Found: /Inventory/viewInventory/public/playground_assets/3d5cfec84e518bf6a39609681dc93bd7-400w.png
+2022-04-25 20:33:43,229 Not Found: /media/images/hdts-200h.png
+2022-04-25 20:33:43,230 "GET /Inventory/viewInventory/public/playground_assets/4d7777708e58ea04be2ded716d9f9d61-500w.png HTTP/1.1" 404 7249
+2022-04-25 20:33:43,231 "GET /Inventory/viewInventory/b32df1dc-e88b-492f-bbac-32fd99bf0c29 HTTP/1.1" 404 7159
+2022-04-25 20:33:43,231 "GET /media/images/hdts-200h.png HTTP/1.1" 404 5262
+2022-04-25 20:33:43,231 "GET /Inventory/viewInventory/public/playground_assets/3d5cfec84e518bf6a39609681dc93bd7-400w.png HTTP/1.1" 404 7249
+2022-04-25 20:35:43,247 D:\Documents\HARD DRIVES\HDTS\HDTS-Django\HDTS\settings.py changed, reloading.
+2022-04-25 20:35:44,292 Watching for file changes with StatReloader
+2022-04-25 20:37:09,501 "GET /Inventory/viewInventory/ HTTP/1.1" 200 14040
+2022-04-25 20:37:09,534 "GET /static/css/main_inventory.css HTTP/1.1" 304 0
+2022-04-25 20:37:09,547 "GET /static/css/style.css HTTP/1.1" 304 0
+2022-04-25 20:37:09,605 Not Found: /media/images/b32df1dc-e88b-492f-bbac-32fd99bf0c29
+2022-04-25 20:37:09,607 Not Found: /media/images/4d7777708e58ea04be2ded716d9f9d61-500w.png
+2022-04-25 20:37:09,608 "GET /media/images/b32df1dc-e88b-492f-bbac-32fd99bf0c29 HTTP/1.1" 404 5331
+2022-04-25 20:37:09,611 Not Found: /media/images/3d5cfec84e518bf6a39609681dc93bd7-400w.png
+2022-04-25 20:37:09,612 "GET /media/images/4d7777708e58ea04be2ded716d9f9d61-500w.png HTTP/1.1" 404 5346
+2022-04-25 20:37:09,615 Not Found: /media/images/hdts-200h.png
+2022-04-25 20:37:09,615 "GET /media/images/3d5cfec84e518bf6a39609681dc93bd7-400w.png HTTP/1.1" 404 5346
+2022-04-25 20:37:09,615 "GET /media/images/hdts-200h.png HTTP/1.1" 404 5262
+2022-04-25 20:37:14,457 "GET /static/css/main_inventory.css HTTP/1.1" 304 0
+2022-04-25 20:38:24,192 D:\Documents\HARD DRIVES\HDTS\HDTS-Django\HDTS\settings.py changed, reloading.
+2022-04-25 20:38:25,313 Watching for file changes with StatReloader
+2022-04-25 20:41:39,541 "GET /Inventory/viewInventory/ HTTP/1.1" 200 14051
+2022-04-25 20:41:39,580 "GET /static/css/style.css HTTP/1.1" 304 0
+2022-04-25 20:41:39,581 "GET /static/css/main_inventory.css HTTP/1.1" 304 0
+2022-04-25 20:41:39,645 Not Found: /media/images/b32df1dc-e88b-492f-bbac-32fd99bf0c29
+2022-04-25 20:41:39,648 Not Found: /Inventory/viewInventory/HDTS-Django/media/images/4d7777708e58ea04be2ded716d9f9d61-500w.png
+2022-04-25 20:41:39,651 Not Found: /media/images/hdts-200h.png
+2022-04-25 20:41:39,651 "GET /media/images/b32df1dc-e88b-492f-bbac-32fd99bf0c29 HTTP/1.1" 404 5331
+2022-04-25 20:41:39,654 Not Found: /media/images/3d5cfec84e518bf6a39609681dc93bd7-400w.png
+2022-04-25 20:41:39,654 "GET /Inventory/viewInventory/HDTS-Django/media/images/4d7777708e58ea04be2ded716d9f9d61-500w.png HTTP/1.1" 404 7249
+2022-04-25 20:41:39,655 "GET /media/images/hdts-200h.png HTTP/1.1" 404 5262
+2022-04-25 20:41:39,655 "GET /media/images/3d5cfec84e518bf6a39609681dc93bd7-400w.png HTTP/1.1" 404 5346
+2022-04-25 20:41:41,990 "GET /Inventory/viewInventory/ HTTP/1.1" 200 14051
+2022-04-25 20:41:42,032 "GET /static/css/main_inventory.css HTTP/1.1" 304 0
+2022-04-25 20:41:42,058 Not Found: /media/images/hdts-200h.png
+2022-04-25 20:41:42,067 Not Found: /Inventory/viewInventory/HDTS-Django/media/images/4d7777708e58ea04be2ded716d9f9d61-500w.png
+2022-04-25 20:41:42,068 "GET /media/images/hdts-200h.png HTTP/1.1" 404 5262
+2022-04-25 20:41:42,072 Not Found: /media/images/b32df1dc-e88b-492f-bbac-32fd99bf0c29
+2022-04-25 20:41:42,074 Not Found: /media/images/3d5cfec84e518bf6a39609681dc93bd7-400w.png
+2022-04-25 20:41:42,075 "GET /Inventory/viewInventory/HDTS-Django/media/images/4d7777708e58ea04be2ded716d9f9d61-500w.png HTTP/1.1" 404 7249
+2022-04-25 20:41:42,075 "GET /media/images/3d5cfec84e518bf6a39609681dc93bd7-400w.png HTTP/1.1" 404 5346
+2022-04-25 20:41:42,076 "GET /media/images/b32df1dc-e88b-492f-bbac-32fd99bf0c29 HTTP/1.1" 404 5331
+2022-04-25 20:41:59,379 "GET /Inventory/viewInventory/ HTTP/1.1" 200 14073
+2022-04-25 20:41:59,418 "GET /static/css/main_inventory.css HTTP/1.1" 304 0
+2022-04-25 20:41:59,480 Not Found: /Inventory/viewInventory/HDTS-Django/media/images/3d5cfec84e518bf6a39609681dc93bd7-400w.png
+2022-04-25 20:41:59,484 Not Found: /Inventory/viewInventory/HDTS-Django/media/images/b32df1dc-e88b-492f-bbac-32fd99bf0c29
+2022-04-25 20:41:59,488 Not Found: /Inventory/viewInventory/HDTS-Django/media/images/4d7777708e58ea04be2ded716d9f9d61-500w.png
+2022-04-25 20:41:59,492 Not Found: /media/images/hdts-200h.png
+2022-04-25 20:41:59,492 "GET /Inventory/viewInventory/HDTS-Django/media/images/3d5cfec84e518bf6a39609681dc93bd7-400w.png HTTP/1.1" 404 7249
+2022-04-25 20:41:59,493 "GET /Inventory/viewInventory/HDTS-Django/media/images/b32df1dc-e88b-492f-bbac-32fd99bf0c29 HTTP/1.1" 404 7234
+2022-04-25 20:41:59,493 "GET /Inventory/viewInventory/HDTS-Django/media/images/4d7777708e58ea04be2ded716d9f9d61-500w.png HTTP/1.1" 404 7249
+2022-04-25 20:41:59,493 "GET /media/images/hdts-200h.png HTTP/1.1" 404 5262
+2022-04-25 20:42:03,113 "GET /static/css/main_inventory.css HTTP/1.1" 304 0
+2022-04-25 20:44:35,204 D:\Documents\HARD DRIVES\HDTS\HDTS-Django\Inventory\urls.py changed, reloading.
+2022-04-25 20:44:36,211 Watching for file changes with StatReloader
+2022-04-25 20:44:39,797 "GET /Inventory/viewInventory/ HTTP/1.1" 200 14040
+2022-04-25 20:44:39,869 "GET /static/css/style.css HTTP/1.1" 304 0
+2022-04-25 20:44:39,881 "GET /static/css/main_inventory.css HTTP/1.1" 304 0
+2022-04-25 20:44:39,951 Not Found: /media/images/b32df1dc-e88b-492f-bbac-32fd99bf0c29
+2022-04-25 20:44:39,954 Not Found: /media/images/3d5cfec84e518bf6a39609681dc93bd7-400w.png
+2022-04-25 20:44:39,957 Not Found: /media/images/4d7777708e58ea04be2ded716d9f9d61-500w.png
+2022-04-25 20:44:39,957 "GET /media/images/b32df1dc-e88b-492f-bbac-32fd99bf0c29 HTTP/1.1" 404 5331
+2022-04-25 20:44:39,959 Not Found: /media/images/hdts-200h.png
+2022-04-25 20:44:39,960 "GET /media/images/3d5cfec84e518bf6a39609681dc93bd7-400w.png HTTP/1.1" 404 5346
+2022-04-25 20:44:39,960 "GET /media/images/4d7777708e58ea04be2ded716d9f9d61-500w.png HTTP/1.1" 404 5346
+2022-04-25 20:44:39,960 "GET /media/images/hdts-200h.png HTTP/1.1" 404 5262
+2022-04-25 20:44:41,994 "GET /Inventory/viewInventory/ HTTP/1.1" 200 14040
+2022-04-25 20:44:42,029 "GET /static/css/main_inventory.css HTTP/1.1" 304 0
+2022-04-25 20:44:42,071 Not Found: /media/images/3d5cfec84e518bf6a39609681dc93bd7-400w.png
+2022-04-25 20:44:42,074 Not Found: /media/images/4d7777708e58ea04be2ded716d9f9d61-500w.png
+2022-04-25 20:44:42,074 "GET /media/images/4d7777708e58ea04be2ded716d9f9d61-500w.png HTTP/1.1" 404 5346
+2022-04-25 20:44:42,076 Not Found: /media/images/hdts-200h.png
+2022-04-25 20:44:42,077 "GET /media/images/3d5cfec84e518bf6a39609681dc93bd7-400w.png HTTP/1.1" 404 5346
+2022-04-25 20:44:42,080 Not Found: /media/images/b32df1dc-e88b-492f-bbac-32fd99bf0c29
+2022-04-25 20:44:42,080 "GET /media/images/hdts-200h.png HTTP/1.1" 404 5262
+2022-04-25 20:44:42,081 "GET /media/images/b32df1dc-e88b-492f-bbac-32fd99bf0c29 HTTP/1.1" 404 5331
+2022-04-25 20:45:36,603 D:\Documents\HARD DRIVES\HDTS\HDTS-Django\Inventory\urls.py changed, reloading.
+2022-04-25 20:45:37,624 Watching for file changes with StatReloader
+2022-04-25 20:45:43,068 "GET /Inventory/viewInventory/ HTTP/1.1" 200 14040
+2022-04-25 20:45:43,102 "GET /static/css/main_inventory.css HTTP/1.1" 304 0
+2022-04-25 20:45:43,175 Not Found: /media/images/3d5cfec84e518bf6a39609681dc93bd7-400w.png
+2022-04-25 20:45:43,178 Not Found: /media/images/4d7777708e58ea04be2ded716d9f9d61-500w.png
+2022-04-25 20:45:43,178 "GET /media/images/3d5cfec84e518bf6a39609681dc93bd7-400w.png HTTP/1.1" 404 5346
+2022-04-25 20:45:43,180 Not Found: /media/images/hdts-200h.png
+2022-04-25 20:45:43,182 Not Found: /media/images/b32df1dc-e88b-492f-bbac-32fd99bf0c29
+2022-04-25 20:45:43,183 "GET /media/images/4d7777708e58ea04be2ded716d9f9d61-500w.png HTTP/1.1" 404 5346
+2022-04-25 20:45:43,183 "GET /media/images/hdts-200h.png HTTP/1.1" 404 5262
+2022-04-25 20:45:43,183 "GET /media/images/b32df1dc-e88b-492f-bbac-32fd99bf0c29 HTTP/1.1" 404 5331
+2022-04-25 20:45:45,499 "GET /Inventory/viewInventory/ HTTP/1.1" 200 14040
+2022-04-25 20:45:45,545 "GET /static/css/main_inventory.css HTTP/1.1" 304 0
+2022-04-25 20:45:45,569 Not Found: /media/images/hdts-200h.png
+2022-04-25 20:45:45,572 Not Found: /media/images/3d5cfec84e518bf6a39609681dc93bd7-400w.png
+2022-04-25 20:45:45,574 Not Found: /media/images/4d7777708e58ea04be2ded716d9f9d61-500w.png
+2022-04-25 20:45:45,577 Not Found: /media/images/b32df1dc-e88b-492f-bbac-32fd99bf0c29
+2022-04-25 20:45:45,577 "GET /media/images/hdts-200h.png HTTP/1.1" 404 5262
+2022-04-25 20:45:45,578 "GET /media/images/3d5cfec84e518bf6a39609681dc93bd7-400w.png HTTP/1.1" 404 5346
+2022-04-25 20:45:45,578 "GET /media/images/4d7777708e58ea04be2ded716d9f9d61-500w.png HTTP/1.1" 404 5346
+2022-04-25 20:45:45,578 "GET /media/images/b32df1dc-e88b-492f-bbac-32fd99bf0c29 HTTP/1.1" 404 5331
+2022-04-25 20:48:53,413 Watching for file changes with StatReloader
+2022-04-25 20:48:54,707 "GET /Inventory/viewInventory/ HTTP/1.1" 200 14040
+2022-04-25 20:48:54,782 "GET /static/css/style.css HTTP/1.1" 304 0
+2022-04-25 20:48:54,790 "GET /static/css/main_inventory.css HTTP/1.1" 304 0
+2022-04-25 20:48:54,979 Not Found: /media/images/3d5cfec84e518bf6a39609681dc93bd7-400w.png
+2022-04-25 20:48:54,982 Not Found: /media/images/b32df1dc-e88b-492f-bbac-32fd99bf0c29
+2022-04-25 20:48:54,983 "GET /media/images/3d5cfec84e518bf6a39609681dc93bd7-400w.png HTTP/1.1" 404 5346
+2022-04-25 20:48:54,985 Not Found: /media/images/4d7777708e58ea04be2ded716d9f9d61-500w.png
+2022-04-25 20:48:54,989 Not Found: /media/images/hdts-200h.png
+2022-04-25 20:48:54,990 "GET /media/images/b32df1dc-e88b-492f-bbac-32fd99bf0c29 HTTP/1.1" 404 5331
+2022-04-25 20:48:54,990 "GET /media/images/4d7777708e58ea04be2ded716d9f9d61-500w.png HTTP/1.1" 404 5346
+2022-04-25 20:48:54,991 "GET /media/images/hdts-200h.png HTTP/1.1" 404 5262
+2022-04-25 20:49:10,940 "GET /static/css/main_inventory.css HTTP/1.1" 304 0
+2022-04-25 20:49:47,305 "GET /Inventory/viewInventory/ HTTP/1.1" 200 14095
+2022-04-25 20:49:47,337 "GET /static/css/main_inventory.css HTTP/1.1" 304 0
+2022-04-25 20:49:47,399 Not Found: /media/images/hdts-200h.png
+2022-04-25 20:49:47,401 Not Found: /media/images/b32df1dc-e88b-492f-bbac-32fd99bf0c29
+2022-04-25 20:49:47,404 Not Found: /media/images/3d5cfec84e518bf6a39609681dc93bd7-400w.png
+2022-04-25 20:49:47,404 "GET /media/images/hdts-200h.png HTTP/1.1" 404 5262
+2022-04-25 20:49:47,404 "GET /media/images/b32df1dc-e88b-492f-bbac-32fd99bf0c29 HTTP/1.1" 404 5331
+2022-04-25 20:49:47,407 Not Found: /media/images/4d7777708e58ea04be2ded716d9f9d61-500w.png
+2022-04-25 20:49:47,408 "GET /media/images/3d5cfec84e518bf6a39609681dc93bd7-400w.png HTTP/1.1" 404 5346
+2022-04-25 20:49:47,408 "GET /media/images/4d7777708e58ea04be2ded716d9f9d61-500w.png HTTP/1.1" 404 5346
+2022-04-25 20:49:50,679 "GET /Inventory/viewInventory/ HTTP/1.1" 200 14095
+2022-04-25 20:49:50,710 "GET /static/css/main_inventory.css HTTP/1.1" 304 0
+2022-04-25 20:49:50,765 Not Found: /media/images/4d7777708e58ea04be2ded716d9f9d61-500w.png
+2022-04-25 20:49:50,775 Not Found: /media/images/3d5cfec84e518bf6a39609681dc93bd7-400w.png
+2022-04-25 20:49:50,777 "GET /media/images/4d7777708e58ea04be2ded716d9f9d61-500w.png HTTP/1.1" 404 5346
+2022-04-25 20:49:50,778 "GET /media/images/3d5cfec84e518bf6a39609681dc93bd7-400w.png HTTP/1.1" 404 5346
+2022-04-25 20:49:50,782 Not Found: /media/images/b32df1dc-e88b-492f-bbac-32fd99bf0c29
+2022-04-25 20:49:50,782 "GET /media/images/b32df1dc-e88b-492f-bbac-32fd99bf0c29 HTTP/1.1" 404 5331
+2022-04-25 20:49:50,788 Not Found: /media/images/hdts-200h.png
+2022-04-25 20:49:50,788 "GET /media/images/hdts-200h.png HTTP/1.1" 404 5262
+2022-04-25 20:49:58,110 Watching for file changes with StatReloader
+2022-04-25 20:50:02,802 "GET /Inventory/viewInventory/ HTTP/1.1" 200 14095
+2022-04-25 20:50:02,876 "GET /static/css/main_inventory.css HTTP/1.1" 304 0
+2022-04-25 20:50:02,980 Not Found: /media/images/3d5cfec84e518bf6a39609681dc93bd7-400w.png
+2022-04-25 20:50:02,982 Not Found: /media/images/hdts-200h.png
+2022-04-25 20:50:02,984 Not Found: /media/images/4d7777708e58ea04be2ded716d9f9d61-500w.png
+2022-04-25 20:50:02,985 "GET /media/images/3d5cfec84e518bf6a39609681dc93bd7-400w.png HTTP/1.1" 404 5346
+2022-04-25 20:50:02,988 Not Found: /media/images/b32df1dc-e88b-492f-bbac-32fd99bf0c29
+2022-04-25 20:50:02,988 "GET /media/images/hdts-200h.png HTTP/1.1" 404 5262
+2022-04-25 20:50:02,989 "GET /media/images/4d7777708e58ea04be2ded716d9f9d61-500w.png HTTP/1.1" 404 5346
+2022-04-25 20:50:02,989 "GET /media/images/b32df1dc-e88b-492f-bbac-32fd99bf0c29 HTTP/1.1" 404 5331
+2022-04-25 20:50:09,022 "GET /Inventory/viewInventory/ HTTP/1.1" 200 14095
+2022-04-25 20:50:09,060 "GET /static/css/main_inventory.css HTTP/1.1" 304 0
+2022-04-25 20:50:09,087 Not Found: /media/images/3d5cfec84e518bf6a39609681dc93bd7-400w.png
+2022-04-25 20:50:09,092 Not Found: /media/images/hdts-200h.png
+2022-04-25 20:50:09,096 Not Found: /media/images/b32df1dc-e88b-492f-bbac-32fd99bf0c29
+2022-04-25 20:50:09,098 Not Found: /media/images/4d7777708e58ea04be2ded716d9f9d61-500w.png
+2022-04-25 20:50:09,099 "GET /media/images/3d5cfec84e518bf6a39609681dc93bd7-400w.png HTTP/1.1" 404 5346
+2022-04-25 20:50:09,099 "GET /media/images/hdts-200h.png HTTP/1.1" 404 5262
+2022-04-25 20:50:09,099 "GET /media/images/4d7777708e58ea04be2ded716d9f9d61-500w.png HTTP/1.1" 404 5346
+2022-04-25 20:50:09,100 "GET /media/images/b32df1dc-e88b-492f-bbac-32fd99bf0c29 HTTP/1.1" 404 5331
+2022-04-25 20:50:30,965 "GET /static/css/main_inventory.css HTTP/1.1" 304 0
+2022-04-25 20:51:44,188 "GET /Inventory/viewInventory/ HTTP/1.1" 200 14077
+2022-04-25 20:51:44,221 "GET /static/css/main_inventory.css HTTP/1.1" 304 0
+2022-04-25 20:51:44,229 "GET /static/css/style.css HTTP/1.1" 304 0
+2022-04-25 20:51:44,281 Not Found: /media/images/hdts-200h.png
+2022-04-25 20:51:44,283 Not Found: /media/images/3d5cfec84e518bf6a39609681dc93bd7-400w.png
+2022-04-25 20:51:44,286 Not Found: /media/images/b32df1dc-e88b-492f-bbac-32fd99bf0c29
+2022-04-25 20:51:44,287 Not Found: /media/images/4d7777708e58ea04be2ded716d9f9d61-500w.png
+2022-04-25 20:51:44,288 "GET /media/images/hdts-200h.png HTTP/1.1" 404 5262
+2022-04-25 20:51:44,288 "GET /media/images/3d5cfec84e518bf6a39609681dc93bd7-400w.png HTTP/1.1" 404 5346
+2022-04-25 20:51:44,288 "GET /media/images/b32df1dc-e88b-492f-bbac-32fd99bf0c29 HTTP/1.1" 404 5331
+2022-04-25 20:51:44,289 "GET /media/images/4d7777708e58ea04be2ded716d9f9d61-500w.png HTTP/1.1" 404 5346
+2022-04-25 20:52:03,603 "GET /static/css/main_inventory.css HTTP/1.1" 304 0
+2022-04-25 20:52:23,415 "GET /Inventory/viewInventory/ HTTP/1.1" 200 14077
+2022-04-25 20:52:23,453 "GET /static/css/main_inventory.css HTTP/1.1" 304 0
+2022-04-25 20:52:23,503 Not Found: /media/images/hdts-200h.png
+2022-04-25 20:52:23,504 "GET /media/images/hdts-200h.png HTTP/1.1" 404 5262
+2022-04-25 20:52:23,506 Not Found: /media/images/3d5cfec84e518bf6a39609681dc93bd7-400w.png
+2022-04-25 20:52:23,509 Not Found: /media/images/4d7777708e58ea04be2ded716d9f9d61-500w.png
+2022-04-25 20:52:23,511 Not Found: /media/images/b32df1dc-e88b-492f-bbac-32fd99bf0c29
+2022-04-25 20:52:23,511 "GET /media/images/4d7777708e58ea04be2ded716d9f9d61-500w.png HTTP/1.1" 404 5346
+2022-04-25 20:52:23,511 "GET /media/images/3d5cfec84e518bf6a39609681dc93bd7-400w.png HTTP/1.1" 404 5346
+2022-04-25 20:52:23,512 "GET /media/images/b32df1dc-e88b-492f-bbac-32fd99bf0c29 HTTP/1.1" 404 5331
+2022-04-25 20:52:27,515 "GET /static/css/main_inventory.css HTTP/1.1" 304 0
+2022-04-25 20:54:03,395 "GET /Inventory/viewInventory/ HTTP/1.1" 200 14077
+2022-04-25 20:54:03,429 "GET /static/css/main_inventory.css HTTP/1.1" 304 0
+2022-04-25 20:54:03,489 Not Found: /media/images/b32df1dc-e88b-492f-bbac-32fd99bf0c29
+2022-04-25 20:54:03,491 Not Found: /media/images/4d7777708e58ea04be2ded716d9f9d61-500w.png
+2022-04-25 20:54:03,493 Not Found: /media/images/hdts-200h.png
+2022-04-25 20:54:03,496 Not Found: /media/images/3d5cfec84e518bf6a39609681dc93bd7-400w.png
+2022-04-25 20:54:03,497 "GET /media/images/b32df1dc-e88b-492f-bbac-32fd99bf0c29 HTTP/1.1" 404 5331
+2022-04-25 20:54:03,497 "GET /media/images/4d7777708e58ea04be2ded716d9f9d61-500w.png HTTP/1.1" 404 5346
+2022-04-25 20:54:03,497 "GET /media/images/hdts-200h.png HTTP/1.1" 404 5262
+2022-04-25 20:54:03,498 "GET /media/images/3d5cfec84e518bf6a39609681dc93bd7-400w.png HTTP/1.1" 404 5346
+2022-04-25 20:55:50,723 "GET /Inventory/viewInventory/ HTTP/1.1" 200 13860
+2022-04-25 20:55:50,791 "GET /static/css/main_inventory.css HTTP/1.1" 304 0
+2022-04-25 20:55:50,794 "GET /static/css/style.css HTTP/1.1" 304 0
+2022-04-25 20:55:50,928 Not Found: /media/images/3d5cfec84e518bf6a39609681dc93bd7-400w.png
+2022-04-25 20:55:50,930 Not Found: /media/images/b32df1dc-e88b-492f-bbac-32fd99bf0c29
+2022-04-25 20:55:50,932 Not Found: /media/images/hdts-200h.png
+2022-04-25 20:55:50,934 Not Found: /media/images/4d7777708e58ea04be2ded716d9f9d61-500w.png
+2022-04-25 20:55:50,935 "GET /media/images/3d5cfec84e518bf6a39609681dc93bd7-400w.png HTTP/1.1" 404 5346
+2022-04-25 20:55:50,935 "GET /media/images/hdts-200h.png HTTP/1.1" 404 5262
+2022-04-25 20:55:50,936 "GET /media/images/b32df1dc-e88b-492f-bbac-32fd99bf0c29 HTTP/1.1" 404 5331
+2022-04-25 20:55:50,936 "GET /media/images/4d7777708e58ea04be2ded716d9f9d61-500w.png HTTP/1.1" 404 5346
+2022-04-25 20:55:56,982 Watching for file changes with StatReloader
+2022-04-25 20:55:58,793 "GET /Inventory/viewInventory/ HTTP/1.1" 200 13860
+2022-04-25 20:55:58,888 "GET /static/css/main_inventory.css HTTP/1.1" 304 0
+2022-04-25 20:55:58,963 Not Found: /media/images/3d5cfec84e518bf6a39609681dc93bd7-400w.png
+2022-04-25 20:55:58,966 Not Found: /media/images/hdts-200h.png
+2022-04-25 20:55:58,969 Not Found: /media/images/4d7777708e58ea04be2ded716d9f9d61-500w.png
+2022-04-25 20:55:58,970 "GET /media/images/3d5cfec84e518bf6a39609681dc93bd7-400w.png HTTP/1.1" 404 5346
+2022-04-25 20:55:58,972 Not Found: /media/images/b32df1dc-e88b-492f-bbac-32fd99bf0c29
+2022-04-25 20:55:58,972 "GET /media/images/hdts-200h.png HTTP/1.1" 404 5262
+2022-04-25 20:55:58,972 "GET /media/images/4d7777708e58ea04be2ded716d9f9d61-500w.png HTTP/1.1" 404 5346
+2022-04-25 20:55:58,973 "GET /media/images/b32df1dc-e88b-492f-bbac-32fd99bf0c29 HTTP/1.1" 404 5331
+2022-04-25 20:56:00,553 "GET /Inventory/viewInventory/ HTTP/1.1" 200 13860
+2022-04-25 20:56:00,597 "GET /static/css/main_inventory.css HTTP/1.1" 304 0
+2022-04-25 20:56:00,615 Not Found: /media/images/3d5cfec84e518bf6a39609681dc93bd7-400w.png
+2022-04-25 20:56:00,618 Not Found: /media/images/b32df1dc-e88b-492f-bbac-32fd99bf0c29
+2022-04-25 20:56:00,621 Not Found: /media/images/hdts-200h.png
+2022-04-25 20:56:00,623 Not Found: /media/images/4d7777708e58ea04be2ded716d9f9d61-500w.png
+2022-04-25 20:56:00,624 "GET /media/images/b32df1dc-e88b-492f-bbac-32fd99bf0c29 HTTP/1.1" 404 5331
+2022-04-25 20:56:00,624 "GET /media/images/4d7777708e58ea04be2ded716d9f9d61-500w.png HTTP/1.1" 404 5346
+2022-04-25 20:56:00,624 "GET /media/images/hdts-200h.png HTTP/1.1" 404 5262
+2022-04-25 20:56:00,624 "GET /media/images/3d5cfec84e518bf6a39609681dc93bd7-400w.png HTTP/1.1" 404 5346
+2022-04-25 20:56:26,395 Not Found: /Inventory/viewInventory/pending_request.html
+2022-04-25 20:56:26,396 "GET /Inventory/viewInventory/pending_request.html HTTP/1.1" 404 7111
+2022-04-25 20:57:05,315 Not Found: /Inventory/viewInventory/index.html
+2022-04-25 20:57:05,316 "GET /Inventory/viewInventory/index.html HTTP/1.1" 404 7081
+2022-04-25 20:58:30,759 "GET /Inventory/viewInventory/ HTTP/1.1" 200 13860
+2022-04-25 20:58:30,833 "GET /static/css/main_inventory.css HTTP/1.1" 304 0
+2022-04-25 20:58:30,964 Not Found: /media/images/hdts-200h.png
+2022-04-25 20:58:30,966 Not Found: /media/images/4d7777708e58ea04be2ded716d9f9d61-500w.png
+2022-04-25 20:58:30,968 Not Found: /media/images/3d5cfec84e518bf6a39609681dc93bd7-400w.png
+2022-04-25 20:58:30,968 "GET /media/images/hdts-200h.png HTTP/1.1" 404 5262
+2022-04-25 20:58:30,971 Not Found: /media/images/b32df1dc-e88b-492f-bbac-32fd99bf0c29
+2022-04-25 20:58:30,971 "GET /media/images/4d7777708e58ea04be2ded716d9f9d61-500w.png HTTP/1.1" 404 5346
+2022-04-25 20:58:30,972 "GET /media/images/3d5cfec84e518bf6a39609681dc93bd7-400w.png HTTP/1.1" 404 5346
+2022-04-25 20:58:30,972 "GET /media/images/b32df1dc-e88b-492f-bbac-32fd99bf0c29 HTTP/1.1" 404 5331
+2022-04-25 20:58:39,299 Not Found: /Inventory/viewInventory/main_inventory.html
+2022-04-25 20:58:39,300 "GET /Inventory/viewInventory/main_inventory.html HTTP/1.1" 404 7108
+2022-04-25 20:58:45,640 "GET /static/css/main_inventory.css HTTP/1.1" 304 0
+2022-04-25 20:58:45,668 Not Found: /media/images/3d5cfec84e518bf6a39609681dc93bd7-400w.png
+2022-04-25 20:58:45,670 Not Found: /media/images/hdts-200h.png
+2022-04-25 20:58:45,672 Not Found: /media/images/b32df1dc-e88b-492f-bbac-32fd99bf0c29
+2022-04-25 20:58:45,674 Not Found: /media/images/4d7777708e58ea04be2ded716d9f9d61-500w.png
+2022-04-25 20:58:45,675 "GET /media/images/3d5cfec84e518bf6a39609681dc93bd7-400w.png HTTP/1.1" 404 5346
+2022-04-25 20:58:45,675 "GET /media/images/hdts-200h.png HTTP/1.1" 404 5262
+2022-04-25 20:58:45,676 "GET /media/images/b32df1dc-e88b-492f-bbac-32fd99bf0c29 HTTP/1.1" 404 5331
+2022-04-25 20:58:45,676 "GET /media/images/4d7777708e58ea04be2ded716d9f9d61-500w.png HTTP/1.1" 404 5346
+2022-04-25 20:59:07,002 "GET /Inventory/viewInventory/ HTTP/1.1" 200 13860
+2022-04-25 20:59:07,035 "GET /static/css/main_inventory.css HTTP/1.1" 304 0
+2022-04-25 20:59:07,036 "GET /static/css/style.css HTTP/1.1" 304 0
+2022-04-25 20:59:07,096 Not Found: /media/images/hdts-200h.png
+2022-04-25 20:59:07,099 Not Found: /media/images/3d5cfec84e518bf6a39609681dc93bd7-400w.png
+2022-04-25 20:59:07,102 Not Found: /media/images/b32df1dc-e88b-492f-bbac-32fd99bf0c29
+2022-04-25 20:59:07,105 Not Found: /media/images/4d7777708e58ea04be2ded716d9f9d61-500w.png
+2022-04-25 20:59:07,105 "GET /media/images/hdts-200h.png HTTP/1.1" 404 5262
+2022-04-25 20:59:07,106 "GET /media/images/b32df1dc-e88b-492f-bbac-32fd99bf0c29 HTTP/1.1" 404 5331
+2022-04-25 20:59:07,106 "GET /media/images/3d5cfec84e518bf6a39609681dc93bd7-400w.png HTTP/1.1" 404 5346
+2022-04-25 20:59:07,107 "GET /media/images/4d7777708e58ea04be2ded716d9f9d61-500w.png HTTP/1.1" 404 5346
+2022-04-25 20:59:10,766 "GET /Inventory/viewInventory/ HTTP/1.1" 200 13860
+2022-04-25 20:59:10,820 "GET /static/css/main_inventory.css HTTP/1.1" 304 0
+2022-04-25 20:59:10,953 Not Found: /media/images/hdts-200h.png
+2022-04-25 20:59:10,955 Not Found: /media/images/3d5cfec84e518bf6a39609681dc93bd7-400w.png
+2022-04-25 20:59:10,957 Not Found: /media/images/b32df1dc-e88b-492f-bbac-32fd99bf0c29
+2022-04-25 20:59:10,960 Not Found: /media/images/4d7777708e58ea04be2ded716d9f9d61-500w.png
+2022-04-25 20:59:10,960 "GET /media/images/hdts-200h.png HTTP/1.1" 404 5262
+2022-04-25 20:59:10,961 "GET /media/images/3d5cfec84e518bf6a39609681dc93bd7-400w.png HTTP/1.1" 404 5346
+2022-04-25 20:59:10,961 "GET /media/images/b32df1dc-e88b-492f-bbac-32fd99bf0c29 HTTP/1.1" 404 5331
+2022-04-25 20:59:10,961 "GET /media/images/4d7777708e58ea04be2ded716d9f9d61-500w.png HTTP/1.1" 404 5346
+2022-04-25 21:00:55,535 "GET /Inventory/viewInventory/ HTTP/1.1" 200 13860
+2022-04-25 21:00:55,573 "GET /static/css/main_inventory.css HTTP/1.1" 304 0
+2022-04-25 21:00:55,638 Not Found: /media/images/4d7777708e58ea04be2ded716d9f9d61-500w.png
+2022-04-25 21:00:55,640 Not Found: /media/images/3d5cfec84e518bf6a39609681dc93bd7-400w.png
+2022-04-25 21:00:55,643 Not Found: /media/images/b32df1dc-e88b-492f-bbac-32fd99bf0c29
+2022-04-25 21:00:55,646 Not Found: /media/images/hdts-200h.png
+2022-04-25 21:00:55,646 "GET /media/images/4d7777708e58ea04be2ded716d9f9d61-500w.png HTTP/1.1" 404 5346
+2022-04-25 21:00:55,647 "GET /media/images/3d5cfec84e518bf6a39609681dc93bd7-400w.png HTTP/1.1" 404 5346
+2022-04-25 21:00:55,647 "GET /media/images/hdts-200h.png HTTP/1.1" 404 5262
+2022-04-25 21:00:55,648 "GET /media/images/b32df1dc-e88b-492f-bbac-32fd99bf0c29 HTTP/1.1" 404 5331
+2022-04-25 21:01:01,295 "GET /Inventory/viewInventory/ HTTP/1.1" 200 13860
+2022-04-25 21:01:01,325 "GET /static/css/main_inventory.css HTTP/1.1" 304 0
+2022-04-25 21:01:01,358 Not Found: /media/images/b32df1dc-e88b-492f-bbac-32fd99bf0c29
+2022-04-25 21:01:01,360 Not Found: /media/images/3d5cfec84e518bf6a39609681dc93bd7-400w.png
+2022-04-25 21:01:01,362 Not Found: /media/images/hdts-200h.png
+2022-04-25 21:01:01,363 "GET /media/images/b32df1dc-e88b-492f-bbac-32fd99bf0c29 HTTP/1.1" 404 5331
+2022-04-25 21:01:01,363 "GET /media/images/3d5cfec84e518bf6a39609681dc93bd7-400w.png HTTP/1.1" 404 5346
+2022-04-25 21:01:01,365 Not Found: /media/images/4d7777708e58ea04be2ded716d9f9d61-500w.png
+2022-04-25 21:01:01,366 "GET /media/images/hdts-200h.png HTTP/1.1" 404 5262
+2022-04-25 21:01:01,366 "GET /media/images/4d7777708e58ea04be2ded716d9f9d61-500w.png HTTP/1.1" 404 5346
+2022-04-25 21:01:04,240 "GET /static/css/main_inventory.css HTTP/1.1" 304 0
+2022-04-25 21:03:09,945 Internal Server Error: /Inventory/viewInventory/
+Traceback (most recent call last):
+  File "C:\Users\Tony\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Tony\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Tony\AppData\Local\Programs\Python\Python39\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "D:\Documents\HARD DRIVES\HDTS\HDTS-Django\Inventory\views.py", line 69, in viewInventory
+    return render(request, 'Inventory/main_inventory.html',{'harddrive':harddrive})
+  File "C:\Users\Tony\AppData\Local\Programs\Python\Python39\lib\site-packages\django\shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\Tony\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\Tony\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "C:\Users\Tony\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\Tony\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\engine.py", line 163, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\Tony\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\engine.py", line 145, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\Tony\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loaders\base.py", line 29, in get_template
+    return Template(
+  File "C:\Users\Tony\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 155, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\Tony\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 199, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\Tony\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 508, in parse
+    raise self.error(token, e)
+  File "C:\Users\Tony\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 506, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Tony\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader_tags.py", line 218, in do_block
+    raise TemplateSyntaxError("'%s' tag with name '%s' appears more than once" % (bits[0], block_name))
+django.template.exceptions.TemplateSyntaxError: 'block' tag with name 'content' appears more than once
+2022-04-25 21:03:09,949 "GET /Inventory/viewInventory/ HTTP/1.1" 500 150896
+2022-04-25 21:03:23,432 "GET /Inventory/viewInventory/ HTTP/1.1" 200 13877
+2022-04-25 21:03:23,482 "GET /static/css/style.css HTTP/1.1" 304 0
+2022-04-25 21:03:23,483 "GET /static/css/main_inventory.css HTTP/1.1" 304 0
+2022-04-25 21:03:23,547 Not Found: /media/images/b32df1dc-e88b-492f-bbac-32fd99bf0c29
+2022-04-25 21:03:23,549 Not Found: /media/images/hdts-200h.png
+2022-04-25 21:03:23,551 Not Found: /media/images/4d7777708e58ea04be2ded716d9f9d61-500w.png
+2022-04-25 21:03:23,553 Not Found: /media/images/3d5cfec84e518bf6a39609681dc93bd7-400w.png
+2022-04-25 21:03:23,554 "GET /media/images/b32df1dc-e88b-492f-bbac-32fd99bf0c29 HTTP/1.1" 404 5331
+2022-04-25 21:03:23,554 "GET /media/images/hdts-200h.png HTTP/1.1" 404 5262
+2022-04-25 21:03:23,555 "GET /media/images/4d7777708e58ea04be2ded716d9f9d61-500w.png HTTP/1.1" 404 5346
+2022-04-25 21:03:23,555 "GET /media/images/3d5cfec84e518bf6a39609681dc93bd7-400w.png HTTP/1.1" 404 5346
+2022-04-25 21:04:00,093 D:\Documents\HARD DRIVES\HDTS\HDTS-Django\Inventory\views.py changed, reloading.
+2022-04-25 21:04:01,099 Watching for file changes with StatReloader
+2022-04-25 21:04:28,527 "GET /Inventory/viewInventory/ HTTP/1.1" 200 34633
+2022-04-25 21:04:28,601 "GET /static/HDTS/style.css HTTP/1.1" 404 1801
+2022-04-25 21:06:42,894 "GET /Inventory/viewInventory/ HTTP/1.1" 200 34633
+2022-04-25 21:06:42,943 "GET /static/HDTS/style.css HTTP/1.1" 404 1801
+2022-04-25 21:06:59,229 "GET /Inventory/viewInventory/ HTTP/1.1" 200 45125
+2022-04-25 21:06:59,270 "GET /static/css/main_inventory.css HTTP/1.1" 304 0
+2022-04-25 21:06:59,418 Not Found: /media/images/hdts-200h.png
+2022-04-25 21:06:59,420 Not Found: /media/images/3d5cfec84e518bf6a39609681dc93bd7-400w.png
+2022-04-25 21:06:59,423 Not Found: /media/images/b32df1dc-e88b-492f-bbac-32fd99bf0c29
+2022-04-25 21:06:59,423 "GET /media/images/hdts-200h.png HTTP/1.1" 404 5262
+2022-04-25 21:06:59,424 "GET /media/images/3d5cfec84e518bf6a39609681dc93bd7-400w.png HTTP/1.1" 404 5346
+2022-04-25 21:06:59,424 "GET /media/images/b32df1dc-e88b-492f-bbac-32fd99bf0c29 HTTP/1.1" 404 5331
+2022-04-25 21:06:59,428 Not Found: /media/images/4d7777708e58ea04be2ded716d9f9d61-500w.png
+2022-04-25 21:06:59,429 "GET /media/images/4d7777708e58ea04be2ded716d9f9d61-500w.png HTTP/1.1" 404 5346
+2022-04-25 21:07:19,942 "GET /Inventory/viewInventory/ HTTP/1.1" 200 45091
+2022-04-25 21:07:19,987 "GET /static/css/style.css HTTP/1.1" 304 0
+2022-04-25 21:07:19,988 "GET /static/css/main_inventory.css HTTP/1.1" 304 0
+2022-04-25 21:07:20,083 Not Found: /media/images/hdts-200h.png
+2022-04-25 21:07:20,086 Not Found: /media/images/3d5cfec84e518bf6a39609681dc93bd7-400w.png
+2022-04-25 21:07:20,088 Not Found: /media/images/4d7777708e58ea04be2ded716d9f9d61-500w.png
+2022-04-25 21:07:20,091 Not Found: /media/images/b32df1dc-e88b-492f-bbac-32fd99bf0c29
+2022-04-25 21:07:20,091 "GET /media/images/hdts-200h.png HTTP/1.1" 404 5262
+2022-04-25 21:07:20,091 "GET /media/images/3d5cfec84e518bf6a39609681dc93bd7-400w.png HTTP/1.1" 404 5346
+2022-04-25 21:07:20,092 "GET /media/images/4d7777708e58ea04be2ded716d9f9d61-500w.png HTTP/1.1" 404 5346
+2022-04-25 21:07:20,092 "GET /media/images/b32df1dc-e88b-492f-bbac-32fd99bf0c29 HTTP/1.1" 404 5331
+2022-04-25 21:09:31,034 "GET /Inventory/viewInventory/ HTTP/1.1" 200 45109
+2022-04-25 21:09:31,070 "GET /static/css/main_inventory.css HTTP/1.1" 304 0
+2022-04-25 21:09:31,186 Not Found: /media/images/hdts-200h.png
+2022-04-25 21:09:31,188 Not Found: /media/images/3d5cfec84e518bf6a39609681dc93bd7-400w.png
+2022-04-25 21:09:31,190 Not Found: /media/images/b32df1dc-e88b-492f-bbac-32fd99bf0c29
+2022-04-25 21:09:31,192 Not Found: /media/images/4d7777708e58ea04be2ded716d9f9d61-500w.png
+2022-04-25 21:09:31,193 "GET /media/images/hdts-200h.png HTTP/1.1" 404 5262
+2022-04-25 21:09:31,193 "GET /media/images/3d5cfec84e518bf6a39609681dc93bd7-400w.png HTTP/1.1" 404 5346
+2022-04-25 21:09:31,194 "GET /media/images/b32df1dc-e88b-492f-bbac-32fd99bf0c29 HTTP/1.1" 404 5331
+2022-04-25 21:09:31,194 "GET /media/images/4d7777708e58ea04be2ded716d9f9d61-500w.png HTTP/1.1" 404 5346
+2022-04-25 21:11:48,063 "GET /Inventory/viewInventory/ HTTP/1.1" 200 45489
+2022-04-25 21:11:48,103 "GET /static/css/main_inventory.css HTTP/1.1" 304 0
+2022-04-25 21:11:48,111 "GET /static/css/style.css HTTP/1.1" 304 0
+2022-04-25 21:11:48,229 Not Found: /media/images/hdts-200h.png
+2022-04-25 21:11:48,231 Not Found: /media/images/4d7777708e58ea04be2ded716d9f9d61-500w.png
+2022-04-25 21:11:48,233 Not Found: /media/images/3d5cfec84e518bf6a39609681dc93bd7-400w.png
+2022-04-25 21:11:48,235 Not Found: /media/images/b32df1dc-e88b-492f-bbac-32fd99bf0c29
+2022-04-25 21:11:48,236 "GET /media/images/hdts-200h.png HTTP/1.1" 404 5262
+2022-04-25 21:11:48,236 "GET /media/images/4d7777708e58ea04be2ded716d9f9d61-500w.png HTTP/1.1" 404 5346
+2022-04-25 21:11:48,237 "GET /media/images/3d5cfec84e518bf6a39609681dc93bd7-400w.png HTTP/1.1" 404 5346
+2022-04-25 21:11:48,238 "GET /media/images/b32df1dc-e88b-492f-bbac-32fd99bf0c29 HTTP/1.1" 404 5331
+2022-04-25 21:12:10,863 "GET /Inventory/viewInventory/ HTTP/1.1" 200 45386
+2022-04-25 21:12:10,931 "GET /static/css/main_inventory.css HTTP/1.1" 304 0
+2022-04-25 21:12:11,055 Not Found: /media/images/3d5cfec84e518bf6a39609681dc93bd7-400w.png
+2022-04-25 21:12:11,059 Not Found: /media/images/b32df1dc-e88b-492f-bbac-32fd99bf0c29
+2022-04-25 21:12:11,063 Not Found: /media/images/hdts-200h.png
+2022-04-25 21:12:11,065 Not Found: /media/images/4d7777708e58ea04be2ded716d9f9d61-500w.png
+2022-04-25 21:12:11,066 "GET /media/images/3d5cfec84e518bf6a39609681dc93bd7-400w.png HTTP/1.1" 404 5346
+2022-04-25 21:12:11,066 "GET /media/images/b32df1dc-e88b-492f-bbac-32fd99bf0c29 HTTP/1.1" 404 5331
+2022-04-25 21:12:11,066 "GET /media/images/hdts-200h.png HTTP/1.1" 404 5262
+2022-04-25 21:12:11,067 "GET /media/images/4d7777708e58ea04be2ded716d9f9d61-500w.png HTTP/1.1" 404 5346
+2022-04-25 21:13:02,927 "GET /Inventory/viewInventory/ HTTP/1.1" 200 45391
+2022-04-25 21:13:02,966 "GET /static/css/main_inventory.css HTTP/1.1" 304 0
+2022-04-25 21:13:03,064 Not Found: /media/images/hdts-200h.png
+2022-04-25 21:13:03,067 Not Found: /media/images/b32df1dc-e88b-492f-bbac-32fd99bf0c29
+2022-04-25 21:13:03,069 Not Found: /media/images/3d5cfec84e518bf6a39609681dc93bd7-400w.png
+2022-04-25 21:13:03,071 Not Found: /media/images/4d7777708e58ea04be2ded716d9f9d61-500w.png
+2022-04-25 21:13:03,071 "GET /media/images/hdts-200h.png HTTP/1.1" 404 5262
+2022-04-25 21:13:03,071 "GET /media/images/b32df1dc-e88b-492f-bbac-32fd99bf0c29 HTTP/1.1" 404 5331
+2022-04-25 21:13:03,071 "GET /media/images/3d5cfec84e518bf6a39609681dc93bd7-400w.png HTTP/1.1" 404 5346
+2022-04-25 21:13:03,072 "GET /media/images/4d7777708e58ea04be2ded716d9f9d61-500w.png HTTP/1.1" 404 5346
+2022-04-25 21:14:04,060 "GET /Inventory/viewInventory/ HTTP/1.1" 200 45391
+2022-04-25 21:14:04,107 "GET /static/css/main_inventory.css HTTP/1.1" 304 0
+2022-04-25 21:14:04,216 Not Found: /media/images/hdts-200h.png
+2022-04-25 21:14:04,219 Not Found: /media/images/b32df1dc-e88b-492f-bbac-32fd99bf0c29
+2022-04-25 21:14:04,221 Not Found: /media/images/4d7777708e58ea04be2ded716d9f9d61-500w.png
+2022-04-25 21:14:04,223 Not Found: /media/images/3d5cfec84e518bf6a39609681dc93bd7-400w.png
+2022-04-25 21:14:04,224 "GET /media/images/hdts-200h.png HTTP/1.1" 404 5262
+2022-04-25 21:14:04,224 "GET /media/images/b32df1dc-e88b-492f-bbac-32fd99bf0c29 HTTP/1.1" 404 5331
+2022-04-25 21:14:04,225 "GET /media/images/4d7777708e58ea04be2ded716d9f9d61-500w.png HTTP/1.1" 404 5346
+2022-04-25 21:14:04,225 "GET /media/images/3d5cfec84e518bf6a39609681dc93bd7-400w.png HTTP/1.1" 404 5346
+2022-04-25 21:15:31,812 "GET /Inventory/viewInventory/ HTTP/1.1" 200 45415
+2022-04-25 21:15:31,892 "GET /static/css/main_inventory.css HTTP/1.1" 304 0
+2022-04-25 21:15:32,047 Not Found: /media/images/hdts-200h.png
+2022-04-25 21:15:32,049 Not Found: /media/images/3d5cfec84e518bf6a39609681dc93bd7-400w.png
+2022-04-25 21:15:32,051 Not Found: /media/images/b32df1dc-e88b-492f-bbac-32fd99bf0c29
+2022-04-25 21:15:32,054 Not Found: /media/images/4d7777708e58ea04be2ded716d9f9d61-500w.png
+2022-04-25 21:15:32,054 "GET /media/images/hdts-200h.png HTTP/1.1" 404 5262
+2022-04-25 21:15:32,055 "GET /media/images/3d5cfec84e518bf6a39609681dc93bd7-400w.png HTTP/1.1" 404 5346
+2022-04-25 21:15:32,055 "GET /media/images/b32df1dc-e88b-492f-bbac-32fd99bf0c29 HTTP/1.1" 404 5331
+2022-04-25 21:15:32,056 "GET /media/images/4d7777708e58ea04be2ded716d9f9d61-500w.png HTTP/1.1" 404 5346
+2022-04-25 21:15:34,968 "GET /Inventory/viewInventory/ HTTP/1.1" 200 45415
+2022-04-25 21:15:35,006 "GET /static/css/main_inventory.css HTTP/1.1" 304 0
+2022-04-25 21:15:35,085 Not Found: /media/images/b32df1dc-e88b-492f-bbac-32fd99bf0c29
+2022-04-25 21:15:35,088 Not Found: /media/images/hdts-200h.png
+2022-04-25 21:15:35,090 Not Found: /media/images/4d7777708e58ea04be2ded716d9f9d61-500w.png
+2022-04-25 21:15:35,093 Not Found: /media/images/3d5cfec84e518bf6a39609681dc93bd7-400w.png
+2022-04-25 21:15:35,093 "GET /media/images/b32df1dc-e88b-492f-bbac-32fd99bf0c29 HTTP/1.1" 404 5331
+2022-04-25 21:15:35,094 "GET /media/images/hdts-200h.png HTTP/1.1" 404 5262
+2022-04-25 21:15:35,094 "GET /media/images/4d7777708e58ea04be2ded716d9f9d61-500w.png HTTP/1.1" 404 5346
+2022-04-25 21:15:35,094 "GET /media/images/3d5cfec84e518bf6a39609681dc93bd7-400w.png HTTP/1.1" 404 5346
+2022-04-25 21:17:07,935 "GET /Inventory/viewInventory/ HTTP/1.1" 200 45415
+2022-04-25 21:17:07,968 "GET /static/css/style.css HTTP/1.1" 304 0
+2022-04-25 21:17:07,968 "GET /static/css/main_inventory.css HTTP/1.1" 304 0
+2022-04-25 21:17:08,068 Not Found: /media/images/3d5cfec84e518bf6a39609681dc93bd7-400w.png
+2022-04-25 21:17:08,072 Not Found: /media/images/4d7777708e58ea04be2ded716d9f9d61-500w.png
+2022-04-25 21:17:08,075 Not Found: /media/images/hdts-200h.png
+2022-04-25 21:17:08,077 Not Found: /media/images/b32df1dc-e88b-492f-bbac-32fd99bf0c29
+2022-04-25 21:17:08,078 "GET /media/images/3d5cfec84e518bf6a39609681dc93bd7-400w.png HTTP/1.1" 404 5346
+2022-04-25 21:17:08,078 "GET /media/images/4d7777708e58ea04be2ded716d9f9d61-500w.png HTTP/1.1" 404 5346
+2022-04-25 21:17:08,078 "GET /media/images/hdts-200h.png HTTP/1.1" 404 5262
+2022-04-25 21:17:08,079 "GET /media/images/b32df1dc-e88b-492f-bbac-32fd99bf0c29 HTTP/1.1" 404 5331
+2022-04-25 21:18:33,241 "GET /Inventory/viewInventory/ HTTP/1.1" 200 45415
+2022-04-25 21:18:33,283 "GET /static/css/main_inventory.css HTTP/1.1" 304 0
+2022-04-25 21:18:33,410 Not Found: /media/images/hdts-200h.png
+2022-04-25 21:18:33,412 Not Found: /media/images/b32df1dc-e88b-492f-bbac-32fd99bf0c29
+2022-04-25 21:18:33,414 Not Found: /media/images/3d5cfec84e518bf6a39609681dc93bd7-400w.png
+2022-04-25 21:18:33,418 Not Found: /media/images/4d7777708e58ea04be2ded716d9f9d61-500w.png
+2022-04-25 21:18:33,419 "GET /media/images/b32df1dc-e88b-492f-bbac-32fd99bf0c29 HTTP/1.1" 404 5331
+2022-04-25 21:18:33,419 "GET /media/images/hdts-200h.png HTTP/1.1" 404 5262
+2022-04-25 21:18:33,419 "GET /media/images/3d5cfec84e518bf6a39609681dc93bd7-400w.png HTTP/1.1" 404 5346
+2022-04-25 21:18:33,420 "GET /media/images/4d7777708e58ea04be2ded716d9f9d61-500w.png HTTP/1.1" 404 5346
+2022-04-25 21:18:57,379 Watching for file changes with StatReloader
+2022-04-25 21:18:59,085 "GET /Inventory/viewInventory/ HTTP/1.1" 200 45415
+2022-04-25 21:18:59,131 "GET /static/css/main_inventory.css HTTP/1.1" 304 0
+2022-04-25 21:18:59,268 Not Found: /media/images/3d5cfec84e518bf6a39609681dc93bd7-400w.png
+2022-04-25 21:18:59,271 Not Found: /media/images/hdts-200h.png
+2022-04-25 21:18:59,273 Not Found: /media/images/4d7777708e58ea04be2ded716d9f9d61-500w.png
+2022-04-25 21:18:59,274 "GET /media/images/3d5cfec84e518bf6a39609681dc93bd7-400w.png HTTP/1.1" 404 5346
+2022-04-25 21:18:59,274 "GET /media/images/hdts-200h.png HTTP/1.1" 404 5262
+2022-04-25 21:18:59,274 "GET /media/images/4d7777708e58ea04be2ded716d9f9d61-500w.png HTTP/1.1" 404 5346
+2022-04-25 21:18:59,277 Not Found: /media/images/b32df1dc-e88b-492f-bbac-32fd99bf0c29
+2022-04-25 21:18:59,278 "GET /media/images/b32df1dc-e88b-492f-bbac-32fd99bf0c29 HTTP/1.1" 404 5331
+2022-04-25 21:19:35,083 "GET /Inventory/viewInventory/ HTTP/1.1" 200 45415
+2022-04-25 21:19:35,146 "GET /static/css/main_inventory.css HTTP/1.1" 304 0
+2022-04-25 21:19:35,272 Not Found: /media/images/4d7777708e58ea04be2ded716d9f9d61-500w.png
+2022-04-25 21:19:35,275 Not Found: /media/images/3d5cfec84e518bf6a39609681dc93bd7-400w.png
+2022-04-25 21:19:35,277 Not Found: /media/images/b32df1dc-e88b-492f-bbac-32fd99bf0c29
+2022-04-25 21:19:35,279 Not Found: /media/images/hdts-200h.png
+2022-04-25 21:19:35,280 "GET /media/images/4d7777708e58ea04be2ded716d9f9d61-500w.png HTTP/1.1" 404 5346
+2022-04-25 21:19:35,280 "GET /media/images/3d5cfec84e518bf6a39609681dc93bd7-400w.png HTTP/1.1" 404 5346
+2022-04-25 21:19:35,280 "GET /media/images/b32df1dc-e88b-492f-bbac-32fd99bf0c29 HTTP/1.1" 404 5331
+2022-04-25 21:19:35,281 "GET /media/images/hdts-200h.png HTTP/1.1" 404 5262
+2022-04-25 21:20:11,290 "GET /Inventory/viewInventory/ HTTP/1.1" 200 45415
+2022-04-25 21:20:11,333 "GET /static/css/main_inventory.css HTTP/1.1" 304 0
+2022-04-25 21:20:11,444 Not Found: /media/images/3d5cfec84e518bf6a39609681dc93bd7-400w.png
+2022-04-25 21:20:11,446 Not Found: /media/images/b32df1dc-e88b-492f-bbac-32fd99bf0c29
+2022-04-25 21:20:11,448 Not Found: /media/images/4d7777708e58ea04be2ded716d9f9d61-500w.png
+2022-04-25 21:20:11,451 Not Found: /media/images/hdts-200h.png
+2022-04-25 21:20:11,451 "GET /media/images/3d5cfec84e518bf6a39609681dc93bd7-400w.png HTTP/1.1" 404 5346
+2022-04-25 21:20:11,452 "GET /media/images/b32df1dc-e88b-492f-bbac-32fd99bf0c29 HTTP/1.1" 404 5331
+2022-04-25 21:20:11,452 "GET /media/images/4d7777708e58ea04be2ded716d9f9d61-500w.png HTTP/1.1" 404 5346
+2022-04-25 21:20:11,453 "GET /media/images/hdts-200h.png HTTP/1.1" 404 5262
+2022-04-25 21:20:56,292 "GET /Inventory/viewInventory/ HTTP/1.1" 200 45409
+2022-04-25 21:20:56,329 "GET /static/css/main_inventory.css HTTP/1.1" 304 0
+2022-04-25 21:20:56,405 Not Found: /media/images/hdts-200h.png
+2022-04-25 21:20:56,407 Not Found: /media/images/b32df1dc-e88b-492f-bbac-32fd99bf0c29
+2022-04-25 21:20:56,410 Not Found: /media/images/3d5cfec84e518bf6a39609681dc93bd7-400w.png
+2022-04-25 21:20:56,413 Not Found: /media/images/4d7777708e58ea04be2ded716d9f9d61-500w.png
+2022-04-25 21:20:56,413 "GET /media/images/hdts-200h.png HTTP/1.1" 404 5262
+2022-04-25 21:20:56,414 "GET /media/images/b32df1dc-e88b-492f-bbac-32fd99bf0c29 HTTP/1.1" 404 5331
+2022-04-25 21:20:56,414 "GET /media/images/3d5cfec84e518bf6a39609681dc93bd7-400w.png HTTP/1.1" 404 5346
+2022-04-25 21:20:56,414 "GET /media/images/4d7777708e58ea04be2ded716d9f9d61-500w.png HTTP/1.1" 404 5346
+2022-04-25 21:21:04,264 "GET /Inventory/viewInventory/ HTTP/1.1" 200 45415
+2022-04-25 21:21:04,308 "GET /static/css/main_inventory.css HTTP/1.1" 304 0
+2022-04-25 21:21:04,387 Not Found: /media/images/hdts-200h.png
+2022-04-25 21:21:04,390 Not Found: /media/images/4d7777708e58ea04be2ded716d9f9d61-500w.png
+2022-04-25 21:21:04,392 Not Found: /media/images/3d5cfec84e518bf6a39609681dc93bd7-400w.png
+2022-04-25 21:21:04,394 Not Found: /media/images/b32df1dc-e88b-492f-bbac-32fd99bf0c29
+2022-04-25 21:21:04,394 "GET /media/images/hdts-200h.png HTTP/1.1" 404 5262
+2022-04-25 21:21:04,395 "GET /media/images/4d7777708e58ea04be2ded716d9f9d61-500w.png HTTP/1.1" 404 5346
+2022-04-25 21:21:04,395 "GET /media/images/3d5cfec84e518bf6a39609681dc93bd7-400w.png HTTP/1.1" 404 5346
+2022-04-25 21:21:04,395 "GET /media/images/b32df1dc-e88b-492f-bbac-32fd99bf0c29 HTTP/1.1" 404 5331
+2022-04-25 21:22:16,610 "GET /Inventory/viewInventory/ HTTP/1.1" 200 45415
+2022-04-25 21:22:16,998 Not Found: /media/images/hdts-200h.png
+2022-04-25 21:22:17,000 Not Found: /media/images/3d5cfec84e518bf6a39609681dc93bd7-400w.png
+2022-04-25 21:22:17,001 "GET /media/images/hdts-200h.png HTTP/1.1" 404 5262
+2022-04-25 21:22:17,003 Not Found: /media/images/b32df1dc-e88b-492f-bbac-32fd99bf0c29
+2022-04-25 21:22:17,004 "GET /media/images/3d5cfec84e518bf6a39609681dc93bd7-400w.png HTTP/1.1" 404 5346
+2022-04-25 21:22:17,006 Not Found: /media/images/4d7777708e58ea04be2ded716d9f9d61-500w.png
+2022-04-25 21:22:17,006 "GET /media/images/b32df1dc-e88b-492f-bbac-32fd99bf0c29 HTTP/1.1" 404 5331
+2022-04-25 21:22:17,007 "GET /media/images/4d7777708e58ea04be2ded716d9f9d61-500w.png HTTP/1.1" 404 5346
+2022-04-25 21:22:17,241 "GET /static/css/style.css HTTP/1.1" 200 2410
+2022-04-25 21:22:17,241 "GET /static/css/main_inventory.css HTTP/1.1" 200 16121
+2022-04-25 21:22:17,388 Not Found: /favicon.ico
+2022-04-25 21:22:17,389 "GET /favicon.ico HTTP/1.1" 404 5217
+2022-04-25 21:22:35,421 "GET /Inventory/viewInventory/ HTTP/1.1" 200 45415
+2022-04-25 21:22:35,471 "GET /static/css/main_inventory.css HTTP/1.1" 200 16092
+2022-04-25 21:22:35,551 Not Found: /media/images/hdts-200h.png
+2022-04-25 21:22:35,554 Not Found: /media/images/3d5cfec84e518bf6a39609681dc93bd7-400w.png
+2022-04-25 21:22:35,556 Not Found: /media/images/4d7777708e58ea04be2ded716d9f9d61-500w.png
+2022-04-25 21:22:35,559 Not Found: /media/images/b32df1dc-e88b-492f-bbac-32fd99bf0c29
+2022-04-25 21:22:35,559 "GET /media/images/hdts-200h.png HTTP/1.1" 404 5262
+2022-04-25 21:22:35,559 "GET /media/images/3d5cfec84e518bf6a39609681dc93bd7-400w.png HTTP/1.1" 404 5346
+2022-04-25 21:22:35,560 "GET /media/images/4d7777708e58ea04be2ded716d9f9d61-500w.png HTTP/1.1" 404 5346
+2022-04-25 21:22:35,560 "GET /media/images/b32df1dc-e88b-492f-bbac-32fd99bf0c29 HTTP/1.1" 404 5331
+2022-04-25 21:22:56,294 "GET /Inventory/viewInventory/ HTTP/1.1" 200 45415
+2022-04-25 21:22:56,333 "GET /static/css/main_inventory.css HTTP/1.1" 200 16079
+2022-04-25 21:22:56,426 Not Found: /media/images/3d5cfec84e518bf6a39609681dc93bd7-400w.png
+2022-04-25 21:22:56,430 Not Found: /media/images/b32df1dc-e88b-492f-bbac-32fd99bf0c29
+2022-04-25 21:22:56,439 "GET /media/images/3d5cfec84e518bf6a39609681dc93bd7-400w.png HTTP/1.1" 404 5346
+2022-04-25 21:22:56,439 Not Found: /media/images/4d7777708e58ea04be2ded716d9f9d61-500w.png
+2022-04-25 21:22:56,440 "GET /media/images/b32df1dc-e88b-492f-bbac-32fd99bf0c29 HTTP/1.1" 404 5331
+2022-04-25 21:22:56,441 "GET /media/images/4d7777708e58ea04be2ded716d9f9d61-500w.png HTTP/1.1" 404 5346
+2022-04-25 21:22:56,434 Not Found: /media/images/hdts-200h.png
+2022-04-25 21:22:56,442 "GET /media/images/hdts-200h.png HTTP/1.1" 404 5262
+2022-04-25 21:23:28,563 "GET /Inventory/viewInventory/ HTTP/1.1" 200 45415
+2022-04-25 21:23:28,603 "GET /static/css/main_inventory.css HTTP/1.1" 200 16068
+2022-04-25 21:23:28,697 Not Found: /media/images/4d7777708e58ea04be2ded716d9f9d61-500w.png
+2022-04-25 21:23:28,701 Not Found: /media/images/hdts-200h.png
+2022-04-25 21:23:28,704 Not Found: /media/images/b32df1dc-e88b-492f-bbac-32fd99bf0c29
+2022-04-25 21:23:28,708 Not Found: /media/images/3d5cfec84e518bf6a39609681dc93bd7-400w.png
+2022-04-25 21:23:28,708 "GET /media/images/4d7777708e58ea04be2ded716d9f9d61-500w.png HTTP/1.1" 404 5346
+2022-04-25 21:23:28,709 "GET /media/images/hdts-200h.png HTTP/1.1" 404 5262
+2022-04-25 21:23:28,709 "GET /media/images/b32df1dc-e88b-492f-bbac-32fd99bf0c29 HTTP/1.1" 404 5331
+2022-04-25 21:23:28,710 "GET /media/images/3d5cfec84e518bf6a39609681dc93bd7-400w.png HTTP/1.1" 404 5346
+2022-04-25 21:23:49,684 "GET /Inventory/viewInventory/ HTTP/1.1" 200 45415
+2022-04-25 21:23:49,739 "GET /static/css/main_inventory.css HTTP/1.1" 200 16068
+2022-04-25 21:23:49,950 Not Found: /media/images/b32df1dc-e88b-492f-bbac-32fd99bf0c29
+2022-04-25 21:23:49,953 Not Found: /media/images/3d5cfec84e518bf6a39609681dc93bd7-400w.png
+2022-04-25 21:23:49,955 Not Found: /media/images/4d7777708e58ea04be2ded716d9f9d61-500w.png
+2022-04-25 21:23:49,956 "GET /media/images/b32df1dc-e88b-492f-bbac-32fd99bf0c29 HTTP/1.1" 404 5331
+2022-04-25 21:23:49,959 Not Found: /media/images/hdts-200h.png
+2022-04-25 21:23:49,959 "GET /media/images/3d5cfec84e518bf6a39609681dc93bd7-400w.png HTTP/1.1" 404 5346
+2022-04-25 21:23:49,959 "GET /media/images/4d7777708e58ea04be2ded716d9f9d61-500w.png HTTP/1.1" 404 5346
+2022-04-25 21:23:49,960 "GET /media/images/hdts-200h.png HTTP/1.1" 404 5262
+2022-04-25 21:24:13,319 "GET /Inventory/viewInventory/ HTTP/1.1" 200 45415
+2022-04-25 21:24:13,357 "GET /static/css/main_inventory.css HTTP/1.1" 200 16078
+2022-04-25 21:24:13,445 Not Found: /media/images/3d5cfec84e518bf6a39609681dc93bd7-400w.png
+2022-04-25 21:24:13,447 Not Found: /media/images/hdts-200h.png
+2022-04-25 21:24:13,451 Not Found: /media/images/4d7777708e58ea04be2ded716d9f9d61-500w.png
+2022-04-25 21:24:13,454 Not Found: /media/images/b32df1dc-e88b-492f-bbac-32fd99bf0c29
+2022-04-25 21:24:13,454 "GET /media/images/3d5cfec84e518bf6a39609681dc93bd7-400w.png HTTP/1.1" 404 5346
+2022-04-25 21:24:13,454 "GET /media/images/hdts-200h.png HTTP/1.1" 404 5262
+2022-04-25 21:24:13,455 "GET /media/images/4d7777708e58ea04be2ded716d9f9d61-500w.png HTTP/1.1" 404 5346
+2022-04-25 21:24:13,455 "GET /media/images/b32df1dc-e88b-492f-bbac-32fd99bf0c29 HTTP/1.1" 404 5331
+2022-04-25 21:24:23,995 "GET /Inventory/viewInventory/ HTTP/1.1" 200 45415
+2022-04-25 21:24:24,068 "GET /static/css/main_inventory.css HTTP/1.1" 200 16068
+2022-04-25 21:24:24,153 Not Found: /media/images/hdts-200h.png
+2022-04-25 21:24:24,155 Not Found: /media/images/4d7777708e58ea04be2ded716d9f9d61-500w.png
+2022-04-25 21:24:24,159 Not Found: /media/images/3d5cfec84e518bf6a39609681dc93bd7-400w.png
+2022-04-25 21:24:24,163 Not Found: /media/images/b32df1dc-e88b-492f-bbac-32fd99bf0c29
+2022-04-25 21:24:24,163 "GET /media/images/hdts-200h.png HTTP/1.1" 404 5262
+2022-04-25 21:24:24,164 "GET /media/images/4d7777708e58ea04be2ded716d9f9d61-500w.png HTTP/1.1" 404 5346
+2022-04-25 21:24:24,164 "GET /media/images/3d5cfec84e518bf6a39609681dc93bd7-400w.png HTTP/1.1" 404 5346
+2022-04-25 21:24:24,164 "GET /media/images/b32df1dc-e88b-492f-bbac-32fd99bf0c29 HTTP/1.1" 404 5331
+2022-04-25 21:24:59,618 "GET /Inventory/viewInventory/ HTTP/1.1" 200 45415
+2022-04-25 21:24:59,661 "GET /static/css/main_inventory.css HTTP/1.1" 200 16081
+2022-04-25 21:24:59,775 Not Found: /media/images/hdts-200h.png
+2022-04-25 21:24:59,775 "GET /media/images/hdts-200h.png HTTP/1.1" 404 5262
+2022-04-25 21:24:59,810 Not Found: /media/images/3d5cfec84e518bf6a39609681dc93bd7-400w.png
+2022-04-25 21:24:59,810 "GET /media/images/3d5cfec84e518bf6a39609681dc93bd7-400w.png HTTP/1.1" 404 5346
+2022-04-25 21:24:59,816 Not Found: /media/images/4d7777708e58ea04be2ded716d9f9d61-500w.png
+2022-04-25 21:24:59,817 "GET /media/images/4d7777708e58ea04be2ded716d9f9d61-500w.png HTTP/1.1" 404 5346
+2022-04-25 21:24:59,821 Not Found: /media/images/b32df1dc-e88b-492f-bbac-32fd99bf0c29
+2022-04-25 21:24:59,822 "GET /media/images/b32df1dc-e88b-492f-bbac-32fd99bf0c29 HTTP/1.1" 404 5331
+2022-04-25 21:25:56,117 "GET /Inventory/viewInventory/ HTTP/1.1" 200 45415
+2022-04-25 21:25:56,158 "GET /static/css/style.css HTTP/1.1" 200 2410
+2022-04-25 21:25:56,159 "GET /static/css/main_inventory.css HTTP/1.1" 200 16093
+2022-04-25 21:25:56,460 Not Found: /media/images/hdts-200h.png
+2022-04-25 21:25:56,463 Not Found: /media/images/3d5cfec84e518bf6a39609681dc93bd7-400w.png
+2022-04-25 21:25:56,465 Not Found: /media/images/b32df1dc-e88b-492f-bbac-32fd99bf0c29
+2022-04-25 21:25:56,468 Not Found: /media/images/4d7777708e58ea04be2ded716d9f9d61-500w.png
+2022-04-25 21:25:56,468 "GET /media/images/hdts-200h.png HTTP/1.1" 404 5262
+2022-04-25 21:25:56,469 "GET /media/images/3d5cfec84e518bf6a39609681dc93bd7-400w.png HTTP/1.1" 404 5346
+2022-04-25 21:25:56,469 "GET /media/images/b32df1dc-e88b-492f-bbac-32fd99bf0c29 HTTP/1.1" 404 5331
+2022-04-25 21:25:56,469 "GET /media/images/4d7777708e58ea04be2ded716d9f9d61-500w.png HTTP/1.1" 404 5346
+2022-04-25 21:25:56,859 Not Found: /favicon.ico
+2022-04-25 21:25:56,859 "GET /favicon.ico HTTP/1.1" 404 5217
+2022-04-25 21:26:59,716 "GET /Inventory/viewInventory/ HTTP/1.1" 200 45415
+2022-04-25 21:26:59,790 "GET /static/css/style.css HTTP/1.1" 200 2410
+2022-04-25 21:26:59,791 "GET /static/css/main_inventory.css HTTP/1.1" 200 16156
+2022-04-25 21:27:00,023 Not Found: /media/images/3d5cfec84e518bf6a39609681dc93bd7-400w.png
+2022-04-25 21:27:00,025 Not Found: /media/images/b32df1dc-e88b-492f-bbac-32fd99bf0c29
+2022-04-25 21:27:00,027 Not Found: /media/images/hdts-200h.png
+2022-04-25 21:27:00,028 "GET /media/images/3d5cfec84e518bf6a39609681dc93bd7-400w.png HTTP/1.1" 404 5346
+2022-04-25 21:27:00,028 "GET /media/images/b32df1dc-e88b-492f-bbac-32fd99bf0c29 HTTP/1.1" 404 5331
+2022-04-25 21:27:00,031 Not Found: /media/images/4d7777708e58ea04be2ded716d9f9d61-500w.png
+2022-04-25 21:27:00,031 "GET /media/images/hdts-200h.png HTTP/1.1" 404 5262
+2022-04-25 21:27:00,032 "GET /media/images/4d7777708e58ea04be2ded716d9f9d61-500w.png HTTP/1.1" 404 5346
+2022-04-25 21:27:00,488 Not Found: /favicon.ico
+2022-04-25 21:27:00,488 "GET /favicon.ico HTTP/1.1" 404 5217
+2022-04-25 21:27:11,008 "GET /Inventory/viewInventory/ HTTP/1.1" 200 45415
+2022-04-25 21:27:11,056 "GET /static/css/main_inventory.css HTTP/1.1" 200 16133
+2022-04-25 21:27:11,178 Not Found: /media/images/hdts-200h.png
+2022-04-25 21:27:11,181 Not Found: /media/images/3d5cfec84e518bf6a39609681dc93bd7-400w.png
+2022-04-25 21:27:11,183 Not Found: /media/images/b32df1dc-e88b-492f-bbac-32fd99bf0c29
+2022-04-25 21:27:11,184 "GET /media/images/hdts-200h.png HTTP/1.1" 404 5262
+2022-04-25 21:27:11,186 Not Found: /media/images/4d7777708e58ea04be2ded716d9f9d61-500w.png
+2022-04-25 21:27:11,187 "GET /media/images/b32df1dc-e88b-492f-bbac-32fd99bf0c29 HTTP/1.1" 404 5331
+2022-04-25 21:27:11,187 "GET /media/images/3d5cfec84e518bf6a39609681dc93bd7-400w.png HTTP/1.1" 404 5346
+2022-04-25 21:27:11,187 "GET /media/images/4d7777708e58ea04be2ded716d9f9d61-500w.png HTTP/1.1" 404 5346
+2022-04-25 21:27:24,312 "GET /Inventory/updateHardDrive/2345/ HTTP/1.1" 200 19018
+2022-04-25 21:27:24,360 "GET /static/HDTS/style.css HTTP/1.1" 404 1801
+2022-04-25 21:27:36,366 "GET /Inventory/updateHardDrive/2345/ HTTP/1.1" 200 19018
+2022-04-25 21:27:36,424 "GET /static/HDTS/style.css HTTP/1.1" 404 1801
+2022-04-25 21:28:41,737 Hard Drive Added
+2022-04-25 21:28:42,005 "GET /Inventory/addHardDrive/? HTTP/1.1" 200 19032
+2022-04-25 21:28:42,048 "GET /static/HDTS/style.css HTTP/1.1" 404 1801
+2022-04-25 21:29:56,080 "GET /Inventory/viewInventory/ HTTP/1.1" 200 45627
+2022-04-25 21:29:56,121 "GET /static/css/main_inventory.css HTTP/1.1" 304 0
+2022-04-25 21:29:56,204 Not Found: /media/images/hdts-200h.png
+2022-04-25 21:29:56,208 Not Found: /media/images/3d5cfec84e518bf6a39609681dc93bd7-400w.png
+2022-04-25 21:29:56,209 "GET /media/images/3d5cfec84e518bf6a39609681dc93bd7-400w.png HTTP/1.1" 404 5346
+2022-04-25 21:29:56,209 "GET /media/images/hdts-200h.png HTTP/1.1" 404 5262
+2022-04-25 21:29:56,211 Not Found: /media/images/b32df1dc-e88b-492f-bbac-32fd99bf0c29
+2022-04-25 21:29:56,214 Not Found: /media/images/4d7777708e58ea04be2ded716d9f9d61-500w.png
+2022-04-25 21:29:56,215 "GET /media/images/b32df1dc-e88b-492f-bbac-32fd99bf0c29 HTTP/1.1" 404 5331
+2022-04-25 21:29:56,215 "GET /media/images/4d7777708e58ea04be2ded716d9f9d61-500w.png HTTP/1.1" 404 5346
+2022-04-25 21:30:04,978 "GET /Inventory/viewInventory/ HTTP/1.1" 200 45490
+2022-04-25 21:30:05,127 Not Found: /media/images/3d5cfec84e518bf6a39609681dc93bd7-400w.png
+2022-04-25 21:30:05,130 Not Found: /media/images/hdts-200h.png
+2022-04-25 21:30:05,133 Not Found: /media/images/b32df1dc-e88b-492f-bbac-32fd99bf0c29
+2022-04-25 21:30:05,137 Not Found: /media/images/4d7777708e58ea04be2ded716d9f9d61-500w.png
+2022-04-25 21:30:05,138 "GET /media/images/3d5cfec84e518bf6a39609681dc93bd7-400w.png HTTP/1.1" 404 5346
+2022-04-25 21:30:05,138 "GET /media/images/hdts-200h.png HTTP/1.1" 404 5262
+2022-04-25 21:30:05,138 "GET /media/images/b32df1dc-e88b-492f-bbac-32fd99bf0c29 HTTP/1.1" 404 5331
+2022-04-25 21:30:05,138 "GET /media/images/4d7777708e58ea04be2ded716d9f9d61-500w.png HTTP/1.1" 404 5346
+2022-04-25 21:30:35,840 Hard Drive Added
+2022-04-25 21:30:36,012 "GET /Inventory/addHardDrive/? HTTP/1.1" 200 19032
+2022-04-25 21:30:36,068 "GET /static/HDTS/style.css HTTP/1.1" 404 1801
+2022-04-25 21:32:11,340 "GET /Inventory/viewInventory/ HTTP/1.1" 200 45490
+2022-04-25 21:32:11,377 "GET /static/css/main_inventory.css HTTP/1.1" 200 16047
+2022-04-25 21:32:11,472 Not Found: /media/images/hdts-200h.png
+2022-04-25 21:32:11,475 Not Found: /media/images/b32df1dc-e88b-492f-bbac-32fd99bf0c29
+2022-04-25 21:32:11,477 Not Found: /media/images/3d5cfec84e518bf6a39609681dc93bd7-400w.png
+2022-04-25 21:32:11,478 Not Found: /media/images/4d7777708e58ea04be2ded716d9f9d61-500w.png
+2022-04-25 21:32:11,479 "GET /media/images/hdts-200h.png HTTP/1.1" 404 5262
+2022-04-25 21:32:11,480 "GET /media/images/3d5cfec84e518bf6a39609681dc93bd7-400w.png HTTP/1.1" 404 5346
+2022-04-25 21:32:11,480 "GET /media/images/b32df1dc-e88b-492f-bbac-32fd99bf0c29 HTTP/1.1" 404 5331
+2022-04-25 21:32:11,480 "GET /media/images/4d7777708e58ea04be2ded716d9f9d61-500w.png HTTP/1.1" 404 5346
+2022-04-25 21:32:14,827 Hard Drive Added
+2022-04-25 21:32:15,030 "GET /Inventory/addHardDrive/? HTTP/1.1" 200 19032
+2022-04-25 21:32:15,095 "GET /static/HDTS/style.css HTTP/1.1" 404 1801
+2022-04-25 21:32:18,057 "GET /Inventory/viewInventory/ HTTP/1.1" 200 45490
+2022-04-25 21:32:18,104 "GET /static/css/main_inventory.css HTTP/1.1" 304 0
+2022-04-25 21:32:18,216 Not Found: /media/images/hdts-200h.png
+2022-04-25 21:32:18,218 Not Found: /media/images/b32df1dc-e88b-492f-bbac-32fd99bf0c29
+2022-04-25 21:32:18,219 Not Found: /media/images/3d5cfec84e518bf6a39609681dc93bd7-400w.png
+2022-04-25 21:32:18,221 Not Found: /media/images/4d7777708e58ea04be2ded716d9f9d61-500w.png
+2022-04-25 21:32:18,222 "GET /media/images/b32df1dc-e88b-492f-bbac-32fd99bf0c29 HTTP/1.1" 404 5331
+2022-04-25 21:32:18,222 "GET /media/images/hdts-200h.png HTTP/1.1" 404 5262
+2022-04-25 21:32:18,222 "GET /media/images/3d5cfec84e518bf6a39609681dc93bd7-400w.png HTTP/1.1" 404 5346
+2022-04-25 21:32:18,223 "GET /media/images/4d7777708e58ea04be2ded716d9f9d61-500w.png HTTP/1.1" 404 5346
+2022-04-25 21:37:56,339 "GET /Inventory/viewInventory/ HTTP/1.1" 200 45533
+2022-04-25 21:37:56,378 "GET /static/css/style.css HTTP/1.1" 304 0
+2022-04-25 21:37:56,379 "GET /static/css/main_inventory.css HTTP/1.1" 304 0
+2022-04-25 21:37:56,463 Not Found: /media/images/3d5cfec84e518bf6a39609681dc93bd7-400w.png
+2022-04-25 21:37:56,465 Not Found: /media/images/hdts-200h.png
+2022-04-25 21:37:56,467 Not Found: /media/images/b32df1dc-e88b-492f-bbac-32fd99bf0c29
+2022-04-25 21:37:56,470 Not Found: /media/images/4d7777708e58ea04be2ded716d9f9d61-500w.png
+2022-04-25 21:37:56,470 "GET /media/images/3d5cfec84e518bf6a39609681dc93bd7-400w.png HTTP/1.1" 404 5346
+2022-04-25 21:37:56,471 "GET /media/images/b32df1dc-e88b-492f-bbac-32fd99bf0c29 HTTP/1.1" 404 5331
+2022-04-25 21:37:56,471 "GET /media/images/hdts-200h.png HTTP/1.1" 404 5262
+2022-04-25 21:37:56,471 "GET /media/images/4d7777708e58ea04be2ded716d9f9d61-500w.png HTTP/1.1" 404 5346
+2022-04-25 21:38:30,554 "GET /Inventory/viewInventory/ HTTP/1.1" 200 45563
+2022-04-25 21:38:30,685 Not Found: /media/images/hdts-200h.png
+2022-04-25 21:38:30,687 Not Found: /media/images/b32df1dc-e88b-492f-bbac-32fd99bf0c29
+2022-04-25 21:38:30,689 Not Found: /media/images/3d5cfec84e518bf6a39609681dc93bd7-400w.png
+2022-04-25 21:38:30,692 Not Found: /media/images/4d7777708e58ea04be2ded716d9f9d61-500w.png
+2022-04-25 21:38:30,692 "GET /media/images/hdts-200h.png HTTP/1.1" 404 5262
+2022-04-25 21:38:30,693 "GET /media/images/b32df1dc-e88b-492f-bbac-32fd99bf0c29 HTTP/1.1" 404 5331
+2022-04-25 21:38:30,693 "GET /media/images/3d5cfec84e518bf6a39609681dc93bd7-400w.png HTTP/1.1" 404 5346
+2022-04-25 21:38:30,694 "GET /media/images/4d7777708e58ea04be2ded716d9f9d61-500w.png HTTP/1.1" 404 5346
+2022-04-25 21:38:33,047 "GET /Inventory/viewrequest/ HTTP/1.1" 200 8919
+2022-04-25 21:38:33,106 "GET /static/HDTS/style.css HTTP/1.1" 404 1801
+2022-04-25 21:38:36,785 "GET /Inventory/viewInventory/ HTTP/1.1" 200 45563
+2022-04-25 21:38:36,875 "GET /static/css/main_inventory.css HTTP/1.1" 304 0
+2022-04-25 21:38:36,950 Not Found: /media/images/hdts-200h.png
+2022-04-25 21:38:36,953 Not Found: /media/images/b32df1dc-e88b-492f-bbac-32fd99bf0c29
+2022-04-25 21:38:36,955 Not Found: /media/images/3d5cfec84e518bf6a39609681dc93bd7-400w.png
+2022-04-25 21:38:36,955 "GET /media/images/hdts-200h.png HTTP/1.1" 404 5262
+2022-04-25 21:38:36,957 Not Found: /media/images/4d7777708e58ea04be2ded716d9f9d61-500w.png
+2022-04-25 21:38:36,958 "GET /media/images/b32df1dc-e88b-492f-bbac-32fd99bf0c29 HTTP/1.1" 404 5331
+2022-04-25 21:38:36,958 "GET /media/images/3d5cfec84e518bf6a39609681dc93bd7-400w.png HTTP/1.1" 404 5346
+2022-04-25 21:38:36,959 "GET /media/images/4d7777708e58ea04be2ded716d9f9d61-500w.png HTTP/1.1" 404 5346
+2022-04-25 21:38:39,629 "GET /Inventory/viewInventory/ HTTP/1.1" 200 45563
+2022-04-25 21:38:39,719 Not Found: /media/images/3d5cfec84e518bf6a39609681dc93bd7-400w.png
+2022-04-25 21:38:39,720 "GET /media/images/3d5cfec84e518bf6a39609681dc93bd7-400w.png HTTP/1.1" 404 5346
+2022-04-25 21:38:39,730 Not Found: /media/images/hdts-200h.png
+2022-04-25 21:38:39,731 "GET /media/images/hdts-200h.png HTTP/1.1" 404 5262
+2022-04-25 21:38:39,740 Not Found: /media/images/4d7777708e58ea04be2ded716d9f9d61-500w.png
+2022-04-25 21:38:39,741 "GET /media/images/4d7777708e58ea04be2ded716d9f9d61-500w.png HTTP/1.1" 404 5346
+2022-04-25 21:38:39,745 Not Found: /media/images/b32df1dc-e88b-492f-bbac-32fd99bf0c29
+2022-04-25 21:38:39,745 "GET /media/images/b32df1dc-e88b-492f-bbac-32fd99bf0c29 HTTP/1.1" 404 5331
+2022-04-25 21:38:41,180 "GET /Inventory/returnharddrives/ HTTP/1.1" 200 6942
+2022-04-25 21:38:41,230 "GET /static/HDTS/style.css HTTP/1.1" 404 1801
+2022-04-25 21:38:43,396 "GET /Inventory/viewrequest/ HTTP/1.1" 200 8919
+2022-04-25 21:38:43,445 "GET /static/HDTS/style.css HTTP/1.1" 404 1801
+2022-04-25 21:38:44,372 "GET /Inventory/viewInventory/ HTTP/1.1" 200 45563
+2022-04-25 21:38:44,468 Not Found: /media/images/hdts-200h.png
+2022-04-25 21:38:44,469 "GET /media/images/hdts-200h.png HTTP/1.1" 404 5262
+2022-04-25 21:38:44,471 Not Found: /media/images/3d5cfec84e518bf6a39609681dc93bd7-400w.png
+2022-04-25 21:38:44,474 Not Found: /media/images/b32df1dc-e88b-492f-bbac-32fd99bf0c29
+2022-04-25 21:38:44,476 Not Found: /media/images/4d7777708e58ea04be2ded716d9f9d61-500w.png
+2022-04-25 21:38:44,476 "GET /media/images/3d5cfec84e518bf6a39609681dc93bd7-400w.png HTTP/1.1" 404 5346
+2022-04-25 21:38:44,477 "GET /media/images/b32df1dc-e88b-492f-bbac-32fd99bf0c29 HTTP/1.1" 404 5331
+2022-04-25 21:38:44,477 "GET /media/images/4d7777708e58ea04be2ded716d9f9d61-500w.png HTTP/1.1" 404 5346
+2022-04-25 21:38:46,277 "GET /Inventory/ HTTP/1.1" 200 4152
+2022-04-25 21:38:46,346 "GET /static/HDTS/style.css HTTP/1.1" 404 1801
+2022-04-25 21:38:46,347 "GET /static/Inventory/style.css HTTP/1.1" 404 1816
+2022-04-25 21:39:03,350 "GET /Inventory/viewInventory/ HTTP/1.1" 200 45577
+2022-04-25 21:39:03,482 Not Found: /media/images/3d5cfec84e518bf6a39609681dc93bd7-400w.png
+2022-04-25 21:39:03,484 Not Found: /media/images/b32df1dc-e88b-492f-bbac-32fd99bf0c29
+2022-04-25 21:39:03,486 Not Found: /media/images/hdts-200h.png
+2022-04-25 21:39:03,489 Not Found: /media/images/4d7777708e58ea04be2ded716d9f9d61-500w.png
+2022-04-25 21:39:03,490 "GET /media/images/3d5cfec84e518bf6a39609681dc93bd7-400w.png HTTP/1.1" 404 5346
+2022-04-25 21:39:03,490 "GET /media/images/hdts-200h.png HTTP/1.1" 404 5262
+2022-04-25 21:39:03,490 "GET /media/images/b32df1dc-e88b-492f-bbac-32fd99bf0c29 HTTP/1.1" 404 5331
+2022-04-25 21:39:03,490 "GET /media/images/4d7777708e58ea04be2ded716d9f9d61-500w.png HTTP/1.1" 404 5346
+2022-04-25 21:39:27,221 "GET /Inventory/updateHardDrive/001/ HTTP/1.1" 200 19002
+2022-04-25 21:39:27,270 "GET /static/HDTS/style.css HTTP/1.1" 404 1801
+2022-04-27 21:34:38,556 "GET /static/HDTS/style.css HTTP/1.1" 404 1801
+2022-04-27 21:34:38,567 "GET /static/admin/css/base.css HTTP/1.1" 200 19513
+2022-04-27 21:34:38,638 "GET /static/admin/css/changelists.css HTTP/1.1" 200 6932
+2022-04-27 21:34:38,638 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2616
+2022-04-27 21:34:38,639 "GET /static/admin/css/responsive.css HTTP/1.1" 200 18575
+2022-04-27 21:34:39,452 "GET /admin/auth/user/fonts.css HTTP/1.1" 301 0
+2022-04-27 21:34:40,117 "GET /admin/auth/user/fonts.css/ HTTP/1.1" 302 0
+2022-04-27 21:34:40,638 "GET /admin/auth/user/fonts.css/change/ HTTP/1.1" 302 0
+2022-04-27 21:34:41,298 "GET /admin/ HTTP/1.1" 200 3507
+2022-04-28 15:53:50,130 Watching for file changes with StatReloader
+2022-04-28 15:53:55,195 "GET / HTTP/1.1" 200 3250
+2022-04-28 15:53:55,380 "GET /static/HDTS/style.css HTTP/1.1" 404 1801
+2022-04-28 15:53:58,343 "GET /maintainerlogin/ HTTP/1.1" 200 4377
+2022-04-28 15:53:58,399 "GET /static/HDTS/style.css HTTP/1.1" 404 1801
+2022-04-28 15:54:03,808 "POST /maintainerlogin/ HTTP/1.1" 302 0
+2022-04-28 15:54:03,848 "GET /Inventory HTTP/1.1" 301 0
+2022-04-28 15:54:04,466 "GET /Inventory/ HTTP/1.1" 200 4152
+2022-04-28 15:54:04,535 "GET /static/HDTS/style.css HTTP/1.1" 404 1801
+2022-04-28 15:54:04,537 "GET /static/Inventory/style.css HTTP/1.1" 404 1816
+2022-04-28 15:54:06,523 "GET /maintainerlogin/ HTTP/1.1" 200 4377
+2022-04-28 15:54:07,887 "GET /requestorlogin/ HTTP/1.1" 200 4384
+2022-04-28 15:54:07,935 "GET /static/HDTS/style.css HTTP/1.1" 404 1801
+2022-04-28 15:54:08,582 "GET /adminlogin HTTP/1.1" 301 0
+2022-04-28 15:54:08,606 "GET /adminlogin/ HTTP/1.1" 200 4377
+2022-04-28 15:54:08,651 "GET /static/HDTS/style.css HTTP/1.1" 404 1801
+2022-04-28 15:55:52,266 "GET /Inventory/updateHardDrive/001/ HTTP/1.1" 200 19002
+2022-04-28 15:55:52,315 "GET /static/HDTS/style.css HTTP/1.1" 404 1801
+2022-04-28 15:55:54,486 "GET /Inventory/viewrequest/ HTTP/1.1" 200 8919
+2022-04-28 15:55:54,529 "GET /static/HDTS/style.css HTTP/1.1" 404 1801
+2022-04-28 15:56:34,096 "GET /Inventory/viewInventory/ HTTP/1.1" 200 45577
+2022-04-28 15:56:34,173 "GET /static/css/style.css HTTP/1.1" 304 0
+2022-04-28 15:56:34,174 "GET /static/css/main_inventory.css HTTP/1.1" 304 0
+2022-04-28 15:56:34,274 Not Found: /media/images/4d7777708e58ea04be2ded716d9f9d61-500w.png
+2022-04-28 15:56:34,276 Not Found: /media/images/hdts-200h.png
+2022-04-28 15:56:34,278 Not Found: /media/images/3d5cfec84e518bf6a39609681dc93bd7-400w.png
+2022-04-28 15:56:34,281 Not Found: /media/images/b32df1dc-e88b-492f-bbac-32fd99bf0c29
+2022-04-28 15:56:34,281 "GET /media/images/4d7777708e58ea04be2ded716d9f9d61-500w.png HTTP/1.1" 404 5346
+2022-04-28 15:56:34,281 "GET /media/images/hdts-200h.png HTTP/1.1" 404 5262
+2022-04-28 15:56:34,281 "GET /media/images/3d5cfec84e518bf6a39609681dc93bd7-400w.png HTTP/1.1" 404 5346
+2022-04-28 15:56:34,282 "GET /media/images/b32df1dc-e88b-492f-bbac-32fd99bf0c29 HTTP/1.1" 404 5331
+2022-04-28 15:56:46,872 "GET /Inventory/viewrequest/ HTTP/1.1" 200 8919
+2022-04-28 15:56:46,928 "GET /static/HDTS/style.css HTTP/1.1" 404 1801
+2022-04-28 15:56:56,789 "GET /Inventory/returnharddrives/ HTTP/1.1" 200 6942
+2022-04-28 15:56:56,873 "GET /static/HDTS/style.css HTTP/1.1" 404 1801
