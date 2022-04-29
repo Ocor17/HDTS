@@ -17,7 +17,7 @@ from django.urls import path
 from . import views
 app_name = 'request'
 urlpatterns = [
-    path('', views.mainMenu, name='mainmenu'),
+    path('', views.request_list, name='requestlist'),
     path('newrequest/', views.new_request, name='newrequest'),
     path('requestlist/', views.request_list, name='requestlist'),
     path('requestlist/<request_id>', views.request_list, name='requestlistparams'),

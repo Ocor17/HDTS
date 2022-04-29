@@ -56,7 +56,7 @@
   </head>
   <body>
     <div>
-      <link href="{% static 'css/main_inventory.css' %}" rel="stylesheet" />
+      <link href="{% static 'css/main.css' %}" rel="stylesheet" />
 
       <div class="main-inventory-container">
         <div class="main-inventory-container01">
@@ -96,9 +96,10 @@
                       <a href="{% url 'Inventory:viewReports' %}" class="navigation-links2-navlink3">
                         <span>Reports</span>
                       </a>
-                      <span href="{% url 'logout' %}" class="navigation-links2-text">
-                        <span>Log Out</span>
-                      </span>
+                    </a>
+                    <a href="{% url 'logout' %}" class="navigation-links2-navlink3">
+                      <span>Log Out</span>
+                    </a>
                     </nav>
                   </div>
                 </div>
@@ -201,10 +202,10 @@
                     name="user_type"
                     class="main-inventory-button1 user-type button"
                   >
-                    <span class="main-inventory-text1">User_Type</span>
+                    <span class="main-inventory-text1">Requestor</span>
                     <img
                       alt="image"
-                      src="/media/images/b32df1dc-e88b-492f-bbac-32fd99bf0c29"
+                      src="/media/images/377b833802f2fde7016d2abbd666eda3-400w.png"
                       class="main-inventory-image3"
                     />
                   </button>
@@ -258,7 +259,7 @@
           <div class="main-inventory-separator"></div>
           <div class="main-inventory-container23">
             <span class="main-inventory-text5">
-              © 2021 HDTS, All Rights Reserved.
+              © 2022 HDTS, All Rights Reserved.
             </span>
           </div>
         </footer>

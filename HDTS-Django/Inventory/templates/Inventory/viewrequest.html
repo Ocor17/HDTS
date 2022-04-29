@@ -4,28 +4,7 @@
 {% block content %}
 
   
-    <div id="search_div" class="main-inventory-container15">
-        <form method="get">
-            <label for="{{ form.eventLocation }}">Event Location:</label>
     
-            {{filter.form.eventLocation}}
-            <label for="{{ form.amount }}">Hard Drive Amount:</label>
-    
-            {{filter.form.amount}}
-            <br>
-            <label for="{{ form.event_end_date }}">Event End Date:</label>
-    
-            {{filter.form.event_end_date}}
-            <label for="{{ form.eventStatus }}">Event Status:</label>
-    
-            {{filter.form.eventStatus}}
-            
-            <button class="btn btn-primary" type="submit">Search</button>
-        </form>
-        <form action="/Inventory/viewrequest/">
-            <button class="btn btn-primary" type="submit">Clear Filters</button>
-        </form>
-    </div>
   
     <div id="table_div" class="main-inventory-container16">
     <!-- <br> -->
@@ -115,5 +94,30 @@
 
 {% endblock %}
 
+{% block subcontent %}
+<div id="search_div" style= "height: auto; flex-direction: column;" class="main-inventory-container15">
+    <form method="get">
+        <label for="{{ form.eventLocation }}">Location:</label>
+        {{filter.form.eventLocation}}
+        <br>
+        <label for="{{ form.amount }}">Hard Drive Amount:</label>
+        {{filter.form.amount}}
+        <br>
+        <label for="{{ form.event_end_date }}">End Date:</label>
+        {{filter.form.event_end_date}}
+        <br>
+        <label for="{{ form.eventStatus }}">Status:</label>
+        {{filter.form.eventStatus}}
+        <br>
+        <button class="main-inventory-navlink20 button" type="submit">Search</button>
+        <br>
+    </form>
+    <form action="/Inventory/viewrequest/">
+        <br>
+        <button class="main-inventory-navlink20 button" type="submit">Clear Filters</button>
+    </form>
+</div>
+{% endblock %}
+{% block subcont
 {% block subtitle %}<h2 class="main-inventory-text3">Request Details</h2>{% endblock %}
 {% block button %}<button class="main-inventory-navlink1 button" type="submit">Delinquency</button>{% endblock %}

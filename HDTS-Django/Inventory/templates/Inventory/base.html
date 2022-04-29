@@ -99,9 +99,9 @@
                       <a href="{% url 'Inventory:viewReports' %}" class="navigation-links2-navlink3">
                         <span>Reports</span>
                       </a>
-                      <span href="{% url 'logout' %}" class="navigation-links2-text">
+                      <a href="{% url 'logout' %}" class="navigation-links2-navlink3">
                         <span>Log Out</span>
-                      </span>
+                      </a>
                     </nav>
                   </div>
                 </div>
@@ -136,27 +136,30 @@
                         navigation-links2-root-class-name25
                       "
                     >
-                      <a
-                        href="{% url 'Inventory:viewrequest' %}"
-                        class="navigation-links2-navlink"
-                      >
-                        <span>Requests</span>
-                      </a>
-                      <a
-                        href="{% url 'Inventory:viewInventory' %}"
-                        class="navigation-links2-navlink1"
-                      >
-                        <span>Inventory</span>
-                      </a>
-                      <a href="reports.html" class="navigation-links2-navlink2">
-                        <span>Reports</span>
-                      </a>
-                      <a href="{% url 'Inventory:viewLog' %}" class="navigation-links2-navlink3">
-                        <span>Logs</span>
-                      </a>
-                      <span class="navigation-links2-text">
-                        <span>Configuration</span>
-                      </span>
+                    <a
+                    href="{% url 'Inventory:viewrequest' %}"
+                    class="navigation-links2-navlink"
+                  >
+                    <span>Requests</span>
+                  </a>
+                  <a
+                    href="{% url 'Inventory:viewInventory' %}"
+                    class="navigation-links2-navlink1"
+                  >
+                    <span>Inventory</span>
+                  </a>
+                  <a href="{% url 'Inventory:returnharddrives' %}" class="navigation-links2-navlink2">
+                    <span>Return Drives</span>
+                  </a>
+                  <a href="{% url 'Inventory:viewLog' %}" class="navigation-links2-navlink3">
+                    <span>Logs</span>
+                  </a>
+                  <a href="{% url 'Inventory:viewReports' %}" class="navigation-links2-navlink3">
+                    <span>Reports</span>
+                  </a>
+                  <a href="{% url 'logout' %}" class="navigation-links2-navlink3">
+                    <span>Log Out</span>
+                  </a>
                     </nav>
                   </nav>
                   <div>
@@ -204,10 +207,10 @@
                     name="user_type"
                     class="main-inventory-button1 user-type button"
                   >
-                    <span class="main-inventory-text1">User_Type</span>
+                    <span class="main-inventory-text1">Maintainer</span>
                     <img
                       alt="image"
-                      src="/media/images/b32df1dc-e88b-492f-bbac-32fd99bf0c29"
+                      src="/media/images/377b833802f2fde7016d2abbd666eda3-400w.png"
                       class="main-inventory-image3"
                     />
                   </button>
@@ -261,7 +264,7 @@
           <div class="main-inventory-separator"></div>
           <div class="main-inventory-container23">
             <span class="main-inventory-text5">
-              © 2021 HDTS, All Rights Reserved.
+              © 2022 HDTS, All Rights Reserved.
             </span>
           </div>
         </footer>

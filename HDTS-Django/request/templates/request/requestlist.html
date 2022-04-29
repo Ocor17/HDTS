@@ -2,32 +2,7 @@
 {% block title %}<h1 class="main-inventory-text2">Hard Drive Requests</h1>{% endblock %}
 {% block content %}
 
-<div id="search_div" class="main-inventory-container15">
 
-    
-
-    <form method="get">
-        <label for="{{ form.eventLocation }}">Event Location:</label>
-
-        {{filter.form.eventLocation}}
-        <label for="{{ form.amount }}">Hard Drive Amount:</label>
-
-        {{filter.form.amount}}
-        <br>
-        <label for="{{ form.event_end_date }}">Event End Date:</label>
-
-        {{filter.form.event_end_date}}
-        <label for="{{ form.eventStatus }}">Event Status:</label>
-
-        {{filter.form.eventStatus}}
-        
-        <button class="btn btn-primary" type="submit">Search</button>
-    </form>
-
-    <form action="/request/requestlist">
-        <button class="btn btn-primary" type="submit">Clear Filters</button>
-    </form>
-</div>
 <div id="table_div" class="main-inventory-container16">
     <!-- <br> -->
     <table class="table table-hover" style="color: #cdd1d5;">
@@ -110,6 +85,38 @@
 </div>
 
 {% endblock %}
+
+{% block subcontent %}
+<div id="search_div" style= "width: 99%; height: auto; flex-direction: column;" class="main-inventory-container15">
+
+    
+
+    <form method="get">
+        <label for="{{ form.eventLocation }}">Event Location:</label>
+
+        {{filter.form.eventLocation}}
+        <label for="{{ form.amount }}">Hard Drive Amount:</label>
+
+        {{filter.form.amount}}
+        <br>
+        <label for="{{ form.event_end_date }}">Event End Date:</label>
+
+        {{filter.form.event_end_date}}
+        <label for="{{ form.eventStatus }}">Event Status:</label>
+
+        {{filter.form.eventStatus}}
+        <br>
+        <br>
+        <button class="main-inventory-navlink20 button" type="submit">Search</button>
+    </form>
+
+    <form action="/request/requestlist">
+        <br>
+        <button class="main-inventory-navlink20 button" type="submit">Clear Filters</button>
+    </form>
+</div>
+{% endblock %}
+
 
 {% block subtitle %}<h2 class="main-inventory-text3">Request Details</h2>{% endblock %}
 {% block button %}

@@ -2682,3 +2682,821 @@ django.urls.exceptions.NoReverseMatch: Reverse for 'viewReports' not found. 'vie
 2022-04-28 18:10:03,173 "GET /static/HDTS/style.css HTTP/1.1" 404 1801
 2022-04-28 18:10:04,906 "GET /register/viewAccounts/ HTTP/1.1" 200 6135
 2022-04-28 18:10:04,977 "GET /static/HDTS/style.css HTTP/1.1" 404 1801
+2022-04-28 21:01:51,178 Watching for file changes with StatReloader
+2022-04-28 21:02:20,219 "GET /logout/ HTTP/1.1" 302 0
+2022-04-28 21:02:20,260 "GET / HTTP/1.1" 200 3250
+2022-04-28 21:02:20,382 "GET /static/HDTS/style.css HTTP/1.1" 404 1801
+2022-04-28 21:02:27,487 "GET /maintainerlogin/ HTTP/1.1" 200 4377
+2022-04-28 21:02:27,536 "GET /static/HDTS/style.css HTTP/1.1" 404 1801
+2022-04-28 21:02:29,390 "POST /maintainerlogin/ HTTP/1.1" 302 0
+2022-04-28 21:02:29,414 "GET /Inventory HTTP/1.1" 301 0
+2022-04-28 21:02:29,898 "GET /Inventory/ HTTP/1.1" 200 14294
+2022-04-28 21:02:29,958 "GET /static/css/main_inventory.css HTTP/1.1" 304 0
+2022-04-28 21:02:30,071 "GET /static/Inventory/style.css HTTP/1.1" 404 1816
+2022-04-28 21:02:30,086 Not Found: /media/images/4d7777708e58ea04be2ded716d9f9d61-500w.png
+2022-04-28 21:02:30,088 Not Found: /media/images/b32df1dc-e88b-492f-bbac-32fd99bf0c29
+2022-04-28 21:02:30,091 Not Found: /media/images/3d5cfec84e518bf6a39609681dc93bd7-400w.png
+2022-04-28 21:02:30,093 Not Found: /media/images/hdts-200h.png
+2022-04-28 21:02:30,094 "GET /media/images/4d7777708e58ea04be2ded716d9f9d61-500w.png HTTP/1.1" 404 5346
+2022-04-28 21:02:30,094 "GET /media/images/b32df1dc-e88b-492f-bbac-32fd99bf0c29 HTTP/1.1" 404 5331
+2022-04-28 21:02:30,094 "GET /media/images/3d5cfec84e518bf6a39609681dc93bd7-400w.png HTTP/1.1" 404 5346
+2022-04-28 21:02:30,095 "GET /media/images/hdts-200h.png HTTP/1.1" 404 5262
+2022-04-28 21:02:33,923 "GET /Inventory/viewInventory/ HTTP/1.1" 200 45156
+2022-04-28 21:02:34,100 Not Found: /media/images/b32df1dc-e88b-492f-bbac-32fd99bf0c29
+2022-04-28 21:02:34,103 Not Found: /media/images/hdts-200h.png
+2022-04-28 21:02:34,105 Not Found: /media/images/4d7777708e58ea04be2ded716d9f9d61-500w.png
+2022-04-28 21:02:34,107 Not Found: /media/images/3d5cfec84e518bf6a39609681dc93bd7-400w.png
+2022-04-28 21:02:34,107 "GET /media/images/b32df1dc-e88b-492f-bbac-32fd99bf0c29 HTTP/1.1" 404 5331
+2022-04-28 21:02:34,108 "GET /media/images/hdts-200h.png HTTP/1.1" 404 5262
+2022-04-28 21:02:34,108 "GET /media/images/4d7777708e58ea04be2ded716d9f9d61-500w.png HTTP/1.1" 404 5346
+2022-04-28 21:02:34,108 "GET /media/images/3d5cfec84e518bf6a39609681dc93bd7-400w.png HTTP/1.1" 404 5346
+2022-04-28 21:02:38,178 Not Found: /media/images/b32df1dc-e88b-492f-bbac-32fd99bf0c29
+2022-04-28 21:02:38,180 Not Found: /media/images/hdts-200h.png
+2022-04-28 21:02:38,182 Not Found: /media/images/3d5cfec84e518bf6a39609681dc93bd7-400w.png
+2022-04-28 21:02:38,184 Not Found: /media/images/4d7777708e58ea04be2ded716d9f9d61-500w.png
+2022-04-28 21:02:38,185 "GET /media/images/b32df1dc-e88b-492f-bbac-32fd99bf0c29 HTTP/1.1" 404 5331
+2022-04-28 21:02:38,185 "GET /media/images/hdts-200h.png HTTP/1.1" 404 5262
+2022-04-28 21:02:38,186 "GET /media/images/3d5cfec84e518bf6a39609681dc93bd7-400w.png HTTP/1.1" 404 5346
+2022-04-28 21:02:38,186 "GET /media/images/4d7777708e58ea04be2ded716d9f9d61-500w.png HTTP/1.1" 404 5346
+2022-04-28 21:02:45,418 "GET / HTTP/1.1" 200 3250
+2022-04-28 21:02:45,472 "GET /static/HDTS/style.css HTTP/1.1" 404 1801
+2022-04-28 21:02:47,129 "GET /adminlogin/ HTTP/1.1" 200 4377
+2022-04-28 21:02:47,171 "GET /static/HDTS/style.css HTTP/1.1" 404 1801
+2022-04-28 21:02:49,075 "POST /adminlogin/ HTTP/1.1" 302 0
+2022-04-28 21:02:49,091 "GET /register HTTP/1.1" 301 0
+2022-04-28 21:02:49,673 "GET /register/ HTTP/1.1" 200 3307
+2022-04-28 21:02:49,736 "GET /static/register/style.css HTTP/1.1" 404 1813
+2022-04-28 21:02:49,737 "GET /static/HDTS/style.css HTTP/1.1" 404 1801
+2022-04-28 21:02:52,581 "GET /register/viewAccounts/ HTTP/1.1" 200 6135
+2022-04-28 21:02:52,637 "GET /static/HDTS/style.css HTTP/1.1" 404 1801
+2022-04-28 21:03:01,896 "GET /Inventory/viewReports/ HTTP/1.1" 200 26781
+2022-04-28 21:03:02,045 Not Found: /Inventory/viewReports/2d2ef24a-4c8b-4f36-b43a-748f41c32c93
+2022-04-28 21:03:02,048 Not Found: /Inventory/viewReports/58d1fc3b-0e32-49cd-8a5a-837bf695655d
+2022-04-28 21:03:02,048 "GET /Inventory/viewReports/2d2ef24a-4c8b-4f36-b43a-748f41c32c93 HTTP/1.1" 404 7342
+2022-04-28 21:03:02,052 Not Found: /Inventory/viewReports/b32df1dc-e88b-492f-bbac-32fd99bf0c29
+2022-04-28 21:03:02,052 "GET /Inventory/viewReports/58d1fc3b-0e32-49cd-8a5a-837bf695655d HTTP/1.1" 404 7342
+2022-04-28 21:03:02,055 Not Found: /Inventory/viewReports/fcd2e022-9b8b-493a-9215-48a981b67647
+2022-04-28 21:03:02,055 "GET /Inventory/viewReports/b32df1dc-e88b-492f-bbac-32fd99bf0c29 HTTP/1.1" 404 7342
+2022-04-28 21:03:02,056 "GET /Inventory/viewReports/fcd2e022-9b8b-493a-9215-48a981b67647 HTTP/1.1" 404 7342
+2022-04-28 21:03:04,294 "GET /Inventory/viewrequest/ HTTP/1.1" 200 19409
+2022-04-28 21:03:04,438 Not Found: /media/images/b32df1dc-e88b-492f-bbac-32fd99bf0c29
+2022-04-28 21:03:04,440 Not Found: /media/images/3d5cfec84e518bf6a39609681dc93bd7-400w.png
+2022-04-28 21:03:04,442 Not Found: /media/images/hdts-200h.png
+2022-04-28 21:03:04,444 Not Found: /media/images/4d7777708e58ea04be2ded716d9f9d61-500w.png
+2022-04-28 21:03:04,445 "GET /media/images/b32df1dc-e88b-492f-bbac-32fd99bf0c29 HTTP/1.1" 404 5331
+2022-04-28 21:03:04,445 "GET /media/images/3d5cfec84e518bf6a39609681dc93bd7-400w.png HTTP/1.1" 404 5346
+2022-04-28 21:03:04,445 "GET /media/images/hdts-200h.png HTTP/1.1" 404 5262
+2022-04-28 21:03:04,446 "GET /media/images/4d7777708e58ea04be2ded716d9f9d61-500w.png HTTP/1.1" 404 5346
+2022-04-28 21:03:07,700 "GET /Inventory/viewInventory/ HTTP/1.1" 200 45156
+2022-04-28 21:03:07,872 Not Found: /media/images/4d7777708e58ea04be2ded716d9f9d61-500w.png
+2022-04-28 21:03:07,872 "GET /media/images/4d7777708e58ea04be2ded716d9f9d61-500w.png HTTP/1.1" 404 5346
+2022-04-28 21:03:07,877 Not Found: /media/images/hdts-200h.png
+2022-04-28 21:03:07,877 "GET /media/images/hdts-200h.png HTTP/1.1" 404 5262
+2022-04-28 21:03:07,883 Not Found: /media/images/3d5cfec84e518bf6a39609681dc93bd7-400w.png
+2022-04-28 21:03:07,883 "GET /media/images/3d5cfec84e518bf6a39609681dc93bd7-400w.png HTTP/1.1" 404 5346
+2022-04-28 21:03:07,893 Not Found: /media/images/b32df1dc-e88b-492f-bbac-32fd99bf0c29
+2022-04-28 21:03:07,894 "GET /media/images/b32df1dc-e88b-492f-bbac-32fd99bf0c29 HTTP/1.1" 404 5331
+2022-04-28 21:03:10,235 "GET /Inventory/returnharddrives/ HTTP/1.1" 200 17123
+2022-04-28 21:03:10,352 Not Found: /media/images/hdts-200h.png
+2022-04-28 21:03:10,354 Not Found: /media/images/4d7777708e58ea04be2ded716d9f9d61-500w.png
+2022-04-28 21:03:10,356 Not Found: /media/images/b32df1dc-e88b-492f-bbac-32fd99bf0c29
+2022-04-28 21:03:10,358 Not Found: /media/images/3d5cfec84e518bf6a39609681dc93bd7-400w.png
+2022-04-28 21:03:10,359 "GET /media/images/4d7777708e58ea04be2ded716d9f9d61-500w.png HTTP/1.1" 404 5346
+2022-04-28 21:03:10,359 "GET /media/images/hdts-200h.png HTTP/1.1" 404 5262
+2022-04-28 21:03:10,360 "GET /media/images/b32df1dc-e88b-492f-bbac-32fd99bf0c29 HTTP/1.1" 404 5331
+2022-04-28 21:03:10,360 "GET /media/images/3d5cfec84e518bf6a39609681dc93bd7-400w.png HTTP/1.1" 404 5346
+2022-04-28 21:03:13,192 "GET /Inventory/viewrequest/ HTTP/1.1" 200 19409
+2022-04-28 21:03:13,339 Not Found: /media/images/3d5cfec84e518bf6a39609681dc93bd7-400w.png
+2022-04-28 21:03:13,341 Not Found: /media/images/b32df1dc-e88b-492f-bbac-32fd99bf0c29
+2022-04-28 21:03:13,343 Not Found: /media/images/4d7777708e58ea04be2ded716d9f9d61-500w.png
+2022-04-28 21:03:13,346 Not Found: /media/images/hdts-200h.png
+2022-04-28 21:03:13,346 "GET /media/images/3d5cfec84e518bf6a39609681dc93bd7-400w.png HTTP/1.1" 404 5346
+2022-04-28 21:03:13,347 "GET /media/images/b32df1dc-e88b-492f-bbac-32fd99bf0c29 HTTP/1.1" 404 5331
+2022-04-28 21:03:13,347 "GET /media/images/4d7777708e58ea04be2ded716d9f9d61-500w.png HTTP/1.1" 404 5346
+2022-04-28 21:03:13,348 "GET /media/images/hdts-200h.png HTTP/1.1" 404 5262
+2022-04-28 21:03:25,604 "GET / HTTP/1.1" 200 3250
+2022-04-28 21:03:25,645 "GET /static/HDTS/style.css HTTP/1.1" 404 1801
+2022-04-28 21:03:29,110 "GET /maintainerlogin/ HTTP/1.1" 200 4377
+2022-04-28 21:03:29,160 "GET /static/HDTS/style.css HTTP/1.1" 404 1801
+2022-04-28 21:03:29,980 "GET /requestorlogin/ HTTP/1.1" 200 4384
+2022-04-28 21:03:30,023 "GET /static/HDTS/style.css HTTP/1.1" 404 1801
+2022-04-28 21:03:30,472 "GET /adminlogin/ HTTP/1.1" 200 4377
+2022-04-28 21:03:30,519 "GET /static/HDTS/style.css HTTP/1.1" 404 1801
+2022-04-28 21:03:31,970 "POST /adminlogin/ HTTP/1.1" 302 0
+2022-04-28 21:03:32,001 "GET /register HTTP/1.1" 301 0
+2022-04-28 21:03:32,498 "GET /register/ HTTP/1.1" 200 3307
+2022-04-28 21:03:32,551 "GET /static/HDTS/style.css HTTP/1.1" 404 1801
+2022-04-28 21:03:32,555 "GET /static/register/style.css HTTP/1.1" 404 1813
+2022-04-28 21:03:34,883 "GET /register/viewAccounts/ HTTP/1.1" 200 6135
+2022-04-28 21:03:34,948 "GET /static/HDTS/style.css HTTP/1.1" 404 1801
+2022-04-28 21:03:38,035 "GET /Inventory/viewrequest/ HTTP/1.1" 200 19409
+2022-04-28 21:03:38,182 Not Found: /media/images/3d5cfec84e518bf6a39609681dc93bd7-400w.png
+2022-04-28 21:03:38,183 "GET /media/images/3d5cfec84e518bf6a39609681dc93bd7-400w.png HTTP/1.1" 404 5346
+2022-04-28 21:03:38,185 Not Found: /media/images/b32df1dc-e88b-492f-bbac-32fd99bf0c29
+2022-04-28 21:03:38,187 Not Found: /media/images/hdts-200h.png
+2022-04-28 21:03:38,188 "GET /media/images/hdts-200h.png HTTP/1.1" 404 5262
+2022-04-28 21:03:38,188 "GET /media/images/b32df1dc-e88b-492f-bbac-32fd99bf0c29 HTTP/1.1" 404 5331
+2022-04-28 21:03:38,190 Not Found: /media/images/4d7777708e58ea04be2ded716d9f9d61-500w.png
+2022-04-28 21:03:38,191 "GET /media/images/4d7777708e58ea04be2ded716d9f9d61-500w.png HTTP/1.1" 404 5346
+2022-04-28 21:03:41,163 "GET /Inventory/viewInventory/ HTTP/1.1" 200 45156
+2022-04-28 21:03:41,292 Not Found: /media/images/4d7777708e58ea04be2ded716d9f9d61-500w.png
+2022-04-28 21:03:41,295 Not Found: /media/images/b32df1dc-e88b-492f-bbac-32fd99bf0c29
+2022-04-28 21:03:41,297 Not Found: /media/images/3d5cfec84e518bf6a39609681dc93bd7-400w.png
+2022-04-28 21:03:41,298 "GET /media/images/4d7777708e58ea04be2ded716d9f9d61-500w.png HTTP/1.1" 404 5346
+2022-04-28 21:03:41,301 Not Found: /media/images/hdts-200h.png
+2022-04-28 21:03:41,302 "GET /media/images/b32df1dc-e88b-492f-bbac-32fd99bf0c29 HTTP/1.1" 404 5331
+2022-04-28 21:03:41,302 "GET /media/images/3d5cfec84e518bf6a39609681dc93bd7-400w.png HTTP/1.1" 404 5346
+2022-04-28 21:03:41,303 "GET /media/images/hdts-200h.png HTTP/1.1" 404 5262
+2022-04-28 21:03:49,598 "GET /Inventory/returnharddrives/ HTTP/1.1" 200 17123
+2022-04-28 21:03:49,723 Not Found: /media/images/hdts-200h.png
+2022-04-28 21:03:49,725 Not Found: /media/images/3d5cfec84e518bf6a39609681dc93bd7-400w.png
+2022-04-28 21:03:49,728 Not Found: /media/images/b32df1dc-e88b-492f-bbac-32fd99bf0c29
+2022-04-28 21:03:49,730 Not Found: /media/images/4d7777708e58ea04be2ded716d9f9d61-500w.png
+2022-04-28 21:03:49,731 "GET /media/images/hdts-200h.png HTTP/1.1" 404 5262
+2022-04-28 21:03:49,731 "GET /media/images/3d5cfec84e518bf6a39609681dc93bd7-400w.png HTTP/1.1" 404 5346
+2022-04-28 21:03:49,731 "GET /media/images/b32df1dc-e88b-492f-bbac-32fd99bf0c29 HTTP/1.1" 404 5331
+2022-04-28 21:03:49,732 "GET /media/images/4d7777708e58ea04be2ded716d9f9d61-500w.png HTTP/1.1" 404 5346
+2022-04-28 21:03:54,608 "GET /Inventory/viewReports/ HTTP/1.1" 200 26781
+2022-04-28 21:03:54,757 Not Found: /Inventory/viewReports/2d2ef24a-4c8b-4f36-b43a-748f41c32c93
+2022-04-28 21:03:54,758 "GET /Inventory/viewReports/2d2ef24a-4c8b-4f36-b43a-748f41c32c93 HTTP/1.1" 404 7342
+2022-04-28 21:03:54,763 Not Found: /Inventory/viewReports/fcd2e022-9b8b-493a-9215-48a981b67647
+2022-04-28 21:03:54,764 "GET /Inventory/viewReports/fcd2e022-9b8b-493a-9215-48a981b67647 HTTP/1.1" 404 7342
+2022-04-28 21:03:54,770 Not Found: /Inventory/viewReports/b32df1dc-e88b-492f-bbac-32fd99bf0c29
+2022-04-28 21:03:54,770 "GET /Inventory/viewReports/b32df1dc-e88b-492f-bbac-32fd99bf0c29 HTTP/1.1" 404 7342
+2022-04-28 21:03:54,775 Not Found: /Inventory/viewReports/58d1fc3b-0e32-49cd-8a5a-837bf695655d
+2022-04-28 21:03:54,775 "GET /Inventory/viewReports/58d1fc3b-0e32-49cd-8a5a-837bf695655d HTTP/1.1" 404 7342
+2022-04-28 21:04:00,279 "GET /Inventory/viewLog/ HTTP/1.1" 200 319995
+2022-04-28 21:04:00,403 Not Found: /media/images/hdts-200h.png
+2022-04-28 21:04:00,405 Not Found: /media/images/3d5cfec84e518bf6a39609681dc93bd7-400w.png
+2022-04-28 21:04:00,407 Not Found: /media/images/b32df1dc-e88b-492f-bbac-32fd99bf0c29
+2022-04-28 21:04:00,409 Not Found: /media/images/4d7777708e58ea04be2ded716d9f9d61-500w.png
+2022-04-28 21:04:00,410 "GET /media/images/hdts-200h.png HTTP/1.1" 404 5262
+2022-04-28 21:04:00,411 "GET /media/images/3d5cfec84e518bf6a39609681dc93bd7-400w.png HTTP/1.1" 404 5346
+2022-04-28 21:04:00,411 "GET /media/images/b32df1dc-e88b-492f-bbac-32fd99bf0c29 HTTP/1.1" 404 5331
+2022-04-28 21:04:00,411 "GET /media/images/4d7777708e58ea04be2ded716d9f9d61-500w.png HTTP/1.1" 404 5346
+2022-04-28 21:04:05,647 "GET /Inventory/viewrequest/ HTTP/1.1" 200 19409
+2022-04-28 21:04:05,803 Not Found: /media/images/b32df1dc-e88b-492f-bbac-32fd99bf0c29
+2022-04-28 21:04:05,804 "GET /media/images/b32df1dc-e88b-492f-bbac-32fd99bf0c29 HTTP/1.1" 404 5331
+2022-04-28 21:04:05,808 Not Found: /media/images/3d5cfec84e518bf6a39609681dc93bd7-400w.png
+2022-04-28 21:04:05,808 "GET /media/images/3d5cfec84e518bf6a39609681dc93bd7-400w.png HTTP/1.1" 404 5346
+2022-04-28 21:04:05,815 Not Found: /media/images/4d7777708e58ea04be2ded716d9f9d61-500w.png
+2022-04-28 21:04:05,816 "GET /media/images/4d7777708e58ea04be2ded716d9f9d61-500w.png HTTP/1.1" 404 5346
+2022-04-28 21:04:05,823 Not Found: /media/images/hdts-200h.png
+2022-04-28 21:04:05,824 "GET /media/images/hdts-200h.png HTTP/1.1" 404 5262
+2022-04-29 13:42:45,682 Watching for file changes with StatReloader
+2022-04-29 13:42:48,887 "GET /Inventory/viewrequest/ HTTP/1.1" 200 19409
+2022-04-29 13:42:48,950 "GET /static/css/style.css HTTP/1.1" 304 0
+2022-04-29 13:42:48,950 "GET /static/css/main_inventory.css HTTP/1.1" 304 0
+2022-04-29 13:42:49,116 Not Found: /media/images/4d7777708e58ea04be2ded716d9f9d61-500w.png
+2022-04-29 13:42:49,119 Not Found: /media/images/b32df1dc-e88b-492f-bbac-32fd99bf0c29
+2022-04-29 13:42:49,122 Not Found: /media/images/hdts-200h.png
+2022-04-29 13:42:49,125 Not Found: /media/images/3d5cfec84e518bf6a39609681dc93bd7-400w.png
+2022-04-29 13:42:49,126 "GET /media/images/4d7777708e58ea04be2ded716d9f9d61-500w.png HTTP/1.1" 404 5346
+2022-04-29 13:42:49,126 "GET /media/images/b32df1dc-e88b-492f-bbac-32fd99bf0c29 HTTP/1.1" 404 5331
+2022-04-29 13:42:49,127 "GET /media/images/hdts-200h.png HTTP/1.1" 404 5262
+2022-04-29 13:42:49,128 "GET /media/images/3d5cfec84e518bf6a39609681dc93bd7-400w.png HTTP/1.1" 404 5346
+2022-04-29 13:42:53,003 "GET /Inventory/viewrequest/ HTTP/1.1" 200 19409
+2022-04-29 13:42:53,106 Not Found: /media/images/4d7777708e58ea04be2ded716d9f9d61-500w.png
+2022-04-29 13:42:53,110 Not Found: /media/images/hdts-200h.png
+2022-04-29 13:42:53,113 Not Found: /media/images/b32df1dc-e88b-492f-bbac-32fd99bf0c29
+2022-04-29 13:42:53,115 Not Found: /media/images/3d5cfec84e518bf6a39609681dc93bd7-400w.png
+2022-04-29 13:42:53,115 "GET /media/images/4d7777708e58ea04be2ded716d9f9d61-500w.png HTTP/1.1" 404 5346
+2022-04-29 13:42:53,116 "GET /media/images/b32df1dc-e88b-492f-bbac-32fd99bf0c29 HTTP/1.1" 404 5331
+2022-04-29 13:42:53,116 "GET /media/images/hdts-200h.png HTTP/1.1" 404 5262
+2022-04-29 13:42:53,117 "GET /media/images/3d5cfec84e518bf6a39609681dc93bd7-400w.png HTTP/1.1" 404 5346
+2022-04-29 13:42:59,423 "GET /Inventory/viewrequest/ HTTP/1.1" 200 19409
+2022-04-29 13:42:59,723 Not Found: /media/images/hdts-200h.png
+2022-04-29 13:42:59,726 Not Found: /media/images/4d7777708e58ea04be2ded716d9f9d61-500w.png
+2022-04-29 13:42:59,726 "GET /media/images/hdts-200h.png HTTP/1.1" 404 5262
+2022-04-29 13:42:59,728 Not Found: /media/images/3d5cfec84e518bf6a39609681dc93bd7-400w.png
+2022-04-29 13:42:59,728 "GET /media/images/4d7777708e58ea04be2ded716d9f9d61-500w.png HTTP/1.1" 404 5346
+2022-04-29 13:42:59,731 Not Found: /media/images/b32df1dc-e88b-492f-bbac-32fd99bf0c29
+2022-04-29 13:42:59,731 "GET /media/images/3d5cfec84e518bf6a39609681dc93bd7-400w.png HTTP/1.1" 404 5346
+2022-04-29 13:42:59,732 "GET /media/images/b32df1dc-e88b-492f-bbac-32fd99bf0c29 HTTP/1.1" 404 5331
+2022-04-29 13:43:00,049 "GET /static/css/style.css HTTP/1.1" 200 2410
+2022-04-29 13:43:00,050 "GET /static/css/main_inventory.css HTTP/1.1" 200 16082
+2022-04-29 13:43:00,156 Not Found: /favicon.ico
+2022-04-29 13:43:00,156 "GET /favicon.ico HTTP/1.1" 404 5217
+2022-04-29 13:43:12,808 "GET /Inventory/viewInventory/ HTTP/1.1" 200 45156
+2022-04-29 13:43:12,953 Not Found: /media/images/hdts-200h.png
+2022-04-29 13:43:12,955 Not Found: /media/images/b32df1dc-e88b-492f-bbac-32fd99bf0c29
+2022-04-29 13:43:12,957 Not Found: /media/images/3d5cfec84e518bf6a39609681dc93bd7-400w.png
+2022-04-29 13:43:12,959 Not Found: /media/images/4d7777708e58ea04be2ded716d9f9d61-500w.png
+2022-04-29 13:43:12,960 "GET /media/images/hdts-200h.png HTTP/1.1" 404 5262
+2022-04-29 13:43:12,960 "GET /media/images/b32df1dc-e88b-492f-bbac-32fd99bf0c29 HTTP/1.1" 404 5331
+2022-04-29 13:43:12,961 "GET /media/images/3d5cfec84e518bf6a39609681dc93bd7-400w.png HTTP/1.1" 404 5346
+2022-04-29 13:43:12,961 "GET /media/images/4d7777708e58ea04be2ded716d9f9d61-500w.png HTTP/1.1" 404 5346
+2022-04-29 13:44:51,974 D:\Documents\HARD DRIVES\HDTS\HDTS-Django\HDTS\urls.py changed, reloading.
+2022-04-29 13:44:53,112 Watching for file changes with StatReloader
+2022-04-29 13:44:54,689 "GET /Inventory/viewInventory/ HTTP/1.1" 200 45156
+2022-04-29 13:44:54,822 Not Found: /media/images/b32df1dc-e88b-492f-bbac-32fd99bf0c29
+2022-04-29 13:44:54,823 "GET /media/images/b32df1dc-e88b-492f-bbac-32fd99bf0c29 HTTP/1.1" 404 5698
+2022-04-29 13:44:55,405 "GET /media/images/4d7777708e58ea04be2ded716d9f9d61-500w.png HTTP/1.1" 200 1905
+2022-04-29 13:44:55,405 "GET /media/images/3d5cfec84e518bf6a39609681dc93bd7-400w.png HTTP/1.1" 200 459
+2022-04-29 13:44:55,405 "GET /media/images/hdts-200h.png HTTP/1.1" 200 3026
+2022-04-29 13:46:05,782 "GET /Inventory/viewInventory/ HTTP/1.1" 200 45161
+2022-04-29 13:46:05,884 "GET /media/images/377b833802f2fde7016d2abbd666eda3-400w.png HTTP/1.1" 200 238
+2022-04-29 13:46:25,290 "GET /Inventory/viewrequest/ HTTP/1.1" 200 19415
+2022-04-29 13:46:27,656 "GET /Inventory/viewInventory/ HTTP/1.1" 200 45162
+2022-04-29 13:48:17,165 "GET /Inventory/viewInventory/ HTTP/1.1" 200 45162
+2022-04-29 13:48:20,049 "GET /Inventory/viewInventory/ HTTP/1.1" 200 45162
+2022-04-29 13:48:20,097 "GET /static/css/main_inventory.css HTTP/1.1" 200 16035
+2022-04-29 13:48:20,109 "GET /static/css/style.css HTTP/1.1" 200 2410
+2022-04-29 13:48:20,233 "GET /media/images/hdts-200h.png HTTP/1.1" 200 3026
+2022-04-29 13:48:20,233 "GET /media/images/3d5cfec84e518bf6a39609681dc93bd7-400w.png HTTP/1.1" 200 459
+2022-04-29 13:48:20,233 "GET /media/images/377b833802f2fde7016d2abbd666eda3-400w.png HTTP/1.1" 200 238
+2022-04-29 13:48:20,234 "GET /media/images/4d7777708e58ea04be2ded716d9f9d61-500w.png HTTP/1.1" 200 1905
+2022-04-29 13:48:21,172 Not Found: /favicon.ico
+2022-04-29 13:48:21,173 "GET /favicon.ico HTTP/1.1" 404 5343
+2022-04-29 13:50:00,217 "GET /Inventory/viewInventory/ HTTP/1.1" 200 45162
+2022-04-29 13:50:00,302 "GET /static/css/style.css HTTP/1.1" 200 2410
+2022-04-29 13:50:00,303 "GET /static/css/main_inventory.css HTTP/1.1" 200 16035
+2022-04-29 13:50:00,443 "GET /media/images/3d5cfec84e518bf6a39609681dc93bd7-400w.png HTTP/1.1" 200 459
+2022-04-29 13:50:00,448 "GET /media/images/hdts-200h.png HTTP/1.1" 200 3026
+2022-04-29 13:50:00,448 "GET /media/images/377b833802f2fde7016d2abbd666eda3-400w.png HTTP/1.1" 200 238
+2022-04-29 13:50:00,449 "GET /media/images/4d7777708e58ea04be2ded716d9f9d61-500w.png HTTP/1.1" 200 1905
+2022-04-29 13:50:01,026 Not Found: /favicon.ico
+2022-04-29 13:50:01,027 "GET /favicon.ico HTTP/1.1" 404 5343
+2022-04-29 13:50:05,567 "GET /Inventory/viewInventory/ HTTP/1.1" 200 45162
+2022-04-29 13:50:05,670 "GET /static/css/style.css HTTP/1.1" 200 2410
+2022-04-29 13:50:05,671 "GET /static/css/main_inventory.css HTTP/1.1" 200 16035
+2022-04-29 13:50:05,799 "GET /media/images/3d5cfec84e518bf6a39609681dc93bd7-400w.png HTTP/1.1" 200 459
+2022-04-29 13:50:05,799 "GET /media/images/377b833802f2fde7016d2abbd666eda3-400w.png HTTP/1.1" 200 238
+2022-04-29 13:50:05,799 "GET /media/images/hdts-200h.png HTTP/1.1" 200 3026
+2022-04-29 13:50:05,799 "GET /media/images/4d7777708e58ea04be2ded716d9f9d61-500w.png HTTP/1.1" 200 1905
+2022-04-29 13:50:07,553 Not Found: /favicon.ico
+2022-04-29 13:50:07,554 "GET /favicon.ico HTTP/1.1" 404 5343
+2022-04-29 13:50:56,790 "GET /Inventory/viewInventory/ HTTP/1.1" 200 45162
+2022-04-29 13:50:56,844 "GET /static/css/main_inventory.css HTTP/1.1" 200 16312
+2022-04-29 13:51:12,768 "GET /Inventory/viewInventory/ HTTP/1.1" 200 45162
+2022-04-29 13:51:12,819 "GET /static/css/main_inventory.css HTTP/1.1" 200 16314
+2022-04-29 13:51:40,995 "GET /Inventory/viewInventory/ HTTP/1.1" 200 45162
+2022-04-29 13:51:41,065 "GET /static/css/main_inventory.css HTTP/1.1" 304 0
+2022-04-29 13:51:46,395 "GET /Inventory/viewInventory/ HTTP/1.1" 200 45162
+2022-04-29 13:51:46,462 "GET /static/css/style.css HTTP/1.1" 200 2410
+2022-04-29 13:51:46,464 "GET /static/css/main_inventory.css HTTP/1.1" 200 16314
+2022-04-29 13:51:46,677 "GET /media/images/3d5cfec84e518bf6a39609681dc93bd7-400w.png HTTP/1.1" 200 459
+2022-04-29 13:51:46,678 "GET /media/images/hdts-200h.png HTTP/1.1" 200 3026
+2022-04-29 13:51:46,679 "GET /media/images/4d7777708e58ea04be2ded716d9f9d61-500w.png HTTP/1.1" 200 1905
+2022-04-29 13:51:46,679 "GET /media/images/377b833802f2fde7016d2abbd666eda3-400w.png HTTP/1.1" 200 238
+2022-04-29 13:51:47,326 Not Found: /favicon.ico
+2022-04-29 13:51:47,326 "GET /favicon.ico HTTP/1.1" 404 5343
+2022-04-29 13:52:04,182 "GET /Inventory/viewrequest/ HTTP/1.1" 200 19415
+2022-04-29 13:52:04,242 "GET /static/css/main_inventory.css HTTP/1.1" 304 0
+2022-04-29 13:52:14,310 "GET /static/css/main_inventory.css HTTP/1.1" 304 0
+2022-04-29 13:53:50,727 "GET /Inventory/viewrequest/ HTTP/1.1" 200 19415
+2022-04-29 13:53:50,777 "GET /static/css/main_inventory.css HTTP/1.1" 304 0
+2022-04-29 13:54:02,119 "GET /Inventory/returnharddrives/ HTTP/1.1" 200 17129
+2022-04-29 13:54:07,837 "GET /Inventory/viewInventory/ HTTP/1.1" 200 45162
+2022-04-29 13:54:07,897 "GET /static/css/main_inventory.css HTTP/1.1" 304 0
+2022-04-29 13:54:12,155 "GET /Inventory/updateHardDrive/2345/ HTTP/1.1" 200 30754
+2022-04-29 13:55:12,474 "GET /Inventory/updateHardDrive/2345/ HTTP/1.1" 200 30754
+2022-04-29 13:55:12,544 "GET /static/css/style.css HTTP/1.1" 200 2410
+2022-04-29 13:55:12,546 "GET /static/css/main_inventory.css HTTP/1.1" 200 16627
+2022-04-29 13:55:12,735 "GET /media/images/377b833802f2fde7016d2abbd666eda3-400w.png HTTP/1.1" 200 238
+2022-04-29 13:55:12,735 "GET /media/images/hdts-200h.png HTTP/1.1" 200 3026
+2022-04-29 13:55:12,735 "GET /media/images/4d7777708e58ea04be2ded716d9f9d61-500w.png HTTP/1.1" 200 1905
+2022-04-29 13:55:12,736 "GET /media/images/3d5cfec84e518bf6a39609681dc93bd7-400w.png HTTP/1.1" 200 459
+2022-04-29 13:55:13,160 Not Found: /favicon.ico
+2022-04-29 13:55:13,160 "GET /favicon.ico HTTP/1.1" 404 5343
+2022-04-29 13:57:35,718 "GET /Inventory/viewrequest/ HTTP/1.1" 200 19415
+2022-04-29 13:57:35,790 "GET /static/css/main_inventory.css HTTP/1.1" 304 0
+2022-04-29 13:57:38,398 "GET /Inventory/viewReports/ HTTP/1.1" 200 26781
+2022-04-29 13:57:38,482 "GET /static/css/reports.css HTTP/1.1" 304 0
+2022-04-29 13:57:38,568 Not Found: /Inventory/viewReports/58d1fc3b-0e32-49cd-8a5a-837bf695655d
+2022-04-29 13:57:38,569 "GET /Inventory/viewReports/58d1fc3b-0e32-49cd-8a5a-837bf695655d HTTP/1.1" 404 7468
+2022-04-29 13:57:38,585 Not Found: /Inventory/viewReports/2d2ef24a-4c8b-4f36-b43a-748f41c32c93
+2022-04-29 13:57:38,586 "GET /Inventory/viewReports/2d2ef24a-4c8b-4f36-b43a-748f41c32c93 HTTP/1.1" 404 7468
+2022-04-29 13:57:38,596 Not Found: /Inventory/viewReports/b32df1dc-e88b-492f-bbac-32fd99bf0c29
+2022-04-29 13:57:38,604 "GET /Inventory/viewReports/b32df1dc-e88b-492f-bbac-32fd99bf0c29 HTTP/1.1" 404 7468
+2022-04-29 13:57:38,609 Not Found: /Inventory/viewReports/fcd2e022-9b8b-493a-9215-48a981b67647
+2022-04-29 13:57:38,609 "GET /Inventory/viewReports/fcd2e022-9b8b-493a-9215-48a981b67647 HTTP/1.1" 404 7468
+2022-04-29 13:58:22,526 "GET /Inventory/viewReports/ HTTP/1.1" 200 26781
+2022-04-29 13:58:22,718 Not Found: /Inventory/viewReports/58d1fc3b-0e32-49cd-8a5a-837bf695655d
+2022-04-29 13:58:22,721 Not Found: /Inventory/viewReports/b32df1dc-e88b-492f-bbac-32fd99bf0c29
+2022-04-29 13:58:22,724 Not Found: /Inventory/viewReports/2d2ef24a-4c8b-4f36-b43a-748f41c32c93
+2022-04-29 13:58:22,727 Not Found: /Inventory/viewReports/fcd2e022-9b8b-493a-9215-48a981b67647
+2022-04-29 13:58:22,728 "GET /Inventory/viewReports/58d1fc3b-0e32-49cd-8a5a-837bf695655d HTTP/1.1" 404 7468
+2022-04-29 13:58:22,728 "GET /Inventory/viewReports/b32df1dc-e88b-492f-bbac-32fd99bf0c29 HTTP/1.1" 404 7468
+2022-04-29 13:58:22,729 "GET /Inventory/viewReports/2d2ef24a-4c8b-4f36-b43a-748f41c32c93 HTTP/1.1" 404 7468
+2022-04-29 13:58:22,729 "GET /Inventory/viewReports/fcd2e022-9b8b-493a-9215-48a981b67647 HTTP/1.1" 404 7468
+2022-04-29 13:58:28,919 "GET /Inventory/viewInventory/ HTTP/1.1" 200 45155
+2022-04-29 13:58:28,975 "GET /static/css/main_inventory.css HTTP/1.1" 304 0
+2022-04-29 14:00:22,867 "GET /Inventory/viewInventory/ HTTP/1.1" 200 45162
+2022-04-29 14:00:22,913 "GET /static/css/main_inventory.css HTTP/1.1" 304 0
+2022-04-29 14:00:25,311 "GET /Inventory/viewReports/ HTTP/1.1" 200 26830
+2022-04-29 14:00:47,614 "GET /Inventory/viewrequest/ HTTP/1.1" 200 19415
+2022-04-29 14:00:51,695 "GET /Inventory/viewInventory/ HTTP/1.1" 200 45162
+2022-04-29 14:01:02,293 "GET /Inventory/viewrequest/ HTTP/1.1" 200 19415
+2022-04-29 14:01:02,358 "GET /static/css/main_inventory.css HTTP/1.1" 304 0
+2022-04-29 14:01:18,412 "GET /Inventory/viewrequest/ HTTP/1.1" 200 19415
+2022-04-29 14:02:53,239 "GET /Inventory/viewrequest/ HTTP/1.1" 200 19454
+2022-04-29 14:02:53,285 "GET /static/css/main_inventory.css HTTP/1.1" 304 0
+2022-04-29 14:03:15,350 "GET /Inventory/viewrequest/ HTTP/1.1" 200 19415
+2022-04-29 14:03:57,425 "GET /static/css/main_inventory.css HTTP/1.1" 304 0
+2022-04-29 14:05:48,904 "GET /Inventory/viewrequest/ HTTP/1.1" 200 19430
+2022-04-29 14:05:48,950 "GET /static/css/main_inventory.css HTTP/1.1" 304 0
+2022-04-29 14:06:32,917 "GET /Inventory/viewrequest/ HTTP/1.1" 200 19431
+2022-04-29 14:06:35,967 "GET /Inventory/viewrequest/ HTTP/1.1" 200 19431
+2022-04-29 14:06:38,993 "GET /Inventory/viewrequest/ HTTP/1.1" 200 19431
+2022-04-29 14:06:39,039 "GET /static/css/style.css HTTP/1.1" 200 2410
+2022-04-29 14:06:39,040 "GET /static/css/main_inventory.css HTTP/1.1" 200 16605
+2022-04-29 14:06:39,191 "GET /media/images/hdts-200h.png HTTP/1.1" 200 3026
+2022-04-29 14:06:39,191 "GET /media/images/3d5cfec84e518bf6a39609681dc93bd7-400w.png HTTP/1.1" 200 459
+2022-04-29 14:06:39,192 "GET /media/images/377b833802f2fde7016d2abbd666eda3-400w.png HTTP/1.1" 200 238
+2022-04-29 14:06:39,193 "GET /media/images/4d7777708e58ea04be2ded716d9f9d61-500w.png HTTP/1.1" 200 1905
+2022-04-29 14:06:39,557 Not Found: /favicon.ico
+2022-04-29 14:06:39,557 "GET /favicon.ico HTTP/1.1" 404 5343
+2022-04-29 14:07:24,574 "GET /Inventory/viewrequest/ HTTP/1.1" 200 19447
+2022-04-29 14:07:24,656 "GET /static/css/main_inventory.css HTTP/1.1" 200 16589
+2022-04-29 14:08:02,027 "GET /Inventory/viewrequest/ HTTP/1.1" 200 19456
+2022-04-29 14:08:02,085 "GET /static/css/main_inventory.css HTTP/1.1" 304 0
+2022-04-29 14:10:04,843 "GET /Inventory/viewrequest/ HTTP/1.1" 200 19451
+2022-04-29 14:10:04,896 "GET /static/css/main_inventory.css HTTP/1.1" 304 0
+2022-04-29 14:10:28,986 "GET /Inventory/viewrequest/ HTTP/1.1" 200 19474
+2022-04-29 14:10:29,039 "GET /static/css/main_inventory.css HTTP/1.1" 304 0
+2022-04-29 14:10:59,031 "GET /Inventory/viewrequest/ HTTP/1.1" 200 19470
+2022-04-29 14:10:59,078 "GET /static/css/main_inventory.css HTTP/1.1" 304 0
+2022-04-29 14:11:12,417 "GET /Inventory/viewrequest/ HTTP/1.1" 200 19464
+2022-04-29 14:11:20,441 "GET /Inventory/viewrequest/ HTTP/1.1" 200 19458
+2022-04-29 14:11:36,434 "GET /Inventory/viewrequest/ HTTP/1.1" 200 19452
+2022-04-29 14:11:36,490 "GET /static/css/main_inventory.css HTTP/1.1" 304 0
+2022-04-29 14:12:24,470 "GET /Inventory/viewrequest/ HTTP/1.1" 200 19452
+2022-04-29 14:12:24,544 "GET /static/css/main_inventory.css HTTP/1.1" 200 16574
+2022-04-29 14:14:08,165 "GET /Inventory/viewrequest/ HTTP/1.1" 200 19318
+2022-04-29 14:14:08,220 "GET /static/css/main_inventory.css HTTP/1.1" 304 0
+2022-04-29 14:14:50,680 "GET /Inventory/viewrequest/ HTTP/1.1" 200 19370
+2022-04-29 14:14:50,731 "GET /static/css/main_inventory.css HTTP/1.1" 304 0
+2022-04-29 14:15:06,632 "GET /Inventory/viewrequest/ HTTP/1.1" 200 19394
+2022-04-29 14:15:06,684 "GET /static/css/main_inventory.css HTTP/1.1" 304 0
+2022-04-29 14:15:32,987 "GET /Inventory/viewrequest/ HTTP/1.1" 200 19424
+2022-04-29 14:15:33,037 "GET /static/css/main_inventory.css HTTP/1.1" 304 0
+2022-04-29 14:16:33,353 "GET /Inventory/viewrequest/ HTTP/1.1" 200 19424
+2022-04-29 14:16:33,459 "GET /static/css/main_inventory.css HTTP/1.1" 200 16589
+2022-04-29 14:16:43,345 "GET /Inventory/viewrequest/ HTTP/1.1" 200 19437
+2022-04-29 14:16:43,389 "GET /static/css/main_inventory.css HTTP/1.1" 304 0
+2022-04-29 14:16:51,154 "GET /Inventory/viewrequest/ HTTP/1.1" 200 19450
+2022-04-29 14:16:51,208 "GET /static/css/main_inventory.css HTTP/1.1" 304 0
+2022-04-29 14:18:00,745 "GET /Inventory/viewrequest/ HTTP/1.1" 200 19450
+2022-04-29 14:18:00,793 "GET /static/css/main_inventory.css HTTP/1.1" 200 16770
+2022-04-29 14:18:44,026 "GET /Inventory/viewInventory/ HTTP/1.1" 200 45162
+2022-04-29 14:18:44,083 "GET /static/css/main_inventory.css HTTP/1.1" 304 0
+2022-04-29 14:18:54,895 "GET /Inventory/viewInventory/ HTTP/1.1" 200 45162
+2022-04-29 14:18:54,938 "GET /static/css/main_inventory.css HTTP/1.1" 304 0
+2022-04-29 14:18:56,744 "GET /Inventory/viewrequest/ HTTP/1.1" 200 19450
+2022-04-29 14:18:59,050 "GET /Inventory/viewInventory/ HTTP/1.1" 200 45162
+2022-04-29 14:19:12,468 "GET /Inventory/returnharddrives/ HTTP/1.1" 200 17129
+2022-04-29 14:19:12,567 "GET /static/css/main_inventory.css HTTP/1.1" 304 0
+2022-04-29 14:19:23,776 "GET /Inventory/viewLog/ HTTP/1.1" 200 342783
+2022-04-29 14:19:23,834 "GET /static/css/main_inventory.css HTTP/1.1" 304 0
+2022-04-29 14:19:27,068 "GET /Inventory/viewInventory/ HTTP/1.1" 200 45162
+2022-04-29 14:19:28,757 Hard Drive Added
+2022-04-29 14:19:28,894 "GET /Inventory/addHardDrive/? HTTP/1.1" 200 29250
+2022-04-29 14:19:54,805 Hard Drive Added
+2022-04-29 14:19:54,988 "GET /Inventory/addHardDrive/? HTTP/1.1" 200 29250
+2022-04-29 14:19:55,041 "GET /static/css/main_inventory.css HTTP/1.1" 200 16956
+2022-04-29 14:20:02,054 "GET /Inventory/viewInventory/ HTTP/1.1" 200 45162
+2022-04-29 14:20:02,114 "GET /static/css/main_inventory.css HTTP/1.1" 304 0
+2022-04-29 14:20:04,391 "GET /Inventory/updateHardDrive/3456/ HTTP/1.1" 200 30754
+2022-04-29 14:20:04,453 "GET /static/css/main_inventory.css HTTP/1.1" 304 0
+2022-04-29 14:20:24,699 "GET /Inventory/updateHardDrive/3456/ HTTP/1.1" 200 30754
+2022-04-29 14:20:24,756 "GET /static/css/main_inventory.css HTTP/1.1" 200 16957
+2022-04-29 14:20:33,821 "GET /Inventory/updateHardDrive/3456/ HTTP/1.1" 200 30754
+2022-04-29 14:20:33,865 "GET /static/css/main_inventory.css HTTP/1.1" 200 16957
+2022-04-29 14:20:44,790 "GET /Inventory/updateHardDrive/3456/ HTTP/1.1" 200 30754
+2022-04-29 14:20:44,839 "GET /static/css/main_inventory.css HTTP/1.1" 200 16957
+2022-04-29 14:20:55,126 "GET /Inventory/updateHardDrive/3456/ HTTP/1.1" 200 30754
+2022-04-29 14:20:55,183 "GET /static/css/main_inventory.css HTTP/1.1" 200 16934
+2022-04-29 14:21:11,681 "GET /Inventory/updateHardDrive/3456/ HTTP/1.1" 200 30754
+2022-04-29 14:21:11,734 "GET /static/css/main_inventory.css HTTP/1.1" 200 16932
+2022-04-29 14:22:18,409 "GET /Inventory/updateHardDrive/3456/ HTTP/1.1" 200 30754
+2022-04-29 14:22:18,490 "GET /static/css/main_inventory.css HTTP/1.1" 200 16924
+2022-04-29 14:22:37,252 "GET /Inventory/updateHardDrive/3456/ HTTP/1.1" 200 30754
+2022-04-29 14:22:37,309 "GET /static/css/main_inventory.css HTTP/1.1" 200 16971
+2022-04-29 14:22:48,011 "GET /Inventory/viewrequest/ HTTP/1.1" 200 19450
+2022-04-29 14:22:48,079 "GET /static/css/main_inventory.css HTTP/1.1" 304 0
+2022-04-29 14:23:23,432 "GET /Inventory/viewrequest/ HTTP/1.1" 200 19450
+2022-04-29 14:23:23,483 "GET /static/css/main_inventory.css HTTP/1.1" 200 16991
+2022-04-29 14:23:29,173 "GET /Inventory/viewInventory/ HTTP/1.1" 200 45162
+2022-04-29 14:23:29,232 "GET /static/css/main_inventory.css HTTP/1.1" 304 0
+2022-04-29 14:23:32,976 "GET /Inventory/updateHardDrive/2345/ HTTP/1.1" 200 30754
+2022-04-29 14:23:33,038 "GET /static/css/main_inventory.css HTTP/1.1" 304 0
+2022-04-29 14:24:09,980 "GET /Inventory/updateHardDrive/2345/ HTTP/1.1" 200 30754
+2022-04-29 14:24:10,035 "GET /static/css/main_inventory.css HTTP/1.1" 200 17188
+2022-04-29 14:24:34,765 "GET /Inventory/updateHardDrive/2345/ HTTP/1.1" 200 30754
+2022-04-29 14:24:34,809 "GET /static/css/main_inventory.css HTTP/1.1" 200 17189
+2022-04-29 14:26:48,288 "GET /Inventory/updateHardDrive/2345/ HTTP/1.1" 200 30754
+2022-04-29 14:26:48,343 "GET /static/css/main_inventory.css HTTP/1.1" 200 17461
+2022-04-29 14:27:06,486 "GET /Inventory/updateHardDrive/2345/ HTTP/1.1" 200 30754
+2022-04-29 14:27:06,578 "GET /static/css/main_inventory.css HTTP/1.1" 200 17461
+2022-04-29 14:28:23,751 "GET /Inventory/updateHardDrive/2345/ HTTP/1.1" 200 30754
+2022-04-29 14:28:23,795 "GET /static/css/main_inventory.css HTTP/1.1" 200 17445
+2022-04-29 14:29:03,774 "GET /Inventory/updateHardDrive/2345/ HTTP/1.1" 200 30754
+2022-04-29 14:29:03,827 "GET /static/css/main_inventory.css HTTP/1.1" 200 17442
+2022-04-29 14:30:07,891 "GET /Inventory/viewrequest/ HTTP/1.1" 200 19446
+2022-04-29 14:30:07,945 "GET /static/css/main_inventory.css HTTP/1.1" 304 0
+2022-04-29 14:30:20,618 "GET /Inventory/viewrequest/?eventLocation=&amount=15&event_end_date=&eventStatus= HTTP/1.1" 200 16169
+2022-04-29 14:30:20,692 "GET /static/css/main_inventory.css HTTP/1.1" 304 0
+2022-04-29 14:30:24,869 "GET /Inventory/viewrequest/? HTTP/1.1" 200 19446
+2022-04-29 14:30:27,388 "GET /Inventory/viewInventory/ HTTP/1.1" 200 45162
+2022-04-29 14:30:30,886 "GET /Inventory/returnharddrives/ HTTP/1.1" 200 17129
+2022-04-29 14:30:30,942 "GET /static/css/main_inventory.css HTTP/1.1" 304 0
+2022-04-29 14:30:48,375 "GET /Inventory/viewLog/ HTTP/1.1" 200 348231
+2022-04-29 14:30:48,441 "GET /static/css/main_inventory.css HTTP/1.1" 304 0
+2022-04-29 14:30:49,670 "GET /Inventory/viewReports/ HTTP/1.1" 200 26830
+2022-04-29 14:31:24,611 "GET /Inventory/viewrequest/ HTTP/1.1" 200 19446
+2022-04-29 14:31:24,687 "GET /static/css/main_inventory.css HTTP/1.1" 304 0
+2022-04-29 14:31:48,297 "GET / HTTP/1.1" 200 3250
+2022-04-29 14:31:48,350 "GET /static/HDTS/style.css HTTP/1.1" 404 1801
+2022-04-29 14:31:49,987 "GET /maintainerlogin/ HTTP/1.1" 200 4377
+2022-04-29 14:31:50,043 "GET /static/HDTS/style.css HTTP/1.1" 404 1801
+2022-04-29 14:32:35,239 "GET /maintainerlogin/ HTTP/1.1" 200 4377
+2022-04-29 14:32:35,287 "GET /static/HDTS/style.css HTTP/1.1" 404 1801
+2022-04-29 14:32:36,910 "GET /maintainerlogin/ HTTP/1.1" 200 4377
+2022-04-29 14:32:36,952 "GET /static/HDTS/style.css HTTP/1.1" 404 1801
+2022-04-29 14:32:39,095 "GET /maintainerlogin/ HTTP/1.1" 200 4377
+2022-04-29 14:32:39,152 "GET /static/HDTS/style.css HTTP/1.1" 404 1801
+2022-04-29 14:32:39,442 Not Found: /favicon.ico
+2022-04-29 14:32:39,443 "GET /favicon.ico HTTP/1.1" 404 5343
+2022-04-29 14:33:47,024 "GET /maintainerlogin/ HTTP/1.1" 200 4377
+2022-04-29 14:33:47,081 "GET /static/HDTS/style.css HTTP/1.1" 200 3365
+2022-04-29 14:34:11,303 "GET /maintainerlogin/ HTTP/1.1" 200 4377
+2022-04-29 14:34:11,340 "GET /static/HDTS/style.css HTTP/1.1" 200 3386
+2022-04-29 14:35:51,430 "GET /maintainerlogin/ HTTP/1.1" 200 4377
+2022-04-29 14:35:51,469 "GET /static/HDTS/style.css HTTP/1.1" 200 3644
+2022-04-29 14:36:55,393 "GET /maintainerlogin/ HTTP/1.1" 200 4377
+2022-04-29 14:36:55,446 "GET /static/HDTS/style.css HTTP/1.1" 200 3644
+2022-04-29 14:36:55,823 Not Found: /favicon.ico
+2022-04-29 14:36:55,823 "GET /favicon.ico HTTP/1.1" 404 5343
+2022-04-29 14:37:48,220 "GET /requestorlogin/ HTTP/1.1" 200 4384
+2022-04-29 14:37:48,258 "GET /static/HDTS/style.css HTTP/1.1" 304 0
+2022-04-29 14:37:50,059 "POST /requestorlogin/ HTTP/1.1" 302 0
+2022-04-29 14:37:50,091 "GET /request HTTP/1.1" 301 0
+2022-04-29 14:37:50,852 "GET /request/ HTTP/1.1" 200 14053
+2022-04-29 14:37:50,920 "GET /static/css/main_inventory.css HTTP/1.1" 304 0
+2022-04-29 14:37:55,608 "GET /request/requestlist/ HTTP/1.1" 200 15902
+2022-04-29 14:38:51,671 "GET /request/requestlist/ HTTP/1.1" 200 15904
+2022-04-29 14:38:51,730 "GET /static/css/main_inventory.css HTTP/1.1" 304 0
+2022-04-29 14:39:37,337 "GET /request/requestlist/ HTTP/1.1" 200 15904
+2022-04-29 14:40:17,959 "GET /request/requestlist/ HTTP/1.1" 200 15894
+2022-04-29 14:40:18,019 "GET /static/css/main.css HTTP/1.1" 200 16299
+2022-04-29 14:40:51,684 "GET /request/requestlist/ HTTP/1.1" 200 15894
+2022-04-29 14:40:51,760 "GET /static/css/main.css HTTP/1.1" 200 17153
+2022-04-29 14:41:44,042 "GET /request/requestlist/ HTTP/1.1" 200 15973
+2022-04-29 14:41:44,151 "GET /static/css/main.css HTTP/1.1" 304 0
+2022-04-29 14:42:14,677 "GET /request/requestlist/ HTTP/1.1" 200 15973
+2022-04-29 14:42:14,720 "GET /static/css/main.css HTTP/1.1" 200 17427
+2022-04-29 14:42:37,248 "GET /request/requestlist/ HTTP/1.1" 200 15986
+2022-04-29 14:42:37,307 "GET /static/css/main.css HTTP/1.1" 304 0
+2022-04-29 14:42:44,745 "GET /request/requestlist/ HTTP/1.1" 200 16003
+2022-04-29 14:42:44,789 "GET /static/css/main.css HTTP/1.1" 304 0
+2022-04-29 14:44:17,008 "GET /request/requestlist/ HTTP/1.1" 200 16015
+2022-04-29 14:44:17,067 "GET /static/css/main.css HTTP/1.1" 304 0
+2022-04-29 14:44:20,002 "GET /request/requestlist/ HTTP/1.1" 200 16015
+2022-04-29 14:44:21,685 "GET /request/newrequest/ HTTP/1.1" 200 22775
+2022-04-29 14:44:32,141 "GET /userprofile/ HTTP/1.1" 200 3461
+2022-04-29 14:44:32,182 "GET /static/HDTS/style.css HTTP/1.1" 304 0
+2022-04-29 14:44:35,790 "GET /Inventory/viewReports/ HTTP/1.1" 200 26830
+2022-04-29 14:44:40,983 "GET /request/requestlist/ HTTP/1.1" 200 16015
+2022-04-29 14:44:41,037 "GET /static/css/main.css HTTP/1.1" 304 0
+2022-04-29 14:45:23,764 "GET /request/newrequest/ HTTP/1.1" 200 22791
+2022-04-29 14:45:23,857 "GET /static/css/main.css HTTP/1.1" 304 0
+2022-04-29 14:45:33,890 "GET /userprofile/ HTTP/1.1" 200 3461
+2022-04-29 14:45:33,931 "GET /static/HDTS/style.css HTTP/1.1" 304 0
+2022-04-29 14:45:44,767 "GET /requestorlogin/ HTTP/1.1" 200 4384
+2022-04-29 14:45:47,781 "POST /requestorlogin/ HTTP/1.1" 302 0
+2022-04-29 14:45:47,802 "GET /request HTTP/1.1" 301 0
+2022-04-29 14:45:48,383 "GET /request/ HTTP/1.1" 200 14043
+2022-04-29 14:45:48,471 "GET /static/css/main.css HTTP/1.1" 304 0
+2022-04-29 14:46:36,712 "GET /Inventory/viewReports/ HTTP/1.1" 200 26830
+2022-04-29 14:46:40,046 "GET /userprofile/ HTTP/1.1" 200 3461
+2022-04-29 14:46:40,092 "GET /static/HDTS/style.css HTTP/1.1" 304 0
+2022-04-29 14:46:42,117 "GET /adminlogin/ HTTP/1.1" 200 4377
+2022-04-29 14:46:43,903 "POST /adminlogin/ HTTP/1.1" 302 0
+2022-04-29 14:46:43,945 "GET /register HTTP/1.1" 301 0
+2022-04-29 14:46:44,501 "GET /register/ HTTP/1.1" 200 3307
+2022-04-29 14:46:44,583 "GET /static/register/style.css HTTP/1.1" 404 1813
+2022-04-29 14:46:55,680 "GET /logout/ HTTP/1.1" 302 0
+2022-04-29 14:46:55,708 "GET / HTTP/1.1" 200 3250
+2022-04-29 14:47:00,932 "GET /register/ HTTP/1.1" 302 0
+2022-04-29 14:47:00,940 "GET /?next=/register/ HTTP/1.1" 200 3250
+2022-04-29 14:47:02,814 "GET /adminlogin/ HTTP/1.1" 200 4377
+2022-04-29 14:47:04,767 "POST /adminlogin/ HTTP/1.1" 302 0
+2022-04-29 14:47:04,804 "GET /register HTTP/1.1" 301 0
+2022-04-29 14:47:05,265 "GET /register/ HTTP/1.1" 200 3307
+2022-04-29 14:47:05,334 "GET /static/register/style.css HTTP/1.1" 404 1813
+2022-04-29 14:48:24,796 "GET /register/ HTTP/1.1" 200 3307
+2022-04-29 14:48:24,865 "GET /static/HDTS/style.css HTTP/1.1" 304 0
+2022-04-29 14:48:24,870 "GET /static/register/style.css HTTP/1.1" 404 1813
+2022-04-29 14:50:08,772 "GET /register/ HTTP/1.1" 200 13548
+2022-04-29 14:50:08,816 "GET /static/css/main.css HTTP/1.1" 304 0
+2022-04-29 14:50:08,942 "GET /static/register/style.css HTTP/1.1" 404 1813
+2022-04-29 14:50:12,933 "GET /register/viewAccounts/ HTTP/1.1" 200 16376
+2022-04-29 14:50:17,617 "GET /Inventory/viewInventory/ HTTP/1.1" 200 45162
+2022-04-29 14:50:17,691 "GET /static/css/main_inventory.css HTTP/1.1" 304 0
+2022-04-29 14:52:09,174 "GET /register/viewAccounts/ HTTP/1.1" 200 15797
+2022-04-29 14:52:09,244 "GET /static/css/main.css HTTP/1.1" 304 0
+2022-04-29 14:52:57,254 "GET /register/viewAccounts/ HTTP/1.1" 200 15810
+2022-04-29 14:53:25,824 "GET /register/viewAccounts/ HTTP/1.1" 200 15831
+2022-04-29 14:53:25,872 "GET /static/css/main.css HTTP/1.1" 304 0
+2022-04-29 14:54:22,449 "GET /register/viewAccounts/ HTTP/1.1" 200 15896
+2022-04-29 14:54:26,005 "GET /register/viewAccounts/ HTTP/1.1" 200 15896
+2022-04-29 14:54:29,610 "GET /register/viewAccounts/ HTTP/1.1" 200 15896
+2022-04-29 14:54:29,740 "GET /static/css/style.css HTTP/1.1" 200 3365
+2022-04-29 14:54:29,741 "GET /static/css/main.css HTTP/1.1" 200 17427
+2022-04-29 14:54:29,876 "GET /media/images/hdts-200h.png HTTP/1.1" 200 3026
+2022-04-29 14:54:29,877 "GET /media/images/3d5cfec84e518bf6a39609681dc93bd7-400w.png HTTP/1.1" 200 459
+2022-04-29 14:54:29,877 "GET /media/images/377b833802f2fde7016d2abbd666eda3-400w.png HTTP/1.1" 200 238
+2022-04-29 14:54:29,878 "GET /media/images/4d7777708e58ea04be2ded716d9f9d61-500w.png HTTP/1.1" 200 1905
+2022-04-29 14:54:30,423 Not Found: /favicon.ico
+2022-04-29 14:54:30,423 "GET /favicon.ico HTTP/1.1" 404 5343
+2022-04-29 14:54:57,065 "GET /register/viewAccounts/ HTTP/1.1" 200 15920
+2022-04-29 14:55:10,900 "GET /register/viewAccounts/ HTTP/1.1" 200 15913
+2022-04-29 14:55:45,299 "GET /register/viewAccounts/ HTTP/1.1" 200 15922
+2022-04-29 14:55:45,387 "GET /static/css/main.css HTTP/1.1" 304 0
+2022-04-29 14:57:32,335 "GET /register/viewAccounts/ HTTP/1.1" 200 15922
+2022-04-29 14:57:32,402 "GET /static/css/style.css HTTP/1.1" 304 0
+2022-04-29 14:57:32,403 "GET /static/css/main.css HTTP/1.1" 304 0
+2022-04-29 14:57:36,882 "GET / HTTP/1.1" 200 3250
+2022-04-29 14:57:36,934 "GET /static/HDTS/style.css HTTP/1.1" 304 0
+2022-04-29 14:57:38,393 "GET /maintainerlogin/ HTTP/1.1" 200 4377
+2022-04-29 14:57:39,275 "GET /adminlogin/ HTTP/1.1" 200 4377
+2022-04-29 14:57:41,144 "GET /request/ HTTP/1.1" 200 14043
+2022-04-29 14:58:08,828 "GET /request/ HTTP/1.1" 200 14043
+2022-04-29 14:58:13,163 "GET /request/ HTTP/1.1" 200 14043
+2022-04-29 14:58:39,945 "GET /requestorlogin/ HTTP/1.1" 200 4384
+2022-04-29 14:58:41,096 "GET /accountRequest HTTP/1.1" 301 0
+2022-04-29 14:58:41,208 "GET /accountRequest/ HTTP/1.1" 200 7836
+2022-04-29 14:58:50,148 "GET /maintainerlogin/ HTTP/1.1" 200 4377
+2022-04-29 14:58:51,576 "GET /request/ HTTP/1.1" 200 14043
+2022-04-29 14:59:50,842 "GET /maintainerlogin/ HTTP/1.1" 200 4384
+2022-04-29 14:59:50,881 "GET /static/HDTS/style.css HTTP/1.1" 304 0
+2022-04-29 14:59:52,995 "GET /accountRequest/ HTTP/1.1" 200 7836
+2022-04-29 14:59:54,677 "GET /requestorlogin/ HTTP/1.1" 200 4384
+2022-04-29 14:59:56,002 "GET /accountRequest/ HTTP/1.1" 200 7836
+2022-04-29 14:59:57,618 "GET /adminlogin/ HTTP/1.1" 200 4384
+2022-04-29 14:59:59,036 "GET /accountRequest/ HTTP/1.1" 200 7836
+2022-04-29 15:00:04,407 "GET /maintainerlogin/ HTTP/1.1" 200 4384
+2022-04-29 15:01:05,087 "GET /maintainerlogin/ HTTP/1.1" 200 4384
+2022-04-29 15:01:54,313 "GET /maintainerlogin/ HTTP/1.1" 200 4384
+2022-04-29 15:01:56,260 "GET /maintainerlogin/ HTTP/1.1" 200 4384
+2022-04-29 15:02:34,780 "GET /maintainerlogin/ HTTP/1.1" 200 14083
+2022-04-29 15:02:34,830 "GET /static/css/style.css HTTP/1.1" 304 0
+2022-04-29 15:02:34,833 "GET /static/css/main.css HTTP/1.1" 200 17427
+2022-04-29 15:04:52,739 "GET /maintainerlogin/ HTTP/1.1" 200 14625
+2022-04-29 15:04:52,784 "GET /static/css/main.css HTTP/1.1" 304 0
+2022-04-29 15:06:13,648 "GET /maintainerlogin/ HTTP/1.1" 200 15403
+2022-04-29 15:06:13,728 "GET /static/css/style.css HTTP/1.1" 304 0
+2022-04-29 15:06:13,729 "GET /static/css/main.css HTTP/1.1" 304 0
+2022-04-29 15:07:04,878 "GET /maintainerlogin/ HTTP/1.1" 200 15106
+2022-04-29 15:07:04,922 "GET /static/css/main.css HTTP/1.1" 304 0
+2022-04-29 15:09:39,666 "GET /maintainerlogin/ HTTP/1.1" 200 15073
+2022-04-29 15:09:39,721 "GET /static/css/style.css HTTP/1.1" 304 0
+2022-04-29 15:09:39,722 "GET /static/css/main.css HTTP/1.1" 304 0
+2022-04-29 15:09:41,211 "GET /requestorlogin/ HTTP/1.1" 200 15026
+2022-04-29 15:09:43,389 "GET /maintainerlogin/ HTTP/1.1" 200 15073
+2022-04-29 15:09:45,428 "GET /maintainerlogin/ HTTP/1.1" 200 15073
+2022-04-29 15:09:46,795 "GET /adminlogin/ HTTP/1.1" 200 15026
+2022-04-29 15:09:49,184 "GET /requestorlogin/ HTTP/1.1" 200 15026
+2022-04-29 15:10:45,893 "GET /requestorlogin/ HTTP/1.1" 200 15006
+2022-04-29 15:10:45,944 "GET /static/css/main.css HTTP/1.1" 304 0
+2022-04-29 15:10:47,721 "GET /maintainerlogin/ HTTP/1.1" 200 15007
+2022-04-29 15:10:48,960 "GET /maintainerlogin/ HTTP/1.1" 200 15007
+2022-04-29 15:11:51,436 "GET /maintainerlogin/ HTTP/1.1" 200 14248
+2022-04-29 15:11:51,513 "GET /static/css/main.css HTTP/1.1" 304 0
+2022-04-29 15:12:24,087 "GET /maintainerlogin/ HTTP/1.1" 200 14248
+2022-04-29 15:12:29,657 "GET /maintainerlogin/ HTTP/1.1" 200 14248
+2022-04-29 15:12:29,704 "GET /static/css/style.css HTTP/1.1" 200 3365
+2022-04-29 15:12:29,704 "GET /static/css/main.css HTTP/1.1" 200 17428
+2022-04-29 15:12:29,838 "GET /media/images/3d5cfec84e518bf6a39609681dc93bd7-400w.png HTTP/1.1" 200 459
+2022-04-29 15:12:29,838 "GET /media/images/hdts-200h.png HTTP/1.1" 200 3026
+2022-04-29 15:12:29,839 "GET /media/images/377b833802f2fde7016d2abbd666eda3-400w.png HTTP/1.1" 200 238
+2022-04-29 15:12:29,839 "GET /media/images/4d7777708e58ea04be2ded716d9f9d61-500w.png HTTP/1.1" 200 1905
+2022-04-29 15:12:30,222 Not Found: /favicon.ico
+2022-04-29 15:12:30,222 "GET /favicon.ico HTTP/1.1" 404 5343
+2022-04-29 15:13:22,529 "GET /maintainerlogin/ HTTP/1.1" 200 14248
+2022-04-29 15:13:22,628 "GET /static/css/main.css HTTP/1.1" 200 17421
+2022-04-29 15:13:23,903 "GET /maintainerlogin/ HTTP/1.1" 200 14248
+2022-04-29 15:13:23,945 "GET /static/css/main.css HTTP/1.1" 304 0
+2022-04-29 15:13:25,062 "GET /requestorlogin/ HTTP/1.1" 200 14247
+2022-04-29 15:13:25,114 "GET /static/css/main.css HTTP/1.1" 304 0
+2022-04-29 15:13:27,585 "GET /maintainerlogin/ HTTP/1.1" 200 14248
+2022-04-29 15:13:27,669 "GET /static/css/main.css HTTP/1.1" 304 0
+2022-04-29 15:13:28,600 "GET /adminlogin/ HTTP/1.1" 200 14243
+2022-04-29 15:13:28,667 "GET /static/css/main.css HTTP/1.1" 304 0
+2022-04-29 15:14:50,428 "GET /adminlogin/ HTTP/1.1" 200 14243
+2022-04-29 15:14:50,520 "GET /static/css/main.css HTTP/1.1" 200 17442
+2022-04-29 15:15:52,804 "GET /adminlogin/ HTTP/1.1" 200 12769
+2022-04-29 15:15:52,855 "GET /static/css/main.css HTTP/1.1" 304 0
+2022-04-29 15:16:43,802 "GET /requestorlogin/ HTTP/1.1" 200 12773
+2022-04-29 15:16:43,861 "GET /static/css/style.css HTTP/1.1" 304 0
+2022-04-29 15:16:43,863 "GET /static/css/main.css HTTP/1.1" 304 0
+2022-04-29 15:16:45,760 "POST /requestorlogin/ HTTP/1.1" 302 0
+2022-04-29 15:16:45,786 "GET /request HTTP/1.1" 301 0
+2022-04-29 15:16:46,361 "GET /request/ HTTP/1.1" 200 14043
+2022-04-29 15:17:00,585 "GET /request/ HTTP/1.1" 200 14043
+2022-04-29 15:17:00,692 "GET /static/css/main.css HTTP/1.1" 304 0
+2022-04-29 15:18:24,213 "GET /request/ HTTP/1.1" 200 14211
+2022-04-29 15:18:24,266 "GET /static/css/main.css HTTP/1.1" 304 0
+2022-04-29 15:18:26,209 "GET /logout/ HTTP/1.1" 302 0
+2022-04-29 15:18:26,261 "GET / HTTP/1.1" 200 11660
+2022-04-29 15:25:13,956 "GET / HTTP/1.1" 200 11697
+2022-04-29 15:25:14,006 "GET /static/css/style.css HTTP/1.1" 304 0
+2022-04-29 15:25:14,007 "GET /static/css/main.css HTTP/1.1" 304 0
+2022-04-29 15:25:41,913 "GET /requestorlogin/ HTTP/1.1" 200 12768
+2022-04-29 15:26:15,405 "POST /requestorlogin/ HTTP/1.1" 200 12843
+2022-04-29 15:27:05,025 "GET /maintainerlogin/ HTTP/1.1" 200 12769
+2022-04-29 15:27:05,084 "GET /static/css/main.css HTTP/1.1" 304 0
+2022-04-29 15:27:13,155 "GET /Inventory/viewInventory/ HTTP/1.1" 302 0
+2022-04-29 15:27:13,165 "GET /?next=/Inventory/viewInventory/ HTTP/1.1" 200 11697
+2022-04-29 15:27:17,265 "GET /requestorlogin/ HTTP/1.1" 200 12768
+2022-04-29 15:28:15,141 "GET /requestorlogin/ HTTP/1.1" 200 12768
+2022-04-29 15:29:50,705 "GET /requestorlogin/ HTTP/1.1" 200 12768
+2022-04-29 15:29:50,769 "GET /static/css/style.css HTTP/1.1" 200 3365
+2022-04-29 15:29:50,770 "GET /static/css/main.css HTTP/1.1" 200 17846
+2022-04-29 15:29:50,915 "GET /media/images/hdts-200h.png HTTP/1.1" 200 3026
+2022-04-29 15:29:51,437 Not Found: /favicon.ico
+2022-04-29 15:29:51,438 "GET /favicon.ico HTTP/1.1" 404 5343
+2022-04-29 15:31:58,611 "GET /requestorlogin/ HTTP/1.1" 200 12805
+2022-04-29 15:31:58,690 "GET /static/css/main.css HTTP/1.1" 200 17823
+2022-04-29 15:32:05,658 "GET /requestorlogin/ HTTP/1.1" 200 12777
+2022-04-29 15:32:05,712 "GET /static/css/main.css HTTP/1.1" 304 0
+2022-04-29 15:32:59,118 "GET /requestorlogin/ HTTP/1.1" 200 12771
+2022-04-29 15:32:59,167 "GET /static/css/main.css HTTP/1.1" 200 17810
+2022-04-29 15:33:01,756 "GET /requestorlogin/ HTTP/1.1" 200 12771
+2022-04-29 15:33:01,802 "GET /static/css/main.css HTTP/1.1" 304 0
+2022-04-29 15:33:03,213 "GET /maintainerlogin/ HTTP/1.1" 200 12772
+2022-04-29 15:33:03,271 "GET /static/css/main.css HTTP/1.1" 304 0
+2022-04-29 15:33:05,535 "GET /accountRequest/ HTTP/1.1" 200 16292
+2022-04-29 15:33:05,605 "GET /static/css/main.css HTTP/1.1" 304 0
+2022-04-29 15:34:14,207 "GET /accountRequest/ HTTP/1.1" 200 16292
+2022-04-29 15:34:14,258 "GET /static/css/main.css HTTP/1.1" 200 17796
+2022-04-29 15:34:25,296 "GET /accountRequest/ HTTP/1.1" 200 16292
+2022-04-29 15:34:25,355 "GET /static/css/main.css HTTP/1.1" 200 17781
+2022-04-29 15:35:00,418 "GET /accountRequest/ HTTP/1.1" 200 16292
+2022-04-29 15:35:00,477 "GET /static/css/main.css HTTP/1.1" 200 17823
+2022-04-29 15:35:56,326 "GET /accountRequest/ HTTP/1.1" 200 16292
+2022-04-29 15:35:56,384 "GET /static/css/style.css HTTP/1.1" 304 0
+2022-04-29 15:35:56,385 "GET /static/css/main.css HTTP/1.1" 200 17841
+2022-04-29 15:36:56,328 "GET /accountRequest/ HTTP/1.1" 200 16292
+2022-04-29 15:36:56,375 "GET /static/css/main.css HTTP/1.1" 200 17841
+2022-04-29 15:37:57,055 "GET /maintainerlogin/ HTTP/1.1" 200 12772
+2022-04-29 15:37:57,117 "GET /static/css/main.css HTTP/1.1" 304 0
+2022-04-29 15:38:30,341 "GET /maintainerlogin/ HTTP/1.1" 200 12772
+2022-04-29 15:38:30,392 "GET /static/css/main.css HTTP/1.1" 200 17864
+2022-04-29 15:38:33,059 "GET /maintainerlogin/ HTTP/1.1" 200 12772
+2022-04-29 15:38:33,106 "GET /static/css/main.css HTTP/1.1" 304 0
+2022-04-29 15:38:33,639 "GET /maintainerlogin/ HTTP/1.1" 200 12772
+2022-04-29 15:38:33,677 "GET /static/css/main.css HTTP/1.1" 304 0
+2022-04-29 15:38:36,043 "GET /adminlogin/ HTTP/1.1" 200 12767
+2022-04-29 15:38:36,094 "GET /static/css/main.css HTTP/1.1" 304 0
+2022-04-29 15:38:37,415 "GET /requestorlogin/ HTTP/1.1" 200 12771
+2022-04-29 15:38:37,497 "GET /static/css/main.css HTTP/1.1" 304 0
+2022-04-29 15:39:35,985 "GET /requestorlogin/ HTTP/1.1" 200 12771
+2022-04-29 15:39:36,031 "GET /static/css/main.css HTTP/1.1" 200 17944
+2022-04-29 15:39:41,413 "GET /requestorlogin/ HTTP/1.1" 200 12771
+2022-04-29 15:39:41,459 "GET /static/css/main.css HTTP/1.1" 200 17944
+2022-04-29 15:39:55,684 Not Found: /r
+2022-04-29 15:39:55,684 "GET /r HTTP/1.1" 404 5313
+2022-04-29 15:39:57,908 "GET / HTTP/1.1" 200 11700
+2022-04-29 15:39:57,980 "GET /static/css/main.css HTTP/1.1" 304 0
+2022-04-29 15:40:09,359 "GET /requestorlogin/ HTTP/1.1" 200 12771
+2022-04-29 15:40:09,410 "GET /static/css/main.css HTTP/1.1" 304 0
+2022-04-29 15:40:13,879 "GET /accountRequest/ HTTP/1.1" 200 16292
+2022-04-29 15:40:13,932 "GET /static/css/main.css HTTP/1.1" 304 0
+2022-04-29 15:40:50,793 "GET /requestorlogin/ HTTP/1.1" 200 12771
+2022-04-29 15:40:50,844 "GET /static/css/main.css HTTP/1.1" 304 0
+2022-04-29 15:40:53,025 "POST /requestorlogin/ HTTP/1.1" 302 0
+2022-04-29 15:40:53,051 "GET /request HTTP/1.1" 301 0
+2022-04-29 15:40:53,598 "GET /request/ HTTP/1.1" 200 14060
+2022-04-29 15:40:55,342 "GET /userprofile/ HTTP/1.1" 200 11905
+2022-04-29 15:41:16,584 "GET /requestorlogin/ HTTP/1.1" 200 12771
+2022-04-29 15:41:16,651 "GET /static/css/main.css HTTP/1.1" 304 0
+2022-04-29 15:41:37,996 "GET /maintainerlogin/ HTTP/1.1" 200 12772
+2022-04-29 15:41:38,040 "GET /static/css/main.css HTTP/1.1" 304 0
+2022-04-29 15:41:39,831 "POST /maintainerlogin/ HTTP/1.1" 302 0
+2022-04-29 15:41:39,856 "GET /Inventory HTTP/1.1" 301 0
+2022-04-29 15:41:40,444 "GET /Inventory/ HTTP/1.1" 200 14398
+2022-04-29 15:41:40,541 "GET /static/css/main_inventory.css HTTP/1.1" 304 0
+2022-04-29 15:41:40,640 "GET /static/Inventory/style.css HTTP/1.1" 404 1816
+2022-04-29 15:42:09,806 D:\Documents\HARD DRIVES\HDTS\HDTS-Django\Inventory\urls.py changed, reloading.
+2022-04-29 15:42:10,979 Watching for file changes with StatReloader
+2022-04-29 15:42:11,745 "GET /logout/ HTTP/1.1" 302 0
+2022-04-29 15:42:11,784 "GET / HTTP/1.1" 200 11700
+2022-04-29 15:42:11,841 "GET /static/css/main.css HTTP/1.1" 304 0
+2022-04-29 15:42:14,424 "GET /maintainerlogin/ HTTP/1.1" 200 12772
+2022-04-29 15:42:16,372 "POST /maintainerlogin/ HTTP/1.1" 302 0
+2022-04-29 15:42:16,402 "GET /Inventory HTTP/1.1" 301 0
+2022-04-29 15:42:17,182 "GET /Inventory/ HTTP/1.1" 200 45260
+2022-04-29 15:42:17,240 "GET /static/css/style.css HTTP/1.1" 304 0
+2022-04-29 15:42:46,157 "GET /Inventory/viewInventory/ HTTP/1.1" 200 45260
+2022-04-29 15:42:47,673 "GET /Inventory/viewInventory/ HTTP/1.1" 200 45260
+2022-04-29 15:43:13,833 D:\Documents\HARD DRIVES\HDTS\HDTS-Django\register\urls.py changed, reloading.
+2022-04-29 15:43:14,846 Watching for file changes with StatReloader
+2022-04-29 15:43:15,473 "GET /logout/ HTTP/1.1" 302 0
+2022-04-29 15:43:15,526 "GET / HTTP/1.1" 200 11700
+2022-04-29 15:43:15,612 "GET /static/css/main.css HTTP/1.1" 304 0
+2022-04-29 15:43:17,716 "GET /adminlogin/ HTTP/1.1" 200 12767
+2022-04-29 15:43:20,021 "POST /adminlogin/ HTTP/1.1" 302 0
+2022-04-29 15:43:20,058 "GET /register HTTP/1.1" 301 0
+2022-04-29 15:43:20,653 "GET /register/ HTTP/1.1" 200 15918
+2022-04-29 15:43:24,144 "GET /logout/ HTTP/1.1" 302 0
+2022-04-29 15:43:24,178 "GET / HTTP/1.1" 200 11700
+2022-04-29 15:43:44,190 D:\Documents\HARD DRIVES\HDTS\HDTS-Django\request\urls.py changed, reloading.
+2022-04-29 15:43:45,283 Watching for file changes with StatReloader
+2022-04-29 15:43:46,683 "GET /requestorlogin/ HTTP/1.1" 200 12771
+2022-04-29 15:43:46,737 "GET /static/css/main.css HTTP/1.1" 304 0
+2022-04-29 15:43:48,557 "POST /requestorlogin/ HTTP/1.1" 302 0
+2022-04-29 15:43:48,584 "GET /request HTTP/1.1" 301 0
+2022-04-29 15:43:49,063 "GET /request/ HTTP/1.1" 200 16032
+2022-04-29 15:43:57,963 "GET /request/requestlist/ HTTP/1.1" 200 16032
+2022-04-29 15:43:59,865 "GET /userprofile/ HTTP/1.1" 200 11905
+2022-04-29 15:44:02,539 "GET /requestorlogin/ HTTP/1.1" 200 12771
+2022-04-29 15:44:04,782 "POST /requestorlogin/ HTTP/1.1" 302 0
+2022-04-29 15:44:04,811 "GET /request HTTP/1.1" 301 0
+2022-04-29 15:44:05,479 "GET /request/ HTTP/1.1" 200 16032
+2022-04-29 15:45:21,627 "GET /request/ HTTP/1.1" 200 16032
+2022-04-29 15:45:21,721 "GET /static/css/main.css HTTP/1.1" 304 0
+2022-04-29 15:45:24,574 "GET /request/ HTTP/1.1" 200 16032
+2022-04-29 15:45:25,747 "GET /static/css/style.css HTTP/1.1" 200 3365
+2022-04-29 15:45:25,769 "GET /static/css/main.css HTTP/1.1" 200 17944
+2022-04-29 15:45:25,801 "GET /media/images/377b833802f2fde7016d2abbd666eda3-400w.png HTTP/1.1" 200 238
+2022-04-29 15:45:25,824 "GET /media/images/hdts-200h.png HTTP/1.1" 200 3026
+2022-04-29 15:45:25,825 "GET /media/images/3d5cfec84e518bf6a39609681dc93bd7-400w.png HTTP/1.1" 200 459
+2022-04-29 15:45:25,828 "GET /media/images/4d7777708e58ea04be2ded716d9f9d61-500w.png HTTP/1.1" 200 1905
+2022-04-29 15:45:25,902 Not Found: /favicon.ico
+2022-04-29 15:45:25,903 "GET /favicon.ico HTTP/1.1" 404 5343
+2022-04-29 15:46:10,518 "GET /request/ HTTP/1.1" 200 16032
+2022-04-29 15:46:10,606 "GET /static/css/main.css HTTP/1.1" 304 0
+2022-04-29 15:46:12,705 "GET /request/ HTTP/1.1" 200 16032
+2022-04-29 15:46:14,579 "GET /request/ HTTP/1.1" 200 16032
+2022-04-29 15:46:14,648 "GET /static/css/style.css HTTP/1.1" 200 3365
+2022-04-29 15:46:14,649 "GET /static/css/main.css HTTP/1.1" 200 17944
+2022-04-29 15:46:14,787 "GET /media/images/4d7777708e58ea04be2ded716d9f9d61-500w.png HTTP/1.1" 200 1905
+2022-04-29 15:46:14,787 "GET /media/images/hdts-200h.png HTTP/1.1" 200 3026
+2022-04-29 15:46:14,787 "GET /media/images/377b833802f2fde7016d2abbd666eda3-400w.png HTTP/1.1" 200 238
+2022-04-29 15:46:14,788 "GET /media/images/3d5cfec84e518bf6a39609681dc93bd7-400w.png HTTP/1.1" 200 459
+2022-04-29 15:46:15,138 Not Found: /favicon.ico
+2022-04-29 15:46:15,138 "GET /favicon.ico HTTP/1.1" 404 5343
+2022-04-29 15:46:45,347 "GET /request/ HTTP/1.1" 200 16032
+2022-04-29 15:46:45,415 "GET /static/css/style.css HTTP/1.1" 200 3365
+2022-04-29 15:46:45,416 "GET /static/css/main.css HTTP/1.1" 200 17944
+2022-04-29 15:46:45,621 "GET /media/images/4d7777708e58ea04be2ded716d9f9d61-500w.png HTTP/1.1" 200 1905
+2022-04-29 15:46:45,624 "GET /media/images/377b833802f2fde7016d2abbd666eda3-400w.png HTTP/1.1" 200 238
+2022-04-29 15:46:45,625 "GET /media/images/3d5cfec84e518bf6a39609681dc93bd7-400w.png HTTP/1.1" 200 459
+2022-04-29 15:46:45,626 "GET /media/images/hdts-200h.png HTTP/1.1" 200 3026
+2022-04-29 15:46:46,066 Not Found: /favicon.ico
+2022-04-29 15:46:46,067 "GET /favicon.ico HTTP/1.1" 404 5343
+2022-04-29 15:46:47,543 "GET /request/requestlist/ HTTP/1.1" 200 16032
+2022-04-29 15:46:49,158 "GET /logout/ HTTP/1.1" 302 0
+2022-04-29 15:46:49,205 "GET / HTTP/1.1" 200 11700
+2022-04-29 15:46:50,857 "GET /maintainerlogin/ HTTP/1.1" 200 12772
+2022-04-29 15:46:53,041 "POST /maintainerlogin/ HTTP/1.1" 302 0
+2022-04-29 15:46:53,069 "GET /Inventory HTTP/1.1" 301 0
+2022-04-29 15:46:53,825 "GET /Inventory/ HTTP/1.1" 200 45260
+2022-04-29 15:46:57,130 "GET /Inventory/viewrequest/ HTTP/1.1" 200 19544
+2022-04-29 15:46:59,275 "GET /Inventory/returnharddrives/ HTTP/1.1" 200 17227
+2022-04-29 15:47:00,793 "GET /Inventory/viewLog/ HTTP/1.1" 200 380202
+2022-04-29 15:47:01,981 "GET /Inventory/viewReports/ HTTP/1.1" 200 26830
+2022-04-29 15:48:32,633 "GET /Inventory/viewReports/ HTTP/1.1" 200 26828
+2022-04-29 15:48:34,388 "GET /logout/ HTTP/1.1" 302 0
+2022-04-29 15:48:34,422 "GET / HTTP/1.1" 200 11700
+2022-04-29 15:48:34,496 "GET /static/css/main.css HTTP/1.1" 304 0
+2022-04-29 15:48:36,154 "GET /adminlogin/ HTTP/1.1" 200 12767
+2022-04-29 15:48:38,224 "POST /adminlogin/ HTTP/1.1" 302 0
+2022-04-29 15:48:38,255 "GET /register HTTP/1.1" 301 0
+2022-04-29 15:48:38,948 "GET /register/ HTTP/1.1" 200 15926
+2022-04-29 15:48:39,007 "GET /static/css/mainregister.css HTTP/1.1" 200 17427
+2022-04-29 15:48:41,778 "GET /logout/ HTTP/1.1" 302 0
+2022-04-29 15:48:41,818 "GET / HTTP/1.1" 200 11700
+2022-04-29 15:48:43,370 "GET /requestorlogin/ HTTP/1.1" 200 12771
+2022-04-29 15:48:45,359 "POST /requestorlogin/ HTTP/1.1" 302 0
+2022-04-29 15:48:45,392 "GET /request HTTP/1.1" 301 0
+2022-04-29 15:48:45,967 "GET /request/ HTTP/1.1" 200 16032
+2022-04-29 15:49:15,010 "GET /request/newrequest/ HTTP/1.1" 200 22808
+2022-04-29 15:50:51,266 "GET /request/newrequest/ HTTP/1.1" 200 22808
+2022-04-29 15:50:51,336 "GET /static/css/main.css HTTP/1.1" 200 17427
+2022-04-29 15:50:53,323 "GET /request/newrequest/ HTTP/1.1" 200 22808
+2022-04-29 15:50:55,293 "GET /request/requestlist/ HTTP/1.1" 200 16032
+2022-04-29 15:50:58,133 "GET /userprofile/ HTTP/1.1" 200 11913
+2022-04-29 15:50:58,185 "GET /static/css/mainaccounts.css HTTP/1.1" 200 17944
+2022-04-29 15:51:06,007 "GET /adminlogin/ HTTP/1.1" 200 12775
+2022-04-29 15:51:07,656 "GET /maintainerlogin/ HTTP/1.1" 200 12780
+2022-04-29 15:51:09,047 "GET /adminlogin/ HTTP/1.1" 200 12775
+2022-04-29 15:51:12,491 "POST /adminlogin/ HTTP/1.1" 302 0
+2022-04-29 15:51:12,525 "GET /register HTTP/1.1" 301 0
+2022-04-29 15:51:13,264 "GET /register/ HTTP/1.1" 200 15926
+2022-04-29 15:51:15,497 "GET /logout/ HTTP/1.1" 302 0
+2022-04-29 15:51:15,532 "GET / HTTP/1.1" 200 11708
+2022-04-29 15:51:18,130 "GET /requestorlogin/ HTTP/1.1" 200 12779
+2022-04-29 15:51:22,154 "POST /requestorlogin/ HTTP/1.1" 302 0
+2022-04-29 15:51:22,185 "GET /request HTTP/1.1" 301 0
+2022-04-29 15:51:22,706 "GET /request/ HTTP/1.1" 200 16032
+2022-04-29 15:51:22,807 "GET /static/css/main.css HTTP/1.1" 304 0
+2022-04-29 15:52:04,620 "GET /Inventory/viewReports/ HTTP/1.1" 200 26828
+2022-04-29 15:52:30,536 "GET /Inventory/returnharddrives/ HTTP/1.1" 200 17227
+2022-04-29 15:52:30,627 "GET /static/css/main_inventory.css HTTP/1.1" 304 0
+2022-04-29 15:52:32,128 "GET /Inventory/viewInventory/ HTTP/1.1" 200 45260
+2022-04-29 15:52:36,594 "GET /Inventory/updateHardDrive/3456/ HTTP/1.1" 200 30852
+2022-04-29 15:52:44,524 "GET /Inventory/viewrequest/ HTTP/1.1" 200 19544
+2022-04-29 15:52:50,964 "GET /Inventory/viewInventory/ HTTP/1.1" 200 45260

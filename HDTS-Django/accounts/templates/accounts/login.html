@@ -1,6 +1,7 @@
 {% extends 'accounts/base.html'%}
 
-{% block title %} Login {% endblock %}
+{% block title %}<h1 class="main-inventory-text2"> Login</h1>{% endblock %}
+
 {% load crispy_forms_tags %}
 
 {% block content %}
@@ -12,6 +13,6 @@
         {% endfor %}
         <button type="submit", class="btn btn-success">Login</button>
         <p></p>
-        <p>Don't have an account? Register <a href="/register">Here</a></p>
+        <p>Don't have an account? Register <a href="/accountRequest">Here</a></p>
     </form>
 {% endblock %}

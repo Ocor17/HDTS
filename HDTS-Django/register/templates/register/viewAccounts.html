@@ -1,12 +1,14 @@
 {% extends 'register/base.html'%}
+
+{% block title %}<h1 class="main-inventory-text2">Summary view of user profiles</h1>{% endblock %}
+
 {% block content %}
 
 <div class="container-fluid">
-  <h3 class="mt-2">Summary view of user profiles</h3>
-    <input id="profileInput" class="form-control" type="text" placeholder="Search..">
+    <input id="profileInput" style="border: 0ch;" class="form-control" type="text" placeholder="Search..">
 </div>
-  <br>
-  <table class="table table-hover">
+  <div id="table_div" class="main-inventory-container16">
+  <table class="table table-hover" style="color: #cdd1d5;">
     <thead>
       <tr>
         <SettingsBehavior AllowSelectSingleRowOnly="true" AllowSelectByRowClick="true" />
@@ -38,6 +40,7 @@
     </tbody>
     {% endfor%}
   </table>
+</div>
 
   <head>
     <script type="text/javascript">
@@ -69,5 +72,5 @@
       });
     });
 </script>
-</div>
+<!-- </div> -->
 {% endblock content%}
