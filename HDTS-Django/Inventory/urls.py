@@ -35,6 +35,7 @@ urlpatterns = [
     path('returnharddrives/', views.return_hard_drive, name='returnharddrives'),
     path('viewHardDrive/<sn>/', views.viewHardDrive, name='viewHardDrive'),
     path('updateHardDrive/<sn>/', views.updateHardDrive, name='updateHardDrive'),
+    path('viewReports/', views.viewReports, name='viewReports'),
 ]
 
 if settings.DEBUG:

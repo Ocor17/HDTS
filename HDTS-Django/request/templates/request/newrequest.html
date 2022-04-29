@@ -1,11 +1,11 @@
 {% extends 'request/base.html' %}
 
-{% block title %} Create New Request {% endblock %}
+
+{% block title %}<h1 class="main-inventory-text2">Create New Requests</h1>{% endblock %}
 
 {% block content %}
 <div class="container-fluid">
-<h3 class="mt-2">Create a Hard Drive Request</h3>
-<hr class="mt-0 mb-4">
+
 <form method="post" action="/request/newrequest/">
     {% csrf_token %}
     {{form.as_p}}

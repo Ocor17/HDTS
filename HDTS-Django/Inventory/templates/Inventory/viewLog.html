@@ -1,11 +1,14 @@
 {% extends 'Inventory/base.html'%}
 {% include 'Inventory/views.py' %}
 
+{% block title %}<h1 class="main-inventory-text2">Log</h1>{% endblock %}
+
 {% block content %}
 <div class="container-fluid">
-  <h3 class="mt-2">Log</h3>
-  <hr class="mt-0 mb-4">
-  <table class="table" width="device-width">
+
+  <div id="table_div" class="main-inventory-container16">
+    <!-- <br> -->
+    <table class="table table-hover" style="color: #cdd1d5;">
     <thead>
       <td>Timestamp</td>
       <td>User </td>
@@ -23,4 +26,8 @@
   <h3 class="mt-2">Log Content</h3>
     <p> {{file_contents}} </p>
 </div>
+</div>
 {% endblock content%}
+
+{% block subtitle %}<h2 class="main-inventory-text3">Log Details</h2>{% endblock %}
+{% block button %}<button class="main-inventory-navlink1 button" type="submit">Print</button>{% endblock %}

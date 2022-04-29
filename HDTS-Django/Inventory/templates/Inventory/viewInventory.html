@@ -1,6 +1,11 @@
-{% extends 'Inventory/main_inventory.html'%}
+{% extends 'Inventory/base.html'%}
 {% load static %}
+
+{% block title %}<h1 class="main-inventory-text2">Inventory</h1>{% endblock %}
+
 {% block content %}
+
+
   <div id="search_div" class="main-inventory-container15">
     <button class="main-inventory-button2 button">Sort By</button>
     <button class="main-inventory-button3 button">
@@ -64,5 +69,13 @@
   }
 </script>
 </div>
+
 {% endblock content%}
 
+{% block subtitle %}<h2 class="main-inventory-text3">Inventory Details</h2>{% endblock %}
+
+{% block button %}
+<form method="get" action="{% url 'Inventory:addHardDrive' %}">
+  <button class="main-inventory-navlink1 button" type="submit">Add Hard Drive</button>
+</form>
+{% endblock %}

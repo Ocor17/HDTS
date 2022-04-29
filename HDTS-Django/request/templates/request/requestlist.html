@@ -1,14 +1,10 @@
 {% extends 'request/base.html' %}
-{% block title %} Requests {% endblock %}
+{% block title %}<h1 class="main-inventory-text2">Hard Drive Requests</h1>{% endblock %}
 {% block content %}
 
-<div class="container-fluid">
-    <h3 class="mt-2">Hard Drive Requests</h3>
-    <hr class="mt-0 mb-4">
+<div id="search_div" class="main-inventory-container15">
 
-    <form action="/request/newrequest/">
-        <button class="btn btn-primary" type="submit">Create Request</button>
-    </form>
+    
 
     <form method="get">
         <label for="{{ form.eventLocation }}">Event Location:</label>
@@ -31,8 +27,10 @@
     <form action="/request/requestlist">
         <button class="btn btn-primary" type="submit">Clear Filters</button>
     </form>
-    
-    <table class="table table-bordered">
+</div>
+<div id="table_div" class="main-inventory-container16">
+    <!-- <br> -->
+    <table class="table table-hover" style="color: #cdd1d5;">
         <thead>
             <tr>
                 <th>Request Number</th>
@@ -110,4 +108,12 @@
             <p>User ID: </p>
     {% endif %}
 </div>
+
+{% endblock %}
+
+{% block subtitle %}<h2 class="main-inventory-text3">Request Details</h2>{% endblock %}
+{% block button %}
+<form action="/request/newrequest/">
+    <button class="main-inventory-navlink1 button" type="submit">Create Request</button>
+</form>
 {% endblock %}
