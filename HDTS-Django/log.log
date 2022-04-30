@@ -4170,3 +4170,572 @@ django.core.exceptions.FieldError: Cannot resolve keyword 'name' into field. Cho
 2022-04-29 22:23:15,914 Watching for file changes with StatReloader
 2022-04-29 22:23:19,629 Not Found: /request/editrequest/
 2022-04-29 22:23:19,629 "POST /request/editrequest/ HTTP/1.1" 404 6504
+2022-04-29 22:31:26,569 C:\Users\Alan\Desktop\class\soft2\HDTS\HDTS\HDTS-Django\request\forms.py changed, reloading.
+2022-04-29 22:31:26,572 C:\Users\Alan\Desktop\class\soft2\HDTS\HDTS\HDTS-Django\request\forms.py changed, reloading.
+2022-04-29 22:31:27,882 Watching for file changes with StatReloader
+2022-04-29 22:31:27,919 Watching for file changes with StatReloader
+2022-04-30 15:18:23,526 Watching for file changes with StatReloader
+2022-04-30 15:18:41,391 "GET / HTTP/1.1" 200 3250
+2022-04-30 15:18:41,435 "GET /static/HDTS/style.css HTTP/1.1" 404 1801
+2022-04-30 15:18:41,465 "GET /static/HDTS/style.css HTTP/1.1" 404 1801
+2022-04-30 15:18:43,468 "GET /maintainerlogin/ HTTP/1.1" 200 4377
+2022-04-30 15:18:43,512 "GET /static/HDTS/style.css HTTP/1.1" 404 1801
+2022-04-30 15:18:44,757 "POST /maintainerlogin/ HTTP/1.1" 302 0
+2022-04-30 15:18:44,782 "GET /Inventory HTTP/1.1" 301 0
+2022-04-30 15:18:45,478 "GET /Inventory/ HTTP/1.1" 200 4152
+2022-04-30 15:18:45,520 "GET /static/HDTS/style.css HTTP/1.1" 404 1801
+2022-04-30 15:18:45,521 "GET /static/Inventory/style.css HTTP/1.1" 404 1816
+2022-04-30 15:18:45,580 "GET /static/Inventory/style.css HTTP/1.1" 404 1816
+2022-04-30 15:18:50,487 Hard Drive Added
+2022-04-30 15:18:50,583 "GET /Inventory/addHardDrive/ HTTP/1.1" 200 19032
+2022-04-30 15:18:50,622 "GET /static/HDTS/style.css HTTP/1.1" 404 1801
+2022-04-30 15:19:51,728 Hard Drive Added
+2022-04-30 15:19:51,799 "POST /Inventory/addHardDrive/ HTTP/1.1" 200 19073
+2022-04-30 15:19:51,833 "GET /static/HDTS/style.css HTTP/1.1" 404 1801
+2022-04-30 15:19:55,004 "GET /Inventory/viewInventory/ HTTP/1.1" 200 35013
+2022-04-30 15:19:55,044 "GET /static/HDTS/style.css HTTP/1.1" 404 1801
+2022-04-30 15:20:01,067 "GET /Inventory/returnharddrives/ HTTP/1.1" 200 6942
+2022-04-30 15:20:01,105 "GET /static/HDTS/style.css HTTP/1.1" 404 1801
+2022-04-30 15:20:06,959 Internal Server Error: /Inventory/returnharddrives/
+Traceback (most recent call last):
+  File "C:\Users\Alan\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Alan\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Alan\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\Alan\Desktop\class\soft2\HDTS\HDTS\HDTS-Django\Inventory\views.py", line 135, in return_hard_drive
+    if formset.is_valid():
+  File "C:\Users\Alan\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\forms\formsets.py", line 332, in is_valid
+    self.errors
+  File "C:\Users\Alan\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\forms\formsets.py", line 315, in errors
+    self.full_clean()
+  File "C:\Users\Alan\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\forms\formsets.py", line 372, in full_clean
+    form_errors = form.errors
+  File "C:\Users\Alan\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\forms\forms.py", line 185, in errors
+    self.full_clean()
+  File "C:\Users\Alan\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\forms\forms.py", line 405, in full_clean
+    self._clean_form()
+  File "C:\Users\Alan\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\forms\forms.py", line 426, in _clean_form
+    cleaned_data = self.clean()
+  File "C:\Users\Alan\Desktop\class\soft2\HDTS\HDTS\HDTS-Django\Inventory\forms.py", line 79, in clean
+    self.add_error('hdStatus', 'Hard Drive is not assgined')
+  File "C:\Users\Alan\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\forms\forms.py", line 375, in add_error
+    raise ValueError(
+ValueError: 'return_hard_drives' has no field named 'hdStatus'.
+2022-04-30 15:20:06,960 "POST /Inventory/returnharddrives/ HTTP/1.1" 500 104792
+2022-04-30 15:20:07,025 Not Found: /favicon.ico
+2022-04-30 15:20:07,026 - Broken pipe from ('127.0.0.1', 64602)
+
+2022-04-30 15:21:59,891 C:\Users\Alan\Desktop\class\soft2\HDTS\HDTS\HDTS-Django\Inventory\forms.py changed, reloading.
+2022-04-30 15:22:00,789 Watching for file changes with StatReloader
+2022-04-30 15:22:03,000 "GET /Inventory/returnharddrives/ HTTP/1.1" 200 6942
+2022-04-30 15:22:04,766 Internal Server Error: /Inventory/returnharddrives/
+Traceback (most recent call last):
+  File "C:\Users\Alan\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Alan\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Alan\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\Alan\Desktop\class\soft2\HDTS\HDTS\HDTS-Django\Inventory\views.py", line 135, in return_hard_drive
+    if formset.is_valid():
+  File "C:\Users\Alan\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\forms\formsets.py", line 332, in is_valid
+    self.errors
+  File "C:\Users\Alan\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\forms\formsets.py", line 315, in errors
+    self.full_clean()
+  File "C:\Users\Alan\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\forms\formsets.py", line 372, in full_clean
+    form_errors = form.errors
+  File "C:\Users\Alan\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\forms\forms.py", line 185, in errors
+    self.full_clean()
+  File "C:\Users\Alan\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\forms\forms.py", line 405, in full_clean
+    self._clean_form()
+  File "C:\Users\Alan\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\forms\forms.py", line 426, in _clean_form
+    cleaned_data = self.clean()
+  File "C:\Users\Alan\Desktop\class\soft2\HDTS\HDTS\HDTS-Django\Inventory\forms.py", line 79, in clean
+    self.add_error('HD Status', 'Hard Drive is not assgined')
+  File "C:\Users\Alan\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\forms\forms.py", line 375, in add_error
+    raise ValueError(
+ValueError: 'return_hard_drives' has no field named 'HD Status'.
+2022-04-30 15:22:04,768 "POST /Inventory/returnharddrives/ HTTP/1.1" 500 104800
+2022-04-30 15:22:13,343 C:\Users\Alan\Desktop\class\soft2\HDTS\HDTS\HDTS-Django\Inventory\forms.py changed, reloading.
+2022-04-30 15:22:13,958 Watching for file changes with StatReloader
+2022-04-30 15:32:27,532 C:\Users\Alan\Desktop\class\soft2\HDTS\HDTS\HDTS-Django\Inventory\forms.py changed, reloading.
+2022-04-30 15:32:28,625 Watching for file changes with StatReloader
+2022-04-30 15:32:31,268 "GET /Inventory/returnharddrives/ HTTP/1.1" 200 6942
+2022-04-30 15:32:32,568 Internal Server Error: /Inventory/returnharddrives/
+Traceback (most recent call last):
+  File "C:\Users\Alan\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Alan\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Alan\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\Alan\Desktop\class\soft2\HDTS\HDTS\HDTS-Django\Inventory\views.py", line 135, in return_hard_drive
+    if formset.is_valid():
+  File "C:\Users\Alan\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\forms\formsets.py", line 332, in is_valid
+    self.errors
+  File "C:\Users\Alan\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\forms\formsets.py", line 315, in errors
+    self.full_clean()
+  File "C:\Users\Alan\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\forms\formsets.py", line 372, in full_clean
+    form_errors = form.errors
+  File "C:\Users\Alan\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\forms\forms.py", line 185, in errors
+    self.full_clean()
+  File "C:\Users\Alan\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\forms\forms.py", line 405, in full_clean
+    self._clean_form()
+  File "C:\Users\Alan\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\forms\forms.py", line 426, in _clean_form
+    cleaned_data = self.clean()
+  File "C:\Users\Alan\Desktop\class\soft2\HDTS\HDTS\HDTS-Django\Inventory\forms.py", line 78, in clean
+    print(cs)
+NameError: name 'cs' is not defined
+2022-04-30 15:32:32,570 "POST /Inventory/returnharddrives/ HTTP/1.1" 500 100280
+2022-04-30 15:32:41,251 C:\Users\Alan\Desktop\class\soft2\HDTS\HDTS\HDTS-Django\Inventory\forms.py changed, reloading.
+2022-04-30 15:32:42,149 Watching for file changes with StatReloader
+2022-04-30 15:32:42,821 "GET /Inventory/returnharddrives/ HTTP/1.1" 200 6942
+2022-04-30 15:32:44,110 Internal Server Error: /Inventory/returnharddrives/
+Traceback (most recent call last):
+  File "C:\Users\Alan\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Alan\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Alan\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\Alan\Desktop\class\soft2\HDTS\HDTS\HDTS-Django\Inventory\views.py", line 135, in return_hard_drive
+    if formset.is_valid():
+  File "C:\Users\Alan\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\forms\formsets.py", line 332, in is_valid
+    self.errors
+  File "C:\Users\Alan\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\forms\formsets.py", line 315, in errors
+    self.full_clean()
+  File "C:\Users\Alan\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\forms\formsets.py", line 372, in full_clean
+    form_errors = form.errors
+  File "C:\Users\Alan\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\forms\forms.py", line 185, in errors
+    self.full_clean()
+  File "C:\Users\Alan\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\forms\forms.py", line 405, in full_clean
+    self._clean_form()
+  File "C:\Users\Alan\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\forms\forms.py", line 426, in _clean_form
+    cleaned_data = self.clean()
+  File "C:\Users\Alan\Desktop\class\soft2\HDTS\HDTS\HDTS-Django\Inventory\forms.py", line 80, in clean
+    self.add_error('hdStatus', 'Hard Drive is not assgined')
+  File "C:\Users\Alan\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\forms\forms.py", line 375, in add_error
+    raise ValueError(
+ValueError: 'return_hard_drives' has no field named 'hdStatus'.
+2022-04-30 15:32:44,111 "POST /Inventory/returnharddrives/ HTTP/1.1" 500 104791
+2022-04-30 15:37:36,506 "GET /Inventory/returnharddrives/ HTTP/1.1" 200 6942
+2022-04-30 15:37:41,663 Internal Server Error: /Inventory/returnharddrives/
+Traceback (most recent call last):
+  File "C:\Users\Alan\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Alan\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Alan\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\Alan\Desktop\class\soft2\HDTS\HDTS\HDTS-Django\Inventory\views.py", line 135, in return_hard_drive
+    if formset.is_valid():
+  File "C:\Users\Alan\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\forms\formsets.py", line 332, in is_valid
+    self.errors
+  File "C:\Users\Alan\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\forms\formsets.py", line 315, in errors
+    self.full_clean()
+  File "C:\Users\Alan\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\forms\formsets.py", line 372, in full_clean
+    form_errors = form.errors
+  File "C:\Users\Alan\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\forms\forms.py", line 185, in errors
+    self.full_clean()
+  File "C:\Users\Alan\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\forms\forms.py", line 405, in full_clean
+    self._clean_form()
+  File "C:\Users\Alan\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\forms\forms.py", line 426, in _clean_form
+    cleaned_data = self.clean()
+  File "C:\Users\Alan\Desktop\class\soft2\HDTS\HDTS\HDTS-Django\Inventory\forms.py", line 80, in clean
+    self.add_error('hdStatus', 'Hard Drive is not assgined')
+  File "C:\Users\Alan\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\forms\forms.py", line 375, in add_error
+    raise ValueError(
+ValueError: 'return_hard_drives' has no field named 'hdStatus'.
+2022-04-30 15:37:41,664 "POST /Inventory/returnharddrives/ HTTP/1.1" 500 104929
+2022-04-30 15:37:41,733 Not Found: /favicon.ico
+2022-04-30 15:37:41,733 - Broken pipe from ('127.0.0.1', 65383)
+
+2022-04-30 15:37:57,999 "GET /Inventory/returnharddrives/ HTTP/1.1" 200 6942
+2022-04-30 15:38:02,416 Internal Server Error: /Inventory/returnharddrives/
+Traceback (most recent call last):
+  File "C:\Users\Alan\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Alan\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Alan\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\Alan\Desktop\class\soft2\HDTS\HDTS\HDTS-Django\Inventory\views.py", line 135, in return_hard_drive
+    if formset.is_valid():
+  File "C:\Users\Alan\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\forms\formsets.py", line 332, in is_valid
+    self.errors
+  File "C:\Users\Alan\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\forms\formsets.py", line 315, in errors
+    self.full_clean()
+  File "C:\Users\Alan\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\forms\formsets.py", line 372, in full_clean
+    form_errors = form.errors
+  File "C:\Users\Alan\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\forms\forms.py", line 185, in errors
+    self.full_clean()
+  File "C:\Users\Alan\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\forms\forms.py", line 405, in full_clean
+    self._clean_form()
+  File "C:\Users\Alan\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\forms\forms.py", line 426, in _clean_form
+    cleaned_data = self.clean()
+  File "C:\Users\Alan\Desktop\class\soft2\HDTS\HDTS\HDTS-Django\Inventory\forms.py", line 80, in clean
+    self.add_error('hdStatus', 'Hard Drive is not assgined')
+  File "C:\Users\Alan\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\forms\forms.py", line 375, in add_error
+    raise ValueError(
+ValueError: 'return_hard_drives' has no field named 'hdStatus'.
+2022-04-30 15:38:02,417 "POST /Inventory/returnharddrives/ HTTP/1.1" 500 104929
+2022-04-30 15:38:09,562 C:\Users\Alan\Desktop\class\soft2\HDTS\HDTS\HDTS-Django\Inventory\forms.py changed, reloading.
+2022-04-30 15:38:10,212 Watching for file changes with StatReloader
+2022-04-30 15:38:11,766 "GET /Inventory/returnharddrives/ HTTP/1.1" 200 6942
+2022-04-30 15:38:18,559 Internal Server Error: /Inventory/returnharddrives/
+Traceback (most recent call last):
+  File "C:\Users\Alan\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Alan\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Alan\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\Alan\Desktop\class\soft2\HDTS\HDTS\HDTS-Django\Inventory\views.py", line 139, in return_hard_drive
+    hd = HardDrive.objects.get(serialNo=serial_num)
+  File "C:\Users\Alan\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\Alan\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\db\models\query.py", line 439, in get
+    raise self.model.DoesNotExist(
+Inventory.models.HardDrive.DoesNotExist: HardDrive matching query does not exist.
+2022-04-30 15:38:18,560 "POST /Inventory/returnharddrives/ HTTP/1.1" 500 84450
+2022-04-30 15:38:22,567 "GET /Inventory/returnharddrives/ HTTP/1.1" 200 6942
+2022-04-30 15:38:26,953 C:\Users\Alan\Desktop\class\soft2\HDTS\HDTS\HDTS-Django\Inventory\forms.py changed, reloading.
+2022-04-30 15:38:27,614 Watching for file changes with StatReloader
+2022-04-30 15:39:07,055 C:\Users\Alan\Desktop\class\soft2\HDTS\HDTS\HDTS-Django\Inventory\forms.py changed, reloading.
+2022-04-30 15:39:08,135 Watching for file changes with StatReloader
+2022-04-30 15:39:17,012 C:\Users\Alan\Desktop\class\soft2\HDTS\HDTS\HDTS-Django\Inventory\forms.py changed, reloading.
+2022-04-30 15:39:18,311 Watching for file changes with StatReloader
+2022-04-30 15:39:20,693 "POST /Inventory/returnharddrives/ HTTP/1.1" 302 0
+2022-04-30 15:39:21,376 "GET /Inventory/viewInventory/ HTTP/1.1" 200 35017
+2022-04-30 15:39:21,412 "GET /static/HDTS/style.css HTTP/1.1" 404 1801
+2022-04-30 15:39:29,395 "GET /Inventory/updateHardDrive/12344321/ HTTP/1.1" 200 19019
+2022-04-30 15:39:29,440 "GET /static/HDTS/style.css HTTP/1.1" 404 1801
+2022-04-30 15:39:36,631 "GET /Inventory/returnharddrives/ HTTP/1.1" 200 6942
+2022-04-30 15:39:36,671 "GET /static/HDTS/style.css HTTP/1.1" 404 1801
+2022-04-30 15:39:41,303 "POST /Inventory/returnharddrives/ HTTP/1.1" 302 0
+2022-04-30 15:39:41,955 "GET /Inventory/viewInventory/ HTTP/1.1" 200 35017
+2022-04-30 15:39:41,999 "GET /static/HDTS/style.css HTTP/1.1" 404 1801
+2022-04-30 15:39:52,219 "GET /Inventory/viewInventory/ HTTP/1.1" 200 35017
+2022-04-30 15:39:52,247 "GET /static/HDTS/style.css HTTP/1.1" 404 1801
+2022-04-30 15:43:31,006 C:\Users\Alan\Desktop\class\soft2\HDTS\HDTS\HDTS-Django\Inventory\forms.py changed, reloading.
+2022-04-30 15:43:31,639 Watching for file changes with StatReloader
+2022-04-30 15:43:50,957 C:\Users\Alan\Desktop\class\soft2\HDTS\HDTS\HDTS-Django\Inventory\forms.py changed, reloading.
+2022-04-30 15:43:51,578 Watching for file changes with StatReloader
+2022-04-30 15:44:37,117 C:\Users\Alan\Desktop\class\soft2\HDTS\HDTS\HDTS-Django\Inventory\forms.py changed, reloading.
+2022-04-30 15:44:38,275 Watching for file changes with StatReloader
+2022-04-30 15:44:48,523 "GET /Inventory/returnharddrives/ HTTP/1.1" 200 6942
+2022-04-30 15:44:48,574 "GET /static/HDTS/style.css HTTP/1.1" 404 1801
+2022-04-30 15:44:51,205 "POST /Inventory/returnharddrives/ HTTP/1.1" 302 0
+2022-04-30 15:44:51,892 "GET /Inventory/viewInventory/ HTTP/1.1" 200 35017
+2022-04-30 15:44:51,936 "GET /static/HDTS/style.css HTTP/1.1" 404 1801
+2022-04-30 15:45:34,966 C:\Users\Alan\Desktop\class\soft2\HDTS\HDTS\HDTS-Django\Inventory\forms.py changed, reloading.
+2022-04-30 15:45:35,848 Watching for file changes with StatReloader
+2022-04-30 15:45:40,908 "GET /Inventory/returnharddrives/ HTTP/1.1" 200 6942
+2022-04-30 15:45:40,955 "GET /static/HDTS/style.css HTTP/1.1" 404 1801
+2022-04-30 15:45:43,724 "POST /Inventory/returnharddrives/ HTTP/1.1" 302 0
+2022-04-30 15:45:44,399 "GET /Inventory/viewInventory/ HTTP/1.1" 200 35017
+2022-04-30 15:45:44,433 "GET /static/HDTS/style.css HTTP/1.1" 404 1801
+2022-04-30 17:18:42,936 C:\Users\Alan\Desktop\class\soft2\HDTS\HDTS\HDTS-Django\Inventory\forms.py changed, reloading.
+2022-04-30 17:18:43,586 Watching for file changes with StatReloader
+2022-04-30 17:18:52,305 "GET /Inventory/returnharddrives/ HTTP/1.1" 200 6942
+2022-04-30 17:18:52,357 "GET /static/HDTS/style.css HTTP/1.1" 404 1801
+2022-04-30 17:18:54,974 "POST /Inventory/returnharddrives/ HTTP/1.1" 302 0
+2022-04-30 17:18:55,639 "GET /Inventory/viewInventory/ HTTP/1.1" 200 35017
+2022-04-30 17:18:55,676 "GET /static/HDTS/style.css HTTP/1.1" 404 1801
+2022-04-30 17:20:35,694 C:\Users\Alan\Desktop\class\soft2\HDTS\HDTS\HDTS-Django\Inventory\forms.py changed, reloading.
+2022-04-30 17:20:36,508 Watching for file changes with StatReloader
+2022-04-30 17:20:39,136 "GET /Inventory/returnharddrives/ HTTP/1.1" 200 6942
+2022-04-30 17:20:39,187 "GET /static/HDTS/style.css HTTP/1.1" 404 1801
+2022-04-30 17:20:41,907 "POST /Inventory/returnharddrives/ HTTP/1.1" 302 0
+2022-04-30 17:20:42,558 "GET /Inventory/viewInventory/ HTTP/1.1" 200 35017
+2022-04-30 17:20:42,593 "GET /static/HDTS/style.css HTTP/1.1" 404 1801
+2022-04-30 17:42:11,246 C:\Users\Alan\Desktop\class\soft2\HDTS\HDTS\HDTS-Django\Inventory\forms.py changed, reloading.
+2022-04-30 17:42:12,192 Watching for file changes with StatReloader
+2022-04-30 17:42:37,026 "GET /Inventory/returnharddrives/ HTTP/1.1" 200 6686
+2022-04-30 17:42:37,187 "GET /static/HDTS/style.css HTTP/1.1" 404 1801
+2022-04-30 17:42:38,404 Internal Server Error: /Inventory/returnharddrives/
+Traceback (most recent call last):
+  File "C:\Users\Alan\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Alan\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Alan\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\Alan\Desktop\class\soft2\HDTS\HDTS\HDTS-Django\Inventory\views.py", line 139, in return_hard_drive
+    hd = HardDrive.objects.get(serialNo=serial_num)
+  File "C:\Users\Alan\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\Alan\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\db\models\query.py", line 439, in get
+    raise self.model.DoesNotExist(
+Inventory.models.HardDrive.DoesNotExist: HardDrive matching query does not exist.
+2022-04-30 17:42:38,406 "POST /Inventory/returnharddrives/ HTTP/1.1" 500 83913
+2022-04-30 17:42:43,632 "GET /Inventory/returnharddrives/ HTTP/1.1" 200 6686
+2022-04-30 17:43:04,792 "GET /Inventory/returnharddrives/ HTTP/1.1" 200 6942
+2022-04-30 17:43:04,869 "GET /static/HDTS/style.css HTTP/1.1" 404 1801
+2022-04-30 17:43:05,073 Not Found: /favicon.ico
+2022-04-30 17:43:05,074 - Broken pipe from ('127.0.0.1', 63279)
+
+2022-04-30 17:43:08,197 "POST /Inventory/returnharddrives/ HTTP/1.1" 302 0
+2022-04-30 17:43:08,784 "GET /Inventory/viewInventory/ HTTP/1.1" 200 35017
+2022-04-30 17:43:08,819 "GET /static/HDTS/style.css HTTP/1.1" 404 1801
+2022-04-30 17:48:34,524 C:\Users\Alan\Desktop\class\soft2\HDTS\HDTS\HDTS-Django\Inventory\views.py changed, reloading.
+2022-04-30 17:48:35,286 Watching for file changes with StatReloader
+2022-04-30 17:48:37,673 "GET /Inventory/returnharddrives/ HTTP/1.1" 200 6942
+2022-04-30 17:48:37,728 "GET /static/HDTS/style.css HTTP/1.1" 404 1801
+2022-04-30 17:48:41,472 "POST /Inventory/returnharddrives/ HTTP/1.1" 200 7033
+2022-04-30 17:48:41,517 "GET /static/HDTS/style.css HTTP/1.1" 404 1801
+2022-04-30 17:49:03,336 C:\Users\Alan\Desktop\class\soft2\HDTS\HDTS\HDTS-Django\Inventory\forms.py changed, reloading.
+2022-04-30 17:49:04,175 Watching for file changes with StatReloader
+2022-04-30 17:49:08,698 "POST /Inventory/returnharddrives/ HTTP/1.1" 302 0
+2022-04-30 17:49:09,202 "GET /Inventory/viewInventory/ HTTP/1.1" 200 35017
+2022-04-30 17:49:09,236 "GET /static/HDTS/style.css HTTP/1.1" 404 1801
+2022-04-30 17:49:11,189 "GET /Inventory/returnharddrives/ HTTP/1.1" 200 6942
+2022-04-30 17:49:11,227 "GET /static/HDTS/style.css HTTP/1.1" 404 1801
+2022-04-30 17:49:15,061 "POST /Inventory/returnharddrives/ HTTP/1.1" 302 0
+2022-04-30 17:49:15,677 "GET /Inventory/viewInventory/ HTTP/1.1" 200 35017
+2022-04-30 17:49:15,723 "GET /static/HDTS/style.css HTTP/1.1" 404 1801
+2022-04-30 17:49:23,029 C:\Users\Alan\Desktop\class\soft2\HDTS\HDTS\HDTS-Django\Inventory\forms.py changed, reloading.
+2022-04-30 17:49:23,682 Watching for file changes with StatReloader
+2022-04-30 17:49:51,477 C:\Users\Alan\Desktop\class\soft2\HDTS\HDTS\HDTS-Django\Inventory\forms.py changed, reloading.
+2022-04-30 17:49:52,577 Watching for file changes with StatReloader
+2022-04-30 17:49:55,176 C:\Users\Alan\Desktop\class\soft2\HDTS\HDTS\HDTS-Django\Inventory\forms.py changed, reloading.
+2022-04-30 17:49:56,525 Watching for file changes with StatReloader
+2022-04-30 17:49:57,504 "GET /Inventory/returnharddrives/ HTTP/1.1" 200 6942
+2022-04-30 17:49:57,560 "GET /static/HDTS/style.css HTTP/1.1" 404 1801
+2022-04-30 17:50:00,627 Internal Server Error: /Inventory/returnharddrives/
+Traceback (most recent call last):
+  File "C:\Users\Alan\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Alan\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Alan\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\Alan\Desktop\class\soft2\HDTS\HDTS\HDTS-Django\Inventory\views.py", line 135, in return_hard_drive
+    if formset.is_valid():
+  File "C:\Users\Alan\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\forms\formsets.py", line 332, in is_valid
+    self.errors
+  File "C:\Users\Alan\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\forms\formsets.py", line 315, in errors
+    self.full_clean()
+  File "C:\Users\Alan\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\forms\formsets.py", line 372, in full_clean
+    form_errors = form.errors
+  File "C:\Users\Alan\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\forms\forms.py", line 185, in errors
+    self.full_clean()
+  File "C:\Users\Alan\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\forms\forms.py", line 405, in full_clean
+    self._clean_form()
+  File "C:\Users\Alan\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\forms\forms.py", line 426, in _clean_form
+    cleaned_data = self.clean()
+  File "C:\Users\Alan\Desktop\class\soft2\HDTS\HDTS\HDTS-Django\Inventory\forms.py", line 85, in clean
+    hd = HardDrive.objects.get(serialNo=cd.get('serialNo'))
+  File "C:\Users\Alan\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\Alan\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\db\models\query.py", line 439, in get
+    raise self.model.DoesNotExist(
+Inventory.models.HardDrive.DoesNotExist: HardDrive matching query does not exist.
+2022-04-30 17:50:00,628 "POST /Inventory/returnharddrives/ HTTP/1.1" 500 111108
+2022-04-30 17:52:09,570 C:\Users\Alan\Desktop\class\soft2\HDTS\HDTS\HDTS-Django\Inventory\views.py changed, reloading.
+2022-04-30 17:52:10,270 Watching for file changes with StatReloader
+2022-04-30 17:52:12,380 "GET /Inventory/returnharddrives/ HTTP/1.1" 200 6942
+2022-04-30 17:52:12,474 Not Found: /favicon.ico
+2022-04-30 17:52:12,475 - Broken pipe from ('127.0.0.1', 63667)
+
+2022-04-30 17:52:13,656 Internal Server Error: /Inventory/returnharddrives/
+Traceback (most recent call last):
+  File "C:\Users\Alan\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Alan\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Alan\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\Alan\Desktop\class\soft2\HDTS\HDTS\HDTS-Django\Inventory\views.py", line 135, in return_hard_drive
+    if formset.is_valid():
+  File "C:\Users\Alan\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\forms\formsets.py", line 332, in is_valid
+    self.errors
+  File "C:\Users\Alan\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\forms\formsets.py", line 315, in errors
+    self.full_clean()
+  File "C:\Users\Alan\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\forms\formsets.py", line 372, in full_clean
+    form_errors = form.errors
+  File "C:\Users\Alan\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\forms\forms.py", line 185, in errors
+    self.full_clean()
+  File "C:\Users\Alan\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\forms\forms.py", line 405, in full_clean
+    self._clean_form()
+  File "C:\Users\Alan\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\forms\forms.py", line 426, in _clean_form
+    cleaned_data = self.clean()
+  File "C:\Users\Alan\Desktop\class\soft2\HDTS\HDTS\HDTS-Django\Inventory\forms.py", line 85, in clean
+    hd = HardDrive.objects.get(serialNo=cd.get('serialNo'))
+  File "C:\Users\Alan\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\Alan\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\db\models\query.py", line 439, in get
+    raise self.model.DoesNotExist(
+Inventory.models.HardDrive.DoesNotExist: HardDrive matching query does not exist.
+2022-04-30 17:52:13,658 "POST /Inventory/returnharddrives/ HTTP/1.1" 500 111104
+2022-04-30 17:52:21,773 C:\Users\Alan\Desktop\class\soft2\HDTS\HDTS\HDTS-Django\Inventory\views.py changed, reloading.
+2022-04-30 17:52:22,389 Watching for file changes with StatReloader
+2022-04-30 17:54:09,830 C:\Users\Alan\Desktop\class\soft2\HDTS\HDTS\HDTS-Django\Inventory\forms.py changed, reloading.
+2022-04-30 17:54:10,965 Watching for file changes with StatReloader
+2022-04-30 17:54:12,660 "GET /Inventory/returnharddrives/ HTTP/1.1" 200 6942
+2022-04-30 17:54:14,055 Internal Server Error: /Inventory/returnharddrives/
+Traceback (most recent call last):
+  File "C:\Users\Alan\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Alan\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Alan\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\Alan\Desktop\class\soft2\HDTS\HDTS\HDTS-Django\Inventory\views.py", line 135, in return_hard_drive
+    if formset.is_valid():
+  File "C:\Users\Alan\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\forms\formsets.py", line 332, in is_valid
+    self.errors
+  File "C:\Users\Alan\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\forms\formsets.py", line 315, in errors
+    self.full_clean()
+  File "C:\Users\Alan\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\forms\formsets.py", line 372, in full_clean
+    form_errors = form.errors
+  File "C:\Users\Alan\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\forms\forms.py", line 185, in errors
+    self.full_clean()
+  File "C:\Users\Alan\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\forms\forms.py", line 405, in full_clean
+    self._clean_form()
+  File "C:\Users\Alan\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\forms\forms.py", line 426, in _clean_form
+    cleaned_data = self.clean()
+  File "C:\Users\Alan\Desktop\class\soft2\HDTS\HDTS\HDTS-Django\Inventory\forms.py", line 86, in clean
+    hd = HardDrive.objects.get(serialNo=cd.get('serialNo'))
+  File "C:\Users\Alan\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\Alan\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\db\models\query.py", line 439, in get
+    raise self.model.DoesNotExist(
+Inventory.models.HardDrive.DoesNotExist: HardDrive matching query does not exist.
+2022-04-30 17:54:14,057 "POST /Inventory/returnharddrives/ HTTP/1.1" 500 110678
+2022-04-30 17:54:15,703 "GET /Inventory/returnharddrives/ HTTP/1.1" 200 6942
+2022-04-30 17:54:17,589 "GET /Inventory/returnharddrives/ HTTP/1.1" 200 6942
+2022-04-30 17:54:17,625 "GET /static/HDTS/style.css HTTP/1.1" 404 1801
+2022-04-30 17:54:21,022 Internal Server Error: /Inventory/returnharddrives/
+Traceback (most recent call last):
+  File "C:\Users\Alan\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Alan\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Alan\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\Alan\Desktop\class\soft2\HDTS\HDTS\HDTS-Django\Inventory\views.py", line 135, in return_hard_drive
+    if formset.is_valid():
+  File "C:\Users\Alan\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\forms\formsets.py", line 332, in is_valid
+    self.errors
+  File "C:\Users\Alan\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\forms\formsets.py", line 315, in errors
+    self.full_clean()
+  File "C:\Users\Alan\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\forms\formsets.py", line 372, in full_clean
+    form_errors = form.errors
+  File "C:\Users\Alan\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\forms\forms.py", line 185, in errors
+    self.full_clean()
+  File "C:\Users\Alan\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\forms\forms.py", line 405, in full_clean
+    self._clean_form()
+  File "C:\Users\Alan\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\forms\forms.py", line 426, in _clean_form
+    cleaned_data = self.clean()
+  File "C:\Users\Alan\Desktop\class\soft2\HDTS\HDTS\HDTS-Django\Inventory\forms.py", line 86, in clean
+    hd = HardDrive.objects.get(serialNo=cd.get('serialNo'))
+  File "C:\Users\Alan\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\Alan\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\db\models\query.py", line 439, in get
+    raise self.model.DoesNotExist(
+Inventory.models.HardDrive.DoesNotExist: HardDrive matching query does not exist.
+2022-04-30 17:54:21,022 "POST /Inventory/returnharddrives/ HTTP/1.1" 500 110678
+2022-04-30 17:54:23,441 "GET /Inventory/returnharddrives/ HTTP/1.1" 200 6942
+2022-04-30 17:55:00,145 C:\Users\Alan\Desktop\class\soft2\HDTS\HDTS\HDTS-Django\Inventory\forms.py changed, reloading.
+2022-04-30 17:55:00,762 Watching for file changes with StatReloader
+2022-04-30 17:55:05,512 Internal Server Error: /Inventory/returnharddrives/
+Traceback (most recent call last):
+  File "C:\Users\Alan\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Alan\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Alan\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\Alan\Desktop\class\soft2\HDTS\HDTS\HDTS-Django\Inventory\views.py", line 135, in return_hard_drive
+    if formset.is_valid():
+  File "C:\Users\Alan\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\forms\formsets.py", line 332, in is_valid
+    self.errors
+  File "C:\Users\Alan\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\forms\formsets.py", line 315, in errors
+    self.full_clean()
+  File "C:\Users\Alan\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\forms\formsets.py", line 372, in full_clean
+    form_errors = form.errors
+  File "C:\Users\Alan\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\forms\forms.py", line 185, in errors
+    self.full_clean()
+  File "C:\Users\Alan\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\forms\forms.py", line 405, in full_clean
+    self._clean_form()
+  File "C:\Users\Alan\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\forms\forms.py", line 426, in _clean_form
+    cleaned_data = self.clean()
+  File "C:\Users\Alan\Desktop\class\soft2\HDTS\HDTS\HDTS-Django\Inventory\forms.py", line 88, in clean
+    hd = HardDrive.objects.get(serialNo=cd.get('serialNo'))
+  File "C:\Users\Alan\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\Alan\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\db\models\query.py", line 439, in get
+    raise self.model.DoesNotExist(
+Inventory.models.HardDrive.DoesNotExist: HardDrive matching query does not exist.
+2022-04-30 17:55:05,514 "POST /Inventory/returnharddrives/ HTTP/1.1" 500 110791
+2022-04-30 17:55:06,755 "GET /Inventory/returnharddrives/ HTTP/1.1" 200 6942
+2022-04-30 17:55:07,911 "GET /Inventory/returnharddrives/ HTTP/1.1" 200 6942
+2022-04-30 17:55:07,941 "GET /static/HDTS/style.css HTTP/1.1" 404 1801
+2022-04-30 17:55:11,759 Internal Server Error: /Inventory/returnharddrives/
+Traceback (most recent call last):
+  File "C:\Users\Alan\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Alan\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Alan\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\Alan\Desktop\class\soft2\HDTS\HDTS\HDTS-Django\Inventory\views.py", line 135, in return_hard_drive
+    if formset.is_valid():
+  File "C:\Users\Alan\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\forms\formsets.py", line 332, in is_valid
+    self.errors
+  File "C:\Users\Alan\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\forms\formsets.py", line 315, in errors
+    self.full_clean()
+  File "C:\Users\Alan\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\forms\formsets.py", line 372, in full_clean
+    form_errors = form.errors
+  File "C:\Users\Alan\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\forms\forms.py", line 185, in errors
+    self.full_clean()
+  File "C:\Users\Alan\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\forms\forms.py", line 405, in full_clean
+    self._clean_form()
+  File "C:\Users\Alan\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\forms\forms.py", line 426, in _clean_form
+    cleaned_data = self.clean()
+  File "C:\Users\Alan\Desktop\class\soft2\HDTS\HDTS\HDTS-Django\Inventory\forms.py", line 88, in clean
+    hd = HardDrive.objects.get(serialNo=cd.get('serialNo'))
+  File "C:\Users\Alan\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\Alan\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\db\models\query.py", line 439, in get
+    raise self.model.DoesNotExist(
+Inventory.models.HardDrive.DoesNotExist: HardDrive matching query does not exist.
+2022-04-30 17:55:11,760 "POST /Inventory/returnharddrives/ HTTP/1.1" 500 110791
+2022-04-30 17:55:24,874 C:\Users\Alan\Desktop\class\soft2\HDTS\HDTS\HDTS-Django\Inventory\forms.py changed, reloading.
+2022-04-30 17:55:25,531 Watching for file changes with StatReloader
+2022-04-30 17:55:36,818 "GET /Inventory/returnharddrives/ HTTP/1.1" 200 6942
+2022-04-30 17:55:38,133 "GET /Inventory/ HTTP/1.1" 200 4152
+2022-04-30 17:55:38,174 "GET /static/HDTS/style.css HTTP/1.1" 404 1801
+2022-04-30 17:55:38,175 "GET /static/Inventory/style.css HTTP/1.1" 404 1816
+2022-04-30 17:55:38,193 "GET /static/Inventory/style.css HTTP/1.1" 404 1816
+2022-04-30 17:55:38,824 "GET /Inventory/returnharddrives/ HTTP/1.1" 200 6942
+2022-04-30 17:55:38,859 "GET /static/HDTS/style.css HTTP/1.1" 404 1801
+2022-04-30 17:55:41,741 "POST /Inventory/returnharddrives/ HTTP/1.1" 200 7033
+2022-04-30 17:55:41,803 "GET /static/HDTS/style.css HTTP/1.1" 404 1801
+2022-04-30 17:55:46,706 "POST /Inventory/returnharddrives/ HTTP/1.1" 200 7033
+2022-04-30 17:55:46,740 "GET /static/HDTS/style.css HTTP/1.1" 404 1801
+2022-04-30 17:56:57,638 "GET /Inventory/returnharddrives/ HTTP/1.1" 200 6942
+2022-04-30 17:56:57,676 "GET /static/HDTS/style.css HTTP/1.1" 404 1801
+2022-04-30 17:57:02,607 Internal Server Error: /Inventory/returnharddrives/
+Traceback (most recent call last):
+  File "C:\Users\Alan\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Alan\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Alan\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\Alan\Desktop\class\soft2\HDTS\HDTS\HDTS-Django\Inventory\views.py", line 139, in return_hard_drive
+    hd = HardDrive.objects.get_object_or_404(serialNo=serial_num)
+AttributeError: 'Manager' object has no attribute 'get_object_or_404'
+2022-04-30 17:57:02,607 "POST /Inventory/returnharddrives/ HTTP/1.1" 500 74246
+2022-04-30 17:57:28,313 C:\Users\Alan\Desktop\class\soft2\HDTS\HDTS\HDTS-Django\Inventory\views.py changed, reloading.
+2022-04-30 17:57:29,053 Watching for file changes with StatReloader
+2022-04-30 17:57:30,559 "GET /Inventory/returnharddrives/ HTTP/1.1" 200 6942
+2022-04-30 17:57:32,981 "GET /Inventory/returnharddrives/ HTTP/1.1" 200 6942
+2022-04-30 17:57:33,017 "GET /static/HDTS/style.css HTTP/1.1" 404 1801
+2022-04-30 17:57:36,053 "POST /Inventory/returnharddrives/ HTTP/1.1" 302 0
+2022-04-30 17:57:36,608 "GET /Inventory/viewInventory/ HTTP/1.1" 200 35017
+2022-04-30 17:57:36,647 "GET /static/HDTS/style.css HTTP/1.1" 404 1801

@@ -49,3 +49,4 @@ class CreateNewRequest(forms.ModelForm):
     class Meta:
         model = RequestList
         exclude = ['requestStatus', 'request_number', 'ticket_number', 'request_creation_date', 'hd_return_date']
+        
