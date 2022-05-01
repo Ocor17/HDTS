@@ -45,6 +45,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    
+    
 ]
 
 MIDDLEWARE = [
@@ -83,10 +85,10 @@ WSGI_APPLICATION = 'HDTS.wsgi.application'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
  #CHANGE LATER TO USE .ENV VARIABLES
- DATABASES = {
+DATABASES = {
      'default': {
          'ENGINE': 'djongo',
-         'NAME': 'hdts',
+         'NAME': 'hdts-testing',
          'CLIENT': {
              'username': 'team7',
              'password': 'team7',
@@ -136,6 +138,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 STATIC_URL = '/static/'
+AUTH_USER_MODEL = 'accounts.User'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
@@ -149,3 +152,5 @@ LOGOUT_REDIRECT_URL="/"
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+# AUTHENTICATION_BACKENDS = ['accounts.authenticate.MyBackend']
