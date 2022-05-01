@@ -33,6 +33,6 @@ MANUFACTURER_CHOICES = [
 ]
 
 BOOT_TEST_CHOICES = [
-    ('yes', 'Yes'),
-    ('no', 'No')
+    (True, 'Yes'),
+    (False, 'No')
 ]

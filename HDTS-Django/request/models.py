@@ -21,6 +21,12 @@ class RequestList(models.Model):
     eventEndDate = models.DateField(max_length=200, null=True)
     requestStatus = models.CharField(max_length=200, null=True)
 
+    request_number = models.IntegerField(null=False)
+    ticket_number = models.CharField(max_length=20, null=False)
+    request_creation_date = models.DateTimeField(max_length=200)
+    hd_pick_up_date = models.DateField(max_length=200)
+    hd_return_date = models.DateField(max_length=200)
+
     class Meta:
         managed = False
         db_table = 'requestlist'

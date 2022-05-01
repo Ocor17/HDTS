@@ -36,6 +36,7 @@ INSTALLED_APPS = [
     'Inventory.apps.InventoryConfig',
     'accounts.apps.AccountsConfig',
     'request.apps.RequestConfig',
+    'register.apps.RegisterConfig',
     'crispy_forms',
 
     # django apps
@@ -45,8 +46,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    
-    
+    'django_filters',
 ]
 
 MIDDLEWARE = [
@@ -153,4 +153,26 @@ LOGOUT_REDIRECT_URL="/"
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
-# AUTHENTICATION_BACKENDS = ['accounts.authenticate.MyBackend']
+LOGGING = {
+    'version': 1,
+    'loggers': {
+        'django': {
+            'handlers': ['file'],
+            'level': 'INFO',
+        }
+    },
+    'handlers': {
+        'file': {
+            'level': 'INFO',
+            'class': 'logging.FileHandler',
+            'filename': './log.log',
+            'formatter': 'simpleRe',
+        },
+    },
+    'formatters': {
+        'simpleRe': {
+            'format': '{asctime} {message}',
+            'style': '{',
+        }
+    }
+}

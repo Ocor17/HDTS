@@ -4,6 +4,7 @@ from operator import is_
 from djongo import models
 from django.contrib.auth.models import  AbstractBaseUser, PermissionsMixin, BaseUserManager
 from django.utils.translation import gettext_lazy as _
+from datetime import date
 
 # Create your models here.
 
@@ -77,6 +78,7 @@ class User(AbstractBaseUser, PermissionsMixin):
     
     def __str__(self):
         return self.email
+
  
 
     class Meta:
