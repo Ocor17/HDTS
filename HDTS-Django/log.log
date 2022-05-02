@@ -14,16 +14,3 @@
 2022-04-19 20:02:21,930 Watching for file changes with StatReloader
 2022-04-19 20:02:28,668 /Users/sofiagutierrez/Desktop/Git Uploads/HDTS/HDTS-Django/Inventory/views.py changed, reloading.
 2022-04-19 20:02:32,017 Watching for file changes with StatReloader
-2022-05-01 01:12:05,899 Watching for file changes with StatReloader
-2022-05-01 01:12:16,273 "GET / HTTP/1.1" 200 3250
-2022-05-01 01:12:16,344 "GET /static/HDTS/style.css HTTP/1.1" 404 1801
-2022-05-01 01:12:19,061 "GET /adminlogin HTTP/1.1" 301 0
-2022-05-01 01:12:19,093 "GET /adminlogin/ HTTP/1.1" 200 4373
-2022-05-01 01:12:19,144 "GET /static/HDTS/style.css HTTP/1.1" 404 1801
-2022-05-01 01:12:27,099 "POST /adminlogin/ HTTP/1.1" 302 0
-2022-05-01 01:12:27,110 "GET /register HTTP/1.1" 301 0
-2022-05-01 01:12:27,237 "GET /register/ HTTP/1.1" 200 3307
-2022-05-01 01:12:27,310 "GET /static/HDTS/style.css HTTP/1.1" 404 1801
-2022-05-01 01:12:27,312 "GET /static/register/style.css HTTP/1.1" 404 1813
-2022-05-01 01:12:30,002 "GET /register/viewAccounts/ HTTP/1.1" 200 5664
-2022-05-01 01:12:30,061 "GET /static/HDTS/style.css HTTP/1.1" 404 1801

@@ -71,4 +71,21 @@ class addNewHardDrive(forms.ModelForm):
             self.add_error('justiRetDate', msg)
 '''
 class return_hard_drives(forms.Form):
-    serialNo = forms.CharField( max_length=10, label='Hard Drive Serial Number')
+    serialNo = forms.CharField(
+            max_length=10, 
+            label='Hard Drive Serial Number',
+            error_messages={
+                'exists': 'The Hard Drive does not exist',
+                'hdStatus': 'The Hard Drive is not assigned'
+            })
+
+    def clean(self):
+        cd = self.cleaned_data
+        hd = None
+        if not HardDrive.objects.filter(serialNo=cd.get('serialNo')).exists():
+            raise forms.ValidationError('Hard Drive does not Exist.')
+        else:
+            hd = HardDrive.objects.get(serialNo=cd.get('serialNo'))
+        if hd is not None and hd.hdStatus != 'assigned':
+            raise forms.ValidationError('Hard Drive is not assigned')
+        return cd
