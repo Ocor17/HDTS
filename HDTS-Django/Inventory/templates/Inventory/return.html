@@ -1,5 +1,6 @@
 {% extends 'Inventory/base.html' %}
-{% block title %} Return Hard Drives {% endblock %}
+
+{% block title %}<h1 class="main-inventory-text2">Return Hard Drives </h1>{% endblock %}
 {% block content %}
 
 <style>
@@ -11,12 +12,10 @@
     }
 </style>
 <div class="container-fluid">
-    <h3 class="mt-2">Return Hard Drives</h3>
-    <hr class="mt-0 mb-4">
+    
     <form action="/Inventory/returnharddrives/" method="POST">
         {% csrf_token %}
         {% if formset %}
-            <h3>Hard Drive Return</h3>
             {{ formset.management_form }}
             <div id="harddrive-form-list">
                 {% for form in formset %}
@@ -58,3 +57,5 @@
     }
 </script>
 {% endblock %}
+
+{% block button %}<button class="main-inventory-navlink1 button" type="submit">Return Hard Drives</button>{% endblock %}

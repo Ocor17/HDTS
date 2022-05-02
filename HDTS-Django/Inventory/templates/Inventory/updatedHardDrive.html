@@ -1,13 +1,82 @@
 {% extends 'Inventory/base.html' %}
 
-{% block title %}Hard Drive Details{% endblock %}
+{% block title %}<h1 class="main-inventory-text2">Inventory</h1>{% endblock %}
 
 {% block content %}
-<h3 class="mt-2">Hard Drive Details</h3>
-<hr class="mt-0 mb-4">
-<form method="post" action="/Inventory/updateHardDrive/{{sn}}/">
+
+  <div id="search_div" class="main-inventory-container15">
+    <button class="main-inventory-button2 button">Sort By</button>
+    <button class="main-inventory-button3 button">
+      Filter By
+    </button>
+    <input id="inventoryInput" class="main-inventory-textinput input" type="text" placeholder="Search..">
+  </div>
+
+  <div id="table_div" class="main-inventory-container16">
+  <!-- <br> -->
+  <table class="table table-hover" style="color: #cdd1d5;">
+    <thead>
+      <tr>
+        <th><input type="checkbox" onclick="checkBoxToggle(this)"></th>
+        <th scope ="col">serialNo </th>
+        <th scope ="col">manufacturer </th>
+        <th scope ="col">modelNo </th>
+        <th scope ="col">hdType </th>
+        <th scope ="col">connPort </th>
+        <th scope ="col">hdSize </th>
+        <th scope ="col">hdClass </th>
+        <th scope ="col">hdStatus </th>
+      </tr>
+    </thead>
+    {% for item in harddrive %}
+    <tbody id="inventoryTable">  
+      <tr>
+        <th><input type="checkbox" name="check"></th>
+        <td><a href="{% url 'Inventory:updateHardDrive' item.serialNo %}"> {{item.serialNo}} </a></td>
+        <td>{{item.manufacturer}}</td> 
+        <td>{{item.modelNo}} </td>
+        <td>{{item.hdType}}</td> 
+        <td>{{item.connPort}}</td> 
+        <td>{{item.hdSize}} </td>
+        <td>{{item.hdClass}}</td>
+        <td>{{item.hdStatus}}</td> 
+      </tr>
+    </tbody>
+    {% endfor%}
+  </table>
+
+  
+
+  <script>
+    $(document).ready(function(){
+      $("#inventoryInput").on("keyup", function() {
+        var value = $(this).val().toLowerCase();
+        $("#inventoryTable tr").filter(function() {
+          $(this).toggle( $(this).text().toLowerCase().indexOf(value) > -1 );
+        });
+      });
+    });
+</script>
+
+<script lang="JavaScript">
+  function checkBoxToggle(header){
+    cbs = document.getElementsByName("check");
+    for(var i=0, n=cbs.length; i<n; i++) {
+      cbs[i].checked = header.checked;
+    }
+  }
+</script>
+</div>
+
+{% endblock content%}
+
+{% block subcontent %}
+<form method="post" action="/Inventory/updateHardDrive/{{sn}}/" style="width: 100%;">
     {% csrf_token %}
     {{form.as_p}}
     <button class="btn btn-primary" type="submit">Save</button> 
 </form> 
 {% endblock %}
+
+{% block subtitle %}<h2 class="main-inventory-text3">Hard Drive Details</h2>{% endblock %}
+{% block button %}<button class="main-inventory-navlink1 button" type="submit">Save</button>{% endblock %}

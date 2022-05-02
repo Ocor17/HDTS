@@ -6,6 +6,7 @@ import datetime
 
 class InventoryTestCase(TestCase):
 
+
     def setUp(self):
         form = addNewHardDrive(
             serialNo =  1234, hdType = 'ssd', connPort = 'sata',

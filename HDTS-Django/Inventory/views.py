@@ -84,6 +84,10 @@ def viewLog(request):
 def mainMenu(request):
     return render(request, 'Inventory/mainMenu.html')
 
+@login_required(login_url='/')
+def viewReports(request):
+    return render(request, 'Inventory/reports.html')
+
 
 @login_required(login_url='/')
 def view_request(response, request_id=None):#passes request values stored to be called from html

@@ -1,12 +1,11 @@
 {% extends 'accounts/base.html'%}
 
-{% block title %} Login {% endblock %}
+{% block title %}<h1 class="main-inventory-text2">Requestor Login</h1>{% endblock %}
 {% load crispy_forms_tags %}
 
 {% block content %}
     <form method="POST" class="form-group">
-        <h3 class="mt-2">Login</h3>
-        <hr class="mt-0 mb-4">
+
         {% csrf_token %}
         {{form|crispy}}
         {% for message in messages %}
