@@ -22,4 +22,6 @@ urlpatterns = [
     path('requestlist/', views.request_list, name='requestlist'),
     path('requestlist/<request_id>', views.request_list, name='requestlistparams'),
     path('<str>:<int>', views.index, name='index'),
+    path('editrequest/<request_number>', views.edit_request, name='editrequest'),
+    path('clonerequest/<request_number>', views.clone_request, name='clonerequest'),
 ]

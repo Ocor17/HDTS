@@ -143,7 +143,8 @@ def return_hard_drive(response):
                 hd = HardDrive.objects.get(serialNo=serial_num)
                 hd.hdStatus = 'Pending Wipe'
                 hd.save(update_fields=['hdStatus'])
-        return redirect(reverse('Inventory:viewInventory'))
+            return redirect(reverse('Inventory:viewInventory'))
+        return render(response, "Inventory/return.html", {'formset': formset})
 
     
     return render(response, "Inventory/return.html", {'formset': formset})

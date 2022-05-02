@@ -48,8 +48,7 @@ def requestor_login_page(response):
         username = response.POST['username']
         password = response.POST['password']
         
-        user = authenticate(response, username=username, password=password)
-        
+        user = authenticate(request=response, email=username, password=password)        
         if user is not None:
             login(response, user)
             return redirect("/request")
@@ -65,7 +64,7 @@ def maintainer_login_page(response):
         username = response.POST['username']
         password = response.POST['password']
         
-        user = authenticate(response, username=username, password=password)
+        user = authenticate(request=response, email=username, password=password)
         
         if user is not None:
             login(response, user)

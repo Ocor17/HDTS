@@ -1,10 +1,10 @@
 from djongo import models
-from django.contrib.auth.models import User
+from accounts.models import User
 
 # Create your models here.
 class RequestList(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE, related_name="requestlist", null=True)
-    name = models.CharField(max_length=200)
+    eventName = models.CharField(max_length=200)
     # info from form
     classification = models.CharField(max_length=200, null=True)
     amount = models.IntegerField(null=True)

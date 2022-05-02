@@ -2,8 +2,9 @@
 from django import forms
 from django.contrib.auth import login, authenticate
 from django.contrib.auth.forms import UserCreationForm
+from .models import RequestList
 
-class CreateNewRequest(forms.Form):
+class CreateNewRequest(forms.ModelForm):
     classification_choices = (#choices for the user pick when creating request
         ("Classified", "Classified"),
         ("Unclassified", "Unclassified"),
@@ -44,3 +45,8 @@ class CreateNewRequest(forms.Form):
     eventEndDate = forms.DateField(label="Event End Date",  widget=forms.SelectDateWidget)
 
     hd_pick_up_date = forms.DateField(label='Needed by', widget=forms.SelectDateWidget)
+
+    class Meta:
+        model = RequestList
+        exclude = ['requestStatus', 'request_number', 'ticket_number', 'request_creation_date', 'hd_return_date']
+        
