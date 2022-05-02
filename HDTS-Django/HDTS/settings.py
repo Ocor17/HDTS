@@ -88,7 +88,7 @@ WSGI_APPLICATION = 'HDTS.wsgi.application'
 DATABASES = {
      'default': {
          'ENGINE': 'djongo',
-         'NAME': 'hdts-testing',
+         'NAME': 'hdts',
          'CLIENT': {
              'username': 'team7',
              'password': 'team7',
