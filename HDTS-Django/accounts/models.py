@@ -1,4 +1,3 @@
-from ast import Try
 from django.utils import timezone
 from operator import is_
 from djongo import models
