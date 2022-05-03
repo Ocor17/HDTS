@@ -16,6 +16,9 @@ from .utils import calc_ret_date, gen_ticket_number, calc_req_num
 from .forms import CreateNewRequest
 from .models import RequestList
 from .filters import RequestFilter
+#logged message when request made.
+import logging,traceback
+logger = logging.getLogger('django')
 
 view_request = False
 # Create your views here.
@@ -72,6 +75,8 @@ def new_request(response):#will get values from user to generate new request in 
             return redirect(reverse('request:requestlist'))
     else:
         form = CreateNewRequest()
+        logger.info('Request Submitted')
+        #return render(response, 'request/addHardDrive.html', {"form":form})
     return render(response, 'request/newrequest.html', {"form":form})
 
 @login_required(login_url='/')
