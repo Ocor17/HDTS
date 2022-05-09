@@ -20,14 +20,20 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-6oii^+w*=n88*uh$866f19yln6!4i@eutt*astet*$bwe3&o6)'
-
+#SECRET_KEY = 'django-insecure-6oii^+w*=n88*uh$866f19yln6!4i@eutt*astet*$bwe3&o6)'
+SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
 #CHANGE LATER TO USE .ENV
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = os.environ.get('ALLOWED_HOSTS').split(" ")
+if ALLOWED_HOSTS is None:
+    ALLOWED_HOSTS = []   
+    
+CSFR_TRUSTED_ORGINS = os.environ.get('CSFR_TRUSTED_ORIGINS').split(" ")
 
+if CSFR_TRUSTED_ORGINS is None:
+    CSFR_TRUSTED_ORGINS = []
 
 # Application definition
 
@@ -88,12 +94,12 @@ WSGI_APPLICATION = 'HDTS.wsgi.application'
 DATABASES = {
      'default': {
          'ENGINE': 'djongo',
-         'NAME': 'hdts',
+         'NAME': os.environ.get('DB_NAME'),
          'CLIENT': {
-             'username': 'team7',
-             'password': 'team7',
-             'host': 'hdts.azemend.com',
-             'port': 4444,
+             'username': os.environ.get('DB_USERNAME'),
+             'password': os.environ.get('DB_PASSWORD'),
+             'host': os.environ.get('HOST'),
+             'port': os.environ.get('PORT'),
          }
 
      }

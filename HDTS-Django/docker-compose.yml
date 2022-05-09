@@ -1,0 +1,40 @@
+version: "3.7"
+
+
+services:
+  mongo:
+    image: mongo:latest
+    restart: always
+    
+    ports:
+      - "$DB_PORT:27017"
+
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: $DB_USERNAME
+      MONGO_INITDB_ROOT_PASSWORD: $DB_PASSWORD
+    volumes:
+      - $DOCKERDIR/mongo:/database
+    
+  hdts:
+    container_name: hdts
+    image: hdts
+    depends_on:
+      - mongo
+    restart: unless-stopped
+    ports:
+      - "$HDTS_PORT:8000"
+    environment:
+      - PYTHONUNBUFFERED=1
+      - PYTHONDONTWRITEBYTECODE=1
+      - DB_USERNAME=$DB_USERNAME
+      - DB_PASSWORD=$DB_PASSWORD
+      - DB_NAME=$DB_NAME
+      - HOST=$HOST
+      - PORT=$PORT 
+      - SECRET_KEY=$SECRET_KEY
+      - ALLOWED_HOSTS=$ALLOWED_HOSTS
+      - CSRF_TRUSTED_ORIGINS=$CSRF_TRUSTED_ORIGINS
+
+
+    volumes:
+      - $DOCKERDIR/hdts:/storage
