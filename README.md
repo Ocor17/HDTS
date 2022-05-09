@@ -25,3 +25,9 @@ web-based hard drive tracker system
 ### Objects
 - Hard Drive Model: Inventory/model.py  
 - Request Model: request/model.py
+
+### NOTICE
+- User needs a Mongo database running to operate
+- User needs to define Mongo settings under Databases
+    - Engine: djongo
+    
