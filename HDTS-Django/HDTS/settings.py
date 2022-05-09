@@ -26,16 +26,26 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 DEBUG = True
 
 #CHANGE LATER TO USE .ENV
-ALLOWED_HOSTS = os.environ.get('ALLOWED_HOSTS').split(" ")
-if ALLOWED_HOSTS is None:
-    ALLOWED_HOSTS = []   
-    
-CSFR_TRUSTED_ORGINS = os.environ.get('CSFR_TRUSTED_ORIGINS').split(" ")
 
-if CSFR_TRUSTED_ORGINS is None:
+#print("HOST",os.getenv('ALLOWED_HOST'),"HOST TYPE",type(os.environ.get('ALLOWED_HOSTS')))
+
+if os.environ.get('ALLOWED_HOSTS') is None:
+    ALLOWED_HOSTS = ["*"]
+else:
+    ALLOWED_HOSTS = os.environ.get('ALLOWED_HOSTS').split(" ")
+
+if os.environ.get('CSFR_TRUSTED_ORIGINS') is None:
     CSFR_TRUSTED_ORGINS = []
+else:
+    CSFR_TRUSTED_ORGINS = os.environ.get('CSFR_TRUSTED_ORIGINS').split(" ")
 
-# Application definition
+    # Application definition
+#print("ALLOWED_HOSTS",ALLOWED_HOSTS)
+#print(os.environ.get('DB_USERNAME'))
+#print(os.environ.get('DB_PASSWORD'))
+#print(os.environ.get('DB_NAME'))
+#print(os.environ.get('HOST'))
+#print("PORT: ",os.environ.get('PORT'),"type: ",type(int(os.environ.get('PORT'))))
 
 INSTALLED_APPS = [
     # our apps
@@ -94,12 +104,12 @@ WSGI_APPLICATION = 'HDTS.wsgi.application'
 DATABASES = {
      'default': {
          'ENGINE': 'djongo',
-         'NAME': os.environ.get('DB_NAME'),
+         'NAME': 'hardDriveTrackerSystem',#os.environ.get('DB_NAME'),
          'CLIENT': {
-             'username': os.environ.get('DB_USERNAME'),
-             'password': os.environ.get('DB_PASSWORD'),
-             'host': os.environ.get('HOST'),
-             'port': os.environ.get('PORT'),
+             'username': os.environ.get('DB_USERNAME'), #os.environ.get('DB_USERNAME'),
+             'password': os.environ.get('DB_PASSWORD'),#os.environ.get('DB_PASSWORD'),
+             'host': 'db',#os.environ.get('HOST'), #os.environ.get('HOST'),
+             'port': 27017#int(os.environ.get('PORT')),#int(os.environ.get('PORT')),
          }
 
      }
