@@ -20,16 +20,32 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-6oii^+w*=n88*uh$866f19yln6!4i@eutt*astet*$bwe3&o6)'
-
+#SECRET_KEY = 'django-insecure-6oii^+w*=n88*uh$866f19yln6!4i@eutt*astet*$bwe3&o6)'
+SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
 #CHANGE LATER TO USE .ENV
-ALLOWED_HOSTS = []
 
+#print("HOST",os.getenv('ALLOWED_HOST'),"HOST TYPE",type(os.environ.get('ALLOWED_HOSTS')))
 
-# Application definition
+if os.environ.get('ALLOWED_HOSTS') is None:
+    ALLOWED_HOSTS = ["*"]
+else:
+    ALLOWED_HOSTS = os.environ.get('ALLOWED_HOSTS').split(" ")
+
+if os.environ.get('CSFR_TRUSTED_ORIGINS') is None:
+    CSFR_TRUSTED_ORGINS = []
+else:
+    CSFR_TRUSTED_ORGINS = os.environ.get('CSFR_TRUSTED_ORIGINS').split(" ")
+
+    # Application definition
+#print("ALLOWED_HOSTS",ALLOWED_HOSTS)
+#print(os.environ.get('DB_USERNAME'))
+#print(os.environ.get('DB_PASSWORD'))
+#print(os.environ.get('DB_NAME'))
+#print(os.environ.get('HOST'))
+#print("PORT: ",os.environ.get('PORT'),"type: ",type(int(os.environ.get('PORT'))))
 
 INSTALLED_APPS = [
     # our apps
@@ -88,12 +104,12 @@ WSGI_APPLICATION = 'HDTS.wsgi.application'
 DATABASES = {
      'default': {
          'ENGINE': 'djongo',
-         'NAME': 'hdts',
+         'NAME': 'hardDriveTrackerSystem',#os.environ.get('DB_NAME'),
          'CLIENT': {
-             'username': 'team7',
-             'password': 'team7',
-             'host': 'hdts.azemend.com',
-             'port': 4444,
+             'username': os.environ.get('DB_USERNAME'), #os.environ.get('DB_USERNAME'),
+             'password': os.environ.get('DB_PASSWORD'),#os.environ.get('DB_PASSWORD'),
+             'host': 'db',#os.environ.get('HOST'), #os.environ.get('HOST'),
+             'port': 27017#int(os.environ.get('PORT')),#int(os.environ.get('PORT')),
          }
 
      }

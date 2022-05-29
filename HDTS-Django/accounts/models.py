@@ -64,7 +64,7 @@ class User(AbstractBaseUser, PermissionsMixin):
     direct_supervisor_email = models.EmailField(max_length=30)
     branch_chief_name = models.CharField(max_length=30)
     account_status = models.CharField(max_length=30,default="Pending")
-    last_modified = models.DateField(default=timezone.now())
+    last_modified = models.DateField()
     
     #needed for superuser functionality
     is_staff = models.BooleanField(default=False)

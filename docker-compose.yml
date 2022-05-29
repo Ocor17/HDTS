@@ -1,0 +1,54 @@
+version: "3.7"
+
+#networks:
+#  hdts_net:
+#    external: true
+#    name: hdts_net
+#  default:
+#    driver: bridge
+
+services:
+  db:
+    container_name: mongo
+    image: mongo:latest
+    restart: always
+#    networks:
+#      - hdts_net
+    
+    ports:
+      - "27017:27017"
+
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: $DB_USERNAME
+      MONGO_INITDB_ROOT_PASSWORD: $DB_PASSWORD
+    volumes:
+      - $DOCKERDIR/mongo:/database
+    
+  hdts:
+    container_name: hdts
+    image: hdts
+    tty: true
+    stdin_open: true
+
+    depends_on:
+      - db
+    restart: unless-stopped
+#    networks:
+#      - hdts_net
+    ports:
+      - "$HDTS_PORT:8000"
+    environment:
+      - PYTHONUNBUFFERED=1
+      - PYTHONDONTWRITEBYTECODE=1
+      - DB_USERNAME=$DB_USERNAME
+      - DB_PASSWORD=$DB_PASSWORD
+      - DB_NAME=$DB_NAME
+      - HOST=db
+      - PORT=$PORT 
+      - SECRET_KEY=$SECRET_KEY
+      - ALLOWED_HOSTS=$ALLOWED_HOSTS
+      - CSRF_TRUSTED_ORIGINS=$CSRF_TRUSTED_ORIGINS
+
+    volumes:
+      - $DOCKERDIR/hdts:/storage
+    #command: ["python","Django/manage.py","createsuperuser", "--username=admin","--first_name=admin","--email=admin@admin.com"]
