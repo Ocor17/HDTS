@@ -27,6 +27,9 @@ services:
   hdts:
     container_name: hdts
     image: hdts
+    tty: true
+    stdin_open: true
+
     depends_on:
       - db
     restart: unless-stopped
@@ -45,7 +48,6 @@ services:
       - SECRET_KEY=$SECRET_KEY
       - ALLOWED_HOSTS=$ALLOWED_HOSTS
       - CSRF_TRUSTED_ORIGINS=$CSRF_TRUSTED_ORIGINS
-
 
     volumes:
       - $DOCKERDIR/hdts:/storage
