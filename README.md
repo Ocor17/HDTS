@@ -4,6 +4,5 @@ web-based hard drive tracker system
 
 
     Install the application libraries
-    -1. pip install -r requirements.txt
-    -2. cd HDTS-Django/
-    -3. python manage.py runserver
+    -1. ensure docker and docker-compose are installed on system
+    -2. run the setup script and allow it to bring the system up
