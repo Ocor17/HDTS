@@ -8,4 +8,9 @@ env/
 media/
 *.DS_Store
 
+.env
+*.env
+.env.*
+!.env.example
+
 media
